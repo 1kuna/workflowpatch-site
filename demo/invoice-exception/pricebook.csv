@@ -1,0 +1,4 @@
+vendor_sku,vendor_name,expected_unit_price,required_po_prefix
+CASE-MILK-2GAL,Acme Dairy,18.50,PO-ACME
+COFFEE-BEANS-5LB,Royal Coffee,42.00,PO-ROYA
+CLEANING-TABS-100CT,Golden Supply,27.75,PO-GLDN

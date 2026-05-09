@@ -1,0 +1,8 @@
+invoice_id,vendor_name,vendor_sku,po_number,quantity,unit_price,invoice_total,source_file
+INV-2001,Acme Dairy,CASE-MILK-2GAL,PO-ACME-1042,4,18.50,74.00,acme_2001.pdf
+INV-2002,Royal Coffee,COFFEE-BEANS-5LB,PO-ROYA-883,2,44.00,88.00,royal_2002.pdf
+INV-2003,Golden Supply,CLEANING-TABS-100CT,PO-WRONG-204,1,27.75,27.75,golden_2003.pdf
+INV-2004,Acme Dairy,CASE-MILK-2GAL,PO-ACME-1043,3,18.50,50.00,acme_2004.pdf
+INV-2005,Unknown Vendor,UNKNOWN-SKU,PO-UNK-1,1,12.00,12.00,unknown_2005.pdf
+INV-2001,Acme Dairy,CASE-MILK-2GAL,PO-ACME-1042,4,18.50,74.00,acme_duplicate.pdf
+,Royal Coffee,COFFEE-BEANS-5LB,PO-ROYA-884,1,42.00,42.00,missing_id.pdf

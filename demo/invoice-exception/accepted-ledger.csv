@@ -1,0 +1,2 @@
+invoice_id,vendor_name,vendor_sku,quantity,unit_price,expected_unit_price,invoice_total,decision,evidence,processed_at
+INV-2001,Acme Dairy,CASE-MILK-2GAL,4,18.50,18.50,74.00,ready_for_human_review,price_match=true total_match=true po_prefix=PO-ACME,2026-05-09T02:05:00-04:00

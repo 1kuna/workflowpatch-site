@@ -1,0 +1,3 @@
+invoice_id,status,error_message,manual_review_reason,processed_at
+INV-2001,error,duplicate invoice_id,Duplicate invoice row blocked so the same vendor document is not processed twice.,2026-05-09T02:05:00-04:00
+,error,missing invoice_id,Row blocked because finance records need a stable invoice id for dedupe and audit.,2026-05-09T02:05:00-04:00

@@ -1,0 +1,5 @@
+invoice_id,vendor_name,vendor_sku,issue_type,review_reason,evidence,processed_at
+INV-2002,Royal Coffee,COFFEE-BEANS-5LB,unit_price_mismatch,Invoice unit price differs from the approved pricebook.,invoice=44.00 expected=42.00,2026-05-09T02:05:00-04:00
+INV-2003,Golden Supply,CLEANING-TABS-100CT,po_prefix_mismatch,Purchase order prefix does not match the vendor's approved prefix.,po_number=PO-WRONG-204 required_prefix=PO-GLDN,2026-05-09T02:05:00-04:00
+INV-2004,Acme Dairy,CASE-MILK-2GAL,line_total_mismatch,Invoice total does not equal quantity times unit price.,invoice_total=50.00 expected_total=55.50,2026-05-09T02:05:00-04:00
+INV-2005,Unknown Vendor,UNKNOWN-SKU,unknown_sku,SKU is not in the approved pricebook.,vendor_sku=UNKNOWN-SKU,2026-05-09T02:05:00-04:00
