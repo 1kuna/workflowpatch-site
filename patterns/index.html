@@ -397,6 +397,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Travel Email Classification And Escalation</h2>
+            <p>For agency inboxes where Gmail messages need category decisions, Sheets status tracking, Slack escalation, and review gates before any customer-facing automation.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted email sample per category, target status stages, Slack alert text shape, and expected daily volume.</div>
+            <div class="step"><strong>Transform</strong>Classify against approved labels, enforce confidence thresholds, block ambiguous rows, prevent auto-reply loops, and attach evidence.</div>
+            <div class="step"><strong>Destination</strong>Classification ledger, Sheets-ready status queue, Slack escalation draft, review queue, error log, and handoff runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Gmail classification</li>
+                <li>Travel booking-change triage</li>
+                <li>Sheets and Slack operations queues</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No customer auto-reply from first proof</li>
+                <li>No live Slack post without review</li>
+                <li>Booking-engine writes stay out of scope</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Urgent rows create Slack drafts</li>
+                <li>Ambiguous category matches are held</li>
+                <li>Auto-replies do not trigger loops</li>
+              </ul>
+              <p><a href="/demo/travel-email-classification/">View travel email demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Invoice Or Vendor Exception Queue</h2>
             <p>For invoice, order, or vendor records that need extraction, reconciliation, and a visible blocked path before finance or operations acts.</p>
           </div>
@@ -1064,6 +1103,7 @@
         <a class="button secondary" href="/demo/cstore-invoice-reconciliation/">View C-Store Invoice Demo</a>
         <a class="button secondary" href="/demo/crm-sync/">View CRM Sync Demo</a>
         <a class="button secondary" href="/demo/hubspot-json-stabilization/">View HubSpot JSON Demo</a>
+        <a class="button secondary" href="/demo/travel-email-classification/">View Travel Email Demo</a>
         <a class="button secondary" href="/demo/postgres-statement-email/">View Statement Email Demo</a>
         <a class="button secondary" href="/demo/research-digest/">View Research Digest Demo</a>
         <a class="button secondary" href="/demo/listing-roi-scan/">View Listing ROI Demo</a>

@@ -1,0 +1,4 @@
+reference,message_id,client_account,stage,category,received_at,next_owner
+TRV-20260509-2001,msg_2001,ACCT-041,Acknowledged,hotel_update,2026-05-09T08:04:12Z,sales_ops
+TRV-20260509-2002,msg_2002,ACCT-012,Pending,urgent,2026-05-09T08:09:43Z,operations
+TRV-20260509-2003,msg_2003,ACCT-027,Pending,invoice,2026-05-09T08:14:02Z,operations

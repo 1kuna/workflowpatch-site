@@ -1,0 +1,7 @@
+message_id,thread_id,received_at,from_email,client_account,language,subject,body_excerpt,auto_submitted
+msg_2001,thr_8001,2026-05-09T08:04:12Z,hotel.ops@example.de,ACCT-041,DE,"Hotel update for Berlin booking","The room type for guest Meyer changed from standard to superior. Arrival remains Friday.",false
+msg_2002,thr_8002,2026-05-09T08:09:43Z,agent@example.com,ACCT-012,EN,"URGENT flight cancellation for Paris group","Flight was cancelled and guests need a same-day rebooking decision before 14:00.",false
+msg_2003,thr_8003,2026-05-09T08:14:02Z,ap@examplehotel.fr,ACCT-027,FR,"Facture avril 2026","Veuillez trouver la facture pour les chambres du groupe Lyon.",false
+msg_2004,thr_8004,2026-05-09T08:18:55Z,client@example.com,ACCT-019,EN,"Question on invoice and booking","Can someone check the invoice and also confirm whether the booking changed?",false
+msg_2005,thr_8005,2026-05-09T08:22:31Z,auto-reply@example.com,ACCT-009,EN,"Out of office: Re booking update","I am out of office and will reply when I return.",true
+msg_2006,thr_8006,2026-05-09T08:25:48Z,unknown@example.com,,DE,"Bitte buchen","Bitte buchen Sie das Hotel neu. Kunde nicht angegeben.",false

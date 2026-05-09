@@ -1,0 +1,4 @@
+message_id,thread_id,reference,client_account,language,label,confidence,status,evidence
+msg_2001,thr_8001,TRV-20260509-2001,ACCT-041,DE,hotel_update,0.91,Acknowledged,hits=hotel update;room type;arrival;guest
+msg_2002,thr_8002,TRV-20260509-2002,ACCT-012,EN,urgent,0.97,Pending,hits=urgent;same-day;cancelled;cancellation
+msg_2003,thr_8003,TRV-20260509-2003,ACCT-027,FR,invoice,0.74,Pending,hits=facture

@@ -1,0 +1,6 @@
+label,min_confidence,keywords,sheets_status,slack_required
+invoice,0.74,"invoice|facture|rechnung|payment|billing",Pending,false
+hotel_update,0.76,"hotel update|room type|arrival|guest|chambre|zimmer",Acknowledged,false
+account_request,0.72,"client|account|customer|kunde|request",Pending,false
+urgent,0.82,"urgent|same-day|cancelled|cancellation|emergency|sofort|dringend",Pending,true
+booking_change,0.78,"booking changed|booking change|rebooking|book again|neu buchen|umbuchen",Pending,true

@@ -1,0 +1,8 @@
+stage,meaning,next_owner
+Pending,New request needs acknowledgement or triage,operations
+Acknowledged,Known update or request has been logged,sales_ops
+Offer Sent,Offer or alternative has been sent,sales
+Follow Up,Follow-up reminder is due,sales
+Negotiation,Client is discussing options,sales
+Confirmed,Client accepted and booking can proceed,booking_ops
+Declined,Client declined or request is closed,sales_ops
