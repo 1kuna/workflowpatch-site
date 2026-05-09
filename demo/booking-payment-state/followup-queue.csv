@@ -1,0 +1,3 @@
+submission_id,recipient,message_type,draft,approval
+sub-1002,jordan@example.test,payment_required,"Your requested time is tentatively held, but the slot is not secure until payment is received.",required
+sub-1003,riley@example.test,payment_required,"Your requested time is tentatively held, but the slot is not secure until payment is received.",required

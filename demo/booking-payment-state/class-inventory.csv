@@ -1,0 +1,10 @@
+class_type,start_at,capacity,confirmed_count,ridercoach_available,enrollment_link
+Learn to Ride,2026-06-08 14:00,4,2,true,https://example.test/learn-to-ride
+Learn to Ride,2026-06-10 09:00,4,1,true,https://example.test/learn-to-ride
+Real World Riding,2026-06-09 08:00,4,4,true,https://example.test/real-world
+Real World Riding,2026-06-11 08:00,4,2,true,https://example.test/real-world
+Dual Sport,2026-06-12 13:00,4,1,false,https://example.test/dual-sport
+Dual Sport,2026-06-15 08:00,4,1,true,https://example.test/dual-sport
+Refresher,2026-06-10 08:00,4,0,true,https://example.test/refresher
+BRC1,2026-06-20 07:45,12,9,true,https://example.test/brc1
+BRC1,2026-06-27 07:45,12,12,true,https://example.test/brc1

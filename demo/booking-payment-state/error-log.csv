@@ -1,0 +1,2 @@
+submission_id,error_code,error_detail
+sub-1005,missing_email,Cannot send booking or payment follow-up without an email address.

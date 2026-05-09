@@ -1,0 +1,7 @@
+submission_id,class_type,selected_start_at,state,payment_status,message_queue,source_preference,enrollment_link,accepted_at
+sub-1001,Learn to Ride,2026-06-08 14:00,confirmed_paid,paid,confirmation_required,preferred_date_1,https://example.test/learn-to-ride,2026-05-09T09:40:00Z
+sub-1002,Real World Riding,2026-06-11 08:00,tentative_unpaid_hold,unpaid,payment_reminder_required,preferred_date_2,https://example.test/real-world,2026-05-09T09:40:00Z
+sub-1003,Learn to Ride,2026-06-08 14:00,tentative_unpaid_hold,unpaid,payment_reminder_required,preferred_date_1,https://example.test/learn-to-ride,2026-05-09T09:40:00Z
+sub-1004,Dual Sport,2026-06-15 08:00,confirmed_paid,paid,confirmation_required,preferred_date_2,https://example.test/dual-sport,2026-05-09T09:40:00Z
+sub-1006,BRC1,2026-06-20 07:45,confirmed_paid,paid,confirmation_required,preferred_date_1,https://example.test/brc1,2026-05-09T09:40:00Z
+sub-1007,Learn to Ride,2026-06-10 09:00,confirmed_paid,paid,confirmation_required,preferred_date_2,https://example.test/learn-to-ride,2026-05-09T09:40:00Z
