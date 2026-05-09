@@ -1,0 +1,5 @@
+request_id,status,request_type,urgency,suggested_owner,draft_next_step,approval_required,error_message,processed_at
+REQ-1001,ready,sales_inquiry,high,sales_ops,"Review the managed-services lead, confirm fit, and draft the first async reply from the website-form details.",true,,2026-05-08T12:35:00-04:00
+REQ-1002,ready,reporting_request,normal,service_ops,"Prepare the monthly ticket-summary note, list unresolved exceptions, and send to the account owner for approval.",true,,2026-05-08T12:35:00-04:00
+REQ-1003,ready,operations_request,normal,revenue_ops,"Draft a Salesforce handoff note with the missing next step and route it to the deal owner for review.",true,,2026-05-08T12:35:00-04:00
+REQ-1005,ready,operations_request,high,finance_ops,"Create a manual-review item for the unmatched invoice email and ask the owner to confirm account mapping before any outbound note.",true,,2026-05-08T12:35:00-04:00

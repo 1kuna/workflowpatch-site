@@ -1,0 +1,7 @@
+request_id,received_at,company,requester_name,requester_email,message,source,priority_hint
+REQ-1001,2026-05-08T09:14:00-04:00,Northline IT,Mara Chen,mara@example.test,"Can someone summarize the new managed-services lead and route it to the right owner before noon?",website_form,high
+REQ-1002,2026-05-08T10:02:00-04:00,Harbor Desk,Owen Patel,owen@example.test,"Client asked for this month's ticket summary and unresolved exceptions. Please prep the review note.",ticket_export,normal
+REQ-1003,2026-05-08T10:47:00-04:00,FieldOps Co,Iris Morgan,iris@example.test,"Need a quick handoff draft for the Salesforce deal that has no next step after discovery.",crm_export,normal
+REQ-1004,2026-05-08T11:18:00-04:00,Acme Sample,Sam Rivera,,"This one is missing the requester email and should not be processed silently.",website_form,normal
+REQ-1005,2026-05-08T12:03:00-04:00,LedgerWorks,Nia Brooks,nia@example.test,"Invoice email came in with no matching account. Need a review queue item, not an auto-send.",inbox_export,high
+REQ-1002,2026-05-08T12:25:00-04:00,Harbor Desk,Owen Patel,owen@example.test,"Duplicate export row for the ticket summary request.",ticket_export,normal
