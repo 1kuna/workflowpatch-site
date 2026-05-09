@@ -248,6 +248,31 @@
         margin-top: 18px;
       }
 
+      .process {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .step-card {
+        border: 1px solid var(--line);
+        background: var(--panel);
+        border-radius: 8px;
+        padding: 16px;
+      }
+
+      .step-card strong {
+        display: block;
+        color: var(--accent-dark);
+        margin-bottom: 8px;
+      }
+
+      .step-card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
       .contact-box {
         border: 1px solid var(--accent);
         background: var(--soft);
@@ -275,7 +300,8 @@
       @media (max-width: 860px) {
         .hero,
         .pricing,
-        .grid {
+        .grid,
+        .process {
           grid-template-columns: 1fr;
         }
 
@@ -356,6 +382,59 @@
             <div class="item">
               <h3>One Destination</h3>
               <p>Sheet, Airtable, CRM, helpdesk, email draft, Slack/Teams alert, or report output.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap">
+          <h2>Pick the closest proof.</h2>
+          <div class="grid">
+            <div class="item">
+              <h3>Request Triage</h3>
+              <p>Inbox, form, ticket, or CSV rows become review items with blocked rows visible.</p>
+              <p class="note"><a href="/demo/">View request demo</a></p>
+            </div>
+            <div class="item">
+              <h3>Invoice Exceptions</h3>
+              <p>Invoice lines are checked against a pricebook and routed to accepted, exception, or error rows.</p>
+              <p class="note"><a href="/demo/invoice-exception/">View invoice demo</a></p>
+            </div>
+            <div class="item">
+              <h3>CRM Sync Conflicts</h3>
+              <p>Contact and appointment updates are matched, written to a ledger, or held for conflict review.</p>
+              <p class="note"><a href="/demo/crm-sync/">View CRM demo</a></p>
+            </div>
+            <div class="item">
+              <h3>Research Digest</h3>
+              <p>Source rows are scored against a watchlist and split into digest-ready or review-needed outputs.</p>
+              <p class="note"><a href="/demo/research-digest/">View digest demo</a></p>
+            </div>
+          </div>
+          <p class="note">The demos use mock data. The point is the delivery shape: source files, processing script, review queue, error log, and runbook.</p>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap">
+          <h2>What happens after you reply.</h2>
+          <div class="process">
+            <div class="step-card">
+              <strong>1. Fit Check</strong>
+              <p>Send the source, manual step, destination, and one redacted sample. If it is too broad, it gets narrowed.</p>
+            </div>
+            <div class="step-card">
+              <strong>2. Written Scope</strong>
+              <p>You get one source, one transformation, one destination, acceptance checks, and exclusions before payment.</p>
+            </div>
+            <div class="step-card">
+              <strong>3. Payment And Access</strong>
+              <p>Work starts only after payment, accepted scope, and usable sample data or tool access are ready.</p>
+            </div>
+            <div class="step-card">
+              <strong>4. Delivery</strong>
+              <p>The handoff includes QA evidence, visible logging, approval path, and a short runbook.</p>
             </div>
           </div>
         </div>
