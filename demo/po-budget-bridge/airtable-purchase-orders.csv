@@ -1,0 +1,6 @@
+po_id,project_code,vendor,budget_code,approved_amount,po_status,last_updated
+PO-1001,PRJ-410,Northlight Rentals,PRODUCTION,4200,approved,2026-05-08T10:14:00Z
+PO-1002,PRJ-410,Blue Finch Studio,DESIGN,1800,approved,2026-05-08T11:22:00Z
+PO-1003,PRJ-411,Metro Fabrication,BUILD,12500,approved,2026-05-08T12:05:00Z
+PO-1004,PRJ-411,City Storage,LOGISTICS,900,cancelled,2026-05-08T13:16:00Z
+PO-1005,PRJ-412,Soundstage Crew,PRODUCTION,3600,approved,2026-05-08T14:47:00Z

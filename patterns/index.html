@@ -704,6 +704,45 @@
             </div>
           </div>
         </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
+            <h2>PO Budget Bridge</h2>
+            <p>For production, agency, or finance teams that need Airtable purchase orders and Google Sheets budget rows to agree before sync.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One Airtable project/PO table and one representative Google Sheets budget template.</div>
+            <div class="step"><strong>Transform</strong>Validate project sheet ownership, PO status, budget code, approved amount, and paused-project state.</div>
+            <div class="step"><strong>Destination</strong>Sync-ready bridge ledger, exception queue, error log, and runbook for replay or handoff.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Production agency budgets</li>
+                <li>ERP-style PO workflows</li>
+                <li>Airtable plus Google Sheets bridge</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No payment approval or vendor contact</li>
+                <li>Cancelled POs stay blocked</li>
+                <li>Wrong project sheets create review rows</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Valid expenses become sync-ready</li>
+                <li>Over-amount rows are blocked</li>
+                <li>Unknown projects become hard errors</li>
+              </ul>
+              <p><a href="/demo/po-budget-bridge/">View PO budget demo</a></p>
+            </div>
+          </div>
+        </section>
       </div>
 
       <div class="actions">
@@ -718,6 +757,7 @@
         <a class="button secondary" href="/demo/board-event-routing/">View Board Routing Demo</a>
         <a class="button secondary" href="/demo/booking-payment-state/">View Booking State Demo</a>
         <a class="button secondary" href="/demo/signup-access-state/">View Signup Access Demo</a>
+        <a class="button secondary" href="/demo/po-budget-bridge/">View PO Budget Demo</a>
         <a class="button secondary" href="/demo/sms-approval-state/">View SMS Approval Demo</a>
         <a class="button secondary" href="/demo/document-export-manifest/">View Document Export Demo</a>
         <a class="button secondary" href="/start/">Ask If A Workflow Fits</a>

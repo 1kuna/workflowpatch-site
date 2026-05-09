@@ -1,0 +1,5 @@
+row_id,project_code,po_id,reason,review_action
+row-2002,PRJ-410,PO-1002,expense_over_po_amount,Approve change order or reduce expense before syncing.
+row-2003,PRJ-410,PO-9999,po_not_found,"Create, correct, or reject the PO reference before syncing."
+row-2005,PRJ-411,PO-1004,po_not_approved,Do not sync expense against cancelled or unapproved PO.
+row-2006,PRJ-412,PO-1005,project_not_active,Review paused project before accepting new budget activity.

@@ -1,0 +1,2 @@
+row_id,error_code,error_detail
+row-2007,unknown_project,Budget sheet row references a project that is not in the Airtable project table.
