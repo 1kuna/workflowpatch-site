@@ -1,0 +1,4 @@
+email_id,customer_email,review_reason,suggested_next_step,evidence
+em-3003,iris@example.test,human review required,"Refund requests require staff review because subscription status, usage, and payment processor state must be checked before any promise is made.",kb_source=Refund policy
+em-3005,renee@example.test,no approved knowledge source,Support lead should write or approve the answer before automation drafts customer copy.,topic_key=technical
+em-3007,noah@example.test,draft already exists,Reviewer should decide whether to resend the prior approved answer.,send-history contains this email_id

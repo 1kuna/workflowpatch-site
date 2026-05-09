@@ -1,0 +1,3 @@
+email_id,error,evidence
+em-3004,"missing required email id, customer email, or body",customer_email=missing body_present=yes
+em-3001,duplicate source email id,second row attempted customer_email=maya.alt@example.test

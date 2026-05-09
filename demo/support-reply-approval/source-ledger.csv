@@ -1,0 +1,6 @@
+email_id,topic_key,kb_source,decision,evidence
+em-3001,pricing,Pricing policy,draft queued for approval,approved answer matched
+em-3002,booking,Booking changes,draft queued for approval,approved answer matched
+em-3003,refund,Refund policy,held for staff review,knowledge-base review flag
+em-3005,technical,none,held for source review,no matching approved answer
+em-3007,booking,Booking changes,held for duplicate-send review,send-history match

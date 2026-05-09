@@ -1,0 +1,3 @@
+email_id,customer_email,draft_subject,draft_body,approval_status,evidence
+em-3001,maya@example.test,Re: Can Pro handle three stores?,"Hi Maya Lin, thanks for writing in. Pro covers up to five storefronts under one account when they share the same billing owner. Separate companies need separate subscriptions. I left this as a draft for review before it goes out.",needs human approval,topic_key=pricing; kb_source=Pricing policy
+em-3002,owen@example.test,Re: Move my booking to next week,"Hi Owen Hart, thanks for writing in. Customers can move a booking once without a fee if the new slot is at least 24 hours away and has available capacity. I left this as a draft for review before it goes out.",needs human approval,topic_key=booking; kb_source=Booking changes

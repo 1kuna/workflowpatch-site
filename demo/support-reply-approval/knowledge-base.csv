@@ -1,0 +1,5 @@
+topic_key,source_title,approved_answer,requires_human_review
+pricing,Pricing policy,"Pro covers up to five storefronts under one account when they share the same billing owner. Separate companies need separate subscriptions.",no
+booking,Booking changes,"Customers can move a booking once without a fee if the new slot is at least 24 hours away and has available capacity.",no
+support,Setup guide delivery,"Setup guides are sent to the purchase email within 15 minutes. If the email is missing, support should verify the order before sending a new guide.",yes
+refund,Refund policy,"Refund requests require staff review because subscription status, usage, and payment processor state must be checked before any promise is made.",yes

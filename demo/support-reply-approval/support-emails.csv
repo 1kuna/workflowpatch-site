@@ -1,0 +1,8 @@
+email_id,customer_email,customer_name,received_at,subject,body,category_hint
+em-3001,maya@example.test,Maya Lin,2026-05-08T13:12:00-04:00,Can Pro handle three stores?,"We have three storefronts and want to know whether Pro covers all of them or if we need separate subscriptions.",pricing
+em-3002,owen@example.test,Owen Hart,2026-05-08T13:41:00-04:00,Move my booking to next week,"I booked the Tuesday onboarding session but need to move it to Thursday next week if there is a seat.",booking
+em-3003,iris@example.test,Iris Bell,2026-05-08T14:06:00-04:00,Refund today,"This is the third time I have asked. I want a refund today and I am going to dispute the charge if nobody answers.",refund
+em-3004,,No Email,2026-05-08T14:12:00-04:00,Where is the guide?,"I bought yesterday but never received the setup guide.",support
+em-3005,renee@example.test,Renee Cole,2026-05-08T14:27:00-04:00,API returns status 429,"The API started returning 429 on all endpoints after we raised our batch size. Is there a workaround?",technical
+em-3001,maya.alt@example.test,Maya Lin,2026-05-08T14:30:00-04:00,Duplicate resend,"Forwarding again because we still need a response.",pricing
+em-3007,noah@example.test,Noah Singh,2026-05-08T15:11:00-04:00,Thanks but can you resend?,"I lost the answer you sent about booking changes. Can you send it again?",booking
