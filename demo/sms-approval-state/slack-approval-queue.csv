@@ -1,0 +1,3 @@
+approval_id,user_id,message_id,activity_id,draft_text,review_status,reviewer_action
+ap_m_001,u_101,m_001,act_memory_walk,"Hi Maya, here is a gentle option for today: Memory walk. Invite the caregiver to take a five-minute walk and ask one gentle memory question. Reply STOP if you do not want more messages.",approved,Approved. Queue for Twilio send after final opt-in check.
+ap_m_006,u_105,m_006,act_breathing,"Hi Iris, here is a gentle option for today: Two-minute breathing reset. Guide the caregiver through a short breathing reset with a reminder to stop if uncomfortable. Reply STOP if you do not want more messages.",revise,Revise before send: Draft needs less certainty and a shorter opening.

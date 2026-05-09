@@ -1,0 +1,6 @@
+user_id,phone_token,caregiver_name,state,last_activity_id,consent_status,timezone
+u_101,twilio:+15550101001,Maya,intake_ready,act_memory_walk,opted_in,America/New_York
+u_102,twilio:+15550101002,Leo,pending_approval,act_breathing,opted_in,America/Chicago
+u_103,twilio:+15550101003,Nora,intake_ready,act_photo_sort,opted_out,America/Los_Angeles
+u_104,twilio:+15550101004,Emmett,paused,act_breathing,opted_in,America/Denver
+u_105,twilio:+15550101005,Iris,intake_ready,act_breathing,opted_in,America/New_York

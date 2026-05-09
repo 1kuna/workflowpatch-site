@@ -1,0 +1,5 @@
+message_id,status,reason,evidence
+m_002,blocked,existing draft already awaits review,user_id=u_102 state=pending_approval
+m_003,blocked,user is not opted in,user_id=u_103 consent_status=opted_out
+m_004,blocked,unknown phone token,phone_token=twilio:+15550101999
+m_005,blocked,conversation is paused,user_id=u_104 state=paused

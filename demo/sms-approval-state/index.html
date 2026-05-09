@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WorkflowPatch SMS Approval State Demo</title>
+    <meta name="description" content="Mock WorkflowPatch SMS approval state demo with conversation state, Slack approval queue, outbound queue, analytics ledger, error log, source script, and runbook.">
+    <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="WorkflowPatch">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WorkflowPatch SMS Approval State Demo">
+    <meta property="og:description" content="A mock stateful SMS workflow with opt-in guardrails, Slack review, approved outbound queue, analytics ledger, error log, source script, and runbook.">
+    <meta property="og:url" content="https://www.workflowpatch.com/demo/sms-approval-state/">
+    <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="WorkflowPatch async fixed-scope workflow automation">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2328;
+        --muted: #5f6b72;
+        --line: #d9e0e4;
+        --paper: #fbfcfb;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-dark: #0b4d49;
+        --warning: #9a5b11;
+        --soft: #edf5f3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      .wrap {
+        width: min(1080px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        background: rgba(251, 252, 251, 0.94);
+      }
+
+      .topbar {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 800;
+      }
+
+      .brand img {
+        width: 32px;
+        height: 32px;
+      }
+
+      a {
+        color: var(--accent-dark);
+        font-weight: 700;
+      }
+
+      main {
+        padding: 48px 0;
+      }
+
+      h1 {
+        font-size: clamp(34px, 6vw, 64px);
+        line-height: 0.98;
+        margin: 0 0 18px;
+        letter-spacing: 0;
+      }
+
+      .lede {
+        color: var(--muted);
+        font-size: 19px;
+        max-width: 820px;
+        margin: 0 0 28px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 34px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        padding: 0 14px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--accent-dark);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .item {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 16px;
+      }
+
+      .item h2 {
+        font-size: 16px;
+        margin: 0 0 8px;
+      }
+
+      .item p {
+        color: var(--muted);
+        font-size: 14px;
+        margin: 0;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        margin-top: 28px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 860px;
+        font-size: 14px;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: var(--soft);
+        color: var(--accent-dark);
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .status {
+        color: var(--accent-dark);
+        font-weight: 800;
+      }
+
+      .warn {
+        color: var(--warning);
+        font-weight: 800;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 26px 0 38px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 820px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        main {
+          padding-top: 34px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
+        <a href="/start/">Start async fit check</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1>SMS approval state demo output.</h1>
+      <p class="lede">A small mock workflow for stateful SMS conversations with opt-in checks, Slack review, approved outbound queue, analytics events, and visible blocked rows. No client data, credentials, live SMS, Slack posts, Claude calls, or health data are used.</p>
+
+      <div class="links">
+        <a class="button" href="process_sms_demo.py">Source Script</a>
+        <a class="button secondary" href="conversation-state.csv">Conversation State CSV</a>
+        <a class="button secondary" href="slack-approval-queue.csv">Slack Approval Queue CSV</a>
+        <a class="button secondary" href="outbound-queue.csv">Outbound Queue CSV</a>
+        <a class="button secondary" href="analytics-events.csv">Analytics Events CSV</a>
+        <a class="button secondary" href="error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="runbook.md">Runbook</a>
+      </div>
+
+      <section class="grid" aria-label="SMS approval state summary">
+        <div class="item">
+          <h2>Approved outbound is gated.</h2>
+          <p>Only reviewer-approved drafts enter the outbound queue, and even those rows are marked approved_not_sent in the mock output.</p>
+        </div>
+        <div class="item">
+          <h2>Unsafe rows are visible.</h2>
+          <p>Unknown phone tokens, opt-outs, paused users, and pending approvals produce error rows instead of silent sends.</p>
+        </div>
+        <div class="item">
+          <h2>State and analytics stay linked.</h2>
+          <p>Every drafted row carries user, message, activity, approval, and event evidence for review.</p>
+        </div>
+      </section>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Input</th>
+              <th>Decision</th>
+              <th>Output</th>
+              <th>Evidence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Known opted-in user asks for an activity.</td>
+              <td class="status">Draft and approval created.</td>
+              <td>Approved row appears in outbound-queue.csv.</td>
+              <td>Conversation state moves from intake_ready to outbound_queued.</td>
+            </tr>
+            <tr>
+              <td>Known opted-in user receives revise decision.</td>
+              <td class="warn">Send blocked for revision.</td>
+              <td>Draft remains in Slack approval queue with reviewer notes.</td>
+              <td>Conversation state moves to needs_revision.</td>
+            </tr>
+            <tr>
+              <td>Opted-out, paused, unknown, or already-pending user.</td>
+              <td class="warn">Blocked before draft.</td>
+              <td>Error row records the reason and source evidence.</td>
+              <td>No outbound row is generated.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">WorkflowPatch is operated async-only. This demo is a public mock artifact, not a client case study.</div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+activity_id,title,risk_level,requires_review,draft_prompt
+act_memory_walk,Memory walk,low,true,Invite the caregiver to take a five-minute walk and ask one gentle memory question.
+act_breathing,Two-minute breathing reset,low,true,Guide the caregiver through a short breathing reset with a reminder to stop if uncomfortable.
+act_photo_sort,Family photo sort,medium,true,Suggest sorting three favorite photos and noting one memory for each.

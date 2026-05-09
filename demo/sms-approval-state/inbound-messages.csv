@@ -1,0 +1,7 @@
+message_id,received_at,phone_token,message_text
+m_001,2026-05-07T10:00:00-04:00,twilio:+15550101001,Could use a short activity for today
+m_002,2026-05-07T10:02:00-05:00,twilio:+15550101002,Can you send the breathing one now?
+m_003,2026-05-07T08:03:00-07:00,twilio:+15550101003,Send me something simple
+m_004,2026-05-07T11:04:00-04:00,twilio:+15550101999,Can you help my family today?
+m_005,2026-05-07T09:05:00-06:00,twilio:+15550101004,Ready again
+m_006,2026-05-07T10:06:00-04:00,twilio:+15550101005,Need a calm activity

@@ -1,0 +1,3 @@
+approval_id,decision,reviewer,notes
+ap_m_001,approved,ops-reviewer,Safe to send after minor tone check.
+ap_m_006,revise,ops-reviewer,Draft needs less certainty and a shorter opening.

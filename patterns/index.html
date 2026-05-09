@@ -395,6 +395,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>SMS Approval State Machine</h2>
+            <p>For opted-in SMS workflows where generated copy needs state tracking, human review, and proof that no message sends before approval.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One inbound SMS event or queued campaign row with a known opted-in user.</div>
+            <div class="step"><strong>Transform</strong>Check consent and state, draft the next message, route to review, apply approval decision.</div>
+            <div class="step"><strong>Destination</strong>Approval queue, outbound queue for approved rows only, state ledger, analytics/error rows.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Caregiver or member SMS prompts</li>
+                <li>Human-reviewed outbound drafts</li>
+                <li>Campaign state and reporting</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>Opt-in and paused-user checks</li>
+                <li>No approved row, no outbound row</li>
+                <li>Test data before live phone numbers</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Unknown or opted-out user is blocked</li>
+                <li>Reviewer notes are preserved</li>
+                <li>Analytics rows tie back to state</li>
+              </ul>
+              <p><a href="/demo/sms-approval-state/">View SMS approval demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Weekly Digest Or Statement Builder</h2>
             <p>For recurring internal reports, statements, or account summaries that should be generated consistently from a known source.</p>
           </div>
@@ -439,6 +478,7 @@
         <a class="button secondary" href="/demo/crm-sync/">View CRM Sync Demo</a>
         <a class="button secondary" href="/demo/research-digest/">View Research Digest Demo</a>
         <a class="button secondary" href="/demo/webhook-idempotency/">View Webhook Demo</a>
+        <a class="button secondary" href="/demo/sms-approval-state/">View SMS Approval Demo</a>
         <a class="button secondary" href="/start/">Ask If A Workflow Fits</a>
       </div>
     </main>

@@ -1,0 +1,2 @@
+message_id,user_id,phone_token,send_status,approved_text,evidence
+m_001,u_101,twilio:+15550101001,approved_not_sent,"Hi Maya, here is a gentle option for today: Memory walk. Invite the caregiver to take a five-minute walk and ask one gentle memory question. Reply STOP if you do not want more messages.",approval_id=ap_m_001 reviewer=ops-reviewer

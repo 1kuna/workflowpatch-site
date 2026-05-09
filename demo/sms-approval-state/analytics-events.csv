@@ -1,0 +1,4 @@
+event_id,user_id,event_type,evidence
+ev_m_001_outbound,u_101,outbound_queued,approval_id=ap_m_001 decision=approved
+ev_m_001_draft,u_101,draft_created,message_id=m_001 activity_id=act_memory_walk
+ev_m_006_draft,u_105,draft_created,message_id=m_006 activity_id=act_breathing
