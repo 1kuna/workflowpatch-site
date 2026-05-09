@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.workflowpatch.com/demo/hubspot-json-stabilization/">
+    <title>WorkflowPatch HubSpot JSON Stabilization Demo</title>
+    <meta name="description" content="Mock WorkflowPatch n8n and HubSpot JSON stabilization demo with normalized lead ledger, review queue, blocked payload queue, error log, source script, and runbook.">
+    <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="WorkflowPatch">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WorkflowPatch HubSpot JSON Stabilization Demo">
+    <meta property="og:description" content="A mock landing-page webhook to OpenAI to HubSpot proof that flattens nested JSON, blocks malformed output, and keeps CRM writes review-first.">
+    <meta property="og:url" content="https://www.workflowpatch.com/demo/hubspot-json-stabilization/">
+    <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="WorkflowPatch async fixed-scope workflow automation">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2328;
+        --muted: #5f6b72;
+        --line: #d9e0e4;
+        --paper: #fbfcfb;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-dark: #0b4d49;
+        --warning: #9a5b11;
+        --soft: #edf5f3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      .wrap {
+        width: min(1080px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        background: rgba(251, 252, 251, 0.94);
+      }
+
+      .topbar {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 800;
+      }
+
+      .brand img {
+        width: 32px;
+        height: 32px;
+      }
+
+      a {
+        color: var(--accent-dark);
+        font-weight: 700;
+      }
+
+      main {
+        padding: 48px 0;
+      }
+
+      h1 {
+        font-size: clamp(34px, 6vw, 64px);
+        line-height: 0.98;
+        margin: 0 0 18px;
+        letter-spacing: 0;
+      }
+
+      .lede {
+        color: var(--muted);
+        font-size: 19px;
+        max-width: 820px;
+        margin: 0 0 28px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 34px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        padding: 0 14px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--accent-dark);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .item {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 16px;
+      }
+
+      .item h2 {
+        font-size: 16px;
+        margin: 0 0 8px;
+      }
+
+      .item p {
+        color: var(--muted);
+        font-size: 14px;
+        margin: 0;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        margin-top: 28px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 860px;
+        font-size: 14px;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: var(--soft);
+        color: var(--accent-dark);
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .status {
+        color: var(--accent-dark);
+        font-weight: 800;
+      }
+
+      .warn {
+        color: var(--warning);
+        font-weight: 800;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 26px 0 38px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 820px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        main {
+          padding-top: 34px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
+        <a href="/start/">Start async fit check</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1>HubSpot JSON stabilization demo output.</h1>
+      <p class="lede">A small mock workflow for landing-page webhook payloads that feed an OpenAI intent step before HubSpot. Nested intent arrays are flattened, malformed model output is blocked, weak confidence goes to review, and HubSpot updates stay review-first. No client data, credentials, live n8n workflow, HubSpot account, or outbound email send is used.</p>
+
+      <div class="links">
+        <a class="button" href="/demo/hubspot-json-stabilization/normalized-lead-ledger.csv">Normalized Lead Ledger CSV</a>
+        <a class="button secondary" href="/demo/hubspot-json-stabilization/hubspot-review-queue.csv">HubSpot Review Queue CSV</a>
+        <a class="button secondary" href="/demo/hubspot-json-stabilization/blocked-payload-queue.csv">Blocked Payload Queue CSV</a>
+        <a class="button secondary" href="/demo/hubspot-json-stabilization/error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="/demo/hubspot-json-stabilization/landing-webhook-events.csv">Mock Webhooks CSV</a>
+        <a class="button secondary" href="/demo/hubspot-json-stabilization/openai-intent-responses.csv">Mock OpenAI Outputs CSV</a>
+        <a class="button secondary" href="/demo/hubspot-json-stabilization/hubspot-field-map.csv">Field Map CSV</a>
+        <a class="button secondary" href="/demo/hubspot-json-stabilization/runbook.md">Runbook</a>
+        <a class="button secondary" href="/demo/hubspot-json-stabilization/process_hubspot_json_demo.py">Source Script</a>
+      </div>
+
+      <div class="grid">
+        <div class="item">
+          <h2>Input</h2>
+          <p>Five mock landing-page submissions and five mock model outputs, including nested arrays, malformed JSON, missing email, and weak intent confidence.</p>
+        </div>
+        <div class="item">
+          <h2>Accepted</h2>
+          <p>Two rows become normalized lead records with evidence and review-first HubSpot upsert candidates.</p>
+        </div>
+        <div class="item">
+          <h2>Blocked</h2>
+          <p>Malformed JSON, missing identity, and weak confidence are visible before any CRM write or email draft is used.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap" aria-label="HubSpot JSON stabilization demo table">
+        <table>
+          <thead>
+            <tr>
+              <th>Request</th>
+              <th>Status</th>
+              <th>Issue</th>
+              <th>Evidence</th>
+              <th>Reviewer Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>req_1001</td>
+              <td class="status">Review queue</td>
+              <td>Valid nested intent list</td>
+              <td>implementation confidence 0.88</td>
+              <td>Review HubSpot fields before upsert.</td>
+            </tr>
+            <tr>
+              <td>req_1002</td>
+              <td class="status">Review queue</td>
+              <td>Nested array inside nested array</td>
+              <td>review_queue confidence 0.84</td>
+              <td>Confirm AI follow-up stays draft-only.</td>
+            </tr>
+            <tr>
+              <td>req_1003</td>
+              <td class="warn">Error</td>
+              <td>Missing required email</td>
+              <td>utm_missing_email</td>
+              <td>Ask for required identity before CRM review.</td>
+            </tr>
+            <tr>
+              <td>req_1004</td>
+              <td class="warn">Blocked</td>
+              <td>Malformed model JSON</td>
+              <td>Parser error recorded with correlation id</td>
+              <td>Regenerate or correct output before review.</td>
+            </tr>
+            <tr>
+              <td>req_1005</td>
+              <td class="warn">Blocked</td>
+              <td>Intent confidence below threshold</td>
+              <td>general_interest confidence 0.48</td>
+              <td>Manual review; no CRM update.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">WorkflowPatch uses mock data for public demos. Production work starts only after written scope, payment, and approved access/data.</div>
+    </footer>
+  </body>
+</html>

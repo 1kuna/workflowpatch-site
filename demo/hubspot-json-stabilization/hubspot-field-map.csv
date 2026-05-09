@@ -1,0 +1,7 @@
+hubspot_field,required,source_path,review_rule
+email,true,landing_webhook.email,block when missing
+firstname,true,landing_webhook.full_name,split first token for mock output only
+company,false,landing_webhook.company,keep blank if missing
+lead_intent,true,openai.lead.intents[0].label,block when confidence below threshold
+lead_urgency,false,openai.lead.urgency,review when blank
+workflowpatch_evidence,true,correlation_id + source_page + tracking_id,always attach before write

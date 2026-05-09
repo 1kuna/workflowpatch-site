@@ -1,0 +1,3 @@
+request_id,block_reason,evidence,reviewer_action
+req_1004,model output is not valid JSON,req_1004:utm_pricing_09,Regenerate or manually correct the model output before HubSpot review.
+req_1005,intent confidence below review threshold,req_1005:utm_low_conf top_intent=general_interest confidence=0.48,Review manually; do not prepare a HubSpot update from weak AI output.

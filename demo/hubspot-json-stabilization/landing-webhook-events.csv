@@ -1,0 +1,6 @@
+request_id,received_at,email,full_name,company,source_page,raw_interest_text,tracking_id
+req_1001,2026-05-09T09:13:22Z,emily.ops@example.com,Emily Santos,Northline Retail,/demo-request,"Need pricing and implementation help for a multi-location HubSpot intake workflow.",utm_ops_17
+req_1002,2026-05-09T09:18:04Z,marco@example.com,Marco Chen,Atlas Bio,/ai-agent,"We need a sales agent to summarize lead intent and draft a follow-up, but only after review.",utm_agent_04
+req_1003,2026-05-09T09:22:41Z,,No Email Lead,SignalWorks,/contact,"Interested in AI routing, no email captured.",utm_missing_email
+req_1004,2026-05-09T09:27:59Z,tara@example.com,Tara Bloom,Launch Desk,/pricing,"Question about HubSpot setup and timeline.",utm_pricing_09
+req_1005,2026-05-09T09:33:16Z,ops@example.com,Ops Reviewer,Canopy Labs,/contact,"Asked for a demo, but the model returned weak intent confidence.",utm_low_conf
