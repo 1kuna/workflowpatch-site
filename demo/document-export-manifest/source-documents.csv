@@ -1,0 +1,7 @@
+doc_id,source_object_type,source_object_id,association_name,file_name,file_type,download_status,visibility,size_mb,created_at
+hsd_001,company,co_100,Acme Manufacturing,msa-2025.pdf,pdf,downloadable,private,2.4,2026-04-01
+hsd_002,deal,deal_200,Acme Expansion,quote-final.pdf,pdf,downloadable,private,1.1,2026-04-03
+hsd_003,contact,ct_300,Nora Lee,onboarding-notes.docx,docx,downloadable,private,0.4,2026-04-05
+hsd_004,deal,deal_201,Northstar Renewal,renewal-terms.pdf,pdf,restricted,private,1.9,2026-04-06
+hsd_005,company,co_999,Unknown Company,legacy-contract.pdf,pdf,downloadable,private,3.2,2026-04-07
+hsd_006,company,co_100,Acme Manufacturing,msa-2025.pdf,pdf,downloadable,private,2.4,2026-04-08

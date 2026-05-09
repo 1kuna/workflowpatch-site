@@ -1,0 +1,5 @@
+source_object_type,source_object_id,nutshell_entity_id,entity_name,file_import_supported
+company,co_100,nu_company_510,Acme Manufacturing,true
+deal,deal_200,nu_lead_700,Acme Expansion,true
+contact,ct_300,nu_person_880,Nora Lee,false
+deal,deal_201,nu_lead_701,Northstar Renewal,true

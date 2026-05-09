@@ -1,0 +1,5 @@
+doc_id,status,reason,evidence,reviewer_action
+hsd_003,export_only,destination file attachment not verified,nutshell_entity_id=nu_person_880 file_import_supported=false,Deliver file plus manifest unless destination import path is confirmed.
+hsd_004,blocked,source file is not downloadable,download_status=restricted visibility=private,Export manually or refresh source permissions before replay.
+hsd_005,blocked,no destination record match,source_object=company:co_999,Map or create destination record before transfer.
+hsd_006,blocked,duplicate document association,source_object=company:co_100 file_name=msa-2025.pdf,Confirm whether this is a true duplicate before moving.

@@ -395,6 +395,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Document Export Manifest</h2>
+            <p>For CRM document exports, migrations, or transfers where files must stay tied to the right companies, contacts, or deals.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One source CRM export or API sample with document ids, file names, object ids, and associations.</div>
+            <div class="step"><strong>Transform</strong>Match destination records, block duplicates and restricted files, mark unsupported imports as export-only.</div>
+            <div class="step"><strong>Destination</strong>Transfer manifest, exception report, file index, and runbook for replay or handoff.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>HubSpot document exports</li>
+                <li>CRM-to-CRM file moves</li>
+                <li>Clean fallback file indexes</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No file moves before sample mapping</li>
+                <li>Restricted files stay blocked</li>
+                <li>Export-only fallback if import is unverified</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Every file has source and destination evidence</li>
+                <li>Duplicate associations are surfaced</li>
+                <li>Exceptions have reviewer actions</li>
+              </ul>
+              <p><a href="/demo/document-export-manifest/">View document export demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>SMS Approval State Machine</h2>
             <p>For opted-in SMS workflows where generated copy needs state tracking, human review, and proof that no message sends before approval.</p>
           </div>
@@ -479,6 +518,7 @@
         <a class="button secondary" href="/demo/research-digest/">View Research Digest Demo</a>
         <a class="button secondary" href="/demo/webhook-idempotency/">View Webhook Demo</a>
         <a class="button secondary" href="/demo/sms-approval-state/">View SMS Approval Demo</a>
+        <a class="button secondary" href="/demo/document-export-manifest/">View Document Export Demo</a>
         <a class="button secondary" href="/start/">Ask If A Workflow Fits</a>
       </div>
     </main>
