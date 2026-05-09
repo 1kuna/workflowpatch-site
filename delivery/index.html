@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WorkflowPatch Sample Handoff</title>
+    <meta name="description" content="A sample WorkflowPatch delivery handoff showing scope, QA evidence, artifacts, acceptance checks, and closeout language.">
+    <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="WorkflowPatch">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WorkflowPatch Sample Handoff">
+    <meta property="og:description" content="See the kind of QA evidence, artifact list, runbook notes, and acceptance checks a WorkflowPatch sprint ships with.">
+    <meta property="og:url" content="https://www.workflowpatch.com/delivery/">
+    <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="WorkflowPatch async fixed-scope workflow automation">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2328;
+        --muted: #5f6b72;
+        --line: #d9e0e4;
+        --paper: #fbfcfb;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-dark: #0b4d49;
+        --warning: #9a5b11;
+        --soft: #edf5f3;
+        --soft-2: #f3f0ea;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      .wrap {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        background: rgba(251, 252, 251, 0.94);
+      }
+
+      .topbar {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 800;
+      }
+
+      .brand img {
+        width: 32px;
+        height: 32px;
+      }
+
+      a {
+        color: var(--accent-dark);
+        font-weight: 700;
+      }
+
+      main {
+        padding: 48px 0;
+      }
+
+      h1 {
+        font-size: clamp(34px, 6vw, 64px);
+        line-height: 0.98;
+        margin: 0 0 18px;
+        letter-spacing: 0;
+        max-width: 880px;
+      }
+
+      .lede {
+        color: var(--muted);
+        font-size: 19px;
+        max-width: 800px;
+        margin: 0 0 28px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 36px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 0 16px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--accent-dark);
+      }
+
+      .note {
+        border: 1px solid var(--accent);
+        background: var(--soft);
+        border-radius: 8px;
+        padding: 16px;
+        max-width: 840px;
+        margin: 0 0 28px;
+        color: var(--accent-dark);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-bottom: 28px;
+      }
+
+      .item {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 16px;
+      }
+
+      .item h2,
+      .item h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+      }
+
+      .item p,
+      .item li {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .item p {
+        margin: 0;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      section {
+        margin-top: 38px;
+      }
+
+      section h2 {
+        font-size: 26px;
+        margin: 0 0 16px;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 820px;
+        font-size: 14px;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: var(--soft);
+        color: var(--accent-dark);
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .status {
+        color: var(--accent-dark);
+        font-weight: 800;
+      }
+
+      .warn {
+        color: var(--warning);
+        font-weight: 800;
+      }
+
+      pre {
+        white-space: pre-wrap;
+        background: #182226;
+        color: #f4fbf8;
+        border-radius: 8px;
+        padding: 18px;
+        overflow-x: auto;
+        font-size: 14px;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 26px 0 38px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 820px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        main {
+          padding-top: 34px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
+        <a href="/start/">Start async fit check</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1>Sample delivery handoff.</h1>
+      <p class="lede">A paid sprint should not end with a vague "it's done." This sample shows the kind of scope summary, QA evidence, artifacts, and acceptance checks WorkflowPatch ships with.</p>
+      <div class="actions">
+        <a class="button" href="/start/">Start Async Fit Check</a>
+        <a class="button secondary" href="/demo/crm-sync/">View CRM Sync Demo</a>
+        <a class="button secondary" href="/patterns/">Reference Patterns</a>
+      </div>
+
+      <div class="note">This is a sample handoff, not a client case study. It uses mock CRM sync details to show the operating standard before a buyer shares real data or pays for a sprint.</div>
+
+      <section>
+        <h2>Confirmed Scope</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>Source</h3>
+            <p>Close appointment webhook and redacted GHL contact-change sample.</p>
+          </div>
+          <div class="item">
+            <h3>Transformation</h3>
+            <p>Normalize contact keys, apply match policy, prevent duplicate sync loops, and classify conflicts.</p>
+          </div>
+          <div class="item">
+            <h3>Destination</h3>
+            <p>Review-ready sync ledger, conflict queue, hard error log, and operator runbook.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>QA Evidence Matrix</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Check</th>
+                <th>Evidence</th>
+                <th>Result</th>
+                <th>Buyer Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Valid Close appointment creates GHL-ready row</td>
+                <td>Mock event APPT-1001 produced sync ledger row with contact key and appointment timestamp.</td>
+                <td class="status">Passed</td>
+                <td>Approve field mapping before live write.</td>
+              </tr>
+              <tr>
+                <td>Duplicate webhook does not create duplicate side effect</td>
+                <td>Replay of APPT-1001 was blocked by idempotency key and written to the run log.</td>
+                <td class="status">Passed</td>
+                <td>No action unless duplicate rate spikes.</td>
+              </tr>
+              <tr>
+                <td>Missing email or phone is held for review</td>
+                <td>Contact sample GHL-2004 routed to conflict queue with reason missing_match_key.</td>
+                <td class="status">Passed</td>
+                <td>Decide whether manual match or ignore is correct.</td>
+              </tr>
+              <tr>
+                <td>API rejection stays visible</td>
+                <td>Mock destination 400 response produced hard error row with endpoint, payload id, and retry note.</td>
+                <td class="warn">Blocked safely</td>
+                <td>Fix credential/field issue, then rerun from ledger.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>Artifacts Delivered</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>Operator Files</h3>
+            <ul>
+              <li>Sync ledger CSV</li>
+              <li>Conflict queue CSV</li>
+              <li>Error log CSV</li>
+              <li>Short runbook</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Implementation Notes</h3>
+            <ul>
+              <li>Match key policy</li>
+              <li>Replay and retry path</li>
+              <li>Known exclusions</li>
+              <li>Access cleanup reminder</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Acceptance Checks</h3>
+            <ul>
+              <li>Buyer confirms sample outputs</li>
+              <li>Blocked cases are understandable</li>
+              <li>Runbook is enough for first operator use</li>
+              <li>Care plan decision is explicit</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Closeout Message Shape</h2>
+        <pre>Subject: WorkflowPatch sprint delivery - CRM sync proof
+
+Hi Buyer,
+
+The first CRM sync proof is ready for review.
+
+Delivered:
+- accepted sync ledger
+- conflict queue
+- hard error log
+- operator runbook
+- QA evidence matrix
+
+Please review the three sample paths:
+1. accepted appointment update
+2. duplicate webhook blocked by idempotency key
+3. contact held for manual review because the match key is missing
+
+If those outputs match the agreed scope, reply "accepted" and I will close the sprint. If you want monthly care, I can send the care link after acceptance.</pre>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">WorkflowPatch · Alex Reed, Workflow Automation Operator · alex@workflowpatch.com · 2995 East Point Street, East Point, GA 30094</div>
+    </footer>
+  </body>
+</html>
