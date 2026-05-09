@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WorkflowPatch Reference Patterns</title>
+    <meta name="description" content="Concrete fixed-scope WorkflowPatch reference patterns for inbox triage, webhook idempotency, CRM handoffs, and recurring digests.">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2328;
+        --muted: #5f6b72;
+        --line: #d9e0e4;
+        --paper: #fbfcfb;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-dark: #0b4d49;
+        --soft: #edf5f3;
+        --soft-2: #f3f0ea;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      .wrap {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        background: rgba(251, 252, 251, 0.94);
+      }
+
+      .topbar {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      a {
+        color: var(--accent-dark);
+        font-weight: 700;
+      }
+
+      main {
+        padding: 48px 0;
+      }
+
+      h1 {
+        font-size: clamp(34px, 6vw, 64px);
+        line-height: 0.98;
+        margin: 0 0 18px;
+        letter-spacing: 0;
+        max-width: 900px;
+      }
+
+      .lede {
+        color: var(--muted);
+        font-size: 19px;
+        max-width: 780px;
+        margin: 0 0 30px;
+      }
+
+      .note {
+        border: 1px solid var(--accent);
+        background: var(--soft);
+        border-radius: 8px;
+        padding: 16px;
+        max-width: 820px;
+        margin-bottom: 28px;
+        color: var(--accent-dark);
+      }
+
+      .patterns {
+        display: grid;
+        gap: 18px;
+      }
+
+      .pattern {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .pattern-head {
+        padding: 18px;
+        border-bottom: 1px solid var(--line);
+        background: #fff;
+      }
+
+      .pattern h2 {
+        font-size: 22px;
+        margin: 0 0 8px;
+      }
+
+      .pattern p {
+        color: var(--muted);
+        margin: 0;
+      }
+
+      .flow {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        padding: 18px;
+        background: var(--soft-2);
+      }
+
+      .step {
+        border: 1px solid var(--line);
+        background: var(--panel);
+        border-radius: 6px;
+        padding: 14px;
+        min-height: 96px;
+      }
+
+      .step strong {
+        display: block;
+        font-size: 13px;
+        color: var(--accent-dark);
+        margin-bottom: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0;
+      }
+
+      .detail-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        padding: 18px;
+      }
+
+      .detail h3 {
+        font-size: 15px;
+        margin: 0 0 8px;
+      }
+
+      .detail ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 0 16px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--accent-dark);
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 26px 0 38px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 840px) {
+        .flow,
+        .detail-grid {
+          grid-template-columns: 1fr;
+        }
+
+        main {
+          padding-top: 34px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <a href="/">WorkflowPatch</a>
+        <span>Reference patterns</span>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1>Fixed-scope workflow patterns.</h1>
+      <p class="lede">These are example sprint shapes, not case studies. Each one is designed to be small enough to scope async and strict enough to test before it touches a live business process.</p>
+      <div class="note">A paid sprint still starts with the buyer's real source, destination, access path, and redacted sample data. If a workflow cannot fit into one source, one transformation, and one destination, it gets narrowed before payment.</div>
+
+      <div class="patterns">
+        <section class="pattern">
+          <div class="pattern-head">
+            <h2>Inbox or Order Intake Review Queue</h2>
+            <p>For forwarded emails, forms, or exported requests that need extraction, routing, and a safe blocked path.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>Email, form export, or CSV rows with request text and requester fields.</div>
+            <div class="step"><strong>Transform</strong>Validate required fields, classify request type, draft the next internal step.</div>
+            <div class="step"><strong>Destination</strong>Review queue plus error log for missing fields, duplicates, and unclear items.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Staffing orders</li>
+                <li>Support triage</li>
+                <li>Sales inquiry routing</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>Human approval for outbound text</li>
+                <li>Duplicate id blocking</li>
+                <li>Visible manual-review queue</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Valid rows produce review items</li>
+                <li>Invalid rows produce errors</li>
+                <li>Reviewer can inspect without code</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
+            <h2>Webhook Idempotency And Tenant Guard</h2>
+            <p>For platforms that receive events from booking, CRM, messaging, payment, or lead systems and cannot tolerate duplicate side effects.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One inbound webhook with an event id, tenant/account id, and payload.</div>
+            <div class="step"><strong>Transform</strong>Verify signature, claim idempotency key, validate tenant boundary, normalize payload.</div>
+            <div class="step"><strong>Destination</strong>Event ledger, accepted/rejected event status, admin alert for unsafe rows.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Restaurant/booking events</li>
+                <li>CRM webhooks</li>
+                <li>Payment or order callbacks</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No state bleeding across tenants</li>
+                <li>No duplicate sends or writes</li>
+                <li>Signed event validation where available</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Duplicate webhook is ignored safely</li>
+                <li>Wrong tenant is blocked</li>
+                <li>Failed event has replay evidence</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
+            <h2>CRM Handoff Or Upsert Patch</h2>
+            <p>For systems where contacts, deals, opportunities, or tasks need to be created or updated without duplicates.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>Lead database, spreadsheet, form, or email-derived structured row.</div>
+            <div class="step"><strong>Transform</strong>Match existing record, map fields, decide create/update/block, prepare audit note.</div>
+            <div class="step"><strong>Destination</strong>CRM record, opportunity/task, sync log, blocked-record queue.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>HubSpot or GHL cleanup</li>
+                <li>Lead routing</li>
+                <li>Pipeline handoff gaps</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>Unique-key matching before create</li>
+                <li>Blocked queue for ambiguous matches</li>
+                <li>Field map documented in the runbook</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Existing contacts are updated</li>
+                <li>New contacts are created once</li>
+                <li>Ambiguous records do not write live</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
+            <h2>Weekly Digest Or Statement Builder</h2>
+            <p>For recurring internal reports, statements, or account summaries that should be generated consistently from a known source.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>Database query, ticket export, CRM report, or approved spreadsheet.</div>
+            <div class="step"><strong>Transform</strong>Group records, summarize exceptions, format a draft digest or statement.</div>
+            <div class="step"><strong>Destination</strong>Email draft, Slack note, PDF/doc output, or review queue.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Postgres statement emails</li>
+                <li>MSP ticket summaries</li>
+                <li>Compliance monitor digests</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No auto-send until approved</li>
+                <li>Missing groups flagged</li>
+                <li>Run history kept visible</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Sample rows group correctly</li>
+                <li>Empty or malformed groups are logged</li>
+                <li>Reviewer can approve or reject output</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="actions">
+        <a class="button" href="/demo/">View Demo Output</a>
+        <a class="button secondary" href="mailto:alex@workflowpatch.com?subject=WorkflowPatch%20Pattern%20Fit&body=Company%3A%0AWebsite%3A%0APattern%20that%20seems%20closest%3A%0ASource%3A%0ATransformation%3A%0ADestination%3A%0AWhat%20breaks%20today%3A%0ARedacted%20sample%20available%3A">Ask If A Workflow Fits</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">WorkflowPatch · Alex Reed, Workflow Automation Operator · alex@workflowpatch.com · 2995 East Point Street, East Point, GA 30094</div>
+    </footer>
+  </body>
+</html>
