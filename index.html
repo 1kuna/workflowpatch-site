@@ -117,6 +117,13 @@
         align-items: center;
       }
 
+      .hero-note {
+        margin-top: 18px;
+        color: var(--muted);
+        font-size: 14px;
+        max-width: 680px;
+      }
+
       .button {
         display: inline-flex;
         align-items: center;
@@ -345,30 +352,12 @@
           <h1>One painful workflow patched in 5 business days.</h1>
           <p class="lede">Async fixed-scope automation for teams with manual work stuck between inboxes, spreadsheets, CRM, tickets, exports, or reporting. Start with a small teardown note. No calls required.</p>
           <div class="actions">
-          <a class="button" href="/start/">Start Async Fit Check</a>
-          <a class="button secondary" href="/demo/">View Demo Output</a>
-          <a class="button secondary" href="/demo/invoice-exception/">Invoice Exception Demo</a>
-          <a class="button secondary" href="/demo/crm-sync/">CRM Sync Demo</a>
-          <a class="button secondary" href="/demo/postgres-statement-email/">Statement Email Demo</a>
-          <a class="button secondary" href="/demo/support-reply-approval/">Support Reply Demo</a>
-          <a class="button secondary" href="/demo/research-digest/">Research Digest Demo</a>
-          <a class="button secondary" href="/demo/listing-roi-scan/">Listing ROI Demo</a>
-          <a class="button secondary" href="/demo/commerce-performance-brief/">Commerce Brief Demo</a>
-          <a class="button secondary" href="/demo/shipping-notification/">Shipping Demo</a>
-          <a class="button secondary" href="/demo/reverse-logistics-routing/">Reverse Logistics Demo</a>
-          <a class="button secondary" href="/demo/webhook-idempotency/">Webhook Demo</a>
-          <a class="button secondary" href="/demo/field-service-action-layer/">Field-Service Demo</a>
-          <a class="button secondary" href="/demo/sms-approval-state/">SMS Approval Demo</a>
-          <a class="button secondary" href="/demo/document-export-manifest/">Document Export Demo</a>
-          <a class="button secondary" href="/demo/scenario-ops-reduction/">Ops Reduction Demo</a>
-          <a class="button secondary" href="/demo/board-event-routing/">Board Routing Demo</a>
-          <a class="button secondary" href="/demo/booking-payment-state/">Booking State Demo</a>
-          <a class="button secondary" href="/demo/signup-access-state/">Signup Access Demo</a>
-          <a class="button secondary" href="/demo/po-budget-bridge/">PO Budget Demo</a>
-          <a class="button secondary" href="/demo/inventory-room-allocation/">Inventory Allocation Demo</a>
-          <a class="button secondary" href="/delivery/">Sample Handoff</a>
-          <a class="button secondary" href="/patterns/">Reference Patterns</a>
-        </div>
+            <a class="button" href="/start/">Start Async Fit Check</a>
+            <a class="button secondary" href="/demo/">View Demo Output</a>
+            <a class="button secondary" href="/delivery/">Sample Handoff</a>
+            <a class="button secondary" href="/patterns/">Reference Patterns</a>
+          </div>
+          <p class="hero-note">The first reply is written scope, not a calendar link. Send one source, one broken step, one destination, and a redacted sample if you have it.</p>
         </div>
 
         <div class="proof" aria-label="Demo workflow preview">
@@ -610,7 +599,7 @@
               <p>2 invalid rows were routed to visible manual review instead of being silently processed.</p>
             </div>
           </div>
-          <p class="note">The demo acceptance checks are simple: valid rows create review items, invalid rows create error rows, external copy stays in review, and duplicate IDs are not processed twice. <a href="/demo/">Open the mock review queue, error log, and runbook.</a> CRM/contact sync examples can inspect the <a href="/demo/crm-sync/">CRM sync demo</a>. Weekly database statement workflows can inspect the <a href="/demo/postgres-statement-email/">Postgres statement email demo</a>. Customer-support reply workflows can inspect the <a href="/demo/support-reply-approval/">support reply approval demo</a>. Research and lead-sourcing workflows can inspect the <a href="/demo/research-digest/">research digest demo</a>. Real-estate listing ROI proofs can inspect the <a href="/demo/listing-roi-scan/">listing ROI scan demo</a>. Commerce performance workflows can inspect the <a href="/demo/commerce-performance-brief/">commerce performance brief demo</a>. Fulfillment and customer-update workflows can inspect the <a href="/demo/shipping-notification/">shipping notification demo</a>. Returns, overstock, and recovery-route workflows can inspect the <a href="/demo/reverse-logistics-routing/">reverse logistics routing demo</a>. Webhook and platform events can inspect the <a href="/demo/webhook-idempotency/">webhook idempotency demo</a>. Field-service and work-order action layers can inspect the <a href="/demo/field-service-action-layer/">field-service action demo</a>. Stateful SMS and approval workflows can inspect the <a href="/demo/sms-approval-state/">SMS approval state demo</a>. CRM document export jobs can inspect the <a href="/demo/document-export-manifest/">document export manifest demo</a>. Scenario cost and reliability audits can inspect the <a href="/demo/scenario-ops-reduction/">scenario ops-reduction demo</a>. Monday-style board workflows can inspect the <a href="/demo/board-event-routing/">board event routing demo</a>. Scheduling and payment-hold workflows can inspect the <a href="/demo/booking-payment-state/">booking payment state demo</a>. Signup and content-access workflows can inspect the <a href="/demo/signup-access-state/">signup access state demo</a>. Airtable PO and Google Sheets budget workflows can inspect the <a href="/demo/po-budget-bridge/">PO budget bridge demo</a>. For more sprint shapes, see the <a href="/patterns/">reference patterns</a>.</p>
+          <p class="note">The demo acceptance checks are simple: valid rows create review items, invalid rows create error rows, external copy stays in review, and duplicate IDs are not processed twice. <a href="/demo/">Open the mock review queue, error log, and runbook.</a> For the full menu, use the proof directory above or the <a href="/patterns/">Reference Patterns</a>.</p>
         </div>
       </section>
 
