@@ -343,6 +343,44 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Invoice Or Vendor Exception Queue</h2>
+            <p>For invoice, order, or vendor records that need extraction, reconciliation, and a visible blocked path before finance or operations acts.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>Email attachment, PDF export, CSV row, or approved vendor/order file.</div>
+            <div class="step"><strong>Transform</strong>Extract fields, compare to pricebook/vendor records, flag missing or mismatched values.</div>
+            <div class="step"><strong>Destination</strong>Exception queue, reconciliation ledger, and run log for accepted/blocked records.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Invoice review</li>
+                <li>Vendor reconciliation</li>
+                <li>Order or pricebook matching</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No auto-payment or approval</li>
+                <li>Low-confidence extraction blocked</li>
+                <li>Original file linked for review</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Matched rows show evidence</li>
+                <li>Price/vendor conflicts are blocked</li>
+                <li>Run log explains each decision</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Weekly Digest Or Statement Builder</h2>
             <p>For recurring internal reports, statements, or account summaries that should be generated consistently from a known source.</p>
           </div>
