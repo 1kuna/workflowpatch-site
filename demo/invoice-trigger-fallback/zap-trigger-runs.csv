@@ -1,0 +1,7 @@
+zap_run_id,invoice_id,zap_triggered_at,run_status,stripe_link_present,client_email_send_attempted
+run-9001,INV-1001,2026-05-08T09:03:00Z,success,true,false
+run-9002,INV-1002,2026-05-08T11:48:00Z,success,true,false
+run-9004,INV-1004,2026-05-08T09:36:00Z,success,false,false
+run-9005,INV-1005,2026-05-08T09:52:00Z,success,true,false
+run-9006,INV-1005,2026-05-08T09:54:00Z,success,true,false
+run-9007,INV-1007,2026-05-08T10:18:00Z,success,true,false

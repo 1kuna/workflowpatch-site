@@ -1,0 +1,4 @@
+invoice_id,reason,evidence,reviewer_action
+INV-1004,stripe_link_not_ready,zap_triggered_at=2026-05-08T09:36:00Z stripe_link_ready_at=2026-05-08T09:40:00Z,Hold client email until the payment link is present in the review draft.
+INV-1005,duplicate_trigger_runs,zap_runs=run-9005;run-9006,Keep one invoice email draft and block duplicate sends.
+INV-1007,invoice_not_open,invoice_status=void,Do not send. Confirm invoice should still be collected before replay.

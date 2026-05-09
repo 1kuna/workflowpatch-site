@@ -1,0 +1,3 @@
+invoice_id,reason,evidence,reviewer_action
+INV-1002,late_instant_trigger,trigger_delay_minutes=156,Confirm the fallback path caught this before staff waited on the instant trigger.
+INV-1003,missing_instant_trigger,Invoice exists in QBO export but no Zap trigger run is present.,Queue fallback lookup and compare before any client email.

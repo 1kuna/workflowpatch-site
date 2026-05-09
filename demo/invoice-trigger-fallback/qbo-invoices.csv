@@ -1,0 +1,8 @@
+invoice_id,customer_name,customer_email,qbo_created_at,amount,invoice_status,stripe_link_ready_at
+INV-1001,Atlas Supply,ops@atlas.example,2026-05-08T09:00:00Z,1240.00,open,2026-05-08T09:01:00Z
+INV-1002,Beacon Repair,billing@beacon.example,2026-05-08T09:12:00Z,865.50,open,2026-05-08T09:13:00Z
+INV-1003,Copper Kitchen,ap@copper.example,2026-05-08T09:20:00Z,2190.00,open,2026-05-08T09:22:00Z
+INV-1004,Delta Cleaning,accounts@delta.example,2026-05-08T09:35:00Z,410.00,open,2026-05-08T09:40:00Z
+INV-1005,Evergreen Studio,payments@evergreen.example,2026-05-08T09:50:00Z,1330.75,open,2026-05-08T09:50:00Z
+INV-1006,Fairway Books,,2026-05-08T10:05:00Z,315.25,open,2026-05-08T10:07:00Z
+INV-1007,Garnet Homes,billing@garnet.example,2026-05-08T10:15:00Z,780.00,void,2026-05-08T10:16:00Z

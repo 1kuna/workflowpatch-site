@@ -1,0 +1,2 @@
+invoice_id,error_code,error_detail
+INV-1006,missing_customer_email,Cannot prepare invoice email review without a recipient address.

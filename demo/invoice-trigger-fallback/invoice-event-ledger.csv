@@ -1,0 +1,4 @@
+invoice_id,customer_name,qbo_created_at,zap_run_id,trigger_delay_minutes,decision,evidence,next_step
+INV-1001,Atlas Supply,2026-05-08T09:00:00Z,run-9001,3,ready_for_invoice_email_review,stripe_link_present=true duplicate_runs=1,Review draft before any client email send.
+INV-1002,Beacon Repair,2026-05-08T09:12:00Z,run-9002,156,late_but_recovered,stripe_link_present=true duplicate_runs=1,Review draft before any client email send.
+INV-1005,Evergreen Studio,2026-05-08T09:50:00Z,run-9005,2,ready_for_invoice_email_review,stripe_link_present=true duplicate_runs=2,Review draft before any client email send.
