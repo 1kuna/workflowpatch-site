@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WorkflowPatch C-Store Invoice Reconciliation Demo</title>
-    <meta name="description" content="Mock WorkflowPatch c-store invoice reconciliation demo with vendor normalization, pricebook matching, exception queue, reconciliation summary, error log, source script, and runbook.">
+    <meta name="description" content="Mock WorkflowPatch c-store invoice reconciliation demo for pilot-safe vendor normalization, pricebook matching, exception review, reconciliation summary, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WorkflowPatch C-Store Invoice Reconciliation Demo">
-    <meta property="og:description" content="A mock c-store invoice workflow with vendor normalization, pricebook checks, exception review, reconciliation summary, and hard errors.">
+    <meta property="og:description" content="A pilot-safe mock c-store invoice workflow with vendor normalization, pricebook checks, exception review, reconciliation summary, and hard errors.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/cstore-invoice-reconciliation/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -45,6 +45,9 @@
       .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
       .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
       .button.secondary { background: transparent; color: var(--accent-dark); }
+      .callout { border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; background: var(--panel); padding: 18px; margin: 0 0 26px; max-width: 900px; }
+      .callout h2 { margin: 0 0 8px; font-size: 18px; }
+      .callout p { margin: 0; color: var(--muted); }
       .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
       .item { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
       .item h2 { font-size: 16px; margin: 0 0 8px; }
@@ -71,6 +74,11 @@
     <main class="wrap">
       <h1>C-store invoice reconciliation demo output.</h1>
       <p class="lede">A small mock workflow that normalizes vendor names, checks convenience-store invoice lines against an approved pricebook, separates accepted spend from exception spend, and keeps duplicate or malformed rows visible before any payment or accounting export.</p>
+
+      <section class="callout" aria-label="Pilot-safe workflow boundary">
+        <h2>Pilot-safe first slice</h2>
+        <p>Use redacted invoices, a small vendor map, and pricebook rules first. The output is a reviewable ledger and exception queue, not a live accounting write, vendor message, or payment approval.</p>
+      </section>
 
       <div class="links">
         <a class="button" href="/demo/cstore-invoice-reconciliation/accepted-ledger.csv">Accepted Ledger CSV</a>
