@@ -1,0 +1,4 @@
+event_id,email,reason,next_step,review_owner
+evt-2003,marco@example.test,possible_existing_user,Review existing user before creating another access record.,operator
+evt-2006,mina@example.test,manual_access_approval_required,Review partner access before granting restricted content.,operator
+evt-2007,otto@example.test,no_email_consent,Do not send onboarding email; review consent/source before any follow-up.,operator

@@ -1,0 +1,4 @@
+event_id,email,requested_tier,content_group,state,access_decision,evidence,processed_at
+evt-2001,ada@example.test,founding,Founder Circle,access_ready,granted,Required payment and verification checks passed.,2026-05-09T13:30:00Z
+evt-2004,nia@example.test,course,Cohort Course,pending_payment,not_granted,Payment-required tier has no paid event.,2026-05-09T13:30:00Z
+evt-2005,sol@example.test,founding,Founder Circle,pending_email_verification,not_granted,"Payment is present, but email verification is incomplete.",2026-05-09T13:30:00Z

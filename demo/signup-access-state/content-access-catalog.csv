@@ -1,0 +1,5 @@
+tier,content_group,requires_payment,requires_manual_approval,default_onboarding_state
+free,Welcome Library,false,false,waitlist_ready
+founding,Founder Circle,true,false,access_ready
+course,Cohort Course,true,false,payment_or_verification_pending
+partner,Partner Dataroom,true,true,manual_approval_required

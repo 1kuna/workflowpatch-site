@@ -1,0 +1,8 @@
+event_id,submitted_at,email,name,source_page,requested_tier,paid_status,email_verified,existing_user_id,consent_to_email
+evt-2001,2026-05-09T12:03:00Z,ada@example.test,Ada Morris,/founding,founding,paid,true,,true
+evt-2002,2026-05-09T12:07:00Z,,No Email User,/waitlist,free,free,true,,true
+evt-2003,2026-05-09T12:11:00Z,marco@example.test,Marco Lane,/founding,founding,paid,true,user-1042,true
+evt-2004,2026-05-09T12:16:00Z,nia@example.test,Nia Park,/cohort,course,unpaid,true,,true
+evt-2005,2026-05-09T12:24:00Z,sol@example.test,Sol Rivera,/founding,founding,paid,false,,true
+evt-2006,2026-05-09T12:30:00Z,mina@example.test,Mina Chen,/partners,partner,paid,true,,true
+evt-2007,2026-05-09T12:38:00Z,otto@example.test,Otto Hale,/founding,founding,paid,true,,false

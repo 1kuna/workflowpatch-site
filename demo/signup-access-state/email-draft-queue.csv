@@ -1,0 +1,3 @@
+event_id,recipient,message_type,draft,approval
+evt-2004,nia@example.test,payment_needed,"Your signup is captured, but access will stay pending until payment is confirmed.",required
+evt-2005,sol@example.test,verify_email,"Payment is received, but access will wait until the email address is verified.",required

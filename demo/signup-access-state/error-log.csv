@@ -1,0 +1,2 @@
+event_id,error_code,error_detail
+evt-2002,missing_email,Cannot create a user or send onboarding steps without an email address.
