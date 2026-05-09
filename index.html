@@ -350,6 +350,7 @@
           <a class="button secondary" href="/demo/invoice-exception/">Invoice Exception Demo</a>
           <a class="button secondary" href="/demo/crm-sync/">CRM Sync Demo</a>
           <a class="button secondary" href="/demo/research-digest/">Research Digest Demo</a>
+          <a class="button secondary" href="/demo/shipping-notification/">Shipping Demo</a>
           <a class="button secondary" href="/delivery/">Sample Handoff</a>
           <a class="button secondary" href="/patterns/">Reference Patterns</a>
         </div>
@@ -423,6 +424,11 @@
               <h3>Research Digest</h3>
               <p>Source rows are scored against a watchlist and split into digest-ready or review-needed outputs.</p>
               <p class="note"><a href="/demo/research-digest/">View digest demo</a></p>
+            </div>
+            <div class="item">
+              <h3>Shipping Notifications</h3>
+              <p>Ready orders become customer-update drafts, while not-live tracking becomes internal alerts.</p>
+              <p class="note"><a href="/demo/shipping-notification/">View shipping demo</a></p>
             </div>
           </div>
           <p class="note">The demos use mock data. The point is the delivery shape: source files, processing script, review queue, error log, and runbook.</p>
@@ -514,7 +520,7 @@
               <p>2 invalid rows were routed to visible manual review instead of being silently processed.</p>
             </div>
           </div>
-          <p class="note">The demo acceptance checks are simple: valid rows create review items, invalid rows create error rows, external copy stays in review, and duplicate IDs are not processed twice. <a href="/demo/">Open the mock review queue, error log, and runbook.</a> CRM/contact sync examples can inspect the <a href="/demo/crm-sync/">CRM sync demo</a>. Research and lead-sourcing workflows can inspect the <a href="/demo/research-digest/">research digest demo</a>. For more sprint shapes, see the <a href="/patterns/">reference patterns</a>.</p>
+          <p class="note">The demo acceptance checks are simple: valid rows create review items, invalid rows create error rows, external copy stays in review, and duplicate IDs are not processed twice. <a href="/demo/">Open the mock review queue, error log, and runbook.</a> CRM/contact sync examples can inspect the <a href="/demo/crm-sync/">CRM sync demo</a>. Research and lead-sourcing workflows can inspect the <a href="/demo/research-digest/">research digest demo</a>. Fulfillment and customer-update workflows can inspect the <a href="/demo/shipping-notification/">shipping notification demo</a>. For more sprint shapes, see the <a href="/patterns/">reference patterns</a>.</p>
         </div>
       </section>
 

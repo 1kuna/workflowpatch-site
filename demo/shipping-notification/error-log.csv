@@ -1,0 +1,3 @@
+order_id,error,evidence
+ORD-9005,"missing required order id, customer email, carrier, or tracking number",email=missing carrier=UPS tracking=1Z500
+ORD-9001,duplicate order id,second row attempted tracking=1Z101 customer_email=duplicate@northstar.test

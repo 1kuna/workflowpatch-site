@@ -1,0 +1,3 @@
+order_id,customer_email,draft_subject,draft_body,approval_status,evidence
+ORD-9001,buyer@northstar.test,Shipping update for Custom onboarding kit,"Hi Morgan Lee, your Custom onboarding kit is in transit with UPS. Current ETA is 2026-05-13. Weather note: light rain near destination.",needs human approval,UPS 1Z100 checked at 2026-05-09T09:00:00-04:00
+ORD-9003,team@clearwater.test,Shipping update for Employee recognition box,"Hi Riley Park, your Employee recognition box is in transit with USPS. Current ETA is 2026-05-12. Weather note: clear conditions.",needs human approval,USPS 9400 checked at 2026-05-09T09:00:00-04:00

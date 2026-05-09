@@ -1,0 +1,7 @@
+order_id,customer_email,customer_name,product_name,ready_flag,tracking_number,carrier,destination_zip,production_rep
+ORD-9001,buyer@northstar.test,Morgan Lee,Custom onboarding kit,yes,1Z100,UPS,30309,Avery
+ORD-9002,ops@harbor.test,Jordan Kim,Spring field crew bundle,yes,7722,FEDEX,68130,Sam
+ORD-9003,team@clearwater.test,Riley Park,Employee recognition box,yes,9400,USPS,10014,Avery
+ORD-9004,office@lakeside.test,Taylor Ray,Trade show restock,no,1Z404,UPS,60611,Sam
+ORD-9005,,Casey Quinn,Executive gift box,yes,1Z500,UPS,94107,Avery
+ORD-9001,duplicate@northstar.test,Morgan Lee,Duplicate onboarding kit,yes,1Z101,UPS,30309,Avery

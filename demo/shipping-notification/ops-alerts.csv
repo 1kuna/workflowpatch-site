@@ -1,0 +1,3 @@
+order_id,production_rep,alert_type,evidence,next_check
+ORD-9002,Sam,tracking not live,carrier_status=label_created eta=missing,Recheck carrier status in 12 hours before drafting the customer email.
+ORD-9004,Sam,order not ready,ready_flag is not yes,Confirm production status before customer notification.

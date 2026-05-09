@@ -1,0 +1,5 @@
+carrier,tracking_number,status,eta,weather_summary,last_checked_at
+UPS,1Z100,in_transit,2026-05-13,light rain near destination,2026-05-09T09:00:00-04:00
+FEDEX,7722,label_created,,tracking not live yet,2026-05-09T09:00:00-04:00
+USPS,9400,in_transit,2026-05-12,clear conditions,2026-05-09T09:00:00-04:00
+UPS,1Z404,not_ready,,order is not marked ready,2026-05-09T09:00:00-04:00
