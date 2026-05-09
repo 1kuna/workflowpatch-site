@@ -1,0 +1,2 @@
+statement_key,week_start,workflow_type,recipient_email,last_sent_at,status
+2026-05-04|external_statement|finance@oldco.test,2026-05-04,external_statement,finance@oldco.test,2026-05-08T18:00:00-04:00,sent

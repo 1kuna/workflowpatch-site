@@ -1,0 +1,2 @@
+record_id,status,reason,evidence
+REC-1005,error,duplicate source record id,record_id appeared earlier in this run

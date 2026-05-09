@@ -1,0 +1,3 @@
+statement_key,week_start,workflow_type,recipient_key,record_count,total_hours,total_amount,source_records,status
+2026-05-04|external_statement|billing@acme.test,2026-05-04,external_statement,billing@acme.test,2,4.00,1200.00,REC-1004;REC-1005,ready_for_email_draft
+2026-05-04|pair_statement|advisor@northstar.test+client@northstar.test,2026-05-04,pair_statement,advisor@northstar.test+client@northstar.test,2,3.50,875.00,REC-1001;REC-1002,ready_for_email_draft

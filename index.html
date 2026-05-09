@@ -349,6 +349,7 @@
           <a class="button secondary" href="/demo/">View Demo Output</a>
           <a class="button secondary" href="/demo/invoice-exception/">Invoice Exception Demo</a>
           <a class="button secondary" href="/demo/crm-sync/">CRM Sync Demo</a>
+          <a class="button secondary" href="/demo/postgres-statement-email/">Statement Email Demo</a>
           <a class="button secondary" href="/demo/research-digest/">Research Digest Demo</a>
           <a class="button secondary" href="/demo/shipping-notification/">Shipping Demo</a>
           <a class="button secondary" href="/demo/webhook-idempotency/">Webhook Demo</a>
@@ -423,6 +424,11 @@
               <h3>CRM Sync Conflicts</h3>
               <p>Contact and appointment updates are matched, written to a ledger, or held for conflict review.</p>
               <p class="note"><a href="/demo/crm-sync/">View CRM demo</a></p>
+            </div>
+            <div class="item">
+              <h3>Statement Emails</h3>
+              <p>Database rows are grouped into weekly statement drafts with duplicate suppression and blocked rows.</p>
+              <p class="note"><a href="/demo/postgres-statement-email/">View statement demo</a></p>
             </div>
             <div class="item">
               <h3>Research Digest</h3>
@@ -544,7 +550,7 @@
               <p>2 invalid rows were routed to visible manual review instead of being silently processed.</p>
             </div>
           </div>
-          <p class="note">The demo acceptance checks are simple: valid rows create review items, invalid rows create error rows, external copy stays in review, and duplicate IDs are not processed twice. <a href="/demo/">Open the mock review queue, error log, and runbook.</a> CRM/contact sync examples can inspect the <a href="/demo/crm-sync/">CRM sync demo</a>. Research and lead-sourcing workflows can inspect the <a href="/demo/research-digest/">research digest demo</a>. Fulfillment and customer-update workflows can inspect the <a href="/demo/shipping-notification/">shipping notification demo</a>. Webhook and platform events can inspect the <a href="/demo/webhook-idempotency/">webhook idempotency demo</a>. Field-service and work-order action layers can inspect the <a href="/demo/field-service-action-layer/">field-service action demo</a>. Stateful SMS and approval workflows can inspect the <a href="/demo/sms-approval-state/">SMS approval state demo</a>. CRM document export jobs can inspect the <a href="/demo/document-export-manifest/">document export manifest demo</a>. For more sprint shapes, see the <a href="/patterns/">reference patterns</a>.</p>
+          <p class="note">The demo acceptance checks are simple: valid rows create review items, invalid rows create error rows, external copy stays in review, and duplicate IDs are not processed twice. <a href="/demo/">Open the mock review queue, error log, and runbook.</a> CRM/contact sync examples can inspect the <a href="/demo/crm-sync/">CRM sync demo</a>. Weekly database statement workflows can inspect the <a href="/demo/postgres-statement-email/">Postgres statement email demo</a>. Research and lead-sourcing workflows can inspect the <a href="/demo/research-digest/">research digest demo</a>. Fulfillment and customer-update workflows can inspect the <a href="/demo/shipping-notification/">shipping notification demo</a>. Webhook and platform events can inspect the <a href="/demo/webhook-idempotency/">webhook idempotency demo</a>. Field-service and work-order action layers can inspect the <a href="/demo/field-service-action-layer/">field-service action demo</a>. Stateful SMS and approval workflows can inspect the <a href="/demo/sms-approval-state/">SMS approval state demo</a>. CRM document export jobs can inspect the <a href="/demo/document-export-manifest/">document export manifest demo</a>. For more sprint shapes, see the <a href="/patterns/">reference patterns</a>.</p>
         </div>
       </section>
 

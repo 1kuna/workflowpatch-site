@@ -1,0 +1,4 @@
+record_id,statement_key,status,reason,evidence,next_step
+REC-1003,not_created,blocked,missing required statement recipient,workflow_type=pair_statement party_a=advisor@ridge.test party_b=missing external=missing,Fix recipient mapping before drafting the email.
+REC-1006,2026-05-04|external_statement|finance@oldco.test,blocked,statement already sent,statement_key exists in send-history.csv,Do not resend unless the prior send is voided and replay is approved.
+REC-1007,not_created,blocked,source row not approved,status=draft,Approve or remove source row before statement generation.

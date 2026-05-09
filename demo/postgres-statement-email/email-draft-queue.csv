@@ -1,0 +1,3 @@
+statement_key,to_email,cc_email,draft_subject,draft_body,send_status,evidence
+2026-05-04|external_statement|billing@acme.test,billing@acme.test,manager@acme.test,Weekly statement for 2026-05-04,"Statement for 2026-05-04: 2 records, 4.00 hours, $1200.00 total. Source records: REC-1004;REC-1005.",needs human approval,grouped from approved records; statement_key not in send-history.csv
+2026-05-04|pair_statement|advisor@northstar.test+client@northstar.test,advisor@northstar.test,client@northstar.test,Weekly statement for 2026-05-04,"Statement for 2026-05-04: 2 records, 3.50 hours, $875.00 total. Source records: REC-1001;REC-1002.",needs human approval,grouped from approved records; statement_key not in send-history.csv

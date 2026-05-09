@@ -1,0 +1,9 @@
+record_id,week_start,workflow_type,party_a_email,party_b_email,external_recipient_email,cc_email,session_label,hours,amount,status,updated_at
+REC-1001,2026-05-04,pair_statement,advisor@northstar.test,client@northstar.test,,ops@northstar.test,Strategy review,1.5,375.00,approved,2026-05-08T15:10:00-04:00
+REC-1002,2026-05-04,pair_statement,advisor@northstar.test,client@northstar.test,,ops@northstar.test,Follow-up planning,2.0,500.00,approved,2026-05-08T15:20:00-04:00
+REC-1003,2026-05-04,pair_statement,advisor@ridge.test,,,ops@ridge.test,Intake session,1.0,250.00,approved,2026-05-08T15:30:00-04:00
+REC-1004,2026-05-04,external_statement,,,billing@acme.test,manager@acme.test,External service A,3.0,900.00,approved,2026-05-08T15:40:00-04:00
+REC-1005,2026-05-04,external_statement,,,billing@acme.test,manager@acme.test,External service B,1.0,300.00,approved,2026-05-08T15:50:00-04:00
+REC-1006,2026-05-04,external_statement,,,finance@oldco.test,ops@oldco.test,Legacy account check,2.0,600.00,approved,2026-05-08T15:55:00-04:00
+REC-1007,2026-05-04,external_statement,,,billing@draftco.test,ops@draftco.test,Draft service,1.0,300.00,draft,2026-05-08T16:00:00-04:00
+REC-1005,2026-05-04,external_statement,,,billing@acme.test,manager@acme.test,Duplicate service row,1.0,300.00,approved,2026-05-08T16:02:00-04:00
