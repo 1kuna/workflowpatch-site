@@ -743,6 +743,45 @@
             </div>
           </div>
         </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
+            <h2>Inventory Room Allocation</h2>
+            <p>For staging, rentals, retail ops, and field teams that need inventory assigned to projects or rooms without double-booking.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One inventory table, one project-room table, and one selection source.</div>
+            <div class="step"><strong>Transform</strong>Validate item readiness, quantity, room status, QR evidence, and install window.</div>
+            <div class="step"><strong>Destination</strong>Allocation ledger, approval-required move queue, conflict queue, error log, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Home staging inventory</li>
+                <li>Room or project allocations</li>
+                <li>QR-based movement evidence</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No over-reserving ready inventory</li>
+                <li>Repair-hold items stay blocked</li>
+                <li>Move rows require human approval</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Ready items reserve once</li>
+                <li>Unknown rooms or items error loudly</li>
+                <li>Paused projects do not create moves</li>
+              </ul>
+              <p><a href="/demo/inventory-room-allocation/">View inventory allocation demo</a></p>
+            </div>
+          </div>
+        </section>
       </div>
 
       <div class="actions">
@@ -758,6 +797,7 @@
         <a class="button secondary" href="/demo/booking-payment-state/">View Booking State Demo</a>
         <a class="button secondary" href="/demo/signup-access-state/">View Signup Access Demo</a>
         <a class="button secondary" href="/demo/po-budget-bridge/">View PO Budget Demo</a>
+        <a class="button secondary" href="/demo/inventory-room-allocation/">View Inventory Demo</a>
         <a class="button secondary" href="/demo/sms-approval-state/">View SMS Approval Demo</a>
         <a class="button secondary" href="/demo/document-export-manifest/">View Document Export Demo</a>
         <a class="button secondary" href="/start/">Ask If A Workflow Fits</a>

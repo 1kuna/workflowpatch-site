@@ -1,0 +1,3 @@
+request_id,error_code,error_detail
+SEL-005,unknown_room,Room PRJ-221 / ROOM-02 is not in the project-room table.
+SEL-007,unknown_item,Item INV-9999 is not in the inventory table.

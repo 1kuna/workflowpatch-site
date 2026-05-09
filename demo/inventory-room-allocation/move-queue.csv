@@ -1,0 +1,4 @@
+request_id,item_id,from_zone,to_project,to_room,install_window,approval
+SEL-001,INV-1001,A2,PRJ-220,ROOM-01,2026-05-15 AM,required
+SEL-002,INV-1002,B1,PRJ-220,ROOM-01,2026-05-15 AM,required
+SEL-004,INV-1004,D2,PRJ-221,ROOM-01,2026-05-16 AM,required

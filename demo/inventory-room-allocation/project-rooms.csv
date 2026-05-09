@@ -1,0 +1,5 @@
+project_id,project_name,room_id,room_name,install_window,status
+PRJ-220,Beacon Hill townhouse,ROOM-01,Living room,2026-05-15 AM,active
+PRJ-220,Beacon Hill townhouse,ROOM-02,Primary bedroom,2026-05-15 PM,active
+PRJ-221,South End condo,ROOM-01,Living room,2026-05-16 AM,active
+PRJ-222,Cambridge loft,ROOM-01,Entry,2026-05-18 AM,paused

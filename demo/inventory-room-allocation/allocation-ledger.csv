@@ -1,0 +1,4 @@
+request_id,project_id,project_name,room_id,room_name,item_id,item_name,quantity,state,qr_code,accepted_at
+SEL-001,PRJ-220,Beacon Hill townhouse,ROOM-01,Living room,INV-1001,Linen sofa,1,reserved_for_install,QR-SOFA-1001,2026-05-09T10:20:00Z
+SEL-002,PRJ-220,Beacon Hill townhouse,ROOM-01,Living room,INV-1002,Round oak coffee table,1,reserved_for_install,QR-TABLE-1002,2026-05-09T10:20:00Z
+SEL-004,PRJ-221,South End condo,ROOM-01,Living room,INV-1004,Neutral area rug,2,reserved_for_install,QR-RUG-1004,2026-05-09T10:20:00Z
