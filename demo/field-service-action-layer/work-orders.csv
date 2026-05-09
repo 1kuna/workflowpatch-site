@@ -1,0 +1,5 @@
+work_order_id,customer_id,jobtread_job_id,service_type,current_status,scheduled_window,technician,open_balance
+WO-7001,CUST-1001,JT-501,filter repair,scheduled,2026-05-12 09:00-11:00,Maya,0
+WO-7002,CUST-1002,JT-502,pump inspection,needs scheduling,,Andre,0
+WO-7003,CUST-1003,JT-503,leak repair,estimate sent,,Maya,1250
+WO-7004,CUST-1004,JT-504,weekly maintenance,scheduled,2026-05-13 13:00-15:00,Sam,0

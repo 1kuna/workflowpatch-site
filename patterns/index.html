@@ -473,6 +473,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Field-Service Action Layer</h2>
+            <p>For Voiceflow, work-order, dispatch, or field-service workflows where customer requests need identity checks and approval before any system write.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One voice/chat request, form row, or webhook with customer identity and requested action.</div>
+            <div class="step"><strong>Transform</strong>Match the customer, check account/work-order state, apply an action policy, block unsafe actions.</div>
+            <div class="step"><strong>Destination</strong>Dry-run action ledger, approval queue, blocked-action report, and source-linked runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>JobTread or field-service API action gates</li>
+                <li>Voiceflow assistant handoff</li>
+                <li>Dispatch and work-order updates</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>Dry-run before live writes</li>
+                <li>Human approval for customer-impacting changes</li>
+                <li>No automated pricing, refunds, or contract terms</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Unknown customers are blocked</li>
+                <li>Duplicate requests cannot duplicate actions</li>
+                <li>Every write candidate has evidence</li>
+              </ul>
+              <p><a href="/demo/field-service-action-layer/">View field-service demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Weekly Digest Or Statement Builder</h2>
             <p>For recurring internal reports, statements, or account summaries that should be generated consistently from a known source.</p>
           </div>
@@ -517,6 +556,7 @@
         <a class="button secondary" href="/demo/crm-sync/">View CRM Sync Demo</a>
         <a class="button secondary" href="/demo/research-digest/">View Research Digest Demo</a>
         <a class="button secondary" href="/demo/webhook-idempotency/">View Webhook Demo</a>
+        <a class="button secondary" href="/demo/field-service-action-layer/">View Field-Service Demo</a>
         <a class="button secondary" href="/demo/sms-approval-state/">View SMS Approval Demo</a>
         <a class="button secondary" href="/demo/document-export-manifest/">View Document Export Demo</a>
         <a class="button secondary" href="/start/">Ask If A Workflow Fits</a>

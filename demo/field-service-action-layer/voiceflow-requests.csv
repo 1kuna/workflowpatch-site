@@ -1,0 +1,8 @@
+request_id,received_at,channel,customer_phone,requested_action,requested_time,details
+REQ-9001,2026-05-09T10:15:00-04:00,Voiceflow,404-555-0101,reschedule,2026-05-12 14:00-16:00,Customer needs later window for filter repair.
+REQ-9002,2026-05-09T10:21:00-04:00,Voiceflow,404-555-0102,schedule,2026-05-14 09:00-11:00,HOA asks to book pump inspection.
+REQ-9003,2026-05-09T10:28:00-04:00,Voiceflow,404-555-0103,schedule,2026-05-13 09:00-11:00,Customer asks to schedule leak repair after estimate.
+REQ-9004,2026-05-09T10:36:00-04:00,Voiceflow,404-555-9999,schedule,2026-05-15 10:00-12:00,Unknown caller wants a new job.
+REQ-9005,2026-05-09T10:42:00-04:00,Voiceflow,404-555-0104,cancel,,Customer wants to cancel weekly maintenance.
+REQ-9006,2026-05-09T10:45:00-04:00,Voiceflow,404-555-0102,schedule,2026-05-14 09:00-11:00,Duplicate retry from the same conversation.
+REQ-9007,2026-05-09T10:52:00-04:00,Voiceflow,404-555-0101,change price,2026-05-12 14:00-16:00,Customer says the price should be different.

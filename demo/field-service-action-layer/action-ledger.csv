@@ -1,0 +1,4 @@
+action_id,request_id,customer_id,work_order_id,jobtread_job_id,dry_run_action,proposed_value,write_status,evidence
+ACT-9001,REQ-9001,CUST-1001,WO-7001,JT-501,reschedule filter repair,2026-05-12 14:00-16:00,dry_run_only,phone_match=true policy=allowed current_status=scheduled
+ACT-9002,REQ-9002,CUST-1002,WO-7002,JT-502,schedule pump inspection,2026-05-14 09:00-11:00,dry_run_only,phone_match=true policy=allowed current_status=needs scheduling
+ACT-9005,REQ-9005,CUST-1004,WO-7004,JT-504,cancel weekly maintenance,cancel requested,dry_run_only,phone_match=true policy=allowed current_status=scheduled

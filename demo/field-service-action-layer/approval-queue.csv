@@ -1,0 +1,4 @@
+approval_id,action_id,reviewer,approval_status,review_prompt,post_approval_step
+APP-9001,ACT-9001,Maya,needs human approval,Approve reschedule for Ridgeview Pool Club on WO-7001?,Write to JobTread only after reviewer approval.
+APP-9002,ACT-9002,Andre,needs human approval,Approve schedule for Northlake HOA on WO-7002?,Write to JobTread only after reviewer approval.
+APP-9005,ACT-9005,Sam,needs human approval,Approve cancel for Old Fourth Cafe on WO-7004?,Write to JobTread only after reviewer approval.

@@ -1,0 +1,5 @@
+request_id,status,reason,evidence,next_step
+REQ-9003,blocked,customer account is on hold,customer_id=CUST-1003 status=on_hold open_balance=1250,Resolve account hold before scheduling or rescheduling service.
+REQ-9004,blocked,unknown customer phone,phone=404-555-9999,Verify identity or create a new-customer intake record before scheduling.
+REQ-9006,blocked,duplicate action request,phone=404-555-0102 action=schedule requested_time=2026-05-14 09:00-11:00,Do not create a second work-order update. Attach to the existing review item.
+REQ-9007,blocked,action type not allowed for automation,requested_action=change price policy=blocked,"Route to a human. Do not modify pricing, refunds, or contract terms automatically."

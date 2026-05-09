@@ -1,0 +1,5 @@
+customer_id,customer_name,phone,email,service_zip,account_status
+CUST-1001,Ridgeview Pool Club,404-555-0101,ops@ridgeview.test,30344,active
+CUST-1002,Northlake HOA,404-555-0102,board@northlake.test,30084,active
+CUST-1003,Peachtree Fitness,404-555-0103,manager@peachtreefitness.test,30308,on_hold
+CUST-1004,Old Fourth Cafe,404-555-0104,owner@oldfourth.test,30312,active

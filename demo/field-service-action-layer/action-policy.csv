@@ -1,0 +1,6 @@
+requested_action,policy,requires_human_approval
+schedule,allowed,true
+reschedule,allowed,true
+cancel,allowed,true
+change price,blocked,true
+refund,blocked,true
