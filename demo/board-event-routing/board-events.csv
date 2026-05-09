@@ -1,0 +1,9 @@
+event_id,item_id,board_name,item_name,status,owner_email,sensitivity,updated_at
+evt-1001,1001,Ops Intake,Vendor W9 received,Ready for routing,ops@sample.test,non_sensitive_ops,2026-05-06T13:44:00Z
+evt-1002,1002,Ops Intake,New matter opened,Ready for routing,case-team@sample.test,client_matter,2026-05-06T14:05:00Z
+evt-1003,1003,Billing Ops,Invoice exception,Needs partner review,partner-review@sample.test,non_sensitive_ops,2026-05-06T14:18:00Z
+evt-1004,1004,Ops Intake,Missing assignee,Ready for routing,,non_sensitive_ops,2026-05-06T14:33:00Z
+evt-1005,1005,Billing Ops,Closed vendor task,Closed,ops@sample.test,non_sensitive_ops,2026-05-06T15:02:00Z
+evt-1006,1005,Billing Ops,Closed vendor task,Closed,ops@sample.test,non_sensitive_ops,2026-05-06T15:03:00Z
+evt-1007,1007,Ops Intake,Unknown status test,Waiting on client,ops@sample.test,non_sensitive_ops,2026-05-06T15:09:00Z
+evt-1008,1008,Ops Intake,Client intake request,Ready for routing,ops@sample.test,client_matter,2026-05-06T15:20:00Z

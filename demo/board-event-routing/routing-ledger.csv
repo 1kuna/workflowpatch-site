@@ -1,0 +1,4 @@
+event_id,item_id,status,destination,action,reviewer,accepted_at,proof
+evt-1001,1001,Ready for routing,ops_review_queue,create_review_task,ops-lead@sample.test,2026-05-09T09:30:00Z,Ops Intake -> ops_review_queue
+evt-1003,1003,Needs partner review,partner_review_queue,create_partner_review_task,partner@sample.test,2026-05-09T09:30:00Z,Billing Ops -> partner_review_queue
+evt-1005,1005,Closed,archive_log,archive_only,ops-lead@sample.test,2026-05-09T09:30:00Z,Billing Ops -> archive_log

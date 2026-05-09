@@ -1,0 +1,2 @@
+event_id,item_id,error_code,error_detail
+evt-1004,1004,missing_owner_email,Board event is missing the owner email required for a safe review task.

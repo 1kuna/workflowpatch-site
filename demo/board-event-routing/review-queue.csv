@@ -1,0 +1,5 @@
+event_id,item_id,queue,reason,reviewer,next_step,source_status
+evt-1002,1002,manual_scope_review,sensitive_data_blocked,ops-lead@sample.test,Use a redacted board schema before automation access or routing.,Ready for routing
+evt-1006,1005,duplicate_review,duplicate_item_status,ops-lead@sample.test,Confirm whether this is a replay before another task is created.,Closed
+evt-1007,1007,policy_review,no_matching_status_policy,ops-lead@sample.test,Define the status rule before this item can be routed.,Waiting on client
+evt-1008,1008,manual_scope_review,sensitive_data_blocked,ops-lead@sample.test,Use a redacted board schema before automation access or routing.,Ready for routing

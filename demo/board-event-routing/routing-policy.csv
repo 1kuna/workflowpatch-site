@@ -1,0 +1,4 @@
+status,destination,action,reviewer,requires_approval
+Ready for routing,ops_review_queue,create_review_task,ops-lead@sample.test,true
+Needs partner review,partner_review_queue,create_partner_review_task,partner@sample.test,true
+Closed,archive_log,archive_only,ops-lead@sample.test,false
