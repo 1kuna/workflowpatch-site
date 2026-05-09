@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WorkflowPatch Listing ROI Scan Demo</title>
+    <meta name="description" content="Mock WorkflowPatch listing ROI scan demo with comparison ledger, opportunity queue, review queue, error log, source script, and runbook.">
+    <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="WorkflowPatch">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WorkflowPatch Listing ROI Scan Demo">
+    <meta property="og:description" content="A mock real-estate listing ROI proof with comp matching, opportunity queue, review queue, and error log.">
+    <meta property="og:url" content="https://www.workflowpatch.com/demo/listing-roi-scan/">
+    <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="WorkflowPatch async fixed-scope workflow automation">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2328;
+        --muted: #5f6b72;
+        --line: #d9e0e4;
+        --paper: #fbfcfb;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-dark: #0b4d49;
+        --warning: #9a5b11;
+        --soft: #edf5f3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      .wrap {
+        width: min(1080px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        background: rgba(251, 252, 251, 0.94);
+      }
+
+      .topbar {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 800;
+      }
+
+      .brand img {
+        width: 32px;
+        height: 32px;
+      }
+
+      a {
+        color: var(--accent-dark);
+        font-weight: 700;
+      }
+
+      main {
+        padding: 48px 0;
+      }
+
+      h1 {
+        font-size: clamp(34px, 6vw, 64px);
+        line-height: 0.98;
+        margin: 0 0 18px;
+        letter-spacing: 0;
+      }
+
+      .lede {
+        color: var(--muted);
+        font-size: 19px;
+        max-width: 820px;
+        margin: 0 0 28px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 34px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        padding: 0 14px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--accent-dark);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .item {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 16px;
+      }
+
+      .item h2 {
+        font-size: 16px;
+        margin: 0 0 8px;
+      }
+
+      .item p {
+        color: var(--muted);
+        font-size: 14px;
+        margin: 0;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        margin-top: 28px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 820px;
+        font-size: 14px;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: var(--soft);
+        color: var(--accent-dark);
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .status {
+        color: var(--accent-dark);
+        font-weight: 800;
+      }
+
+      .warn {
+        color: var(--warning);
+        font-weight: 800;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 26px 0 38px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 820px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        main {
+          padding-top: 34px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
+        <a href="/start/">Start async fit check</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1>Listing ROI scan demo output.</h1>
+      <p class="lede">A small mock workflow that compares approved listing snapshots with recent comparable sales. It produces a comparison ledger, opportunity queue, manual review queue, and error log before anyone tries to scrape a whole market or promise investment returns.</p>
+
+      <div class="links">
+        <a class="button" href="/demo/listing-roi-scan/opportunity-queue.csv">Opportunity Queue CSV</a>
+        <a class="button secondary" href="/demo/listing-roi-scan/comparison-ledger.csv">Comparison Ledger CSV</a>
+        <a class="button secondary" href="/demo/listing-roi-scan/review-queue.csv">Review Queue CSV</a>
+        <a class="button secondary" href="/demo/listing-roi-scan/error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="/demo/listing-roi-scan/listing-snapshots.csv">Mock Listings CSV</a>
+        <a class="button secondary" href="/demo/listing-roi-scan/historical-sales.csv">Mock Sales CSV</a>
+        <a class="button secondary" href="/demo/listing-roi-scan/runbook.md">Runbook</a>
+        <a class="button secondary" href="/demo/listing-roi-scan/process_listing_roi_demo.py">Source Script</a>
+      </div>
+
+      <div class="grid">
+        <div class="item">
+          <h2>Source</h2>
+          <p>Seven mock listing rows and recent comparable sales rows. No live scraping, credentials, or investor data.</p>
+        </div>
+        <div class="item">
+          <h2>Output</h2>
+          <p>Three candidate opportunities enter the queue because they are below the recent median with enough comps.</p>
+        </div>
+        <div class="item">
+          <h2>Guardrail</h2>
+          <p>Stale listings, thin comp sets, premiums, and malformed rows are blocked or reviewed before investor use.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Listing</th>
+              <th>District</th>
+              <th>Decision</th>
+              <th>Evidence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>L-1001</td>
+              <td>Dubai Marina</td>
+              <td><span class="status">Opportunity</span></td>
+              <td>Asking price is 10.4 percent below the recent median with four matching comps.</td>
+            </tr>
+            <tr>
+              <td>L-1003</td>
+              <td>Jumeirah Village Circle</td>
+              <td><span class="status">Opportunity</span></td>
+              <td>Asking price is 10.1 percent below the recent median with three matching comps.</td>
+            </tr>
+            <tr>
+              <td>L-1006</td>
+              <td>Dubai Marina</td>
+              <td><span class="status">Opportunity</span></td>
+              <td>Asking price is 12.1 percent below the recent median with four matching comps.</td>
+            </tr>
+            <tr>
+              <td>L-1004</td>
+              <td>Dubai Hills</td>
+              <td><span class="warn">Manual review</span></td>
+              <td>Listing is stale and has too few recent matching comps for a credible ROI proof.</td>
+            </tr>
+            <tr>
+              <td>L-1007</td>
+              <td>Jumeirah Village Circle</td>
+              <td><span class="warn">Error log</span></td>
+              <td>Missing asking price. The row is not scored.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">Mock demo only. No live scraping, legal advice, investment advice, guarantees, or connected accounts.</div>
+    </footer>
+  </body>
+</html>

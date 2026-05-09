@@ -1,0 +1,6 @@
+rule_name,value,description
+min_recent_comps,3,Minimum matching sales needed before an opportunity can be called ready.
+recent_sale_days,120,Maximum age for a sale comp in the first ROI proof.
+stale_listing_days,21,Listings older than this go to review before scoring.
+opportunity_discount_pct,8,Minimum discount versus median comp price to enter the opportunity queue.
+premium_review_pct,8,Premium above median comp price that requires manual review.

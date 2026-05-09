@@ -1,0 +1,8 @@
+listing_id,source,district,property_type,bedrooms,asking_price_aed,area_sqft,listed_at,captured_at,notes
+L-1001,Mock Portal A,Dubai Marina,apartment,2,1825000,1260,2026-05-08,2026-05-09,Vacant on transfer
+L-1002,Mock Portal B,Dubai Marina,apartment,2,2140000,1235,2026-05-07,2026-05-09,Renovated with sea view premium
+L-1003,Mock Portal A,Jumeirah Village Circle,apartment,1,895000,770,2026-05-09,2026-05-09,Motivated seller
+L-1004,Mock Portal C,Dubai Hills,villa,4,6150000,3550,2026-04-01,2026-05-09,Older captured listing
+L-1005,Mock Portal B,Business Bay,apartment,1,1280000,705,2026-05-08,2026-05-09,High floor
+L-1006,Mock Portal A,Dubai Marina,apartment,2,1790000,1195,2026-05-09,2026-05-09,Same tower as recent sale
+L-1007,Mock Portal C,Jumeirah Village Circle,apartment,1,,760,2026-05-09,2026-05-09,Missing asking price

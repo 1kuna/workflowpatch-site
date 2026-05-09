@@ -1,0 +1,7 @@
+listing_id,district,property_type,bedrooms,asking_price_aed,recent_comp_count,median_comp_price_aed,delta_vs_median_pct,decision,evidence
+L-1001,Dubai Marina,apartment,2,1825000,4,2037500,10.4,opportunity,priced below recent median
+L-1002,Dubai Marina,apartment,2,2140000,4,2037500,-5.0,ledger,near recent median
+L-1003,Jumeirah Village Circle,apartment,1,895000,3,995000,10.1,opportunity,priced below recent median
+L-1004,Dubai Hills,villa,4,6150000,0,0,0.0,review,stale listing
+L-1005,Business Bay,apartment,1,1280000,2,1310000,2.3,review,insufficient recent comps
+L-1006,Dubai Marina,apartment,2,1790000,4,2037500,12.1,opportunity,priced below recent median

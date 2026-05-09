@@ -1,0 +1,12 @@
+sale_id,district,property_type,bedrooms,sale_price_aed,area_sqft,sale_date
+S-9001,Dubai Marina,apartment,2,2060000,1240,2026-04-12
+S-9002,Dubai Marina,apartment,2,2015000,1210,2026-03-28
+S-9003,Dubai Marina,apartment,2,2125000,1305,2026-04-20
+S-9004,Dubai Marina,apartment,2,1985000,1180,2026-02-19
+S-9005,Jumeirah Village Circle,apartment,1,995000,790,2026-04-16
+S-9006,Jumeirah Village Circle,apartment,1,965000,742,2026-03-05
+S-9007,Jumeirah Village Circle,apartment,1,1010000,810,2026-04-24
+S-9008,Business Bay,apartment,1,1325000,720,2026-04-03
+S-9009,Business Bay,apartment,1,1295000,700,2026-03-29
+S-9010,Dubai Hills,villa,4,6025000,3500,2025-10-10
+S-9011,Dubai Hills,villa,4,6400000,3700,2025-09-25
