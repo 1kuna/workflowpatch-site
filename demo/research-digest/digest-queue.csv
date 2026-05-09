@@ -1,0 +1,6 @@
+item_id,topic,score,status,digest_line,source_url,evidence
+ITEM-3001,order intake,96,ready for teardown,Make Community: Hiring Make.com expert for staffing order intake,https://example.test/staffing-order-intake,hiring;blocked;staffing;order intake;email order parsing;client lookup;Monday
+ITEM-3002,finance operations,100,ready for teardown,n8n Community: C-store invoice reconciliation paid trial,https://example.test/invoice-reconciliation,paid;trial;invoice;vendor;reconciliation;pricebook;exception;review
+ITEM-3003,CRM sync,64,ready for teardown,n8n Community: GHL Close two-way sync cost estimate,https://example.test/ghl-close-sync,GHL;Close;sync;appointments;contact changes
+ITEM-3004,data quality,62,ready for teardown,Directory: HubSpot agency custom integration support,https://example.test/hubspot-integration,support;HubSpot;integration;duplicate;migration;data cleanup
+ITEM-3006,research digest,72,ready for teardown,Make Community: Daily industry research automation,https://example.test/daily-research,ongoing;support;daily;research;source monitoring;structured summaries

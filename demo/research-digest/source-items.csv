@@ -1,0 +1,10 @@
+item_id,source,title,url,published_at,summary,region
+ITEM-3001,Make Community,Hiring Make.com expert for staffing order intake,https://example.test/staffing-order-intake,2026-05-08,"Founder needs email order parsing, Monday client lookup, blocked alerts, and AI extraction for staffing orders.",US
+ITEM-3002,n8n Community,C-store invoice reconciliation paid trial,https://example.test/invoice-reconciliation,2026-05-07,"Back-office workflow role mentions invoice processing, vendor reconciliation, pricebook matching, exception review, and paid project trial.",US
+ITEM-3003,n8n Community,GHL Close two-way sync cost estimate,https://example.test/ghl-close-sync,2026-05-09,"Buyer wants Close appointments added to GHL and selected GHL contact changes reflected back in Close.",US
+ITEM-3004,Directory,HubSpot agency custom integration support,https://example.test/hubspot-integration,2026-05-05,"Agency lists HubSpot integrations, data cleanup, migration, duplicate handling, and monthly support.",US
+ITEM-3005,Make Community,AI podcast automation quick help,https://example.test/low-budget-podcast,2026-05-05,"Buyer wants a quick podcast automation under a small budget with social posting and AI voice tools.",US
+ITEM-3006,Make Community,Daily industry research automation,https://example.test/daily-research,2026-05-06,"Buyer wants daily industry research, source monitoring, structured summaries, Google Docs output, and ongoing support.",US
+ITEM-3007,Make Community,Duplicate GHL Close sync mirror,https://example.test/ghl-close-sync,2026-05-09,"Duplicate copy of the same Close to GHL sync request from another feed.",US
+ITEM-3008,n8n Community,Missing URL but strong invoice lead,,2026-05-08,"Invoice and vendor reconciliation request with paid trial language but no source URL.",US
+ITEM-3009,Old Forum,Postgres weekly email statements,https://example.test/postgres-statements,2026-03-01,"Weekly email statements from Postgres with grouping, formatted sends, and external recipients.",US

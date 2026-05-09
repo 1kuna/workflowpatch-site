@@ -1,0 +1,2 @@
+item_id,source,error,evidence
+ITEM-3008,n8n Community,"missing required source, URL, title, or valid published date",title=Missing URL but strong invoice lead url=missing published_at=2026-05-08

@@ -1,0 +1,35 @@
+keyword,topic,weight
+hiring,buyer intent,16
+paid,buyer intent,18
+trial,buyer intent,12
+ongoing,recurring potential,14
+support,recurring potential,10
+invoice,finance operations,18
+vendor,finance operations,12
+reconciliation,finance operations,18
+pricebook,finance operations,15
+exception,review workflow,15
+blocked,review workflow,12
+review,review workflow,10
+HubSpot,CRM sync,14
+GHL,CRM sync,14
+Close,CRM sync,14
+sync,CRM sync,12
+integration,CRM sync,10
+duplicate,data quality,10
+migration,data quality,8
+data cleanup,data quality,10
+daily,research digest,10
+research,research digest,14
+source monitoring,research digest,12
+structured summaries,research digest,12
+Postgres,statement digest,8
+weekly,statement digest,8
+statements,statement digest,10
+staffing,order intake,14
+order intake,order intake,16
+email order parsing,order intake,18
+client lookup,order intake,12
+Monday,order intake,8
+appointments,CRM sync,12
+contact changes,CRM sync,12

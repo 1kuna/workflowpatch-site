@@ -1,0 +1,9 @@
+item_id,decision,score,matched_keywords,published_at,source_url
+ITEM-3001,digest,96,hiring;blocked;staffing;order intake;email order parsing;client lookup;Monday,2026-05-08,https://example.test/staffing-order-intake
+ITEM-3002,digest,100,paid;trial;invoice;vendor;reconciliation;pricebook;exception;review,2026-05-07,https://example.test/invoice-reconciliation
+ITEM-3003,digest,64,GHL;Close;sync;appointments;contact changes,2026-05-09,https://example.test/ghl-close-sync
+ITEM-3004,digest,62,support;HubSpot;integration;duplicate;migration;data cleanup,2026-05-05,https://example.test/hubspot-integration
+ITEM-3005,review,0,none,2026-05-05,https://example.test/low-budget-podcast
+ITEM-3006,digest,72,ongoing;support;daily;research;source monitoring;structured summaries,2026-05-06,https://example.test/daily-research
+ITEM-3007,review,50,GHL;Close;sync;duplicate,2026-05-09,https://example.test/ghl-close-sync
+ITEM-3009,review,26,Postgres;weekly;statements,2026-03-01,https://example.test/postgres-statements

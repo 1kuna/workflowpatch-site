@@ -1,0 +1,4 @@
+item_id,issue,score,evidence,reviewer_action
+ITEM-3005,low-fit or too generic,0,matched_keywords=none,Do not add to outreach unless a clearer workflow or budget appears.
+ITEM-3007,duplicate source URL,50,url=https://example.test/ghl-close-sync matched_keywords=GHL;Close;sync;duplicate,Compare against the first seen item before adding to outreach.
+ITEM-3009,stale source,26,published_at=2026-03-01 age_days=69,Use only as market signal unless the buyer renewed the request.
