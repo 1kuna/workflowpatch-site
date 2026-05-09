@@ -1,0 +1,5 @@
+appointment_id,close_contact_id,email,start_at,status,updated_at,title
+APT-7001,CLOSE-101,alex@acme.test,2026-05-13T14:00:00-04:00,scheduled,2026-05-09T09:15:00-04:00,Workflow review
+APT-7002,CLOSE-999,ops@northstar.test,2026-05-13T16:00:00-04:00,scheduled,2026-05-09T09:22:00-04:00,Ops follow-up
+APT-7003,CLOSE-303,,2026-05-14T10:30:00-04:00,scheduled,2026-05-09T09:35:00-04:00,Missing email test
+APT-7004,CLOSE-404,newlead@newco.test,2026-05-14T12:00:00-04:00,scheduled,2026-05-09T09:48:00-04:00,New contact review

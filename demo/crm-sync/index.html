@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WorkflowPatch Demo Output</title>
-    <meta name="description" content="Mock WorkflowPatch request triage demo with review queue, error log, and runbook.">
+    <title>WorkflowPatch CRM Sync Demo</title>
+    <meta name="description" content="Mock WorkflowPatch CRM sync demo with sync ledger, conflict queue, error log, source script, and runbook.">
     <style>
       :root {
         color-scheme: light;
@@ -82,7 +82,7 @@
       .lede {
         color: var(--muted);
         font-size: 19px;
-        max-width: 760px;
+        max-width: 790px;
         margin: 0 0 28px;
       }
 
@@ -204,95 +204,74 @@
     </header>
 
     <main class="wrap">
-      <h1>Request triage demo output.</h1>
-      <p class="lede">A small mock workflow that turns messy request rows into a review queue and an error log. It uses no client data, no secrets, and no connected accounts.</p>
+      <h1>CRM sync demo output.</h1>
+      <p class="lede">A small mock workflow that checks Close appointment events and GHL contact changes against a contact map. Safe rows become a sync ledger; identity mismatches become a conflict queue; malformed rows become an error log. No client data, credentials, or live CRM writes are used.</p>
 
       <div class="links">
-        <a class="button" href="/demo/review-queue.csv">Review Queue CSV</a>
-        <a class="button secondary" href="/demo/error-log.csv">Error Log CSV</a>
-        <a class="button secondary" href="/demo/mock-input.csv">Mock Input CSV</a>
-        <a class="button secondary" href="/demo/runbook.md">Runbook</a>
-        <a class="button secondary" href="/demo/process_demo.py">Source Script</a>
-        <a class="button secondary" href="/demo/invoice-exception/">Invoice Exception Demo</a>
-        <a class="button secondary" href="/demo/crm-sync/">CRM Sync Demo</a>
-        <a class="button secondary" href="/start/">Ask If This Fits</a>
+        <a class="button" href="/demo/crm-sync/sync-ledger.csv">Sync Ledger CSV</a>
+        <a class="button secondary" href="/demo/crm-sync/conflict-queue.csv">Conflict Queue CSV</a>
+        <a class="button secondary" href="/demo/crm-sync/error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="/demo/crm-sync/contact-map.csv">Contact Map CSV</a>
+        <a class="button secondary" href="/demo/crm-sync/close-appointments.csv">Close Events CSV</a>
+        <a class="button secondary" href="/demo/crm-sync/ghl-contact-changes.csv">GHL Changes CSV</a>
+        <a class="button secondary" href="/demo/crm-sync/runbook.md">Runbook</a>
+        <a class="button secondary" href="/demo/crm-sync/process_crm_sync_demo.py">Source Script</a>
       </div>
 
       <div class="grid">
         <div class="item">
           <h2>Input</h2>
-          <p>Six mock request rows from forms, tickets, CRM exports, and inbox exports.</p>
+          <p>Three mapped contacts, four mock Close appointment events, and four mock GHL contact changes.</p>
         </div>
         <div class="item">
-          <h2>Output</h2>
-          <p>Four rows routed to a human review queue with owner, urgency, and next-step draft.</p>
+          <h2>Accepted</h2>
+          <p>Three rows pass contact-identity checks and land in a reviewer-approved sync ledger.</p>
         </div>
         <div class="item">
-          <h2>Failure Path</h2>
-          <p>Two blocked rows: one missing email and one duplicate id. Neither disappears silently.</p>
+          <h2>Blocked</h2>
+          <p>Three business conflicts and two hard errors are visible before any CRM write happens.</p>
         </div>
       </div>
 
-      <div class="table-wrap" aria-label="Related demo">
+      <div class="table-wrap" aria-label="CRM sync demo table">
         <table>
           <thead>
             <tr>
-              <th>Related Demo</th>
-              <th>Pattern</th>
-              <th>Why It Exists</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="/demo/invoice-exception/">Invoice exception demo</a></td>
-              <td>Invoice or vendor exception queue</td>
-              <td>Shows pricebook, PO-prefix, duplicate, and malformed-row checks without approving payments or contacting vendors.</td>
-            </tr>
-            <tr>
-              <td><a href="/demo/crm-sync/">CRM sync demo</a></td>
-              <td>Two-way CRM conflict queue</td>
-              <td>Shows contact-map checks, sync-ready rows, blocked identity conflicts, and hard errors without writing to either CRM.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="table-wrap" aria-label="Demo review queue">
-        <table>
-          <thead>
-            <tr>
-              <th>Request</th>
+              <th>Event</th>
               <th>Status</th>
-              <th>Type</th>
-              <th>Owner</th>
-              <th>Draft Next Step</th>
-              <th>Approval</th>
+              <th>Issue</th>
+              <th>Evidence</th>
+              <th>Reviewer Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>REQ-1001</td>
-              <td class="status">ready</td>
-              <td>sales inquiry</td>
-              <td>sales ops</td>
-              <td>Review the managed-services lead, confirm fit, and draft the first async reply.</td>
-              <td class="status">required</td>
+              <td>APT-7001</td>
+              <td class="status">ready for sync</td>
+              <td>accepted Close appointment</td>
+              <td>CLOSE-101 maps to GHL-501 by email.</td>
+              <td>Approve appointment upsert into GHL.</td>
             </tr>
             <tr>
-              <td>REQ-1002</td>
-              <td class="status">ready</td>
-              <td>reporting request</td>
-              <td>service ops</td>
-              <td>Prepare the monthly ticket-summary note and list unresolved exceptions.</td>
-              <td class="status">required</td>
-            </tr>
-            <tr>
-              <td>REQ-1004</td>
-              <td class="warn">error</td>
-              <td>blocked</td>
-              <td>manual review</td>
-              <td>Missing requester email; customer-facing draft blocked.</td>
+              <td>APT-7002</td>
               <td class="warn">blocked</td>
+              <td>Close identity conflict</td>
+              <td>Event says CLOSE-999, but email maps to CLOSE-202/GHL-502.</td>
+              <td>Confirm the correct contact before syncing.</td>
+            </tr>
+            <tr>
+              <td>CHG-8802</td>
+              <td class="warn">blocked</td>
+              <td>GHL identity conflict</td>
+              <td>Provided ids disagree with the contact map for buyer@clearwater.test.</td>
+              <td>Resolve the mapping before writing back to Close.</td>
+            </tr>
+            <tr>
+              <td>CHG-8803</td>
+              <td class="warn">error</td>
+              <td>missing contact identity</td>
+              <td>No email, Close contact id, or GHL contact id.</td>
+              <td>Reject the row until a usable identity is present.</td>
             </tr>
           </tbody>
         </table>

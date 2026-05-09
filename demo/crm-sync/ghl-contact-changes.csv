@@ -1,0 +1,5 @@
+change_id,ghl_contact_id,email,close_contact_id,field,new_value,updated_at
+CHG-8801,GHL-502,ops@northstar.test,CLOSE-202,phone,+15550102020,2026-05-09T10:02:00-04:00
+CHG-8802,GHL-777,buyer@clearwater.test,CLOSE-999,lifecycle_stage,qualified,2026-05-09T10:05:00-04:00
+CHG-8803,,,,status,active,2026-05-09T10:09:00-04:00
+CHG-8804,GHL-503,buyer@clearwater.test,CLOSE-303,lifecycle_stage,onboarding,2026-05-09T10:12:00-04:00

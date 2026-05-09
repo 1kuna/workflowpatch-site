@@ -1,0 +1,4 @@
+event_id,source,target,contact_key,action,status,evidence
+APT-7001,close appointment,ghl appointment,CLOSE-101/GHL-501,upsert appointment,ready for sync,start_at=2026-05-13T14:00:00-04:00 title=Workflow review status=scheduled
+CHG-8801,ghl contact change,close contact,CLOSE-202/GHL-502,update phone,ready for sync,phone=+15550102020 updated_at=2026-05-09T10:02:00-04:00
+CHG-8804,ghl contact change,close contact,CLOSE-303/GHL-503,update lifecycle_stage,ready for sync,lifecycle_stage=onboarding updated_at=2026-05-09T10:12:00-04:00
