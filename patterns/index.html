@@ -707,6 +707,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Scenario Modularization Refactor</h2>
+            <p>For Make or n8n accounts where large all-in-one scenarios need reusable sub-scenarios without turning the first sprint into a whole-account rebuild.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One scenario family map, sample payload, failure example, and current module boundary candidates.</div>
+            <div class="step"><strong>Transform</strong>Choose the first extractable boundary, assign idempotency keys, and separate dry-run, review, and live-write paths.</div>
+            <div class="step"><strong>Destination</strong>Refactor ledger, error-path queue map, naming runbook, and acceptance checks for the first reusable module.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Large Make routers</li>
+                <li>Repeated parsing or enrichment logic</li>
+                <li>Sub-scenario architecture questions</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>One scenario family first</li>
+                <li>Side effects behind idempotency</li>
+                <li>Dry-run before broad production reuse</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Each boundary has a declared interface</li>
+                <li>Duplicate runs do not repeat side effects</li>
+                <li>Expected failures land in visible queues</li>
+              </ul>
+              <p><a href="/demo/scenario-modularization/">View modularization demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>n8n Crash Triage And Migration Readiness</h2>
             <p>For self-hosted n8n incidents where crashes, execution-table bloat, missing queue mode, and backup uncertainty must be stabilized before any database cutover.</p>
           </div>
@@ -953,6 +992,7 @@
         <a class="button secondary" href="/demo/n8n-crash-triage/">View n8n Crash Triage Demo</a>
         <a class="button secondary" href="/demo/field-service-action-layer/">View Field-Service Demo</a>
         <a class="button secondary" href="/demo/scenario-ops-reduction/">View Ops Reduction Demo</a>
+        <a class="button secondary" href="/demo/scenario-modularization/">View Modularization Demo</a>
         <a class="button secondary" href="/demo/board-event-routing/">View Board Routing Demo</a>
         <a class="button secondary" href="/demo/booking-payment-state/">View Booking State Demo</a>
         <a class="button secondary" href="/demo/signup-access-state/">View Signup Access Demo</a>

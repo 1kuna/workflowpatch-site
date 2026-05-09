@@ -1,0 +1,7 @@
+boundary_id,boundary_name,failure_class,queue_or_ledger,duplicate_behavior,review_signal,operator_action
+BND-01,webhook-ingress-normalizer,schema_or_payload_mismatch,normalization_review,Return existing normalized payload and do not parse again,Duplicate webhook count by tenant,Hold row before any downstream module sees it.
+BND-02,lead-eligibility-gate,missing_required_mapping,blocked_preflight_queue,Keep first eligibility result unless rules version changes,Blocked lead reason changed after rule update,Write blocked reason and require reviewer fix before replay.
+BND-03,enrichment-cache-lookup,cache_key_missing_or_stale,cache_review_queue,Use cached profile while fresh,Vendor call avoided,Skip vendor call until cache policy is clear.
+BND-04,vendor-enrichment-worker,vendor_or_llm_limit,retry_after_queue,Skip duplicate vendor or LLM call,Usage count over expected threshold,Stop immediate retries and wait for cooldown or approval.
+BND-05,invoice-preflight-ledger,missing_required_mapping,blocked_preflight_queue,Keep first invoice decision and suppress duplicate notification,Duplicate invoice attachment,Write blocked reason and require reviewer fix before replay.
+BND-06,exec-report-builder,delivery_window_conflict,report_delivery_review,Replace draft report before delivery window,Late report rebuild,"Rebuild report draft before delivery, then log final send."

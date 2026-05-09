@@ -1,0 +1,7 @@
+object,convention,example,acceptance_check
+Scenario prefix,"domain.action.stage","lead.ingress.normalize","Name shows domain, action, and stage without opening the scenario"
+Sub-scenario input,"input.<field_name>","input.tenant_id","Every callable module declares required input fields"
+Sub-scenario output,"output.<field_name>","output.blocked_reason","Downstream modules read named outputs instead of positional bundles"
+Ledger key,"ledger.<domain>.<id>","ledger.lead.request_id","Every side-effecting path writes or checks a ledger key first"
+Error route,"error.<domain>.<class>","error.enrichment.rate_limit","Every expected failure class has a visible queue or retry path"
+Runbook section,"source -> transform -> destination","webhook -> eligibility gate -> CRM review","A reviewer can trace the handoff without opening Make or n8n"

@@ -1,0 +1,7 @@
+boundary_id,key_fields,duplicate_behavior,replay_behavior,ttl,review_signal
+BND-01,"tenant_id, request_id","Return existing normalized payload and do not parse again","Allow replay only when payload hash changes",30 days,"Duplicate webhook count by tenant"
+BND-02,"tenant_id, request_id, eligibility_version","Keep first eligibility result unless rules version changes","Replay into review mode before CRM writes",30 days,"Blocked lead reason changed after rule update"
+BND-03,"source_record_id, profile_version","Use cached profile while fresh","Replay only when cache is stale or approved",14 days,"Vendor call avoided"
+BND-04,"source_record_id, vendor, run_date","Skip duplicate vendor or LLM call","Replay after cooldown or manual approval",24 hours,"Usage count over expected threshold"
+BND-05,"vendor_id, invoice_number, amount","Keep first invoice decision and suppress duplicate notification","Replay after PO map or vendor map changes",90 days,"Duplicate invoice attachment"
+BND-06,"report_window, channel","Replace draft report before delivery window","Replay allowed before Slack delivery",7 days,"Late report rebuild"
