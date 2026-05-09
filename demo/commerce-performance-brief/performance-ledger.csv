@@ -1,0 +1,6 @@
+asin,title,week_start,ad_sales,ad_spend,acos,conversion_rate,best_seller_rank,royalty_net,net_after_ads,decision,evidence
+B07PATCH1,Galaxy lunch tote,2026-05-04,8200.00,1260.00,15.4%,12.6%,1280,3340.00,2080.00,scale_candidate,ads=B07PATCH1; catalog=CLK-1042; keepa=fresh; royalty_units=116
+B07PATCH2,Dino sketch pad,2026-05-04,1450.00,920.00,63.4%,6.8%,5800,420.00,-500.00,margin_review,ads=B07PATCH2; catalog=CLK-1189; keepa=fresh; royalty_units=20
+B07PATCH3,Robot sticker pack,2026-05-04,0.00,410.00,n/a,0.0%,14500,0.00,-410.00,pause_or_rebuild_ads,ads=B07PATCH3; catalog=CLK-1210; keepa=fresh; royalty_units=0
+B07PATCH4,Forest puzzle set,2026-05-04,3900.00,640.00,16.4%,11.2%,2100,1600.00,960.00,refresh_market_data,ads=B07PATCH4; catalog=CLK-1307; keepa=stale; royalty_units=59
+B07PATCH6,Ocean alphabet cards,2026-05-04,1100.00,320.00,29.1%,3.5%,8400,190.00,-130.00,monitor,ads=B07PATCH6; catalog=CLK-1425; keepa=fresh; royalty_units=8

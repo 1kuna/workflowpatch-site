@@ -1,0 +1,5 @@
+asin,title,decision,slack_draft,reviewer_action
+B07PATCH1,Galaxy lunch tote,scale_candidate,Galaxy lunch tote: Consider controlled budget increase after inventory check. Evidence: ads=B07PATCH1; catalog=CLK-1042; keepa=fresh; royalty_units=116.,Consider controlled budget increase after inventory check.
+B07PATCH2,Dino sketch pad,margin_review,"Dino sketch pad: Check bid, price, and product margin before scaling. Evidence: ads=B07PATCH2; catalog=CLK-1189; keepa=fresh; royalty_units=20.","Check bid, price, and product margin before scaling."
+B07PATCH3,Robot sticker pack,pause_or_rebuild_ads,Robot sticker pack: Review query/campaign fit before next spend. Evidence: ads=B07PATCH3; catalog=CLK-1210; keepa=fresh; royalty_units=0.,Review query/campaign fit before next spend.
+B07PATCH4,Forest puzzle set,refresh_market_data,Forest puzzle set: Refresh Keepa/BSR evidence before sending recommendation. Evidence: ads=B07PATCH4; catalog=CLK-1307; keepa=stale; royalty_units=59.,Refresh Keepa/BSR evidence before sending recommendation.
