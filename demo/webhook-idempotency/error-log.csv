@@ -1,0 +1,2 @@
+event_id,status,reason,evidence
+missing,error,"missing event id, tenant id, or event type",tenant_id=rest-101 event_type=booking.created

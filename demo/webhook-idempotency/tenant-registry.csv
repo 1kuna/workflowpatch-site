@@ -1,0 +1,4 @@
+tenant_id,tenant_name,status,allowed_event_types,secret_hint
+rest-101,Northstar Bistro,active,booking.created;booking.updated;order.paid,secret-a
+rest-202,Harbor Tacos,active,booking.created;order.paid,secret-b
+rest-303,Lakeside Grill,suspended,booking.created;order.paid,secret-c

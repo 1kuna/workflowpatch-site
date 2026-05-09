@@ -1,0 +1,2 @@
+event_id,tenant_id,tenant_name,event_type,decision,handler_input,evidence
+evt-7001,rest-101,Northstar Bistro,booking.created,ready_for_handler,booking.created for buyer@northstar.test amount=82.40,signature=true idempotency_claimed=true tenant_match=true received_at=2026-05-09T09:00:00-04:00

@@ -1,0 +1,7 @@
+event_id,tenant_id,status,reason,evidence,reviewer_action
+evt-7001,rest-101,blocked,duplicate idempotency key,event_id was already claimed earlier in this run,Ignore duplicate side effects; inspect only if payload differs.
+evt-7003,rest-202,blocked,invalid signature,signature_valid=false in mock event source,Reject event and investigate source credentials.
+evt-7004,rest-202,blocked,unsupported event type for tenant,event_type=booking.updated allowed=booking.created;order.paid,Add an explicit mapping or reject this event type.
+evt-7005,rest-101,blocked,tenant boundary mismatch,payload_restaurant_id=rest-202 expected=rest-101,Do not write. Resolve source tenant mapping first.
+evt-7006,rest-303,blocked,inactive tenant,tenant_status=suspended,Reactivate tenant or reject the event before replay.
+evt-7007,rest-404,blocked,unknown tenant,tenant_id is not present in tenant-registry.csv,Create or map tenant before replaying the event.

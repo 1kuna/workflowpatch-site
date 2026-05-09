@@ -1,0 +1,9 @@
+event_id,tenant_id,event_type,signature_valid,payload_customer_email,payload_amount,payload_restaurant_id,received_at
+evt-7001,rest-101,booking.created,true,buyer@northstar.test,82.40,rest-101,2026-05-09T09:00:00-04:00
+evt-7001,rest-101,booking.created,true,buyer@northstar.test,82.40,rest-101,2026-05-09T09:00:03-04:00
+evt-7003,rest-202,order.paid,false,guest@harbor.test,41.20,rest-202,2026-05-09T09:01:00-04:00
+evt-7004,rest-202,booking.updated,true,guest@harbor.test,0.00,rest-202,2026-05-09T09:02:00-04:00
+evt-7005,rest-101,order.paid,true,ops@wrongtenant.test,29.00,rest-202,2026-05-09T09:03:00-04:00
+evt-7006,rest-303,order.paid,true,host@lakeside.test,58.00,rest-303,2026-05-09T09:04:00-04:00
+evt-7007,rest-404,booking.created,true,ghost@example.test,12.00,rest-404,2026-05-09T09:05:00-04:00
+,rest-101,booking.created,true,missingid@northstar.test,18.00,rest-101,2026-05-09T09:06:00-04:00

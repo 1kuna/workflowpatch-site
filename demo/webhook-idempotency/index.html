@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WorkflowPatch Demo Output</title>
-    <meta name="description" content="Mock WorkflowPatch request triage demo with review queue, error log, and runbook.">
+    <title>WorkflowPatch Webhook Idempotency Demo</title>
+    <meta name="description" content="Mock WorkflowPatch webhook idempotency demo with accepted event ledger, blocked queue, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch Request Triage Demo">
-    <meta property="og:description" content="A mock request triage workflow with a review queue, error log, source script, and runbook.">
-    <meta property="og:url" content="https://www.workflowpatch.com/demo/">
+    <meta property="og:title" content="WorkflowPatch Webhook Idempotency Demo">
+    <meta property="og:description" content="A mock event-ingestion workflow with tenant validation, idempotency checks, blocked event queue, error log, source script, and runbook.">
+    <meta property="og:url" content="https://www.workflowpatch.com/demo/webhook-idempotency/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -94,7 +94,7 @@
       .lede {
         color: var(--muted);
         font-size: 19px;
-        max-width: 760px;
+        max-width: 790px;
         margin: 0 0 28px;
       }
 
@@ -216,113 +216,73 @@
     </header>
 
     <main class="wrap">
-      <h1>Request triage demo output.</h1>
-      <p class="lede">A small mock workflow that turns messy request rows into a review queue and an error log. It uses no client data, no secrets, and no connected accounts.</p>
+      <h1>Webhook idempotency demo output.</h1>
+      <p class="lede">A small mock workflow that checks inbound events before any downstream write. Safe rows become an accepted event ledger; duplicate ids, invalid signatures, unsupported event types, tenant mismatches, inactive tenants, and missing fields are blocked visibly. No client data, credentials, APIs, or live writes are used.</p>
 
       <div class="links">
-        <a class="button" href="/demo/review-queue.csv">Review Queue CSV</a>
-        <a class="button secondary" href="/demo/error-log.csv">Error Log CSV</a>
-        <a class="button secondary" href="/demo/mock-input.csv">Mock Input CSV</a>
-        <a class="button secondary" href="/demo/runbook.md">Runbook</a>
-        <a class="button secondary" href="/demo/process_demo.py">Source Script</a>
-        <a class="button secondary" href="/demo/invoice-exception/">Invoice Exception Demo</a>
-        <a class="button secondary" href="/demo/crm-sync/">CRM Sync Demo</a>
-        <a class="button secondary" href="/demo/research-digest/">Research Digest Demo</a>
-        <a class="button secondary" href="/demo/shipping-notification/">Shipping Notification Demo</a>
-        <a class="button secondary" href="/demo/webhook-idempotency/">Webhook Idempotency Demo</a>
-        <a class="button secondary" href="/start/">Ask If This Fits</a>
+        <a class="button" href="/demo/webhook-idempotency/accepted-events.csv">Accepted Events CSV</a>
+        <a class="button secondary" href="/demo/webhook-idempotency/blocked-events.csv">Blocked Events CSV</a>
+        <a class="button secondary" href="/demo/webhook-idempotency/error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="/demo/webhook-idempotency/webhook-events.csv">Webhook Events CSV</a>
+        <a class="button secondary" href="/demo/webhook-idempotency/tenant-registry.csv">Tenant Registry CSV</a>
+        <a class="button secondary" href="/demo/webhook-idempotency/runbook.md">Runbook</a>
+        <a class="button secondary" href="/demo/webhook-idempotency/process_webhook_demo.py">Source Script</a>
       </div>
 
       <div class="grid">
         <div class="item">
           <h2>Input</h2>
-          <p>Six mock request rows from forms, tickets, CRM exports, and inbox exports.</p>
+          <p>Eight mock webhook events and three mock tenants for a multi-tenant event-ingestion path.</p>
         </div>
         <div class="item">
-          <h2>Output</h2>
-          <p>Four rows routed to a human review queue with owner, urgency, and next-step draft.</p>
+          <h2>Accepted</h2>
+          <p>One signed event for an active tenant passes idempotency and tenant-boundary checks.</p>
         </div>
         <div class="item">
-          <h2>Failure Path</h2>
-          <p>Two blocked rows: one missing email and one duplicate id. Neither disappears silently.</p>
+          <h2>Blocked</h2>
+          <p>Six unsafe events and one hard error are visible before any handler could run.</p>
         </div>
       </div>
 
-      <div class="table-wrap" aria-label="Related demo">
+      <div class="table-wrap" aria-label="Webhook idempotency demo table">
         <table>
           <thead>
             <tr>
-              <th>Related Demo</th>
-              <th>Pattern</th>
-              <th>Why It Exists</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="/demo/invoice-exception/">Invoice exception demo</a></td>
-              <td>Invoice or vendor exception queue</td>
-              <td>Shows pricebook, PO-prefix, duplicate, and malformed-row checks without approving payments or contacting vendors.</td>
-            </tr>
-            <tr>
-              <td><a href="/demo/crm-sync/">CRM sync demo</a></td>
-              <td>Two-way CRM conflict queue</td>
-              <td>Shows contact-map checks, sync-ready rows, blocked identity conflicts, and hard errors without writing to either CRM.</td>
-            </tr>
-            <tr>
-              <td><a href="/demo/research-digest/">Research digest demo</a></td>
-              <td>Recurring source digest and lead scoring</td>
-              <td>Shows watchlist scoring, digest-ready rows, duplicate/stale review rows, and hard errors without scraping live sources.</td>
-            </tr>
-            <tr>
-              <td><a href="/demo/shipping-notification/">Shipping notification demo</a></td>
-              <td>Fulfillment update approval queue</td>
-              <td>Shows order readiness, carrier-status checks, customer-update drafts, operations alerts, and hard errors without sending email.</td>
-            </tr>
-            <tr>
-              <td><a href="/demo/webhook-idempotency/">Webhook idempotency demo</a></td>
-              <td>Tenant-safe event ledger</td>
-              <td>Shows signed event validation, duplicate blocking, tenant-boundary checks, accepted events, blocked events, and hard errors without live writes.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="table-wrap" aria-label="Demo review queue">
-        <table>
-          <thead>
-            <tr>
-              <th>Request</th>
+              <th>Event</th>
               <th>Status</th>
-              <th>Type</th>
-              <th>Owner</th>
-              <th>Draft Next Step</th>
-              <th>Approval</th>
+              <th>Issue</th>
+              <th>Evidence</th>
+              <th>Reviewer Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>REQ-1001</td>
-              <td class="status">ready</td>
-              <td>sales inquiry</td>
-              <td>sales ops</td>
-              <td>Review the managed-services lead, confirm fit, and draft the first async reply.</td>
-              <td class="status">required</td>
+              <td>evt-7001</td>
+              <td class="status">accepted</td>
+              <td>safe booking event</td>
+              <td>signature, idempotency claim, and tenant match all pass.</td>
+              <td>Send to the approved handler.</td>
             </tr>
             <tr>
-              <td>REQ-1002</td>
-              <td class="status">ready</td>
-              <td>reporting request</td>
-              <td>service ops</td>
-              <td>Prepare the monthly ticket-summary note and list unresolved exceptions.</td>
-              <td class="status">required</td>
-            </tr>
-            <tr>
-              <td>REQ-1004</td>
-              <td class="warn">error</td>
-              <td>blocked</td>
-              <td>manual review</td>
-              <td>Missing requester email; customer-facing draft blocked.</td>
+              <td>evt-7001 replay</td>
               <td class="warn">blocked</td>
+              <td>duplicate idempotency key</td>
+              <td>Event id was already claimed earlier in the run.</td>
+              <td>Ignore side effects unless payload differs.</td>
+            </tr>
+            <tr>
+              <td>evt-7003</td>
+              <td class="warn">blocked</td>
+              <td>invalid signature</td>
+              <td>signature_valid=false in mock event source.</td>
+              <td>Reject and investigate source credentials.</td>
+            </tr>
+            <tr>
+              <td>evt-7005</td>
+              <td class="warn">blocked</td>
+              <td>tenant boundary mismatch</td>
+              <td>Payload restaurant id disagrees with the event tenant.</td>
+              <td>Resolve tenant mapping before replay.</td>
             </tr>
           </tbody>
         </table>
