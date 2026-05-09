@@ -1,0 +1,3 @@
+invoice_id,store_id,status,error_message,manual_review_reason,processed_at
+CST-1006,TX-019,error,duplicate invoice/store/SKU line,Duplicate line blocked before it can double-count vendor spend.,2026-05-09T12:18:00-04:00
+,TX-020,error,"missing invoice_id, store_id, or vendor_sku","Row blocked because reconciliation needs a stable invoice, store, and SKU key.",2026-05-09T12:18:00-04:00

@@ -1,0 +1,6 @@
+observed_vendor,canonical_vendor,account_status
+Acme Fuel Supply,Acme Fuel Supply,approved
+Metro Beverage,Metro Beverage,approved
+MTR Beverage,Metro Beverage,approved_alias
+Golden Wholesale,Golden Wholesale,approved
+Unknown Vendor,,unapproved

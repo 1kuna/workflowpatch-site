@@ -1,0 +1,7 @@
+invoice_id,store_id,canonical_vendor,accepted_lines,exception_lines,accepted_amount,exception_amount,decision,next_step,processed_at
+CST-1001,TX-014,Acme Fuel Supply,2,0,2928.00,0.00,ready_for_human_review,Reviewer can approve or reject.,2026-05-09T12:18:00-04:00
+CST-1002,TX-017,Metro Beverage,0,1,0.00,145.20,review_exceptions_before_payment,Resolve blocked rows before payment/export.,2026-05-09T12:18:00-04:00
+CST-1003,TX-017,Metro Beverage,1,0,125.00,0.00,ready_for_human_review,Reviewer can approve or reject.,2026-05-09T12:18:00-04:00
+CST-1004,TX-019,Unknown Vendor,0,1,0.00,97.50,review_exceptions_before_payment,Resolve blocked rows before payment/export.,2026-05-09T12:18:00-04:00
+CST-1005,TX-014,Acme Fuel Supply,0,1,0.00,2100.00,review_exceptions_before_payment,Resolve blocked rows before payment/export.,2026-05-09T12:18:00-04:00
+CST-1006,TX-019,Golden Wholesale,1,0,310.00,0.00,ready_for_human_review,Reviewer can approve or reject.,2026-05-09T12:18:00-04:00

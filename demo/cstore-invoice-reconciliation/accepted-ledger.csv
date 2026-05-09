@@ -1,0 +1,5 @@
+invoice_id,store_id,canonical_vendor,vendor_sku,category,quantity,unit_price,approved_unit_price,line_total,decision,evidence,processed_at
+CST-1001,TX-014,Acme Fuel Supply,FUEL-REG-87,fuel,1200,2.31,2.31,2772.00,ready_for_exception_review,vendor=Acme Fuel Supply price_match=true total_match=true source_file=acme_fuel_1001.pdf,2026-05-09T12:18:00-04:00
+CST-1001,TX-014,Acme Fuel Supply,SNACK-CHIPS-24,store-merch,8,19.50,19.50,156.00,ready_for_exception_review,vendor=Acme Fuel Supply price_match=true total_match=true source_file=acme_fuel_1001.pdf,2026-05-09T12:18:00-04:00
+CST-1003,TX-017,Metro Beverage,WATER-24,beverage,20,6.25,6.25,125.00,ready_for_exception_review,vendor=Metro Beverage price_match=true total_match=true source_file=metro_bev_1003.pdf,2026-05-09T12:18:00-04:00
+CST-1006,TX-019,Golden Wholesale,CANDY-BAR-36,store-merch,10,31.00,31.00,310.00,ready_for_exception_review,vendor=Golden Wholesale price_match=true total_match=true source_file=golden_1006.pdf,2026-05-09T12:18:00-04:00

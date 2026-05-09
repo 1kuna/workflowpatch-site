@@ -1,0 +1,7 @@
+vendor_sku,canonical_vendor,approved_unit_price,category,max_variance_cents
+FUEL-REG-87,Acme Fuel Supply,2.31,fuel,2
+FUEL-DIESEL,Acme Fuel Supply,2.78,fuel,2
+SNACK-CHIPS-24,Acme Fuel Supply,19.50,store-merch,0
+SODA-COLA-24,Metro Beverage,11.85,beverage,0
+WATER-24,Metro Beverage,6.25,beverage,0
+CANDY-BAR-36,Golden Wholesale,31.00,store-merch,0

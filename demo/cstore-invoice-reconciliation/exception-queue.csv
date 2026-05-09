@@ -1,0 +1,4 @@
+invoice_id,store_id,observed_vendor,vendor_sku,issue_type,review_reason,evidence,processed_at
+CST-1002,TX-017,Metro Beverage,SODA-COLA-24,pricebook_mismatch,Invoice unit price is outside the approved variance.,invoice=12.10 approved=11.85 variance_allowed=0,2026-05-09T12:18:00-04:00
+CST-1004,TX-019,Unknown Vendor,SNACK-CHIPS-24,unapproved_vendor,Observed vendor is not mapped to an approved canonical vendor.,observed_vendor=Unknown Vendor,2026-05-09T12:18:00-04:00
+CST-1005,TX-014,Acme Fuel Supply,FUEL-DIESEL,line_total_mismatch,Line total does not equal quantity times unit price.,line_total=2100.00 expected_total=2224.00,2026-05-09T12:18:00-04:00
