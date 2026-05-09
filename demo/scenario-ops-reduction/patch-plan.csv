@@ -1,0 +1,7 @@
+rule_id,scenario_name,patch_action,impacted_runs,estimated_operations_saved,reviewer_action
+RULE-01,lead-enrichment-close-sync,claim idempotency key before enrichment modules,2,789,Keep first successful run and skip duplicate side effects.
+RULE-02,lead-enrichment-close-sync,send to retry-after queue instead of immediate manual retry,2,854,Wait for vendor cooldown or approve batch retry once.
+RULE-03,company-research-digest,skip overlapping scheduler run,1,865,Keep first digest and inspect scheduler cadence.
+RULE-04,company-research-digest,block before LLM and scraping modules,1,922,Fill missing filter or reject the digest request.
+RULE-05,invoice-exception-routing,claim invoice idempotency key before parsing,1,186,Keep first accepted invoice decision.
+RULE-06,invoice-exception-routing,block before reconciliation and notification modules,2,488,Add vendor mapping before replay.

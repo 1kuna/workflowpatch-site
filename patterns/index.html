@@ -548,6 +548,45 @@
             </div>
           </div>
         </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
+            <h2>Scenario Ops Reduction Audit</h2>
+            <p>For Make or n8n accounts where operation volume, duplicate runs, retries, and fragile errors are making the system expensive to trust.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One scenario family export, run-history sample, or execution log with operation counts and errors.</div>
+            <div class="step"><strong>Transform</strong>Find duplicate triggers, immediate retries, missing preflight gates, and expensive modules that should be skipped.</div>
+            <div class="step"><strong>Destination</strong>Ops-reduction ledger, patch plan, reviewer actions, and before/after acceptance checks.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>High monthly Make operations</li>
+                <li>Repeated failed runs</li>
+                <li>Manual retries and hidden duplicate work</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>One scenario family first</li>
+                <li>Dry-run patch plan before live edits</li>
+                <li>No savings promise without real export evidence</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Duplicate runs are blocked</li>
+                <li>Rate-limit retries wait for approval</li>
+                <li>Missing fields stop before expensive modules</li>
+              </ul>
+              <p><a href="/demo/scenario-ops-reduction/">View ops reduction demo</a></p>
+            </div>
+          </div>
+        </section>
       </div>
 
       <div class="actions">
@@ -558,6 +597,7 @@
         <a class="button secondary" href="/demo/research-digest/">View Research Digest Demo</a>
         <a class="button secondary" href="/demo/webhook-idempotency/">View Webhook Demo</a>
         <a class="button secondary" href="/demo/field-service-action-layer/">View Field-Service Demo</a>
+        <a class="button secondary" href="/demo/scenario-ops-reduction/">View Ops Reduction Demo</a>
         <a class="button secondary" href="/demo/sms-approval-state/">View SMS Approval Demo</a>
         <a class="button secondary" href="/demo/document-export-manifest/">View Document Export Demo</a>
         <a class="button secondary" href="/start/">Ask If A Workflow Fits</a>

@@ -1,0 +1,13 @@
+run_id,scenario_name,started_at,trigger_key,source_record_id,module_operations,status,error_code,output_hash,notes
+RUN-9001,lead-enrichment-close-sync,2026-05-06T09:02:00-04:00,lead:new:acme-104,LEAD-104,412,success,,hash-a1,baseline run
+RUN-9002,lead-enrichment-close-sync,2026-05-06T09:03:00-04:00,lead:new:acme-104,LEAD-104,398,success,,hash-a1,duplicate trigger
+RUN-9003,lead-enrichment-close-sync,2026-05-06T09:04:00-04:00,lead:new:acme-104,LEAD-104,391,success,,hash-a1,duplicate trigger
+RUN-9004,lead-enrichment-close-sync,2026-05-06T09:15:00-04:00,lead:new:bravo-205,LEAD-205,428,error,429,,rate limit from enrichment vendor
+RUN-9005,lead-enrichment-close-sync,2026-05-06T09:20:00-04:00,lead:new:bravo-205,LEAD-205,426,error,429,,manual retry hit same rate limit
+RUN-9006,company-research-digest,2026-05-06T10:00:00-04:00,digest:daily:cybersec,LIST-301,870,success,,hash-b1,baseline digest
+RUN-9007,company-research-digest,2026-05-06T10:01:00-04:00,digest:daily:cybersec,LIST-301,865,success,,hash-b1,duplicate scheduler overlap
+RUN-9008,company-research-digest,2026-05-06T10:35:00-04:00,digest:daily:finops,LIST-302,922,error,MISSING_FIELD,,missing industry filter
+RUN-9009,invoice-exception-routing,2026-05-06T11:00:00-04:00,invoice:new:vend-884,INV-884,188,success,,hash-c1,baseline invoice
+RUN-9010,invoice-exception-routing,2026-05-06T11:01:00-04:00,invoice:new:vend-884,INV-884,186,success,,hash-c1,duplicate email attachment
+RUN-9011,invoice-exception-routing,2026-05-06T11:22:00-04:00,invoice:new:vend-912,INV-912,244,error,MAP_MISSING,,unknown vendor mapping
+RUN-9012,invoice-exception-routing,2026-05-06T11:27:00-04:00,invoice:new:vend-912,INV-912,244,error,MAP_MISSING,,manual retry without map fix

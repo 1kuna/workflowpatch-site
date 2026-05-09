@@ -1,0 +1,13 @@
+run_id,scenario_name,decision,matched_rule,operations_observed,estimated_operations_saved,evidence
+RUN-9001,lead-enrichment-close-sync,keep_baseline,baseline,412,0,first useful run for this source
+RUN-9002,lead-enrichment-close-sync,skip_duplicate,RULE-01,398,398,same source/output as RUN-9001
+RUN-9003,lead-enrichment-close-sync,skip_duplicate,RULE-01,391,391,same source/output as RUN-9001
+RUN-9004,lead-enrichment-close-sync,retry_after_queue,RULE-02,428,428,rate-limit error should not be retried immediately
+RUN-9005,lead-enrichment-close-sync,retry_after_queue,RULE-02,426,426,rate-limit error should not be retried immediately
+RUN-9006,company-research-digest,keep_baseline,baseline,870,0,first useful run for this source
+RUN-9007,company-research-digest,skip_overlapping_scheduler_run,RULE-03,865,865,same digest trigger already processed in this window
+RUN-9008,company-research-digest,block_before_expensive_modules,RULE-04,922,922,missing filter should stop before research/LLM work
+RUN-9009,invoice-exception-routing,keep_baseline,baseline,188,0,first useful run for this source
+RUN-9010,invoice-exception-routing,skip_duplicate,RULE-05,186,186,same source/output as RUN-9009
+RUN-9011,invoice-exception-routing,block_until_mapping_exists,RULE-06,244,244,vendor mapping missing before reconciliation
+RUN-9012,invoice-exception-routing,block_until_mapping_exists,RULE-06,244,244,vendor mapping missing before reconciliation
