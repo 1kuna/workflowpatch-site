@@ -1,0 +1,6 @@
+lead_id,company,source,score,decision,evidence,next_step
+LEAD-4001,Northstar Dental Group,form,8,review_ready,source=form; consent=explicit; crm_status=not_found; keywords=crm|lead|report,"Map source fields, qualification criteria, and CRM destination before any write."
+LEAD-4002,Summit CFO Advisors,scraped_list,3,blocked_consent,source=scraped_list; consent=none; crm_status=not_found; keywords=enrichment,"Confirm permission or buyer-created context before any outreach, enrichment, or CRM write."
+LEAD-4003,Axis Pump Repair,referral,6,blocked_duplicate,source=referral; consent=explicit; crm_status=existing_customer; keywords=crm|lead,Existing CRM contact CRM-7712 owned by service ops; route to owner before any update.
+LEAD-4004,BrightPath Tutors,community_reply,7,review_ready,source=community_reply; consent=explicit; crm_status=not_found; keywords=crm|lead,"Map source fields, qualification criteria, and CRM destination before any write."
+LEAD-4005,Longview Roofing,partner_sheet,5,blocked_consent,source=partner_sheet; consent=needs_confirmation; crm_status=not_found; keywords=crm|lead|report,"Confirm permission or buyer-created context before any outreach, enrichment, or CRM write."

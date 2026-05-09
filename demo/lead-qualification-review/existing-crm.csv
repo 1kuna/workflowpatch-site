@@ -1,0 +1,3 @@
+email,crm_contact_id,owner,current_stage,last_touched
+dispatch@axispump.example,CRM-7712,service ops,active customer,2026-05-02
+ops@oldlead.example,CRM-4419,sales ops,dormant lead,2026-01-17

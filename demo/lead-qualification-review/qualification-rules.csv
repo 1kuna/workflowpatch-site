@@ -1,0 +1,7 @@
+rule_id,rule_type,value,weight,reviewer_action
+R1,keyword,crm,1,Require CRM owner and destination field before any write.
+R2,keyword,lead,1,Require source and qualification evidence.
+R3,keyword,report,1,Require report destination and review owner.
+R4,keyword,enrichment,1,Require source citations before enrichment changes.
+R5,consent,explicit,2,Allow review queue only when permission or buyer-created context is present.
+R6,source,approved,1,Prefer form referral community_reply and partner_sheet over scraped lists.

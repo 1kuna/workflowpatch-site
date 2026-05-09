@@ -1,0 +1,3 @@
+lead_id,company,owner,approved_action,draft_note,reviewer_action
+LEAD-4001,Northstar Dental Group,sales ops,prepare CRM update and reporting handoff only,"Northstar Dental Group: review crm, lead, report evidence before any CRM write or outreach.","Map source fields, qualification criteria, and CRM destination before any write."
+LEAD-4004,BrightPath Tutors,sales ops,prepare CRM update and reporting handoff only,"BrightPath Tutors: review crm, lead evidence before any CRM write or outreach.","Map source fields, qualification criteria, and CRM destination before any write."

@@ -1,0 +1,4 @@
+lead_id,company,reason,reviewer_action
+LEAD-4002,Summit CFO Advisors,consent or source permission not confirmed,"Confirm permission or buyer-created context before any outreach, enrichment, or CRM write."
+LEAD-4003,Axis Pump Repair,duplicate existing CRM contact,Existing CRM contact CRM-7712 owned by service ops; route to owner before any update.
+LEAD-4005,Longview Roofing,consent or source permission not confirmed,"Confirm permission or buyer-created context before any outreach, enrichment, or CRM write."

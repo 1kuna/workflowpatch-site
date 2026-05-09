@@ -1,0 +1,7 @@
+lead_id,source,company,contact_name,email,raw_need,consent_status,crm_status,last_activity_days
+LEAD-4001,form,Northstar Dental Group,Maya Chen,ops@northstardental.example,"Asked for help turning web inquiries into CRM follow-up tasks and weekly lead reporting",explicit,not_found,2
+LEAD-4002,scraped_list,Summit CFO Advisors,Dan Price,hello@summitcfo.example,"Looks like a good fit for automated email outreach and enrichment",none,not_found,0
+LEAD-4003,referral,Axis Pump Repair,Terri Hall,dispatch@axispump.example,"Referral mentioned field-service CRM updates and duplicate lead cleanup",explicit,existing_customer,4
+LEAD-4004,community_reply,BrightPath Tutors,Ari Novak,founder@brightpathtutors.example,"Wants lead qualification, source tracking, and a review queue before CRM updates",explicit,not_found,11
+LEAD-4005,partner_sheet,Longview Roofing,Jordan Lee,ops@longviewroofing.example,"Partner sheet says CRM reporting and lead routing are manual but consent is not confirmed",needs_confirmation,not_found,45
+LEAD-4006,form,Harbor Supply Co,Sam Patel,,"Form mentions campaign reporting but no usable email address",explicit,not_found,1
