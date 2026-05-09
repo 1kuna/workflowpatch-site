@@ -1,0 +1,4 @@
+event_id,sku,brand,route,estimated_value,approval_status,evidence,accepted_at
+RET-9001,SKU-ALP-042,Alpine Thread,resale_review,128.00,needs human approval,value 128.00 meets resale threshold 75.00,2026-05-09T12:20:00Z
+RET-9002,SKU-ALP-105,Alpine Thread,repair_review,84.00,needs human approval,damaged item can enter repair review before resale decision,2026-05-09T12:20:00Z
+OVR-3101,SKU-NOR-212,Northline Goods,resale_review,240.00,needs human approval,value 240.00 meets resale threshold 150.00,2026-05-09T12:20:00Z

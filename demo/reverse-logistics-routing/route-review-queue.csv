@@ -1,0 +1,4 @@
+event_id,sku,brand,recommended_route,review_prompt,blocked_live_action
+RET-9001,SKU-ALP-042,Alpine Thread,resale_review,Confirm resale review for SKU-ALP-042 under Alpine Thread guardrails.,"no warehouse, marketplace, pricing, or brand-partner write"
+RET-9002,SKU-ALP-105,Alpine Thread,repair_review,Confirm repair review for SKU-ALP-105 under Alpine Thread guardrails.,"no warehouse, marketplace, pricing, or brand-partner write"
+OVR-3101,SKU-NOR-212,Northline Goods,resale_review,Confirm resale review for SKU-NOR-212 under Northline Goods guardrails.,"no warehouse, marketplace, pricing, or brand-partner write"

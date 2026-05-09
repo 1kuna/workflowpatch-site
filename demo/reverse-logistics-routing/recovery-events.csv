@@ -1,0 +1,8 @@
+event_id,event_type,sku,brand,condition,inventory_status,current_channel,estimated_value,received_at
+RET-9001,return,SKU-ALP-042,Alpine Thread,new,received,none,128.00,2026-05-06T14:05:00Z
+RET-9002,return,SKU-ALP-105,Alpine Thread,damaged,received,none,84.00,2026-05-06T14:07:00Z
+OVR-3101,overstock,SKU-NOR-212,Northline Goods,new,warehouse_hold,clearance,240.00,2026-05-06T15:11:00Z
+RET-9003,return,SKU-CIR-778,Circular Kids,open_box,received,marketplace_a,52.00,2026-05-06T16:22:00Z
+RET-9001,return,SKU-ALP-042,Alpine Thread,new,received,none,128.00,2026-05-06T17:02:00Z
+OVR-3102,overstock,SKU-UNK-404,Unknown Brand,new,received,none,99.00,2026-05-06T17:40:00Z
+RET-9004,return,SKU-NOR-404,Northline Goods,new,,none,180.00,2026-05-06T18:01:00Z

@@ -590,6 +590,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Reverse Logistics Routing</h2>
+            <p>For returns, overstock, resale, repair, and recovery workflows where brand guardrails must block unsafe routes before live operations move inventory.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One return or overstock event export plus one brand guardrail table.</div>
+            <div class="step"><strong>Transform</strong>Validate SKU/event identity, condition, channel restrictions, value threshold, and route policy.</div>
+            <div class="step"><strong>Destination</strong>Route review queue, routing ledger, exception log, and KPI summary.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Reverse logistics</li>
+                <li>Returns and overstock routing</li>
+                <li>Brand-governed resale or repair</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No warehouse or marketplace writes before approval</li>
+                <li>Blocked channels stay visible</li>
+                <li>Missing brand policies stop the route</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Valid events create review rows</li>
+                <li>Duplicate event ids are blocked</li>
+                <li>KPI totals exclude exceptions</li>
+              </ul>
+              <p><a href="/demo/reverse-logistics-routing/">View reverse logistics demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Scenario Ops Reduction Audit</h2>
             <p>For Make or n8n accounts where operation volume, duplicate runs, retries, and fragile errors are making the system expensive to trust.</p>
           </div>
@@ -830,6 +869,7 @@
         <a class="button secondary" href="/demo/postgres-statement-email/">View Statement Email Demo</a>
         <a class="button secondary" href="/demo/research-digest/">View Research Digest Demo</a>
         <a class="button secondary" href="/demo/commerce-performance-brief/">View Commerce Demo</a>
+        <a class="button secondary" href="/demo/reverse-logistics-routing/">View Reverse Logistics Demo</a>
         <a class="button secondary" href="/demo/webhook-idempotency/">View Webhook Demo</a>
         <a class="button secondary" href="/demo/field-service-action-layer/">View Field-Service Demo</a>
         <a class="button secondary" href="/demo/scenario-ops-reduction/">View Ops Reduction Demo</a>

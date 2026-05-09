@@ -1,0 +1,5 @@
+event_id,sku,brand,reason,next_step
+RET-9003,SKU-CIR-778,Circular Kids,current channel marketplace_a is blocked by brand guardrails,Hold for operations review; do not expose inventory to a channel.
+RET-9001,SKU-ALP-042,Alpine Thread,duplicate event id,Keep the first event ledger row and review the duplicate source.
+OVR-3102,SKU-UNK-404,Unknown Brand,missing brand guardrail,Add brand route policy before any recovery action.
+RET-9004,SKU-NOR-404,Northline Goods,missing inventory status,Confirm warehouse receipt/status before routing.

@@ -1,0 +1,4 @@
+brand,allow_resale,allow_repair,allow_liquidation,min_resale_value,blocked_channels,notes
+Alpine Thread,yes,yes,no,75.00,liquidator_x,Premium apparel brand; no liquidation without written brand approval.
+Northline Goods,yes,no,yes,150.00,marketplace_a,Keep open-market exposure controlled until overstock release is approved.
+Circular Kids,yes,yes,no,40.00,marketplace_a,Kids resale allowed only through approved channels with manual image review.
