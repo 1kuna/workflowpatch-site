@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WorkflowPatch</title>
+    <meta name="description" content="Async fixed-scope workflow automation implementation: one source, one transformation, one destination, with logging, QA, approval path, and runbook.">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2328;
+        --muted: #5f6b72;
+        --line: #d9e0e4;
+        --paper: #fbfcfb;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-dark: #0b4d49;
+        --warning: #9a5b11;
+        --soft: #edf5f3;
+        --soft-2: #f3f0ea;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      main {
+        min-height: 100vh;
+      }
+
+      .wrap {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        background: rgba(251, 252, 251, 0.94);
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        align-items: center;
+        min-height: 64px;
+      }
+
+      .brand {
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .mode {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
+        gap: 44px;
+        align-items: center;
+        padding: 64px 0 48px;
+      }
+
+      h1 {
+        font-size: clamp(40px, 7vw, 76px);
+        line-height: 0.94;
+        margin: 0 0 24px;
+        max-width: 840px;
+        letter-spacing: 0;
+      }
+
+      .lede {
+        font-size: 20px;
+        color: var(--muted);
+        max-width: 720px;
+        margin: 0 0 28px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 18px;
+        border: 1px solid var(--accent);
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 6px;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--accent-dark);
+      }
+
+      .proof {
+        border: 1px solid var(--line);
+        background: var(--panel);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(19, 31, 36, 0.08);
+      }
+
+      .proof-head {
+        padding: 16px 18px;
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: center;
+        font-size: 14px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 26px;
+        padding: 0 9px;
+        border-radius: 999px;
+        background: var(--soft);
+        color: var(--accent-dark);
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .proof-body {
+        padding: 18px;
+        display: grid;
+        gap: 12px;
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: 92px 1fr 108px;
+        gap: 12px;
+        align-items: start;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 12px;
+        background: #fff;
+        font-size: 13px;
+      }
+
+      .row strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .status {
+        color: var(--accent-dark);
+        font-weight: 700;
+      }
+
+      .status.warn {
+        color: var(--warning);
+      }
+
+      .band {
+        border-top: 1px solid var(--line);
+        padding: 44px 0;
+      }
+
+      h2 {
+        font-size: 28px;
+        margin: 0 0 18px;
+        letter-spacing: 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .item {
+        border: 1px solid var(--line);
+        background: var(--panel);
+        border-radius: 8px;
+        padding: 18px;
+      }
+
+      .item h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+      }
+
+      .item p,
+      .item li {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .item p {
+        margin: 0;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .pricing {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .price {
+        font-size: 34px;
+        font-weight: 800;
+        margin: 10px 0;
+      }
+
+      .note {
+        color: var(--muted);
+        font-size: 14px;
+        margin-top: 18px;
+      }
+
+      .contact-box {
+        border: 1px solid var(--accent);
+        background: var(--soft);
+        border-radius: 8px;
+        padding: 20px;
+      }
+
+      .intake {
+        columns: 2;
+        column-gap: 36px;
+      }
+
+      .intake li {
+        break-inside: avoid;
+        margin-bottom: 8px;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 28px 0 40px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 860px) {
+        .hero,
+        .pricing,
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          padding-top: 40px;
+        }
+
+        .row {
+          grid-template-columns: 1fr;
+        }
+
+        .intake {
+          columns: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <div class="brand">WorkflowPatch</div>
+        <div class="mode">Async-only workflow implementation</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="wrap hero">
+        <div>
+          <h1>One painful workflow fixed in 5 business days.</h1>
+          <p class="lede">Fixed-scope automation for teams with manual processes stuck between inboxes, spreadsheets, CRM, tickets, exports, or reporting. No calls required.</p>
+          <div class="actions">
+            <a class="button" href="mailto:alex@workflowpatch.com?subject=WorkflowPatch%20Async%20Intake&body=Company%3A%0AWebsite%3A%0AWorkflow%20to%20fix%3A%0ACurrent%20source%3A%0ADesired%20destination%3A%0AWhat%20breaks%20if%20this%20stays%20manual%3A%0ATools%20involved%3A%0ASample%20data%20available%20within%2024%20hours%3A%0ADeadline%3A">Start Async Intake</a>
+            <a class="button secondary" href="#demo">View Demo Output</a>
+          </div>
+        </div>
+
+        <div class="proof" aria-label="Demo workflow preview">
+          <div class="proof-head">
+            <strong>Demo Review Queue</strong>
+            <span class="pill">No client data</span>
+          </div>
+          <div class="proof-body">
+            <div class="row">
+              <div><strong>REQ-1001</strong><span class="status">Ready</span></div>
+              <div>Sales inquiry classified from a website request with a draft owner handoff.</div>
+              <div class="status">Approval required</div>
+            </div>
+            <div class="row">
+              <div><strong>REQ-1002</strong><span class="status">Ready</span></div>
+              <div>Ticket/reporting request routed to service desk with a summary next step.</div>
+              <div class="status">Approval required</div>
+            </div>
+            <div class="row">
+              <div><strong>REQ-1004</strong><span class="status warn">Error</span></div>
+              <div>Missing contact fields are not silently processed; they are routed to manual review.</div>
+              <div class="status warn">Manual review</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap">
+          <h2>Scope</h2>
+          <div class="grid">
+            <div class="item">
+              <h3>One Source</h3>
+              <p>Inbox, form, CSV/export, CRM object, ticket export, spreadsheet, webhook, or ready API.</p>
+            </div>
+            <div class="item">
+              <h3>One Transformation</h3>
+              <p>Summarize, classify, route, draft, enrich, deduplicate, score, or generate a structured report.</p>
+            </div>
+            <div class="item">
+              <h3>One Destination</h3>
+              <p>Sheet, Airtable, CRM, helpdesk, email draft, Slack/Teams alert, or report output.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap">
+          <h2>Packages</h2>
+          <div class="pricing">
+            <div class="item">
+              <h3>Emergency Workflow Implementation Sprint</h3>
+              <div class="price">$6,000</div>
+              <p>One-time fixed-scope build with tests, logging, approval path, and runbook.</p>
+            </div>
+            <div class="item">
+              <h3>Workflow Rescue Sprint + Care Plan</h3>
+              <div class="price">$5,500</div>
+              <p>$5,000 build plus first-month care. Ongoing care is $500/month after month 1.</p>
+            </div>
+          </div>
+          <p class="note">Work starts after payment, accepted scope, and access/data readiness. No live calls are required.</p>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap">
+          <h2>Guardrails</h2>
+          <div class="grid">
+            <div class="item">
+              <h3>Human Approval</h3>
+              <p>External or customer-facing AI output stays in draft/review until a human approves it.</p>
+            </div>
+            <div class="item">
+              <h3>Visible Failure</h3>
+              <p>Errors and unsupported rows go to a log or manual-review queue instead of disappearing.</p>
+            </div>
+            <div class="item">
+              <h3>Clean Boundaries</h3>
+              <p>No fake guarantees, no sensitive regulated workflow by default, and no secrets committed to code.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="demo">
+        <div class="wrap">
+          <h2>Demo Output</h2>
+          <div class="grid">
+            <div class="item">
+              <h3>Processed</h3>
+              <p>6 sample rows run through a request review workflow using non-client demo data.</p>
+            </div>
+            <div class="item">
+              <h3>Review Queue</h3>
+              <p>4 rows were ready for human review; customer-facing drafts stayed approval-required.</p>
+            </div>
+            <div class="item">
+              <h3>Error Handling</h3>
+              <p>2 invalid rows were routed to visible manual review instead of being silently processed.</p>
+            </div>
+          </div>
+          <p class="note">The demo acceptance checks are simple: valid rows create review items, invalid rows create error rows, external copy stays in review, and duplicate IDs are not processed twice.</p>
+        </div>
+      </section>
+
+      <section class="band" id="intake">
+        <div class="wrap">
+          <h2>Async Intake</h2>
+          <div class="contact-box">
+            <p>Email <a href="mailto:alex@workflowpatch.com">alex@workflowpatch.com</a> with the workflow you want fixed. A good first version fits into one source, one transformation, and one destination.</p>
+            <ul class="intake">
+              <li>Company and website</li>
+              <li>Current manual workflow</li>
+              <li>Source system or file</li>
+              <li>Desired output or destination</li>
+              <li>How often the workflow runs</li>
+              <li>What breaks if it stays manual</li>
+              <li>Who approves customer-facing output</li>
+              <li>Tools/accounts involved</li>
+              <li>Whether sample data is available within 24 hours</li>
+              <li>Deadline that matters</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">WorkflowPatch · Alex Reed, Workflow Automation Operator · alex@workflowpatch.com · 2995 East Point Street, East Point, GA 30094</div>
+    </footer>
+  </body>
+</html>
