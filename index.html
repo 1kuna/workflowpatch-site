@@ -58,8 +58,16 @@
       }
 
       .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
         font-size: 15px;
         font-weight: 700;
+      }
+
+      .brand img {
+        width: 32px;
+        height: 32px;
       }
 
       .mode {
@@ -288,7 +296,7 @@
   <body>
     <header>
       <div class="wrap topbar">
-        <div class="brand">WorkflowPatch</div>
+        <div class="brand"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</div>
         <div class="mode">Async-only workflow implementation</div>
       </div>
     </header>
@@ -299,7 +307,7 @@
           <h1>One painful workflow patched in 5 business days.</h1>
           <p class="lede">Async fixed-scope automation for teams with manual work stuck between inboxes, spreadsheets, CRM, tickets, exports, or reporting. Start with a small teardown note. No calls required.</p>
           <div class="actions">
-            <a class="button" href="mailto:alex@workflowpatch.com?subject=WorkflowPatch%20Teardown%20Note&body=Company%3A%0AWebsite%3A%0AWorkflow%20you%20want%20checked%3A%0ACurrent%20source%3A%0ACurrent%20manual%20step%3A%0ADesired%20destination%3A%0AWhat%20breaks%20if%20this%20stays%20manual%3A%0ATools%20involved%3A%0ASample%20data%20available%20within%2024%20hours%3A%0ADeadline%3A">Request Teardown Note</a>
+            <a class="button" href="/start/">Start Async Fit Check</a>
             <a class="button secondary" href="/demo/">View Demo Output</a>
             <a class="button secondary" href="/patterns/">Reference Patterns</a>
           </div>
@@ -432,6 +440,7 @@
               <li>Whether sample data is available within 24 hours</li>
               <li>Deadline that matters</li>
             </ul>
+            <p class="note"><a href="/start/">Open the guided async fit check.</a></p>
           </div>
         </div>
       </section>

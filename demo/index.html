@@ -49,6 +49,20 @@
         gap: 24px;
       }
 
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 800;
+      }
+
+      .brand img {
+        width: 32px;
+        height: 32px;
+      }
+
       a {
         color: var(--accent-dark);
         font-weight: 700;
@@ -184,8 +198,8 @@
   <body>
     <header>
       <div class="wrap topbar">
-        <a href="/">WorkflowPatch</a>
-        <span>Demo output</span>
+        <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
+        <a href="/start/">Start async fit check</a>
       </div>
     </header>
 
@@ -199,6 +213,7 @@
         <a class="button secondary" href="/demo/mock-input.csv">Mock Input CSV</a>
         <a class="button secondary" href="/demo/runbook.md">Runbook</a>
         <a class="button secondary" href="/demo/process_demo.py">Source Script</a>
+        <a class="button secondary" href="/start/">Ask If This Fits</a>
       </div>
 
       <div class="grid">

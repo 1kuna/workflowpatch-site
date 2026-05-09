@@ -49,6 +49,20 @@
         gap: 24px;
       }
 
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 800;
+      }
+
+      .brand img {
+        width: 32px;
+        height: 32px;
+      }
+
       a {
         color: var(--accent-dark);
         font-weight: 700;
@@ -202,8 +216,8 @@
   <body>
     <header>
       <div class="wrap topbar">
-        <a href="/">WorkflowPatch</a>
-        <span>Reference patterns</span>
+        <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
+        <a href="/start/">Start async fit check</a>
       </div>
     </header>
 
@@ -368,7 +382,7 @@
 
       <div class="actions">
         <a class="button" href="/demo/">View Demo Output</a>
-        <a class="button secondary" href="mailto:alex@workflowpatch.com?subject=WorkflowPatch%20Pattern%20Fit&body=Company%3A%0AWebsite%3A%0APattern%20that%20seems%20closest%3A%0ASource%3A%0ATransformation%3A%0ADestination%3A%0AWhat%20breaks%20today%3A%0ARedacted%20sample%20available%3A">Ask If A Workflow Fits</a>
+        <a class="button secondary" href="/start/">Ask If A Workflow Fits</a>
       </div>
     </main>
 
