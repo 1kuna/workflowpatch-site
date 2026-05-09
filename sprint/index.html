@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Start Async Fit Check | WorkflowPatch</title>
-    <meta name="description" content="Start an async WorkflowPatch fit check with the exact information needed to scope one source, one transformation, and one destination.">
+    <title>WorkflowPatch Sprint Brief</title>
+    <meta name="description" content="A concrete WorkflowPatch paid sprint brief: fixed scope, async delivery, acceptance checks, evidence, exclusions, and handoff shape.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Start Async Fit Check | WorkflowPatch">
-    <meta property="og:description" content="Send the exact details needed to scope one fixed async workflow patch.">
-    <meta property="og:url" content="https://www.workflowpatch.com/start/">
+    <meta property="og:title" content="WorkflowPatch Sprint Brief">
+    <meta property="og:description" content="What a fixed async WorkflowPatch sprint includes before a buyer accepts scope and pays.">
+    <meta property="og:url" content="https://www.workflowpatch.com/sprint/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -28,6 +28,8 @@
         --accent: #0f766e;
         --accent-dark: #0b4d49;
         --soft: #edf5f3;
+        --soft-2: #f3f0ea;
+        --warning: #9a5b11;
       }
 
       * {
@@ -96,7 +98,7 @@
 
       .hero {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(340px, 0.74fr);
+        grid-template-columns: minmax(0, 1fr) minmax(340px, 0.76fr);
         gap: 44px;
         align-items: start;
         padding-bottom: 46px;
@@ -142,7 +144,7 @@
         color: var(--accent-dark);
       }
 
-      .fit-panel {
+      .brief-panel {
         border: 1px solid var(--line);
         background: var(--panel);
         border-radius: 8px;
@@ -150,7 +152,7 @@
         overflow: hidden;
       }
 
-      .fit-head {
+      .brief-head {
         display: flex;
         justify-content: space-between;
         gap: 16px;
@@ -172,15 +174,15 @@
         font-size: 13px;
       }
 
-      .fit-body {
+      .brief-body {
         padding: 18px;
         display: grid;
         gap: 12px;
       }
 
-      .flow-row {
+      .mini-row {
         display: grid;
-        grid-template-columns: 110px 1fr;
+        grid-template-columns: 120px 1fr;
         gap: 12px;
         border: 1px solid var(--line);
         border-radius: 6px;
@@ -188,11 +190,11 @@
         padding: 12px;
       }
 
-      .flow-row strong {
+      .mini-row strong {
         color: var(--accent-dark);
       }
 
-      .flow-row span {
+      .mini-row span {
         color: var(--muted);
       }
 
@@ -207,15 +209,14 @@
         letter-spacing: 0;
       }
 
-      .grid,
-      .checklist {
+      .grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 16px;
       }
 
-      .checklist {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      .two {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .item {
@@ -250,6 +251,23 @@
         margin-bottom: 8px;
       }
 
+      .price {
+        font-size: 34px;
+        font-weight: 800;
+        margin: 10px 0;
+      }
+
+      .warn {
+        color: var(--warning);
+        font-weight: 800;
+      }
+
+      .note {
+        color: var(--muted);
+        font-size: 14px;
+        margin-top: 18px;
+      }
+
       .email-box {
         border: 1px solid var(--accent);
         background: var(--soft);
@@ -259,12 +277,6 @@
 
       .email-box p {
         margin: 0 0 14px;
-      }
-
-      .note {
-        color: var(--muted);
-        font-size: 14px;
-        margin-top: 18px;
       }
 
       footer {
@@ -277,7 +289,7 @@
       @media (max-width: 860px) {
         .hero,
         .grid,
-        .checklist {
+        .two {
           grid-template-columns: 1fr;
         }
 
@@ -285,7 +297,7 @@
           padding-top: 34px;
         }
 
-        .flow-row {
+        .mini-row {
           grid-template-columns: 1fr;
         }
       }
@@ -296,10 +308,9 @@
       <div class="wrap topbar">
         <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
         <nav aria-label="Primary">
-          <a href="/demo/">Demo</a>
-          <a href="/patterns/">Patterns</a>
-          <a href="/sprint/">Sprint Brief</a>
-          <a href="#email">Email Alex</a>
+          <a href="/start/">Fit Check</a>
+          <a href="/demo/">Demos</a>
+          <a href="/delivery/">Handoff</a>
         </nav>
       </div>
     </header>
@@ -307,60 +318,31 @@
     <main>
       <section class="wrap hero">
         <div>
-          <h1>Start with the workflow, not a sales call.</h1>
-          <p class="lede">Send the smallest useful version of the problem. If it fits one source, one transformation, and one destination, WorkflowPatch can map a fixed async sprint. If it does not fit, you get the narrower version that would.</p>
+          <h1>What a paid WorkflowPatch sprint actually buys.</h1>
+          <p class="lede">A fixed async sprint patches one operational workflow with visible evidence: source files, transformation logic, review or destination output, error handling, QA checks, and a short runbook.</p>
           <div class="actions">
-            <a class="button" href="mailto:alex@workflowpatch.com?subject=WorkflowPatch%20Async%20Fit%20Check&body=Company%3A%0AWebsite%3A%0AWorkflow%20you%20want%20patched%3A%0ACurrent%20source%3A%0ACurrent%20manual%20step%3A%0ADesired%20destination%3A%0AHow%20often%20it%20runs%3A%0AWhat%20breaks%20if%20it%20stays%20manual%3A%0AWho%20approves%20external%20output%3A%0ATools%20or%20accounts%20involved%3A%0ASample%20or%20redacted%20data%20available%20within%2024%20hours%3A%0ADeadline%3A">Send Fit Check</a>
-            <a class="button secondary" href="/patterns/">Compare Patterns</a>
+            <a class="button" href="/start/">Send Fit Check</a>
+            <a class="button secondary" href="/delivery/">View Sample Handoff</a>
           </div>
         </div>
 
-        <div class="fit-panel" aria-label="Workflow fit preview">
-          <div class="fit-head">
-            <strong>Fit Check Shape</strong>
-            <span class="pill">Async only</span>
+        <div class="brief-panel" aria-label="Sprint brief summary">
+          <div class="brief-head">
+            <strong>Sprint Shape</strong>
+            <span class="pill">Written scope first</span>
           </div>
-          <div class="fit-body">
-            <div class="flow-row">
-              <strong>Source</strong>
-              <span>Inbox, form, export, CRM object, ticket, sheet, webhook, or ready API.</span>
+          <div class="brief-body">
+            <div class="mini-row">
+              <strong>Scope</strong>
+              <span>One source, one transformation, one destination, plus explicit exclusions.</span>
             </div>
-            <div class="flow-row">
-              <strong>Transform</strong>
-              <span>Classify, route, dedupe, summarize, enrich, draft, score, or report.</span>
+            <div class="mini-row">
+              <strong>Evidence</strong>
+              <span>Accepted rows, blocked rows, error log, and acceptance checks.</span>
             </div>
-            <div class="flow-row">
-              <strong>Destination</strong>
-              <span>Review queue, CRM, sheet, helpdesk, Slack/Teams alert, report, or email draft.</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="band">
-        <div class="wrap">
-          <h2>What To Send</h2>
-          <div class="checklist">
-            <div class="item">
-              <h3>Required</h3>
-              <ol>
-                <li>Company and website.</li>
-                <li>The workflow you want patched.</li>
-                <li>The current source and desired destination.</li>
-                <li>What happens manually today.</li>
-                <li>What breaks if it stays manual.</li>
-                <li>Whether redacted sample data is available within 24 hours.</li>
-              </ol>
-            </div>
-            <div class="item">
-              <h3>Helpful</h3>
-              <ol>
-                <li>Two example inputs that should succeed.</li>
-                <li>One example input that should be blocked or reviewed.</li>
-                <li>Known duplicate, missing-field, or API failure cases.</li>
-                <li>Who approves any customer-facing output.</li>
-                <li>The deadline that actually matters.</li>
-              </ol>
+            <div class="mini-row">
+              <strong>Handoff</strong>
+              <span>Runbook, artifact list, QA matrix, and closeout note.</span>
             </div>
           </div>
         </div>
@@ -368,31 +350,114 @@
 
       <section class="band">
         <div class="wrap">
-          <h2>What Happens Next</h2>
+          <h2>Packages</h2>
           <div class="grid">
             <div class="item">
-              <h3>1. Fit Check</h3>
-              <p>Alex reviews the workflow async and replies with the smallest version that can be built and tested cleanly.</p>
+              <h3>Free Teardown Note</h3>
+              <div class="price">Free</div>
+              <p>One short async note on the smallest useful patch. No implementation, no access request, and no payment link.</p>
             </div>
             <div class="item">
-              <h3>2. Written Scope</h3>
-              <p>If it fits, you receive a fixed one-source, one-transform, one-destination scope before payment.</p>
+              <h3>Founding Sprint</h3>
+              <div class="price">$2,500</div>
+              <p>Fixed-scope build plus first-month care. Ongoing care is $500/month after month 1 if both sides want it.</p>
             </div>
             <div class="item">
-              <h3>3. Build And Handoff</h3>
-              <p>Work starts after payment and access/data readiness. Delivery includes QA evidence, logging, and a runbook.</p>
+              <h3>Priority Sprint</h3>
+              <div class="price">$3,000</div>
+              <p>One-time fixed-scope build with no care plan required. Best for a clean urgent patch or trial deliverable.</p>
             </div>
           </div>
-          <p class="note">No implementation starts from the free fit check. Payment links are sent only after the written scope is accepted.</p>
+          <p class="note">Payment links are sent only after the written scope is accepted. No live work starts until payment, usable sample data, and access boundaries are ready.</p>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap">
+          <h2>Included In A Paid Sprint</h2>
+          <div class="grid">
+            <div class="item">
+              <h3>Scope Brief</h3>
+              <ul>
+                <li>Source, transformation, and destination.</li>
+                <li>Acceptance checks before build starts.</li>
+                <li>Explicit out-of-scope list.</li>
+              </ul>
+            </div>
+            <div class="item">
+              <h3>Working Patch</h3>
+              <ul>
+                <li>Processing script or configured workflow.</li>
+                <li>Review queue or destination-ready output.</li>
+                <li>Duplicate and malformed-row handling.</li>
+              </ul>
+            </div>
+            <div class="item">
+              <h3>Delivery Evidence</h3>
+              <ul>
+                <li>QA evidence matrix.</li>
+                <li>Accepted, blocked, and error artifacts.</li>
+                <li>Short runbook and handoff note.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap">
+          <h2>Acceptance Checks</h2>
+          <div class="grid two">
+            <div class="item">
+              <h3>Before Payment</h3>
+              <ol>
+                <li>Buyer confirms the workflow can be reduced to one first slice.</li>
+                <li>Buyer confirms the source data and destination boundary.</li>
+                <li>Buyer accepts the exclusion list and approval rules.</li>
+              </ol>
+            </div>
+            <div class="item">
+              <h3>Before Acceptance</h3>
+              <ol>
+                <li>Valid examples create the expected output rows or draft records.</li>
+                <li>Invalid examples create blocked/error rows instead of silent failure.</li>
+                <li>Customer-facing output remains approval-gated unless the buyer separately accepts a live-send scope.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap">
+          <h2>Not A Fit</h2>
+          <div class="grid">
+            <div class="item">
+              <h3>Broad Rebuilds</h3>
+              <p>Full platform rewrites, large migrations, and open-ended architecture ownership need a narrower paid proof first.</p>
+            </div>
+            <div class="item">
+              <h3>Sensitive Live Actions</h3>
+              <p>Legal, medical, payroll, tax, regulated, payment, or customer-facing actions start with redacted or review-only proof.</p>
+            </div>
+            <div class="item">
+              <h3>Guarantee Requests</h3>
+              <p>No guaranteed revenue, rankings, deliverability, compliance outcome, or zero-failure promise. The deliverable is a tested patch with evidence.</p>
+            </div>
+          </div>
+          <p class="note"><span class="warn">Useful first slice:</span> a redacted sample, one current manual step, and one destination where a review queue or ledger would already save time.</p>
         </div>
       </section>
 
       <section class="band" id="email">
         <div class="wrap">
-          <h2>Email</h2>
+          <h2>Start</h2>
           <div class="email-box">
-            <p>Email <a href="mailto:alex@workflowpatch.com">alex@workflowpatch.com</a> or use the button below to open a prefilled fit-check draft.</p>
-            <a class="button" href="mailto:alex@workflowpatch.com?subject=WorkflowPatch%20Async%20Fit%20Check&body=Company%3A%0AWebsite%3A%0AWorkflow%20you%20want%20patched%3A%0ACurrent%20source%3A%0ACurrent%20manual%20step%3A%0ADesired%20destination%3A%0AHow%20often%20it%20runs%3A%0AWhat%20breaks%20if%20it%20stays%20manual%3A%0AWho%20approves%20external%20output%3A%0ATools%20or%20accounts%20involved%3A%0ASample%20or%20redacted%20data%20available%20within%2024%20hours%3A%0ADeadline%3A">Open Email Draft</a>
+            <p>Email <a href="mailto:alex@workflowpatch.com">alex@workflowpatch.com</a> with the workflow, source, manual step, destination, and one redacted example if available.</p>
+            <div class="actions">
+              <a class="button" href="/start/">Open Fit Check</a>
+              <a class="button secondary" href="/demo/">Browse Proof Demos</a>
+            </div>
           </div>
         </div>
       </section>
