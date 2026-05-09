@@ -1,0 +1,9 @@
+signal_id,source,window,workflow_family,metric,observed,threshold,impact
+SIG-1001,docker_logs,2026-05-08 13:00-14:00,invoice_webhooks,restarts,7,1,n8n main process restarted during a webhook burst
+SIG-1002,mysql_status,2026-05-08 13:00-14:00,all_workflows,execution_table_rows,4820000,1000000,execution-history bloat likely locks writes under load
+SIG-1003,n8n_env,2026-05-08 13:00-14:00,all_workflows,queue_mode,disabled,enabled,main process handles UI webhooks and executions together
+SIG-1004,backup_report,2026-05-08 13:00-14:00,all_workflows,last_restore_test_days,never,30,backup exists but restore has not been proven
+SIG-1005,credential_store,2026-05-08 13:00-14:00,all_workflows,credential_export_requested,true,false,credential movement is blocked from the first proof slice
+SIG-1006,workflow_history,2026-05-08 13:00-14:00,all_workflows,lost_workflow_changes_days,3,0,workflow edits were lost after crashes
+SIG-1007,db_slow_log,2026-05-08 13:00-14:00,invoice_webhooks,avg_execution_insert_ms,1850,250,execution inserts are too slow for burst traffic
+SIG-1008,retention_policy,2026-05-08 13:00-14:00,all_workflows,executions_pruning_age_days,365,30,retention policy allows avoidable database growth

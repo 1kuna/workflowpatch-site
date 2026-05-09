@@ -1,0 +1,6 @@
+check_id,artifact,expected_result,status,notes
+BKP-01,workflow_json_export,Every active workflow has a timestamped export,ready,Use owner-controlled storage
+BKP-02,mysql_dump,Dump completes and row counts are recorded,review,Needs source database access
+BKP-03,restore_rehearsal,Disposable target restores with row-count parity,blocked,Required before production cutover
+BKP-04,credential_decryption_canary,One non-sensitive test credential remains decryptable after restore,blocked,Requires owner-approved test credential only
+BKP-05,rollback_note,Operator can return to prior compose and database state,review,Must be written before migration

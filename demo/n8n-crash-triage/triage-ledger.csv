@@ -1,0 +1,9 @@
+triage_id,signal_id,status,diagnosis,next_action,approval_required
+TRI-1001,SIG-1001,review,Restart storm during webhook burst,Freeze workflow edits and collect container logs before any migration,true
+TRI-1002,SIG-1002,review,Execution table bloat is a likely database-lock source,Measure table sizes and slow queries; define pruning window,true
+TRI-1003,SIG-1003,ready,Queue mode is missing from the current architecture,Prepare main/webhook/worker split plan with Redis/Postgres dependencies,true
+TRI-1004,SIG-1004,blocked,Restore path is unproven,Run a restore rehearsal on a disposable target before touching production,true
+TRI-1005,SIG-1005,blocked,Credential export is not needed for first proof,Keep credentials in owner-controlled account and document access boundaries,true
+TRI-1006,SIG-1006,review,Workflow-change loss already happened,Add workflow JSON export and commit-style snapshot before cutover,true
+TRI-1007,SIG-1007,review,Slow execution inserts support the MySQL bottleneck hypothesis,Verify with slow-query samples and execution retention counts,true
+TRI-1008,SIG-1008,ready,Execution retention is too long for high-volume workflows,Propose save-on-error and max-age pruning after backup proof,true

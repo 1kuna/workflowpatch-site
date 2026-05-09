@@ -1,0 +1,4 @@
+error_id,source,status,reason,review_action
+ERR-1001,SIG-1004,blocked,No restore rehearsal evidence exists,Run disposable restore test before production migration
+ERR-1002,SIG-1005,blocked,Credential export was requested but is outside first-proof boundary,Use owner-controlled access and a non-sensitive canary
+ERR-1003,GATE-06,not_ready,No accepted downtime or rollback window exists,Prepare written cutover plan after diagnosis and backup proof

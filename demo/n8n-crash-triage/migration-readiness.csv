@@ -1,0 +1,7 @@
+gate_id,gate,status,evidence_needed,do_not_do_yet
+GATE-01,Freeze blast radius,ready,Current compose env logs DB size and workflow export inventory,Do not edit live workflows during diagnosis
+GATE-02,Root-cause check,review,Docker memory limits restart timestamps MySQL slow queries execution table counts,Do not assume Postgres alone fixes crashes
+GATE-03,Backup proof,blocked,Fresh database dump workflow JSON export and successful restore rehearsal,Do not run production migration without restore proof
+GATE-04,Credential boundary,blocked,Owner confirms credential handling and access path,Do not export or transmit secrets in a first proof
+GATE-05,Queue-mode plan,review,Main webhook worker Redis Postgres layout with rollback criteria,Do not change process topology without rollback notes
+GATE-06,Cutover window,not_ready,Accepted migration checklist row parity checks and owner-approved downtime window,Do not schedule cutover from a public forum reply
