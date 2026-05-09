@@ -1,0 +1,5 @@
+candidate_id,campaign_id,channel,segment,click_rate,conversion_rate,roi_after_cost,decision,next_test,evidence
+OUT-301,CFB-101,email,new_creator_trial,9.00%,12.22%,21.54,controlled_scale_candidate,segment by first design action,brief=CFB-101; asset=AST-201; freshness=5h; confidence=0.84
+OUT-302,CFB-102,social,existing_crafters,3.00%,7.50%,3.40,monitor,split bundle by craft category,brief=CFB-102; asset=AST-202; freshness=8h; confidence=0.77
+OUT-303,CFB-103,affiliate,pod_sellers,6.00%,15.00%,8.00,controlled_scale_candidate,send license guide to high-intent POD segment,brief=CFB-103; asset=AST-203; freshness=6h; confidence=0.81
+OUT-305,CFB-105,paid_social,new_designers,1.50%,3.33%,-0.22,refresh_data_before_test,rebuild paid-social angle around iteration speed,brief=CFB-105; asset=AST-205; freshness=31h; confidence=0.69

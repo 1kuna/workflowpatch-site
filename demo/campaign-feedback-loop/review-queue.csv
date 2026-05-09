@@ -1,0 +1,4 @@
+candidate_id,campaign_id,reviewer_action,approved_claims,external_copy_draft,evidence
+OUT-301,CFB-101,Approve a small controlled scale test after inventory and brand review.,26 AI tools; commercial-use assets; human review before send,Try Studio AI with 26 tools and review the first draft before you publish.,brief=CFB-101; asset=AST-201; freshness=5h; confidence=0.84
+OUT-303,CFB-103,Approve a small controlled scale test after inventory and brand review.,POD license guidance; approved examples; support article link,"Use the POD licensing guide as a starting point, then check the linked support article before launch.",brief=CFB-103; asset=AST-203; freshness=6h; confidence=0.81
+OUT-305,CFB-105,Refresh performance data before approving any new variation.,faster asset iteration; branded templates; export-ready designs,Speed up design iteration with branded templates and review every claim before launch.,brief=CFB-105; asset=AST-205; freshness=31h; confidence=0.69

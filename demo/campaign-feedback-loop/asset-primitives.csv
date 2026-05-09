@@ -1,0 +1,6 @@
+asset_id,campaign_id,source_asset,approved_claims,banned_terms,status
+AST-201,CFB-101,studio-ai-launch.md,"26 AI tools; commercial-use assets; human review before send","guaranteed income; no effort",approved
+AST-202,CFB-102,bundle-weekend-brief.md,"commercial-use graphics; curated bundles; creator-friendly licensing","free forever; guaranteed sales",approved
+AST-203,CFB-103,pod-license-guide.md,"POD license guidance; approved examples; support article link","legal advice; guaranteed compliance",approved
+AST-204,CFB-104,lapsed-credit-brief.md,"return credit; updated Studio workflow; cancel anytime","limited forever; guaranteed renewal",paused
+AST-205,CFB-105,design-tool-comparison.md,"faster asset iteration; branded templates; export-ready designs","replace designers; guaranteed conversion",approved

@@ -1,0 +1,7 @@
+candidate_id,campaign_id,asset_id,next_test,external_copy,model_confidence
+OUT-301,CFB-101,AST-201,segment by first design action,"Try Studio AI with 26 tools and review the first draft before you publish.",0.84
+OUT-302,CFB-102,AST-202,split bundle by craft category,"Weekend bundles for crafters who want commercial-use assets without starting from scratch.",0.77
+OUT-303,CFB-103,AST-203,send license guide to high-intent POD segment,"Use the POD licensing guide as a starting point, then check the linked support article before launch.",0.81
+OUT-304,CFB-104,AST-204,reactivation credit reminder,"This credit guarantees your next renewal pays for itself.",0.72
+OUT-305,CFB-105,AST-205,rebuild paid-social angle around iteration speed,"Speed up design iteration with branded templates and review every claim before launch.",0.69
+OUT-306,CFB-102,AST-202,discount urgency test,"This bundle is free forever for every creator who clicks today.",0.71

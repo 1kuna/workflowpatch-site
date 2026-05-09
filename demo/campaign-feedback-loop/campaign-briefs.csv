@@ -1,0 +1,6 @@
+campaign_id,channel,segment,offer,goal,status
+CFB-101,email,new_creator_trial,Studio AI launch trial,increase trial activation,active
+CFB-102,social,existing_crafters,Bundle weekend promo,increase saved projects,active
+CFB-103,affiliate,pod_sellers,POD licensing guide,increase guide downloads,active
+CFB-104,email,lapsed_subscribers,Return to Studio credit,increase reactivation,paused
+CFB-105,paid_social,new_designers,Design tool comparison,increase qualified trials,active

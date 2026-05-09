@@ -1,0 +1,3 @@
+candidate_id,campaign_id,reason,evidence,reviewer_action
+OUT-304,CFB-104,campaign is not active,paused,Confirm campaign owner before any next test.
+OUT-306,CFB-102,draft contains banned claim,free forever,Rewrite before review; do not send externally.

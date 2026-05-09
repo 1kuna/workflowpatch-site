@@ -1,0 +1,6 @@
+campaign_id,window_start,channel,sends_or_impressions,clicks,conversions,revenue,cost,data_freshness_hours
+CFB-101,2026-05-04,email,42000,3780,462,9240.00,410.00,5
+CFB-102,2026-05-04,social,88000,2640,198,3960.00,900.00,8
+CFB-103,2026-05-04,affiliate,16000,960,144,2880.00,320.00,6
+CFB-104,2026-05-04,email,25000,375,18,360.00,175.00,7
+CFB-105,2026-05-04,paid_social,74000,1110,37,1110.00,1420.00,31
