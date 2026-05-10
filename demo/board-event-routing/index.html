@@ -52,6 +52,7 @@
       .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
       .button.secondary { background: transparent; color: var(--accent-dark); }
       .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+      .grid + .grid { margin-top: 14px; }
       .item { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
       .item h2 { font-size: 16px; margin: 0 0 8px; }
       .item p { color: var(--muted); font-size: 14px; margin: 0; }
@@ -100,6 +101,21 @@
         <div class="item">
           <h2>Failure Path</h2>
           <p>Sensitive rows, unknown statuses, duplicate replays, and missing owners are held visibly before any write.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="item">
+          <h2>Forwarded Order Email</h2>
+          <p>Messy intake can be normalized into required fields before a board item is ever drafted.</p>
+        </div>
+        <div class="item">
+          <h2>Monday Client Lookup</h2>
+          <p>Client matching is treated as a gate, not a guess, so accepted rows carry routing evidence.</p>
+        </div>
+        <div class="item">
+          <h2>Blocked Unknown Client</h2>
+          <p>Orders without a clean client match become review alerts instead of silent bad AutoFlow items.</p>
         </div>
       </div>
 
