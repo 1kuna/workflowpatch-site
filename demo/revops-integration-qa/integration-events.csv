@@ -1,0 +1,10 @@
+event_id,client_name,source_system,destination_system,record_type,record_key,owner_email,change_summary,risk_hint,sensitive_flag,destructive_flag,client_facing_candidate,confidence,updated_at
+evt-9001,Acme Robotics,HubSpot,Salesforce,deal,hs-deal-501,owner@sample.test,Lifecycle moved to SQL but Salesforce owner is missing,handoff,no,no,yes,0.94,2026-05-10T06:40:00Z
+evt-9002,Northstar SaaS,HubSpot,BigQuery,contact,hs-contact-233,data@sample.test,Email opt-out value changed during enrichment,compliance,no,yes,no,0.93,2026-05-10T06:41:00Z
+evt-9003,Unknown Client,HubSpot,Salesforce,company,hs-company-991,ops@sample.test,New company record does not map to an approved client workspace,handoff,no,no,yes,0.92,2026-05-10T06:42:00Z
+evt-9004,Acme Robotics,HubSpot,Salesforce,deal,hs-deal-501,owner@sample.test,Lifecycle moved to SQL but Salesforce owner is missing,handoff,no,no,yes,0.95,2026-05-10T06:43:00Z
+evt-9005,Clearview Health,HubSpot,HubSpot,company,hs-company-772,data@sample.test,Missing industry and employee count before onboarding report,data_quality,no,no,yes,0.82,2026-05-10T06:44:00Z
+evt-9006,Pine Legal,Salesforce,HubSpot,contact,sf-contact-981,legalops@sample.test,Client-facing note includes legal matter detail,sensitive,yes,no,no,0.91,2026-05-10T06:45:00Z
+evt-9007,Acme Robotics,HubSpot,Salesforce,deal,,owner@sample.test,Deal handoff row has no destination id,handoff,no,no,yes,0.90,2026-05-10T06:46:00Z
+evt-9008,Delta Manufacturing,CSV,HubSpot,company,csv-77,ops@sample.test,Billing system id does not match HubSpot company property,handoff,no,no,yes,0.91,2026-05-10T06:47:00Z
+evt-9009,Northstar SaaS,HubSpot,Marketo,lead,hs-lead-120,marketing@sample.test,UTM source missing before campaign sync,attribution,no,no,yes,0.89,2026-05-10T06:48:00Z

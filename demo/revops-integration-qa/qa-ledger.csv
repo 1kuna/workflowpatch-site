@@ -1,0 +1,4 @@
+event_id,client_key,source_system,destination_system,record_type,record_key,decision,review_queue,owner,accepted_at,proof
+evt-9001,acme-robotics,HubSpot,Salesforce,deal,hs-deal-501,accepted_for_owner_review,RevOps Review,Mara,2026-05-10T07:40:00Z,HubSpot -> Salesforce review for Mara
+evt-9008,delta-manufacturing,CSV,HubSpot,company,csv-77,accepted_for_owner_review,Integration QA,Ian,2026-05-10T07:40:00Z,CSV -> HubSpot review for Ian
+evt-9009,northstar-saas,HubSpot,Marketo,lead,hs-lead-120,accepted_for_owner_review,Attribution Review,Leah,2026-05-10T07:40:00Z,HubSpot -> Marketo review for Leah

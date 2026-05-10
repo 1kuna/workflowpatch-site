@@ -1,0 +1,2 @@
+event_id,error_code,error_detail
+evt-9007,missing_required_integration_field,client=Acme Robotics source=HubSpot destination=Salesforce record_key=missing summary_present=yes

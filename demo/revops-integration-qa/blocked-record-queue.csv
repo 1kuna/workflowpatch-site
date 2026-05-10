@@ -1,0 +1,6 @@
+event_id,queue,reason,reviewer,next_step,source_summary
+evt-9002,scope_review,destructive_or_policy_change,data@sample.test,"Require explicit owner approval before a consent, delete, overwrite, or policy-affecting change.",Email opt-out value changed during enrichment
+evt-9003,client_lookup_review,unknown_client,ops@sample.test,Map the client workspace before creating owner-review output.,New company record does not map to an approved client workspace
+evt-9004,RevOps Review,duplicate_integration_event,owner@sample.test,Confirm this is not a replay before creating another owner-review row.,Lifecycle moved to SQL but Salesforce owner is missing
+evt-9005,Data QA,client_not_active,data@sample.test,Resolve onboarding or account hold before QA output enters a delivery queue.,Missing industry and employee count before onboarding report
+evt-9006,sensitive_review,sensitive_client_detail,legalops@sample.test,"Redact sensitive details before creating summaries, CRM notes, or client-facing rows.",Client-facing note includes legal matter detail

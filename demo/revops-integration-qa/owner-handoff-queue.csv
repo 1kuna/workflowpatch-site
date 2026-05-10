@@ -1,0 +1,4 @@
+event_id,client_key,owner,draft_status,draft_summary,review_reason,next_action
+evt-9001,acme-robotics,Mara,approval_required,Integration handoff mismatch needs owner review,owner_or_destination_mismatch,Confirm owner and destination field before any sync write.
+evt-9008,delta-manufacturing,Ian,approval_required,Integration handoff mismatch needs owner review,owner_or_destination_mismatch,Confirm owner and destination field before any sync write.
+evt-9009,northstar-saas,Leah,approval_required,Attribution row needs campaign owner review,missing_or_inconsistent_attribution,Confirm campaign source before reporting or campaign sync.

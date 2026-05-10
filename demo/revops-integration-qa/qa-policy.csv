@@ -1,0 +1,6 @@
+risk_hint,accepted_summary,review_reason,next_action
+handoff,Integration handoff mismatch needs owner review,owner_or_destination_mismatch,Confirm owner and destination field before any sync write.
+attribution,Attribution row needs campaign owner review,missing_or_inconsistent_attribution,Confirm campaign source before reporting or campaign sync.
+data_quality,Data quality exception needs implementation-owner review,missing_required_crm_fields,Collect missing fields or block from downstream setup.
+compliance,Consent or compliance-affecting row needs explicit approval,consent_or_policy_change,Do not sync until the owner approves the allowed field change.
+sensitive,Sensitive client detail needs redaction review,sensitive_client_detail,Redact detail before any summary or CRM note exists.

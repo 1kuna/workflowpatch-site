@@ -1,0 +1,6 @@
+client_key,account_status,owner,review_queue,allowed_systems
+acme-robotics,active,Mara,RevOps Review,HubSpot|Salesforce|BigQuery
+delta-manufacturing,active,Ian,Integration QA,CSV|HubSpot|Salesforce
+northstar-saas,active,Leah,Attribution Review,HubSpot|Marketo|BigQuery
+clearview-health,onboarding,Ari,Data QA,HubSpot|Salesforce
+pine-legal,active,Sam,Sensitive Review,Salesforce|HubSpot
