@@ -1,0 +1,10 @@
+event_id,workflow_name,source_system,destination,decision,reason_code,reason
+evt-7101,SME Appointment Intake,Tally form,CRM review queue,accepted,ready,ready for reliability proof
+evt-7102,SME Appointment Intake,Tally form,CRM review queue,review,reliability_gap,missing input contract
+evt-7103,Service Reminder Bot,Google Sheet,SMS sender queue,blocked,live_action,live customer message or production write requested
+evt-7104,Invoice Followup Router,QuickBooks invoice,email draft queue,review,reliability_gap,missing retry policy
+evt-7105,Lead Qualification Agent,Webhook,Slack owner handoff,blocked,sensitive_data,sensitive customer or client data present
+evt-7106,Quote Status Monitor,Airtable record,ops monitoring ledger,accepted,ready,ready for reliability proof
+evt-7107,Quote Status Monitor,Airtable record,ops monitoring ledger,blocked,duplicate,duplicate retry event already processed
+evt-7108,CRM Owner Alert,HubSpot deal,Slack owner alert,blocked,source_boundary,source is not approved for first proof
+evt-7110,Calendar Booking Agent,Retell tool call,calendar write plan,blocked,live_action,live customer message or production write requested

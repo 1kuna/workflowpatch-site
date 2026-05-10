@@ -1,0 +1,9 @@
+rule_id,check_name,pass_condition,fail_destination
+pol-01,Approved source,Source is approved for first proof,blocked-action-queue.csv
+pol-02,Input contract,Trigger fields and required destination fields are explicit,fallback-review-queue.csv
+pol-03,Retry policy,Timeout and retry behavior are documented,fallback-review-queue.csv
+pol-04,Error notification,Human alert path is defined,fallback-review-queue.csv
+pol-05,Monitoring field,Run owner can see status and failure class,fallback-review-queue.csv
+pol-06,External action boundary,No live customer message or production write runs from first proof,blocked-action-queue.csv
+pol-07,Sensitive data boundary,Customer-sensitive rows are redacted or blocked,blocked-action-queue.csv
+pol-08,Duplicate key,Duplicate retry events are visible and blocked,blocked-action-queue.csv

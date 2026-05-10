@@ -1,0 +1,6 @@
+event_id,block_reason,safe_boundary
+evt-7103,live customer message or production write requested,use redacted data and written approval before promotion
+evt-7105,sensitive customer or client data present,use redacted data and written approval before promotion
+evt-7107,duplicate retry event already processed,use redacted data and written approval before promotion
+evt-7108,source is not approved for first proof,use redacted data and written approval before promotion
+evt-7110,live customer message or production write requested,use redacted data and written approval before promotion

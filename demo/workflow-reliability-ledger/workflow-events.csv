@@ -1,0 +1,11 @@
+event_id,workflow_name,client_context,source_system,trigger_type,destination,duplicate_key,approved_source,has_input_contract,has_retry_policy,has_error_notification,has_monitoring_field,external_message,production_write,contains_sensitive_data,failure_mode,confidence
+evt-7101,SME Appointment Intake,local HVAC lead intake,Tally form,form submission,CRM review queue,hvac-2026-05-10-001,yes,yes,yes,yes,yes,no,no,no,none,0.94
+evt-7102,SME Appointment Intake,local HVAC lead intake,Tally form,form submission,CRM review queue,hvac-2026-05-10-002,yes,no,yes,yes,yes,no,no,no,missing input contract,0.88
+evt-7103,Service Reminder Bot,dental clinic reminder flow,Google Sheet,row update,SMS sender queue,dental-2026-05-10-011,yes,yes,yes,yes,yes,yes,no,no,external message requested,0.91
+evt-7104,Invoice Followup Router,craft business invoice followup,QuickBooks invoice,invoice update,email draft queue,invoice-2026-05-10-091,yes,yes,no,yes,yes,no,no,no,retry policy missing,0.86
+evt-7105,Lead Qualification Agent,agency lead handoff,Webhook,payload,Slack owner handoff,lead-2026-05-10-031,yes,yes,yes,yes,yes,no,no,yes,sensitive customer notes present,0.93
+evt-7106,Quote Status Monitor,home services quoting,Airtable record,status change,ops monitoring ledger,quote-2026-05-10-018,yes,yes,yes,yes,yes,no,no,no,third-party API outage,0.89
+evt-7107,Quote Status Monitor,home services quoting,Airtable record,status change,ops monitoring ledger,quote-2026-05-10-018,yes,yes,yes,yes,yes,no,no,no,duplicate retry event,0.89
+evt-7108,CRM Owner Alert,commercial cleaning lead router,HubSpot deal,stage change,Slack owner alert,cleaning-2026-05-10-004,no,yes,yes,yes,yes,no,no,no,unapproved source,0.91
+evt-7109,Review Digest,,Gmail label,email labeled,weekly review digest,digest-2026-05-10-002,yes,yes,yes,yes,yes,no,no,no,missing client context,0.83
+evt-7110,Calendar Booking Agent,field-service booking,Retell tool call,voice tool call,calendar write plan,booking-2026-05-10-044,yes,yes,yes,no,yes,no,yes,no,missing alert and production write,0.81
