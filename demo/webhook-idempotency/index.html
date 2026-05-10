@@ -130,6 +130,10 @@
         gap: 14px;
       }
 
+      .grid + .grid {
+        margin-top: 14px;
+      }
+
       .item {
         background: var(--panel);
         border: 1px solid var(--line);
@@ -242,6 +246,21 @@
         <div class="item">
           <h2>Blocked</h2>
           <p>Six unsafe events and one hard error are visible before any handler could run.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="item">
+          <h2>HMAC Gate</h2>
+          <p>Unsigned or invalid events stop before the event log, handler, or any customer-facing action.</p>
+        </div>
+        <div class="item">
+          <h2>Supabase Event Log</h2>
+          <p>Accepted, blocked, and error rows stay queryable so replay decisions are based on evidence.</p>
+        </div>
+        <div class="item">
+          <h2>Restaurant Boundary</h2>
+          <p>The event tenant and payload restaurant_id must match an active tenant before work continues.</p>
         </div>
       </div>
 
