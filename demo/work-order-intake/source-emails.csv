@@ -1,0 +1,9 @@
+email_id,received_at,from_email,subject,work_order_number,store_id,location_name,priority,trade,issue_summary,requested_window,attachment_count,attachment_status,body_quality,confidence,source_kind
+wo-2001,2026-05-08T12:04:00Z,repairs@atlasretail.example,WO 18471 lobby AC down,WO-18471,ATL-144,Atlanta Midtown,urgent,HVAC,Lobby AC down and tenant reports 83 degrees,2026-05-12 08:00-12:00,2,ready,clean,0.96,shared_gmail
+wo-2002,2026-05-08T12:19:00Z,manager@northbridge.example,Need plumbing vendor today,,ATL-210,Atlanta Northbridge,high,Plumbing,Restroom sink shutoff leaking,2026-05-08 14:00-18:00,1,ready,clean,0.93,shared_gmail
+wo-2003,2026-05-08T12:42:00Z,ops@sampletenant.example,Peachtree ceiling leak,WO-18473,,Peachtree,high,Roofing,Ceiling leak near stockroom,2026-05-09 09:00-12:00,3,ready,clean,0.92,shared_gmail
+wo-2004,2026-05-08T12:58:00Z,repairs@atlasretail.example,Fwd: WO 18471 lobby AC down,WO-18471,ATL-144,Atlanta Midtown,urgent,HVAC,Lobby AC down and tenant reports 83 degrees,2026-05-12 08:00-12:00,2,ready,clean,0.96,forwarded_replay
+wo-2005,2026-05-08T13:05:00Z,dispatch@westend.example,WO 18475 fixture photo attached,WO-18475,ATL-188,Atlanta West End,normal,Electrical,Light fixture hanging above aisle 4,2026-05-10 10:00-14:00,4,fetch_failed,clean,0.95,shared_gmail
+wo-2006,2026-05-08T13:31:00Z,facilities@decatur.example,WO 18476 partial note,WO-18476,ATL-177,Decatur Market,normal,General Repair,Maybe door issue near loading area,2026-05-11 13:00-15:00,0,none,ambiguous_body,0.71,shared_gmail
+wo-2007,2026-05-08T13:46:00Z,maint@northbridge.example,WO 18477 back room lock,WO-18477,ATL-210,Atlanta Northbridge,normal,Locksmith,Back room lock sticks and staff cannot secure inventory,2026-05-13 09:00-11:00,1,ready,clean,0.91,shared_gmail
+wo-2008,2026-05-08T14:02:00Z,vendor@unknown.example,blank forwarded thread,,,,,,,,0,none,empty_body,,forwarded_empty

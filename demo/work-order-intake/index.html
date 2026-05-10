@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.workflowpatch.com/demo/work-order-intake/">
+    <title>WorkflowPatch Work Order Intake Demo</title>
+    <meta name="description" content="Mock WorkflowPatch work-order intake demo with FACIL-IT write plan, Google Chat summary queue, blocked review queue, error log, source script, and runbook.">
+    <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="WorkflowPatch">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WorkflowPatch Work Order Intake Demo">
+    <meta property="og:description" content="A mock shared-Gmail work-order intake workflow with FACIL-IT dry-run write plans, Google Chat summary queues, blocked rows, errors, source script, and runbook.">
+    <meta property="og:url" content="https://www.workflowpatch.com/demo/work-order-intake/">
+    <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="WorkflowPatch async fixed-scope workflow automation">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2328;
+        --muted: #5f6b72;
+        --line: #d9e0e4;
+        --paper: #fbfcfb;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-dark: #0b4d49;
+        --warning: #9a5b11;
+        --soft: #edf5f3;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+      .wrap { width: min(1080px, calc(100% - 32px)); margin: 0 auto; }
+      header { border-bottom: 1px solid var(--line); background: rgba(251, 252, 251, 0.94); }
+      .topbar { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+      .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; }
+      .brand img { width: 32px; height: 32px; }
+      a { color: var(--accent-dark); font-weight: 700; }
+      main { padding: 48px 0; }
+      h1 { font-size: clamp(34px, 6vw, 64px); line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
+      .lede { color: var(--muted); font-size: 19px; max-width: 830px; margin: 0 0 28px; }
+      .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
+      .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
+      .button.secondary { background: transparent; color: var(--accent-dark); }
+      .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+      .item { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+      .item h2 { font-size: 16px; margin: 0 0 8px; }
+      .item p { color: var(--muted); font-size: 14px; margin: 0; }
+      .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); margin-top: 28px; }
+      table { width: 100%; border-collapse: collapse; min-width: 900px; font-size: 14px; }
+      th, td { border-bottom: 1px solid var(--line); padding: 12px; text-align: left; vertical-align: top; }
+      th { background: var(--soft); color: var(--accent-dark); }
+      tr:last-child td { border-bottom: 0; }
+      .status { color: var(--accent-dark); font-weight: 800; }
+      .warn { color: var(--warning); font-weight: 800; }
+      footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
+      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
+        <a href="/start/">Start async fit check</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1>Work-order intake demo output.</h1>
+      <p class="lede">A small mock workflow that turns shared-Gmail work-order emails into parsed work-order rows, dry-run FACIL-IT write plans, Google Chat summary queue rows, blocked review rows, and error logs. No live Gmail, FACIL-IT, Google Workspace, Google Chat, customer data, vendor data, or production work orders are used.</p>
+
+      <div class="links">
+        <a class="button" href="/demo/work-order-intake/work-order-ledger.csv">Work Order Ledger CSV</a>
+        <a class="button secondary" href="/demo/work-order-intake/facil-it-write-plan.csv">FACIL-IT Write Plan CSV</a>
+        <a class="button secondary" href="/demo/work-order-intake/google-chat-summary-queue.csv">Google Chat Summary Queue CSV</a>
+        <a class="button secondary" href="/demo/work-order-intake/blocked-review-queue.csv">Blocked Review Queue CSV</a>
+        <a class="button secondary" href="/demo/work-order-intake/error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="/demo/work-order-intake/source-emails.csv">Mock Source Emails CSV</a>
+        <a class="button secondary" href="/demo/work-order-intake/location-map.csv">Location Map CSV</a>
+        <a class="button secondary" href="/demo/work-order-intake/facil-it-field-map.csv">FACIL-IT Field Map CSV</a>
+        <a class="button secondary" href="/demo/work-order-intake/intake-policy.csv">Intake Policy CSV</a>
+        <a class="button secondary" href="/demo/work-order-intake/runbook.md">Runbook</a>
+        <a class="button secondary" href="/demo/work-order-intake/process_work_order_intake_demo.py">Source Script</a>
+      </div>
+
+      <div class="grid">
+        <div class="item">
+          <h2>Shared Gmail Intake</h2>
+          <p>Mock work-order emails are parsed into stable WO, store, trade, priority, window, and attachment fields.</p>
+        </div>
+        <div class="item">
+          <h2>FACIL-IT Write Plan</h2>
+          <p>Accepted rows stop as dry-run create or update candidates with idempotency keys and approval required.</p>
+        </div>
+        <div class="item">
+          <h2>Google Chat Queue</h2>
+          <p>Reviewer-ready summaries are queued as text only. The proof does not send Chat messages.</p>
+        </div>
+        <div class="item">
+          <h2>Blocked Review</h2>
+          <p>Missing WO numbers, ambiguous sites, attachment failures, duplicates, and weak parses stay visible.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap" aria-label="Work-order intake sample">
+        <table>
+          <thead>
+            <tr>
+              <th>Email</th>
+              <th>Work Order</th>
+              <th>Decision</th>
+              <th>Reason</th>
+              <th>Next Step</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>wo-2001</td>
+              <td>WO-18471</td>
+              <td class="status">Dry-run write plan</td>
+              <td>Known active site, required fields present, attachment state ready.</td>
+              <td>Review the FACIL-IT payload and Chat summary before live scope.</td>
+            </tr>
+            <tr>
+              <td>wo-2002</td>
+              <td>Missing</td>
+              <td class="warn">Blocked review</td>
+              <td>No stable work-order number for idempotency.</td>
+              <td>Ask for the WO number before planning a create or update.</td>
+            </tr>
+            <tr>
+              <td>wo-2003</td>
+              <td>WO-18473</td>
+              <td class="warn">Blocked review</td>
+              <td>Peachtree maps to multiple possible sites.</td>
+              <td>Confirm the exact store or FACIL-IT site id.</td>
+            </tr>
+            <tr>
+              <td>wo-2005</td>
+              <td>WO-18475</td>
+              <td class="warn">Blocked review</td>
+              <td>Attachment fetch failed, so the proof does not guess.</td>
+              <td>Retry or exclude attachments before live implementation.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">WorkflowPatch - Alex Reed, Workflow Automation Operator - alex@workflowpatch.com - 2995 East Point Street, East Point, GA 30094</div>
+    </footer>
+  </body>
+</html>

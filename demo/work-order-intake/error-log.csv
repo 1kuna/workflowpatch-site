@@ -1,0 +1,2 @@
+email_id,error_code,error_detail
+wo-2008,empty_forwarded_body,Forwarded thread did not include enough body text for work-order parsing.

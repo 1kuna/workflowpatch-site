@@ -1,0 +1,9 @@
+source_field,facil_it_field,required,notes
+work_order_number,externalWorkOrderNumber,true,Required for idempotency and duplicate prevention.
+store_id,site.externalStoreId,true,Can be resolved from a unique location only when the buyer approves the location map.
+location_name,site.displayName,true,Shown in Chat and review rows.
+priority,priority,true,Normalized to urgent high or normal before the write plan.
+trade,category,true,Used to select the FACIL-IT service category.
+issue_summary,description,true,Short problem statement from the work-order email.
+requested_window,requestedServiceWindow,true,Required before a work-order create or update is planned.
+attachment_count,attachments.count,false,Attachments stay visible but are not fetched from live Gmail in this proof.

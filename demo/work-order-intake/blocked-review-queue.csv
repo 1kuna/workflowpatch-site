@@ -1,0 +1,6 @@
+email_id,queue,reason,evidence,next_step
+wo-2002,blocked_work_order_review,missing_required_field,work_order_number,Ask for the missing work-order fields before planning any FACIL-IT create or update.
+wo-2003,blocked_work_order_review,ambiguous_location,location_name=Peachtree matched 2 mapped sites,Confirm the exact store or FACIL-IT site before planning a create or update.
+wo-2004,blocked_work_order_review,duplicate_work_order,WO-18471 at FAC-SITE-4104,Attach the forwarded replay to the existing review item instead of creating another candidate.
+wo-2005,blocked_work_order_review,attachment_fetch_failed,attachment_count=4,Retry or exclude attachments before a live FACIL-IT work-order create.
+wo-2006,blocked_work_order_review,low_confidence_parse,confidence=0.71,Review the email and field extraction before any write-plan row.

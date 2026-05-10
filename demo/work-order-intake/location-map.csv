@@ -1,0 +1,7 @@
+store_id,location_name,facil_it_site_id,site_status,google_chat_room,default_region
+ATL-144,Atlanta Midtown,FAC-SITE-4104,active,facilities-atlanta-midtown,Georgia
+ATL-188,Atlanta West End,FAC-SITE-4142,active,facilities-atlanta-west-end,Georgia
+ATL-210,Atlanta Northbridge,FAC-SITE-4260,active,facilities-atlanta-northbridge,Georgia
+ATL-177,Decatur Market,FAC-SITE-4199,active,facilities-decatur-market,Georgia
+ATL-230,Peachtree Crossing,FAC-SITE-4301,active,facilities-peachtree-crossing,Georgia
+ATL-231,Peachtree Plaza,FAC-SITE-4302,active,facilities-peachtree-plaza,Georgia

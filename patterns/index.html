@@ -1021,6 +1021,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Work Order Intake</h2>
+            <p>For shared-Gmail, FACIL-IT, Google Workspace, or Google Chat workflows where emailed work orders need parsing, duplicate control, and reviewable write plans.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted work-order email, attachment state, and buyer-approved store or site map.</div>
+            <div class="step"><strong>Transform</strong>Parse WO fields, match FACIL-IT site, block duplicates and ambiguous locations, stage a write plan.</div>
+            <div class="step"><strong>Destination</strong>Work-order ledger, FACIL-IT write plan, Google Chat summary queue, blocked review queue, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Shared Gmail work-order intake</li>
+                <li>FACIL-IT create or update planning</li>
+                <li>Google Chat operations summaries</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>Dry-run write plans before live FACIL-IT access</li>
+                <li>Attachment and duplicate failures block visibly</li>
+                <li>No production work orders from first proof</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Every write candidate has an idempotency key</li>
+                <li>Ambiguous sites and missing WO numbers are blocked</li>
+                <li>Chat summaries are queued but not sent</li>
+              </ul>
+              <p><a href="/demo/work-order-intake/">View work-order demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Weekly Digest Or Statement Builder</h2>
             <p>For recurring internal reports, statements, or account summaries that should be generated consistently from a known source.</p>
           </div>
@@ -1982,6 +2021,7 @@
         <a class="button secondary" href="/demo/webhook-idempotency/">View Webhook Demo</a>
         <a class="button secondary" href="/demo/n8n-crash-triage/">View n8n Crash Triage Demo</a>
         <a class="button secondary" href="/demo/field-service-action-layer/">View Field-Service Demo</a>
+        <a class="button secondary" href="/demo/work-order-intake/">View Work Order Demo</a>
         <a class="button secondary" href="/demo/airtable-source-of-truth-audit/">View Airtable Source Demo</a>
         <a class="button secondary" href="/demo/scenario-ops-reduction/">View Ops Reduction Demo</a>
         <a class="button secondary" href="/demo/scenario-modularization/">View Modularization Demo</a>

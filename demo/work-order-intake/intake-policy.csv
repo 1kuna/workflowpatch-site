@@ -1,0 +1,7 @@
+rule,value,review_queue,notes
+min_confidence,0.86,blocked_work_order_review,Rows below this threshold are review-only.
+duplicate_key,work_order_number + facil_it_site_id,blocked_work_order_review,Duplicate forwarded emails cannot create a second FACIL-IT candidate.
+location_match,store_id first then unique location_name,blocked_work_order_review,Ambiguous locations are blocked until the buyer confirms the site map.
+attachment_fetch,ready or none,blocked_work_order_review,Attachment fetch failures are blocked before any write-plan row.
+write_mode,dry_run_only,facil_it_write_plan,This demo never touches live Gmail FACIL-IT Google Workspace Google Chat or production work orders.
+chat_mode,summary_queue_only,google_chat_summary_queue,Chat messages are queued as text and not sent.
