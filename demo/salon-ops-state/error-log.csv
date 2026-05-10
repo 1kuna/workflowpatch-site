@@ -1,0 +1,2 @@
+event_id,error_code,error_detail
+sal-9109,missing_required_event_field,client_key=missing event_type=booking_changed replay_key=rk-009

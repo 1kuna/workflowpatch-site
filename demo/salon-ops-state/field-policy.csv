@@ -1,0 +1,9 @@
+field_name,allowed_in_first_proof,notes
+client_key,true,Use synthetic or redacted key only.
+service_requested,true,Use service category only, not private notes.
+appointment_at,true,Use sample or redacted date/time.
+provider,true,Use role or first name only.
+consent_to_message,true,Required before any customer-message draft.
+deposit_status,true,Use payment status only, not card or receipt details.
+zenoti_private_notes,false,Exclude private customer notes from first proof.
+health_or_medical_notes,false,Exclude sensitive health details from first proof.

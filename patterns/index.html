@@ -1411,6 +1411,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Salon Ops State</h2>
+            <p>For salons where Jotform requests, Zenoti-style booking changes, Airtable state rows, and Zapier follow-up tasks need one reviewable path before customer messages.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted salon intake or booking event family, plus service, provider, consent, deposit, match, and replay fields.</div>
+            <div class="step"><strong>Transform</strong>Validate consent, deposit state, Zenoti match, duplicate replay keys, sensitivity, and the salon action policy.</div>
+            <div class="step"><strong>Destination</strong>Airtable-ready client/service ledger, dry-run Zapier action queue, blocked event queue, hard errors, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Jotform intake to Airtable tracking</li>
+                <li>Zenoti booking-change review</li>
+                <li>Front-desk follow-up task queues</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live customer messages in first proof</li>
+                <li>Deposits and ambiguous matches stay blocked</li>
+                <li>Sensitive notes are excluded from the state model</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Clean rows become ledger and action drafts</li>
+                <li>Consent, deposit, and match problems block visibly</li>
+                <li>Duplicate or malformed events reach review or error logs</li>
+              </ul>
+              <p><a href="/demo/salon-ops-state/">View salon ops demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Signup Access State</h2>
             <p>For onboarding flows where signup events, payment status, email verification, and content access need clear state before a platform grows.</p>
           </div>
@@ -1633,6 +1672,7 @@
         <a class="button secondary" href="/demo/scenario-modularization/">View Modularization Demo</a>
         <a class="button secondary" href="/demo/board-event-routing/">View Board Routing Demo</a>
         <a class="button secondary" href="/demo/booking-payment-state/">View Booking State Demo</a>
+        <a class="button secondary" href="/demo/salon-ops-state/">View Salon Ops Demo</a>
         <a class="button secondary" href="/demo/signup-access-state/">View Signup Access Demo</a>
         <a class="button secondary" href="/demo/po-budget-bridge/">View PO Budget Demo</a>
         <a class="button secondary" href="/demo/event-production-project-bible/">View Project Bible Demo</a>

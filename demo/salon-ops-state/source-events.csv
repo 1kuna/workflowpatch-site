@@ -1,0 +1,11 @@
+event_id,source_system,client_key,event_type,service_requested,appointment_at,provider,consent_to_message,deposit_status,zenoti_match_status,airtable_client_status,sensitivity,replay_key
+sal-9101,Jotform,c-1001,new_service_request,color consultation,2026-05-18T14:00:00-08:00,Tenaya,true,not_required,matched,active,non_sensitive_ops,rk-001
+sal-9102,Zenoti,c-1002,booking_changed,cut and color,2026-05-19T10:00:00-08:00,Kayla,true,paid,matched,active,non_sensitive_ops,rk-002
+sal-9110,Zenoti,c-1008,no_show_followup,blowout,2026-05-19T17:00:00-08:00,Mia,true,paid,matched,active,non_sensitive_ops,rk-010
+sal-9103,Jotform,c-1003,new_service_request,bridal trial,2026-05-20T11:00:00-08:00,Tenaya,false,required,matched,active,non_sensitive_ops,rk-003
+sal-9104,Zenoti,c-1004,no_show_followup,lash fill,2026-05-16T15:30:00-08:00,Mia,true,paid,ambiguous,active,non_sensitive_ops,rk-004
+sal-9105,Jotform,c-1005,new_service_request,corrective color,2026-05-21T13:00:00-08:00,Tenaya,true,deposit_missing,matched,active,non_sensitive_ops,rk-005
+sal-9106,Zenoti,c-1006,booking_changed,brow wax,2026-05-18T09:00:00-08:00,Mia,true,paid,matched,new,sensitive_notes,rk-006
+sal-9107,Jotform,c-1007,unknown_form_event,extension consult,2026-05-22T12:00:00-08:00,Kayla,true,not_required,matched,active,non_sensitive_ops,rk-007
+sal-9108,Jotform,c-1001,new_service_request,color consultation,2026-05-18T14:00:00-08:00,Tenaya,true,not_required,matched,active,non_sensitive_ops,rk-001
+sal-9109,Zenoti,,booking_changed,haircut,2026-05-19T16:00:00-08:00,Kayla,true,paid,matched,active,non_sensitive_ops,rk-009

@@ -1,0 +1,4 @@
+event_id,client_key,zapier_action,destination,customer_message_status,review_owner,draft_status
+sal-9101,c-1001,create_internal_followup_task,Zapier action queue,approval_required,front-desk-owner,dry_run_only
+sal-9102,c-1002,create_schedule_review_task,Zapier action queue,approval_required,front-desk-owner,dry_run_only
+sal-9110,c-1008,create_recovery_followup_task,Zapier action queue,approval_required,front-desk-owner,dry_run_only

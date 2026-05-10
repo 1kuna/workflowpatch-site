@@ -1,0 +1,7 @@
+event_id,client_key,reason,review_owner,next_step
+sal-9103,c-1003,deposit_or_payment_review,front-desk-owner,Confirm deposit rule before creating customer-facing follow-up.
+sal-9104,c-1004,ambiguous_zenoti_match,front-desk-owner,Resolve the Zenoti client match before creating Airtable or Zapier rows.
+sal-9105,c-1005,deposit_or_payment_review,front-desk-owner,Confirm deposit rule before creating customer-facing follow-up.
+sal-9106,c-1006,sensitive_customer_scope,front-desk-owner,Use redacted non-sensitive fields before any first proof.
+sal-9107,c-1007,unknown_event_type,front-desk-owner,Define the salon state rule before routing this event.
+sal-9108,c-1001,duplicate_replay_key,front-desk-owner,Confirm whether this event already created a state row or action task.

@@ -1,0 +1,4 @@
+event_type,state_decision,zapier_action,requires_message_approval,review_owner
+new_service_request,service_request_received,create_internal_followup_task,true,front-desk-owner
+booking_changed,booking_update_review,create_schedule_review_task,true,front-desk-owner
+no_show_followup,no_show_review,create_recovery_followup_task,true,front-desk-owner

@@ -1,0 +1,4 @@
+event_id,client_key,source_system,service_requested,appointment_at,provider,state_decision,airtable_status,processed_at
+sal-9101,c-1001,Jotform,color consultation,2026-05-18T14:00:00-08:00,Tenaya,service_request_received,draft_ready,2026-05-10T08:24:00Z
+sal-9102,c-1002,Zenoti,cut and color,2026-05-19T10:00:00-08:00,Kayla,booking_update_review,draft_ready,2026-05-10T08:24:00Z
+sal-9110,c-1008,Zenoti,blowout,2026-05-19T17:00:00-08:00,Mia,no_show_review,draft_ready,2026-05-10T08:24:00Z
