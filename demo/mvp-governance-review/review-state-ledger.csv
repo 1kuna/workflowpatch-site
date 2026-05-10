@@ -1,0 +1,4 @@
+item_id,source_key,update_type,source_system,review_state,evidence_status,processed_at
+inv-4101,monthly-update-042,investor_update,Airtable,approval_required,source_backed,2026-05-10T08:54:00Z
+inv-4102,product-map-017,product_map,Softr,internal_review,internal_only,2026-05-10T08:54:00Z
+inv-4103,compliance-note-011,compliance_notice,Airtable,legal_review_required,source_backed,2026-05-10T08:54:00Z

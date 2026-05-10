@@ -1,0 +1,4 @@
+update_type,draft_action,required_review_state,requires_claim_basis,requires_brand_approved,blocks_external_send
+investor_update,create_investor_update_draft,approval_required,true,true,true
+compliance_notice,create_compliance_review_draft,legal_review_required,true,true,true
+product_map,create_product_map_handoff,internal_review,false,true,false

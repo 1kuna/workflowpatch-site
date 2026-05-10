@@ -281,6 +281,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>MVP Governance Review</h2>
+            <p>For early MVPs where investor updates, compliance-sensitive communication, and product-map rows need review state before any external message or broad build.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted or synthetic investor-update, compliance-note, or product-map source plus review-state and brand/compliance rules.</div>
+            <div class="step"><strong>Transform</strong>Validate source evidence, brand approval, review state, external-send boundaries, duplicate replay keys, and sensitivity rules.</div>
+            <div class="step"><strong>Destination</strong>Review-state ledger, approval-required draft queue, blocked communication queue, hard errors, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Investor-update draft governance</li>
+                <li>Airtable or Softr MVP review state</li>
+                <li>Compliance-sensitive communication holds</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live investor data first</li>
+                <li>No external messages or legal advice</li>
+                <li>No whole-MVP ownership promise</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Source-backed rows reach draft review</li>
+                <li>Unsupported claims and off-brand rows block visibly</li>
+                <li>Duplicates and malformed rows reach review or error logs</li>
+              </ul>
+              <p><a href="/demo/mvp-governance-review/">View MVP governance demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Automation Builder Audit</h2>
             <p>For buyers comparing n8n, Make, CRM, or light-agent builders and needing evidence that a proposed build can survive bad inputs.</p>
           </div>
@@ -1731,6 +1770,7 @@
         <a class="button secondary" href="/demo/revops-integration-qa/">View RevOps QA Demo</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/">View Agency Overflow Demo</a>
         <a class="button secondary" href="/demo/finance-ops-handoff/">View Finance Ops Demo</a>
+        <a class="button secondary" href="/demo/mvp-governance-review/">View MVP Governance Demo</a>
         <a class="button secondary" href="/demo/hubspot-json-stabilization/">View HubSpot JSON Demo</a>
         <a class="button secondary" href="/demo/travel-email-classification/">View Travel Email Demo</a>
         <a class="button secondary" href="/demo/postgres-statement-email/">View Statement Email Demo</a>

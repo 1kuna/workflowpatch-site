@@ -1,0 +1,11 @@
+item_id,source_system,source_key,update_type,claim_basis,brand_state,compliance_status,recipient_segment,requires_external_send,sensitivity,review_state,replay_key
+inv-4101,Airtable,monthly-update-042,investor_update,source_present,approved,reviewed,limited-partners,false,non_sensitive_ops,ready,monthly-update-042-v1
+inv-4102,Softr,product-map-017,product_map,not_required,approved,reviewed,internal-team,false,non_sensitive_ops,ready,product-map-017-v1
+inv-4103,Airtable,compliance-note-011,compliance_notice,source_present,approved,legal_review_ready,limited-partners,false,non_sensitive_ops,ready,compliance-note-011-v1
+inv-4104,Airtable,growth-claim-088,investor_update,missing_source,approved,reviewed,limited-partners,false,non_sensitive_ops,ready,growth-claim-088-v1
+inv-4105,Softr,brand-draft-021,investor_update,source_present,off_brand,reviewed,limited-partners,false,non_sensitive_ops,ready,brand-draft-021-v1
+inv-4106,Zapier,send-step-031,investor_update,source_present,approved,reviewed,limited-partners,true,non_sensitive_ops,ready,send-step-031-v1
+inv-4107,Airtable,lp-private-note-114,investor_update,source_present,approved,reviewed,limited-partners,false,sensitive_investor_data,ready,lp-private-note-114-v1
+inv-4108,Softr,review-state-229,product_map,not_required,approved,reviewed,internal-team,false,non_sensitive_ops,unclear,review-state-229-v1
+inv-4109,Airtable,monthly-update-042,investor_update,source_present,approved,reviewed,limited-partners,false,non_sensitive_ops,ready,monthly-update-042-v1
+,Airtable,missing-review,investor_update,source_present,approved,reviewed,limited-partners,false,non_sensitive_ops,ready,

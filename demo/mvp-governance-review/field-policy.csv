@@ -1,0 +1,7 @@
+field_name,first_proof_handling,reason
+investor_name,exclude_from_demo,Named investor data is unnecessary for a synthetic governance proof.
+investor_email,exclude_from_demo,No external message or email send belongs in first touch.
+commitment_amount,redact_to_band,Financial details should not appear in cold-proof artifacts.
+legal_claim,source_required,Compliance-sensitive statements need a source and review owner.
+brand_voice_note,redact_to_status,The proof needs approved/off-brand status rather than proprietary brand text.
+send_destination,block_external_send,The first proof can draft and review but cannot send externally.

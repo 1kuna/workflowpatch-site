@@ -1,0 +1,2 @@
+item_id,error_code,error_detail
+missing,missing_required_governance_field,source_key=missing-review update_type=investor_update replay_key=missing

@@ -1,0 +1,4 @@
+item_id,source_key,recipient_segment,draft_action,send_status,draft_status
+inv-4101,monthly-update-042,limited-partners,create_investor_update_draft,approval_required,dry_run_only
+inv-4102,product-map-017,internal-team,create_product_map_handoff,approval_required,dry_run_only
+inv-4103,compliance-note-011,limited-partners,create_compliance_review_draft,approval_required,dry_run_only

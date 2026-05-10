@@ -1,0 +1,7 @@
+item_id,source_key,reason,review_owner,next_step
+inv-4104,growth-claim-088,unsupported_claim,founder-review,Attach source evidence before any investor-facing draft is created.
+inv-4105,brand-draft-021,brand_review_required,founder-review,Route off-brand text to founder review before a draft leaves the system.
+inv-4106,send-step-031,external_send_blocked,founder-review,Keep the first proof to draft/review artifacts only.
+inv-4107,lp-private-note-114,sensitive_investor_scope,founder-review,Use synthetic or redacted non-sensitive rows before any first proof.
+inv-4108,review-state-229,review_state_unclear,founder-review,Clarify the Airtable or Softr review state before a draft row is created.
+inv-4109,monthly-update-042,duplicate_replay_key,founder-review,Confirm whether this source already produced a review row.
