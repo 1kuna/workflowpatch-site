@@ -1,0 +1,7 @@
+monitor_id,event_id,target_id,status,boundary_tag,source_type,evidence_hash,next_action
+MON-1001,EVT-1001,SRC-1001,accepted,TX,public web page,c29f7ddb4a1348e7,write_public_source_row_to_reviewable_ledger
+MON-1002,EVT-1002,SRC-1002,review,CA,public web page,c46cd2a040e9fde1,review_changed_category_before_destination_write
+MON-1003,EVT-1003,SRC-1003,review,US,public RSS feed,1d37d0162c384fe9,approve_field_mapping_before_next_run
+MON-1004,EVT-1004,SRC-1001,blocked,TX,public web page,e772d826f0434325,block_destination_write_and_route_to_operator
+MON-1005,EVT-1005,SRC-1004,blocked,ALL,synthetic canary,97a973a1c6f22836,block_destination_write_and_route_to_operator
+MON-1006,EVT-1006,SRC-1002,blocked,needs_review,public web page,37973bec8fbb9936,block_destination_write_and_route_to_operator

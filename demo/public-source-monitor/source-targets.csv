@@ -1,0 +1,5 @@
+target_id,source_name,source_type,boundary,fetch_window,allowed_fields,out_of_scope
+SRC-1001,State board bulletin,public web page,TX,24h,state_code;title;published_at;source_url,PHI;patient identifiers;legal opinion;credentialing files
+SRC-1002,Public rulemaking calendar,public web page,CA,24h,state_code;meeting_date;agenda_title;source_url,PHI;case files;provider records
+SRC-1003,Federal public notice feed,public RSS feed,US,12h,agency;notice_title;published_at;source_url,patient data;payer records;clinical advice
+SRC-1004,Known schema canary,synthetic canary,ALL,1h,canary_id;expected_fields;alert_destination,secrets;credentials;regulated case data

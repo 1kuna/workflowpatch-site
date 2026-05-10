@@ -1,0 +1,7 @@
+event_id,target_id,event_type,observed_at,raw_title,source_url,boundary_hint,confidence,notes
+EVT-1001,SRC-1001,record_seen,2026-05-10T06:40:00Z,TX bulletin title change,https://example.invalid/tx-board/bulletin,TX,0.94,public page shape matched expected fields
+EVT-1002,SRC-1002,record_seen,2026-05-10T06:41:00Z,CA agenda item added,https://example.invalid/ca-calendar/agenda,CA,0.88,manual review because agenda category changed
+EVT-1003,SRC-1003,schema_changed,2026-05-10T06:42:00Z,Federal notice feed added summary field,https://example.invalid/federal/notices,US,0.82,new field requires mapping approval before destination write
+EVT-1004,SRC-1001,out_of_scope,2026-05-10T06:43:00Z,Uploaded credentialing packet,owner-provided-file,TX,0.99,first proof does not accept credentialing or regulated case files
+EVT-1005,SRC-1004,canary_failed,2026-05-10T06:44:00Z,Expected field count mismatch,synthetic-canary,ALL,0.91,alert path works and destination write is blocked
+EVT-1006,SRC-1002,missing_boundary,2026-05-10T06:45:00Z,Agenda row without state tag,https://example.invalid/ca-calendar/agenda,unknown,0.73,row cannot be tenant tagged without owner review

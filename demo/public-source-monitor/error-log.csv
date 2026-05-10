@@ -1,0 +1,4 @@
+error_id,monitor_id,error_type,blocked_input,resolution
+ERR-1004,MON-1004,out_of_scope,Uploaded credentialing packet,block_destination_write_and_route_to_operator
+ERR-1005,MON-1005,canary_failed,Expected field count mismatch,block_destination_write_and_route_to_operator
+ERR-1006,MON-1006,missing_boundary,Agenda row without state tag,block_destination_write_and_route_to_operator

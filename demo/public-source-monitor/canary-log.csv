@@ -1,0 +1,5 @@
+canary_id,target_id,status,fetch_window,detail
+CAN-1001,SRC-1001,pass,24h,expected public fields present
+CAN-1002,SRC-1002,pass,24h,expected public fields present
+CAN-1003,SRC-1003,pass,12h,expected public fields present
+CAN-1004,SRC-1004,fail,1h,canary mismatch alerted and blocked destination write

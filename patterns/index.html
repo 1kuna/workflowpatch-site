@@ -825,6 +825,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Public Source Monitor</h2>
+            <p>For regulated, healthcare-adjacent, or legal-adjacent operations where the first proof must stay on public sources and explicit sensitive-data boundaries.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One approved public source family, allowed fields, boundary tags, and canary target.</div>
+            <div class="step"><strong>Transform</strong>Preserve provenance, hash source evidence, tag rows by non-sensitive boundary, and block schema or sensitivity drift.</div>
+            <div class="step"><strong>Destination</strong>Monitor ledger, review queue, canary log, error log, and written handoff.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Public regulatory trackers</li>
+                <li>State or tenant monitor proofs</li>
+                <li>Source availability canaries</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No PHI or patient records</li>
+                <li>No legal or compliance advice</li>
+                <li>No production platform ownership first</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Every row keeps source evidence</li>
+                <li>Schema changes reach review</li>
+                <li>Sensitive material is blocked visibly</li>
+              </ul>
+              <p><a href="/demo/public-source-monitor/">View public-source demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Listing ROI Evidence Slice</h2>
             <p>For real-estate research teams that need a narrow proof of opportunity detection before funding a market-wide data system.</p>
           </div>
@@ -1381,6 +1420,7 @@
         <a class="button secondary" href="/demo/travel-email-classification/">View Travel Email Demo</a>
         <a class="button secondary" href="/demo/postgres-statement-email/">View Statement Email Demo</a>
         <a class="button secondary" href="/demo/research-digest/">View Research Digest Demo</a>
+        <a class="button secondary" href="/demo/public-source-monitor/">View Public Source Demo</a>
         <a class="button secondary" href="/demo/html-review-queue/">View HTML Review Demo</a>
         <a class="button secondary" href="/demo/listing-roi-scan/">View Listing ROI Demo</a>
         <a class="button secondary" href="/demo/commerce-performance-brief/">View Commerce Demo</a>

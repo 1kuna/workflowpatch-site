@@ -1,0 +1,6 @@
+review_id,monitor_id,reason,operator_prompt,allowed_action
+REV-1002,MON-1002,record_seen,manual review because agenda category changed,approve_mapping_or_keep_blocked
+REV-1003,MON-1003,schema_changed,new field requires mapping approval before destination write,approve_mapping_or_keep_blocked
+REV-1004,MON-1004,out_of_scope,first proof does not accept credentialing or regulated case files,approve_mapping_or_keep_blocked
+REV-1005,MON-1005,canary_failed,alert path works and destination write is blocked,approve_mapping_or_keep_blocked
+REV-1006,MON-1006,missing_boundary,row cannot be tenant tagged without owner review,approve_mapping_or_keep_blocked

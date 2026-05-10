@@ -1,0 +1,8 @@
+policy_id,field_name,handling,reason
+POL-1001,state_code,allow,non-sensitive boundary tag
+POL-1002,title,allow,public source title only
+POL-1003,published_at,allow,public timestamp only
+POL-1004,source_url,allow,provenance link
+POL-1005,patient_name,block,PHI is out of first proof scope
+POL-1006,credentialing_file,block,regulated credentialing packets are out of first proof scope
+POL-1007,legal_interpretation,block,WorkflowPatch does not provide legal or regulatory advice
