@@ -1,0 +1,6 @@
+hire_id,candidate,role,template,next_state,owner,reason,legal_boundary
+HIRE-101,Avery Chen,Operations Manager,full_time_us,ready_for_internal_review,manager,approved hire has required fields and packet not created,no legal drafting or template edits
+HIRE-102,Morgan Vale,Support Lead,full_time_us,waiting_on_internal_review,manager,approver status is pending_review,no legal drafting or template edits
+HIRE-103,Riley Hart,Implementation Specialist,contractor_us,reminder_due,recruiting_ops,sent envelope has waited 4 days,no legal drafting or template edits
+HIRE-104,Sam Park,Data Analyst,contractor_us,blocked_missing_fields,recruiting_ops,required fields or candidate email missing,no legal drafting or template edits
+HIRE-105,Jordan Lee,Field Ops Lead,full_time_us,ready_to_file,hr_ops,signed envelope is ready for filing,no legal drafting or template edits

@@ -1,0 +1,3 @@
+template,required_fields,internal_review_required,reminder_after_days,escalate_after_days,filing_destination
+full_time_us,"candidate_email,role,manager,comp_band,start_date",yes,3,6,hr_drive/full_time
+contractor_us,"candidate_email,role,manager,rate,start_date",yes,2,5,hr_drive/contractor

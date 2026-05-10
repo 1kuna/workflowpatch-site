@@ -513,6 +513,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Contract Packet State Machine</h2>
+            <p>For HR teams that need offer letters, employment packets, NDAs, reminders, and filing tracked without turning the first proof into legal drafting.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>Redacted or synthetic approved-hire rows, template family, required fields, approver status, e-sign status, and reminder timing.</div>
+            <div class="step"><strong>Transform</strong>Validate required fields, route internal review, track ready/sent/signed/reminder/escalation states, and block incomplete rows.</div>
+            <div class="step"><strong>Destination</strong>State ledger, internal review queue, reminder or escalation queue, filing manifest, and blocked/error log.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Offer or NDA packet tracking</li>
+                <li>Manual candidate chase loops</li>
+                <li>Signed-document filing queues</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No legal drafting in the first proof</li>
+                <li>No live employee documents</li>
+                <li>No candidate sends before approval</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Missing fields become hard errors</li>
+                <li>Reminder rows require approval</li>
+                <li>Signed rows produce filing evidence</li>
+              </ul>
+              <p><a href="/demo/contract-packet-state/">View contract state demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>SMS Approval State Machine</h2>
             <p>For opted-in SMS workflows where generated copy needs state tracking, human review, and proof that no message sends before approval.</p>
           </div>
@@ -1161,6 +1200,7 @@
         <a class="button secondary" href="/demo/inventory-room-allocation/">View Inventory Demo</a>
         <a class="button secondary" href="/demo/sms-approval-state/">View SMS Approval Demo</a>
         <a class="button secondary" href="/demo/document-export-manifest/">View Document Export Demo</a>
+        <a class="button secondary" href="/demo/contract-packet-state/">View Contract State Demo</a>
         <a class="button secondary" href="/start/">Ask If A Workflow Fits</a>
       </div>
     </main>

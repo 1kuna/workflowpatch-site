@@ -1,0 +1,2 @@
+hire_id,error_type,detail,next_action
+HIRE-104,missing_candidate_email,candidate email is blank,collect required candidate email before packet creation

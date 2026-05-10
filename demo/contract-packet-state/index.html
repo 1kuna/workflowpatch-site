@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.workflowpatch.com/demo/contract-packet-state/">
+    <title>WorkflowPatch Contract Packet State Demo</title>
+    <meta name="description" content="Mock WorkflowPatch contract packet state demo with hire-state ledger, reminder queue, filing manifest, error log, source script, and runbook.">
+    <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="WorkflowPatch">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WorkflowPatch Contract Packet State Demo">
+    <meta property="og:description" content="A mock contract packet state proof showing review gates, signature tracking, reminder queues, filing manifests, and blocked rows before live HR action.">
+    <meta property="og:url" content="https://www.workflowpatch.com/demo/contract-packet-state/">
+    <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="WorkflowPatch async fixed-scope workflow automation">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2328;
+        --muted: #5f6b72;
+        --line: #d9e0e4;
+        --paper: #fbfcfb;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-dark: #0b4d49;
+        --warning: #9a5b11;
+        --soft: #edf5f3;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      .wrap {
+        width: min(1080px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        background: rgba(251, 252, 251, 0.94);
+      }
+
+      .topbar {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 800;
+      }
+
+      .brand img {
+        width: 32px;
+        height: 32px;
+      }
+
+      a {
+        color: var(--accent-dark);
+        font-weight: 700;
+      }
+
+      main {
+        padding: 48px 0;
+      }
+
+      h1 {
+        font-size: clamp(34px, 6vw, 64px);
+        line-height: 0.98;
+        margin: 0 0 18px;
+        letter-spacing: 0;
+      }
+
+      .lede {
+        color: var(--muted);
+        font-size: 19px;
+        max-width: 850px;
+        margin: 0 0 28px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 34px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        padding: 0 14px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--accent-dark);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .item {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 16px;
+      }
+
+      .item h2 {
+        font-size: 16px;
+        margin: 0 0 8px;
+      }
+
+      .item p {
+        color: var(--muted);
+        font-size: 14px;
+        margin: 0;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        margin-top: 28px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 980px;
+        font-size: 14px;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: var(--soft);
+        color: var(--accent-dark);
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .status {
+        color: var(--accent-dark);
+        font-weight: 800;
+      }
+
+      .warn {
+        color: var(--warning);
+        font-weight: 800;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 26px 0 38px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 820px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        main {
+          padding-top: 34px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
+        <a href="/start/">Start async fit check</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1>Contract packet state demo output.</h1>
+      <p class="lede">A mock HR operations proof that tracks contract packet readiness, review gates, signature state, reminders, escalation, filing, and blocked rows without legal drafting or live candidate sends.</p>
+
+      <div class="links">
+        <a class="button" href="/demo/contract-packet-state/state-ledger.csv">State Ledger CSV</a>
+        <a class="button secondary" href="/demo/contract-packet-state/reminder-queue.csv">Reminder Queue CSV</a>
+        <a class="button secondary" href="/demo/contract-packet-state/filing-manifest.csv">Filing Manifest CSV</a>
+        <a class="button secondary" href="/demo/contract-packet-state/error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="/demo/contract-packet-state/hire-events.csv">Mock Hire Events CSV</a>
+        <a class="button secondary" href="/demo/contract-packet-state/packet-policy.csv">Packet Policy CSV</a>
+        <a class="button secondary" href="/demo/contract-packet-state/runbook.md">Runbook</a>
+        <a class="button secondary" href="/demo/contract-packet-state/process_contract_packet_demo.py">Source Script</a>
+      </div>
+
+      <div class="grid">
+        <div class="item">
+          <h2>What It Proves</h2>
+          <p>Approved hires become reviewable state rows before any packet creation, candidate send, or filing action.</p>
+        </div>
+        <div class="item">
+          <h2>Safety Boundary</h2>
+          <p>Contract text, legal decisions, live employee documents, and candidate-facing sends stay outside the first proof.</p>
+        </div>
+        <div class="item">
+          <h2>Acceptance Check</h2>
+          <p>Every reminder, filing row, and error row traces back to one mock hire id and one declared policy.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Hire</th>
+              <th>Candidate</th>
+              <th>Role</th>
+              <th>Next State</th>
+              <th>Owner</th>
+              <th>Reason</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HIRE-101</td>
+              <td>Avery Chen</td>
+              <td>Operations Manager</td>
+              <td class="status">ready_for_internal_review</td>
+              <td>manager</td>
+              <td>Approved hire has required fields and packet not created.</td>
+            </tr>
+            <tr>
+              <td>HIRE-102</td>
+              <td>Morgan Vale</td>
+              <td>Support Lead</td>
+              <td class="warn">waiting_on_internal_review</td>
+              <td>manager</td>
+              <td>Approver status is pending_review.</td>
+            </tr>
+            <tr>
+              <td>HIRE-103</td>
+              <td>Riley Hart</td>
+              <td>Implementation Specialist</td>
+              <td class="warn">reminder_due</td>
+              <td>recruiting_ops</td>
+              <td>Sent envelope has waited 4 days; reminder stays approval-gated.</td>
+            </tr>
+            <tr>
+              <td>HIRE-104</td>
+              <td>Sam Park</td>
+              <td>Data Analyst</td>
+              <td class="warn">blocked_missing_fields</td>
+              <td>recruiting_ops</td>
+              <td>Required fields or candidate email missing.</td>
+            </tr>
+            <tr>
+              <td>HIRE-105</td>
+              <td>Jordan Lee</td>
+              <td>Field Ops Lead</td>
+              <td class="status">ready_to_file</td>
+              <td>hr_ops</td>
+              <td>Signed envelope is ready for filing.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">Mock data only. No legal advice, no employee records, no live HRIS writes, no e-sign sends, and no candidate-facing messages.</div>
+    </footer>
+  </body>
+</html>

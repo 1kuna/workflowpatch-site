@@ -1,0 +1,2 @@
+hire_id,candidate,queue_type,recipient,reason,send_gate
+HIRE-103,Riley Hart,candidate_reminder,riley@example.test,sent envelope has waited 4 days,approval_required_before_send

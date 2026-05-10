@@ -1,0 +1,6 @@
+hire_id,candidate,role,manager,template,approver_status,candidate_email,envelope_status,last_candidate_touch_days,required_fields_complete
+HIRE-101,Avery Chen,Operations Manager,Jules,full_time_us,approved,avery@example.test,not_created,0,yes
+HIRE-102,Morgan Vale,Support Lead,Casey,full_time_us,pending_review,morgan@example.test,not_created,0,yes
+HIRE-103,Riley Hart,Implementation Specialist,Noor,contractor_us,approved,riley@example.test,sent,4,yes
+HIRE-104,Sam Park,Data Analyst,Iris,contractor_us,approved,,not_created,0,no
+HIRE-105,Jordan Lee,Field Ops Lead,Jules,full_time_us,approved,jordan@example.test,signed,0,yes
