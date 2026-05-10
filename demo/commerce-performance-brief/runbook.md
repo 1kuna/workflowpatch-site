@@ -26,5 +26,6 @@ This is a mock WorkflowPatch proof pack. It does not use client data, Amazon cre
 - Retired products are blocked before the brief.
 - Products with spend and no orders are routed to review.
 - Stale market data is routed to review before business recommendations.
+- Missing catalog, market, or royalty evidence becomes a hard error before any brief.
 - Every Slack draft cites row-level evidence.
 - No Slack message, ad change, catalog write, or Amazon action happens automatically.

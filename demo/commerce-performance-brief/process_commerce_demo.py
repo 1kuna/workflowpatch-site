@@ -158,6 +158,14 @@ def main() -> int:
     )
     for row in blocked_rows:
         brief_lines.append(f"- {row['asin']}: {row['reason']}.")
+    brief_lines.extend(
+        [
+            "",
+            "## Hard Errors",
+        ]
+    )
+    for row in error_rows:
+        brief_lines.append(f"- {row['asin']}: {row['reason']}.")
     (ROOT / "brief-draft.md").write_text("\n".join(brief_lines) + "\n", encoding="utf-8")
 
     print(f"ledger_rows={len(ledger_rows)}")

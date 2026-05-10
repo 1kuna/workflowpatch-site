@@ -14,3 +14,6 @@ Claude-style narrative belongs after the ledger is validated. The brief should c
 
 ## Blocked
 - B07PATCH5: catalog status is not active.
+
+## Hard Errors
+- B07PATCH7: royalty row missing.
