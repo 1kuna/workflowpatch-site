@@ -1,0 +1,4 @@
+event_id,object_key,object_type,source_system,state_decision,airtable_status,processed_at
+vdb-3101,prop-mar-144,property,Airtable,property_ready_for_hubspot_review,draft_ready,2026-05-10T08:46:00Z
+vdb-3102,booking-sot-882,booking,HubSpot,booking_ready_for_airtable_review,draft_ready,2026-05-10T08:46:00Z
+vdb-3103,owner-vdb-050,owner_update,Airtable,owner_visibility_ready_for_review,draft_ready,2026-05-10T08:46:00Z

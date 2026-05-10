@@ -1,0 +1,7 @@
+field_name,first_proof_handling,reason
+guest_email,exclude_from_demo,Guest/contact data is not needed for state and sync proof.
+guest_phone,exclude_from_demo,No live guest messaging or phone workflow belongs in first touch.
+payment_card_digits,exclude_from_demo,Payment details are sensitive and unnecessary for dry-run state checks.
+signed_contract_pdf,exclude_from_demo,Contract documents stay out of first proof until paid scope and access are approved.
+owner_private_notes,exclude_from_demo,Private owner notes should not leave the source system in a cold proof.
+commission_formula,redact_to_status,The proof needs exception status rather than proprietary commission math.

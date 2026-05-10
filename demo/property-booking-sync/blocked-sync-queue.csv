@@ -1,0 +1,7 @@
+event_id,object_key,reason,review_owner,next_step
+vdb-3104,booking-mar-510,contract_state_review,ops-lead,Confirm contract status before sync review.
+vdb-3105,booking-mar-611,payment_state_review,ops-lead,Confirm payment status before sync review.
+vdb-3106,prop-sot-288,owner_visibility_review,ops-lead,Keep private owner fields out of the first proof and request a redacted sample.
+vdb-3107,booking-sot-901,ambiguous_property_or_booking_match,ops-lead,Resolve the Airtable and HubSpot identity match before state or sync rows.
+vdb-3108,note-owner-884,unknown_object_type,ops-lead,Define the Airtable and HubSpot handling rule before sync review.
+vdb-3109,prop-mar-144,duplicate_replay_key,ops-lead,Confirm whether this property or booking was already reviewed.

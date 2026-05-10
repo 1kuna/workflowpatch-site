@@ -1,0 +1,2 @@
+event_id,error_code,error_detail
+missing,missing_required_sync_field,object_key=booking-missing object_type=booking replay_key=missing

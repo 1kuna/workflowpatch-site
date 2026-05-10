@@ -1,0 +1,11 @@
+event_id,source_system,object_key,object_type,hubspot_record,availability_status,contract_status,payment_status,owner_visibility,guest_contact_allowed,identity_match_status,sync_direction,sensitivity,replay_key
+vdb-3101,Airtable,prop-mar-144,property,hs-company-448,available,contract_ready,deposit_paid,owner_portal_allowed,false,matched,airtable_to_hubspot,non_sensitive_ops,prop-mar-144-v1
+vdb-3102,HubSpot,booking-sot-882,booking,hs-deal-882,hold,contract_signed,deposit_paid,owner_portal_blocked,false,matched,hubspot_to_airtable,non_sensitive_ops,booking-sot-882-v1
+vdb-3103,Airtable,owner-vdb-050,owner_update,hs-contact-050,not_applicable,contract_ready,not_applicable,owner_portal_allowed,false,matched,airtable_to_hubspot,non_sensitive_ops,owner-vdb-050-v1
+vdb-3104,Airtable,booking-mar-510,booking,hs-deal-510,hold,contract_pending,deposit_paid,owner_portal_blocked,false,matched,airtable_to_hubspot,non_sensitive_ops,booking-mar-510-v1
+vdb-3105,HubSpot,booking-mar-611,booking,hs-deal-611,confirmed,contract_signed,disputed,owner_portal_blocked,false,matched,hubspot_to_airtable,non_sensitive_ops,booking-mar-611-v1
+vdb-3106,Airtable,prop-sot-288,property,hs-company-288,available,contract_ready,deposit_paid,owner_private,false,matched,airtable_to_hubspot,non_sensitive_ops,prop-sot-288-v1
+vdb-3107,HubSpot,booking-sot-901,booking,hs-deal-901,requested,contract_signed,deposit_paid,owner_portal_blocked,false,ambiguous,hubspot_to_airtable,non_sensitive_ops,booking-sot-901-v1
+vdb-3108,Airtable,note-owner-884,owner_note,hs-contact-884,not_applicable,contract_ready,not_applicable,owner_private,false,matched,airtable_to_hubspot,non_sensitive_ops,note-owner-884-v1
+vdb-3109,Airtable,prop-mar-144,property,hs-company-448,available,contract_ready,deposit_paid,owner_portal_allowed,false,matched,airtable_to_hubspot,non_sensitive_ops,prop-mar-144-v1
+,Airtable,booking-missing,booking,hs-deal-999,hold,contract_signed,deposit_paid,owner_portal_blocked,false,matched,airtable_to_hubspot,non_sensitive_ops,

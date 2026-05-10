@@ -1,0 +1,4 @@
+event_id,object_key,hubspot_record,sync_direction,review_action,write_status
+vdb-3101,prop-mar-144,hs-company-448,airtable_to_hubspot,review_property_sync,review_required
+vdb-3102,booking-sot-882,hs-deal-882,hubspot_to_airtable,review_booking_sync,review_required
+vdb-3103,owner-vdb-050,hs-contact-050,airtable_to_hubspot,review_owner_sync,review_required

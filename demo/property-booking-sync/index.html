@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.workflowpatch.com/demo/property-booking-sync/">
+    <title>WorkflowPatch Property Booking Sync Demo</title>
+    <meta name="description" content="Mock WorkflowPatch property booking sync demo with Airtable property ledger, HubSpot sync review queue, contract/payment exceptions, blocked rows, source script, and runbook.">
+    <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="WorkflowPatch">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WorkflowPatch Property Booking Sync Demo">
+    <meta property="og:description" content="A mock Airtable and HubSpot property-management proof slice for property state, booking review, contract/payment exceptions, duplicate blocking, and hard errors before live changes.">
+    <meta property="og:url" content="https://www.workflowpatch.com/demo/property-booking-sync/">
+    <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="WorkflowPatch async fixed-scope workflow automation">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2328;
+        --muted: #5f6b72;
+        --line: #d9e0e4;
+        --paper: #fbfcfb;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-dark: #0b4d49;
+        --warning: #9a5b11;
+        --soft: #edf5f3;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.5; }
+      .wrap { width: min(1080px, calc(100% - 32px)); margin: 0 auto; }
+      header { border-bottom: 1px solid var(--line); background: rgba(251, 252, 251, 0.94); }
+      .topbar { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+      .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; }
+      .brand img { width: 32px; height: 32px; }
+      a { color: var(--accent-dark); font-weight: 700; }
+      main { padding: 48px 0; }
+      h1 { font-size: clamp(34px, 6vw, 64px); line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
+      .lede { color: var(--muted); font-size: 19px; max-width: 860px; margin: 0 0 28px; }
+      .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
+      .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
+      .button.secondary { background: transparent; color: var(--accent-dark); }
+      .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+      .item { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+      .item h2 { font-size: 16px; margin: 0 0 8px; }
+      .item p { color: var(--muted); font-size: 14px; margin: 0; }
+      .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); margin-top: 28px; }
+      table { width: 100%; border-collapse: collapse; min-width: 900px; font-size: 14px; }
+      th, td { border-bottom: 1px solid var(--line); padding: 12px; text-align: left; vertical-align: top; }
+      th { background: var(--soft); color: var(--accent-dark); }
+      tr:last-child td { border-bottom: 0; }
+      .status { color: var(--accent-dark); font-weight: 800; }
+      .warn { color: var(--warning); font-weight: 800; }
+      footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
+      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
+        <a href="/start/">Start async fit check</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1>Property booking sync demo output.</h1>
+      <p class="lede">A small mock proof for Airtable and HubSpot property-management state. It turns redacted property, booking, and owner updates into an Airtable-ready state ledger, HubSpot sync review queue, contract/payment exception log, blocked sync queue, and hard errors before any live owner data, guest data, Airtable writes, HubSpot writes, contract/payment action, or production change.</p>
+
+      <div class="links">
+        <a class="button" href="/demo/property-booking-sync/property-state-ledger.csv">Property State Ledger CSV</a>
+        <a class="button secondary" href="/demo/property-booking-sync/hubspot-sync-review.csv">HubSpot Sync Review CSV</a>
+        <a class="button secondary" href="/demo/property-booking-sync/contract-payment-exception-log.csv">Contract Payment Exception CSV</a>
+        <a class="button secondary" href="/demo/property-booking-sync/blocked-sync-queue.csv">Blocked Sync Queue CSV</a>
+        <a class="button secondary" href="/demo/property-booking-sync/error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="/demo/property-booking-sync/source-events.csv">Source Events CSV</a>
+        <a class="button secondary" href="/demo/property-booking-sync/sync-policy.csv">Sync Policy CSV</a>
+        <a class="button secondary" href="/demo/property-booking-sync/field-policy.csv">Field Policy CSV</a>
+        <a class="button secondary" href="/demo/property-booking-sync/runbook.md">Runbook</a>
+        <a class="button secondary" href="/demo/property-booking-sync/process_property_booking_demo.py">Source Script</a>
+      </div>
+
+      <div class="grid">
+        <div class="item">
+          <h2>Source Events</h2>
+          <p>Property, booking, and owner rows stay redacted and replay-keyed.</p>
+        </div>
+        <div class="item">
+          <h2>State Ledger</h2>
+          <p>Accepted rows become Airtable-ready operating-state drafts.</p>
+        </div>
+        <div class="item">
+          <h2>Sync Review</h2>
+          <p>HubSpot write candidates stay review-required and dry-run only.</p>
+        </div>
+        <div class="item">
+          <h2>Exception Log</h2>
+          <p>Contract, payment, owner-visibility, match, unknown-type, duplicate, and malformed rows stop visibly.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap" aria-label="Property booking sync sample">
+        <table>
+          <thead>
+            <tr>
+              <th>Object</th>
+              <th>Source</th>
+              <th>Decision</th>
+              <th>Queue</th>
+              <th>Boundary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Marbella villa property</td>
+              <td>Airtable</td>
+              <td class="status">property_ready_for_hubspot_review</td>
+              <td>review_property_sync</td>
+              <td>Dry-run review only. No live HubSpot write.</td>
+            </tr>
+            <tr>
+              <td>Sotogrande booking</td>
+              <td>HubSpot</td>
+              <td class="status">booking_ready_for_airtable_review</td>
+              <td>review_booking_sync</td>
+              <td>No owner or guest communication.</td>
+            </tr>
+            <tr>
+              <td>Owner visibility update</td>
+              <td>Airtable</td>
+              <td class="status">owner_visibility_ready_for_review</td>
+              <td>review_owner_sync</td>
+              <td>Private owner notes stay excluded.</td>
+            </tr>
+            <tr>
+              <td>Disputed booking payment</td>
+              <td>HubSpot</td>
+              <td class="warn">payment_state_review</td>
+              <td>blocked-sync</td>
+              <td>Confirm payment state before any payment-affecting action.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">WorkflowPatch · Alex Reed, Workflow Automation Operator · alex@workflowpatch.com · 2995 East Point Street, East Point, GA 30094</div>
+    </footer>
+  </body>
+</html>

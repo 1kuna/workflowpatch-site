@@ -1411,6 +1411,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Property Booking Sync</h2>
+            <p>For real-estate teams where Airtable property operations and HubSpot relationship records need one reviewable state path before a full PMS build.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted property, booking, or owner event family, plus contract, payment, availability, identity, and replay fields.</div>
+            <div class="step"><strong>Transform</strong>Validate contract state, payment state, owner visibility, Airtable/HubSpot identity match, object type, duplicate replay keys, and sensitivity rules.</div>
+            <div class="step"><strong>Destination</strong>Airtable-ready property state ledger, HubSpot sync review queue, contract/payment exception log, blocked sync queue, hard errors, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Airtable property operating state</li>
+                <li>HubSpot deal or company sync review</li>
+                <li>Contract/payment exception surfacing</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live owner or guest data in first proof</li>
+                <li>No live Airtable or HubSpot writes first</li>
+                <li>No contract, payment, commission, or availability decision</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Clean rows become state and sync-review drafts</li>
+                <li>Contract and payment issues block visibly</li>
+                <li>Duplicate or malformed events reach review or error logs</li>
+              </ul>
+              <p><a href="/demo/property-booking-sync/">View property sync demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Venue Guest Alignment</h2>
             <p>For small venues where Vemos, Square, Mailchimp, and Airtable need one guest/member state path before messages or payment-affecting changes.</p>
           </div>
@@ -1711,6 +1750,7 @@
         <a class="button secondary" href="/demo/scenario-modularization/">View Modularization Demo</a>
         <a class="button secondary" href="/demo/board-event-routing/">View Board Routing Demo</a>
         <a class="button secondary" href="/demo/booking-payment-state/">View Booking State Demo</a>
+        <a class="button secondary" href="/demo/property-booking-sync/">View Property Sync Demo</a>
         <a class="button secondary" href="/demo/venue-guest-alignment/">View Guest Alignment Demo</a>
         <a class="button secondary" href="/demo/salon-ops-state/">View Salon Ops Demo</a>
         <a class="button secondary" href="/demo/signup-access-state/">View Signup Access Demo</a>

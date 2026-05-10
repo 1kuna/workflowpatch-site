@@ -1,0 +1,4 @@
+object_type,state_decision,hubspot_review_action,requires_contract_clear,requires_payment_clear,blocks_private_owner
+property,property_ready_for_hubspot_review,review_property_sync,true,false,true
+booking,booking_ready_for_airtable_review,review_booking_sync,true,true,false
+owner_update,owner_visibility_ready_for_review,review_owner_sync,true,false,true

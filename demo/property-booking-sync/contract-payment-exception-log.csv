@@ -1,0 +1,3 @@
+event_id,object_key,exception_type,detail,next_step
+vdb-3104,booking-mar-510,contract_state_review,contract_status=contract_pending,Confirm the contract state before any Airtable or HubSpot sync decision.
+vdb-3105,booking-mar-611,payment_state_review,payment_status=disputed,Confirm payment state before any payment-affecting or guest-facing action.
