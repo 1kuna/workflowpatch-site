@@ -904,6 +904,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Lead Review Ledger</h2>
+            <p>For lead-form, CRM, WhatsApp, or Google Reviews workflows where every external action needs consent, matching, and internal review before it can go live.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted or synthetic lead-form event family with lead stage, consent, CRM-match status, duplicate key, and source boundary.</div>
+            <div class="step"><strong>Transform</strong>Validate required fields, block duplicate rows, block live-source scope, check WhatsApp consent, and route unmatched leads to internal review.</div>
+            <div class="step"><strong>Destination</strong>CRM lead ledger, internal review queue, blocked action queue, hard errors, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Lead form to CRM review</li>
+                <li>WhatsApp follow-up approval</li>
+                <li>Google Reviews request governance</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live customer data first</li>
+                <li>No WhatsApp sends</li>
+                <li>No review request or CRM write before approval</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Consent gaps block before draft actions</li>
+                <li>CRM mismatches route to review</li>
+                <li>Review requests stay internal-only</li>
+              </ul>
+              <p><a href="/demo/lead-review-ledger/">View lead ledger demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>SMS Approval State Machine</h2>
             <p>For opted-in SMS workflows where generated copy needs state tracking, human review, and proof that no message sends before approval.</p>
           </div>
@@ -1878,6 +1917,7 @@
         <a class="button secondary" href="/demo/event-production-project-bible/">View Project Bible Demo</a>
         <a class="button secondary" href="/demo/inventory-room-allocation/">View Inventory Demo</a>
         <a class="button secondary" href="/demo/sms-approval-state/">View SMS Approval Demo</a>
+        <a class="button secondary" href="/demo/lead-review-ledger/">View Lead Ledger Demo</a>
         <a class="button secondary" href="/demo/document-export-manifest/">View Document Export Demo</a>
         <a class="button secondary" href="/demo/contract-packet-state/">View Contract State Demo</a>
         <a class="button secondary" href="/start/">Ask If A Workflow Fits</a>

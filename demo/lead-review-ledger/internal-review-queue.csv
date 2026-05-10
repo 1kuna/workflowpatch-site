@@ -1,0 +1,5 @@
+event_id,lead_ref,review_type,draft_status,detail,approval_needed
+LEAD-2001,synthetic-student-001,lead_intake_review,internal_review_only,Review lead response draft before any external message.,approval_required_before_external_message_or_live_write
+LEAD-2003,synthetic-student-003,crm_match_review,internal_review_only,Confirm CRM identity before ledger or follow-up action.,approval_required_before_external_message_or_live_write
+LEAD-2004,synthetic-student-004,review_request_review,internal_review_only,Review request timing must be approved before any Google Reviews action.,approval_required_before_external_message_or_live_write
+LEAD-2008,synthetic-student-008,followup_review,internal_review_only,Review lead response draft before any external message.,approval_required_before_external_message_or_live_write

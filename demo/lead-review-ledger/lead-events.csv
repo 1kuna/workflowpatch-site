@@ -1,0 +1,9 @@
+event_id,source_system,lead_ref,course_interest,lead_stage,preferred_channel,phone_consent,review_request_eligible,crm_match_status,duplicate_key,source_boundary,notes
+LEAD-2001,landing-page-form,synthetic-student-001,B.Tech admissions,new_inquiry,whatsapp,true,false,matched,kolzeh-lead-001,synthetic_or_redacted,first-time inquiry with explicit WhatsApp opt-in
+LEAD-2002,website-registration,synthetic-student-002,MBA counselling,new_inquiry,whatsapp,false,false,matched,kolzeh-lead-002,synthetic_or_redacted,no WhatsApp consent captured
+LEAD-2003,third-party-form,synthetic-student-003,Scholarship guidance,follow_up_due,email,true,false,unmatched,kolzeh-lead-003,synthetic_or_redacted,CRM match needs review before any follow-up
+LEAD-2004,landing-page-form,synthetic-student-004,Placement support,post_service,whatsapp,true,true,matched,kolzeh-lead-004,synthetic_or_redacted,eligible for internal review of review-request timing
+LEAD-2005,landing-page-form,synthetic-student-005,B.Tech admissions,new_inquiry,whatsapp,true,false,matched,kolzeh-lead-001,synthetic_or_redacted,duplicate submit from same lead
+LEAD-2006,live-whatsapp-thread,synthetic-student-006,Admission support,follow_up_due,whatsapp,true,false,matched,kolzeh-lead-006,live_customer_thread,live channel evidence is out of first-proof scope
+LEAD-2007,website-registration,synthetic-student-007,,new_inquiry,whatsapp,true,false,matched,kolzeh-lead-007,synthetic_or_redacted,missing course interest
+LEAD-2008,landing-page-form,synthetic-student-008,Technical training,follow_up_due,email,true,false,matched,kolzeh-lead-008,synthetic_or_redacted,email follow-up review only

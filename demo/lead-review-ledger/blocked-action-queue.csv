@@ -1,0 +1,4 @@
+event_id,lead_ref,blocked_action,detail,next_step
+LEAD-2002,synthetic-student-002,missing_whatsapp_consent,phone_consent is not true.,review_before_any_whatsapp_review_request_or_crm_write
+LEAD-2005,synthetic-student-005,duplicate_lead_key,duplicate_key=kolzeh-lead-001,review_before_any_whatsapp_review_request_or_crm_write
+LEAD-2006,synthetic-student-006,live_customer_channel_source,Use synthetic or redacted rows for the first proof.,review_before_any_whatsapp_review_request_or_crm_write

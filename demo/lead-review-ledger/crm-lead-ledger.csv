@@ -1,0 +1,4 @@
+event_id,lead_ref,course_interest,crm_action,channel_boundary,processed_at
+LEAD-2001,synthetic-student-001,B.Tech admissions,lead_intake_review,draft_only_no_message,2026-05-10T09:26:00Z
+LEAD-2004,synthetic-student-004,Placement support,review_request_review,draft_only_no_message,2026-05-10T09:26:00Z
+LEAD-2008,synthetic-student-008,Technical training,followup_review,draft_only_no_message,2026-05-10T09:26:00Z
