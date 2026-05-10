@@ -1,0 +1,3 @@
+action_id,target_flow,action_type,entity_ref,dry_run_decision,live_boundary,processed_at
+ACT-3001,campaign-enrichment,api_lookup,synthetic-lead-001,action_plan_ready,no_live_browser_api_or_form_action,2026-05-10T09:32:00Z
+ACT-3002,landing-page-check,browser_read,synthetic-page-002,action_plan_ready,no_live_browser_api_or_form_action,2026-05-10T09:32:00Z

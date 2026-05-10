@@ -1294,6 +1294,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Browser Action Ledger</h2>
+            <p>For Puppeteer, Selenium, or API-heavy marketing workflows where the first useful proof is action planning, failure taxonomy, and alerting without touching live accounts.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>Approved source rows or exports plus a redacted target-flow map and allowed action boundaries.</div>
+            <div class="step"><strong>Transform</strong>Plan browser/API actions, block credential, proxy, anti-bot, live-source, duplicate, and form-submission scope, and classify selector/API/rate-limit failures.</div>
+            <div class="step"><strong>Destination</strong>Dry-run action ledger, blocked action queue, failure taxonomy, alert rules, hard errors, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Approved-source browser workflows</li>
+                <li>Selector and API failure taxonomy</li>
+                <li>Retry and alert runbooks</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live scraping first</li>
+                <li>No anti-bot or proxy work</li>
+                <li>No credentials or form submissions</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Approved rows create dry-run action plans</li>
+                <li>Selector/API/rate-limit failures are classified</li>
+                <li>Unsafe scope blocks before action</li>
+              </ul>
+              <p><a href="/demo/browser-action-ledger/">View browser action demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Scenario Ops Reduction Audit</h2>
             <p>For Make or n8n accounts where operation volume, duplicate runs, retries, and fragile errors are making the system expensive to trust.</p>
           </div>
@@ -1907,6 +1946,7 @@
         <a class="button secondary" href="/demo/airtable-source-of-truth-audit/">View Airtable Source Demo</a>
         <a class="button secondary" href="/demo/scenario-ops-reduction/">View Ops Reduction Demo</a>
         <a class="button secondary" href="/demo/scenario-modularization/">View Modularization Demo</a>
+        <a class="button secondary" href="/demo/browser-action-ledger/">View Browser Action Demo</a>
         <a class="button secondary" href="/demo/board-event-routing/">View Board Routing Demo</a>
         <a class="button secondary" href="/demo/booking-payment-state/">View Booking State Demo</a>
         <a class="button secondary" href="/demo/property-booking-sync/">View Property Sync Demo</a>

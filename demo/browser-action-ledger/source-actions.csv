@@ -1,0 +1,12 @@
+action_id,source_system,target_flow,action_type,entity_ref,source_boundary,duplicate_key,selector_state,api_state,rate_limit_state,credential_required,anti_bot_or_proxy_requested,live_form_submit,expected_state
+ACT-3001,approved-export,campaign-enrichment,api_lookup,synthetic-lead-001,approved_source_only,leadassist-act-001,not_needed,ok,normal,false,false,false,enrichment_ready
+ACT-3002,approved-export,landing-page-check,browser_read,synthetic-page-002,approved_source_only,leadassist-act-002,selector_ok,not_needed,normal,false,false,false,page_state_captured
+ACT-3003,approved-export,landing-page-check,browser_read,synthetic-page-003,approved_source_only,leadassist-act-003,selector_missing,not_needed,normal,false,false,false,selector_failure_review
+ACT-3004,approved-export,crm-campaign-sync,api_write_preview,synthetic-lead-004,approved_source_only,leadassist-act-004,not_needed,api_timeout,normal,false,false,false,retry_rule_review
+ACT-3005,approved-export,ad-platform-review,browser_read,synthetic-audience-005,approved_source_only,leadassist-act-005,selector_ok,not_needed,rate_limited,false,false,false,rate_limit_alert
+ACT-3006,live-browser-session,competitor-source,browser_read,synthetic-source-006,live_source_not_approved,leadassist-act-006,selector_ok,not_needed,normal,false,false,false,blocked_source_scope
+ACT-3007,approved-export,signup-flow,form_submit,synthetic-form-007,approved_source_only,leadassist-act-007,selector_ok,not_needed,normal,false,false,true,blocked_live_submit
+ACT-3008,approved-export,marketing-tool-login,browser_read,synthetic-account-008,approved_source_only,leadassist-act-008,selector_ok,not_needed,normal,true,false,false,blocked_credential_scope
+ACT-3009,approved-export,prospect-scrape,browser_read,synthetic-source-009,approved_source_only,leadassist-act-009,selector_ok,not_needed,normal,false,true,false,blocked_antibot_proxy_scope
+ACT-3010,approved-export,campaign-enrichment,api_lookup,synthetic-lead-010,approved_source_only,leadassist-act-001,not_needed,ok,normal,false,false,false,duplicate_action
+ACT-3011,approved-export,campaign-enrichment,api_lookup,,approved_source_only,leadassist-act-011,not_needed,ok,normal,false,false,false,missing_entity

@@ -1,0 +1,2 @@
+action_id,target_flow,failure_type,detail,alert_rule
+ACT-3005,ad-platform-review,rate_limit,rate_limit_state=rate_limited,hold_queue_until_window_resets

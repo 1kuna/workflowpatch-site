@@ -1,0 +1,3 @@
+action_id,target_flow,failure_type,detail,alert_rule
+ACT-3003,landing-page-check,selector_drift,selector_state=selector_missing,pause_flow_and_review_selector
+ACT-3004,crm-campaign-sync,api_failure,api_state=api_timeout,retry_once_then_alert_owner

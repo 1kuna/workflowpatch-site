@@ -1,0 +1,6 @@
+action_id,target_flow,blocked_reason,detail,next_step
+ACT-3006,competitor-source,unapproved_source_scope,Use approved rows or exports before action planning.,review_before_any_live_browser_api_or_form_action
+ACT-3007,signup-flow,live_form_submission_scope,External form submissions are excluded.,review_before_any_live_browser_api_or_form_action
+ACT-3008,marketing-tool-login,credential_scope,Credential handling is excluded from first proof.,review_before_any_live_browser_api_or_form_action
+ACT-3009,prospect-scrape,antibot_proxy_scope,Anti-bot bypass and proxy work are excluded.,review_before_any_live_browser_api_or_form_action
+ACT-3010,campaign-enrichment,duplicate_action_key,duplicate_key=leadassist-act-001,review_before_any_live_browser_api_or_form_action
