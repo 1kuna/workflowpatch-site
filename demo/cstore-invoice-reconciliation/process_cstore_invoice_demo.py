@@ -307,7 +307,7 @@ def process(
                 "unit_price": f"{unit_price:.2f}",
                 "approved_unit_price": f"{pricebook_row.approved_unit_price:.2f}",
                 "line_total": f"{line_total:.2f}",
-                "decision": "ready_for_exception_review",
+                "decision": "ready_for_human_review",
                 "evidence": (
                     f"vendor={vendor.canonical_vendor} price_match=true "
                     f"total_match=true source_file={row['source_file']}"
