@@ -1,0 +1,5 @@
+client_key,client_name,monday_client_id,account_status,billing_status,default_board
+river-city-packaging,River City Packaging,MON-CLI-1042,active,current,AutoFlow Orders
+wichita-poultry,Wichita Poultry,MON-CLI-2044,active,billing_hold,AutoFlow Orders
+prairie-cold-storage,Prairie Cold Storage,MON-CLI-1870,active,current,AutoFlow Orders
+sunflower-events,Sunflower Events,MON-CLI-2201,inactive,current,AutoFlow Orders

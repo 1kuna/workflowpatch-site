@@ -1,0 +1,9 @@
+field,required,review_if_missing,notes
+client_name,true,true,Used for deterministic Monday client lookup before any draft item exists.
+role,true,true,Staffing role requested by the client.
+shift_date,true,true,Required so an order cannot land on the wrong day.
+shift_time,true,true,Required so operators can review coverage before accepting.
+location,true,true,Required to avoid creating vague AutoFlow items.
+headcount,true,true,Required for order quantity and scheduling.
+pay_rate,false,false,Optional on the first proof; blank values stay visible in the draft ledger.
+confidence,true,true,Rows below 0.85 go to blocked alert review before any item draft.

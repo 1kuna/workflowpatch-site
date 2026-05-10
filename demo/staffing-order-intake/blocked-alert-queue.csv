@@ -1,0 +1,6 @@
+email_id,queue,reason,reviewer,next_step,source_subject
+ord-1002,staffing_order_review,unknown_client,orders-lead@sample.test,Match or create the client record before any AutoFlow item draft.,Rush warehouse shift tonight
+ord-1003,staffing_order_review,billing_hold,orders-lead@sample.test,Resolve or override billing hold before creating an order draft.,Add sanitation team Friday
+ord-1004,staffing_order_review,missing_required_field,orders-lead@sample.test,Ask for the missing order fields before drafting: shift_date.,Need picker shift but date missing
+ord-1005,staffing_order_review,low_confidence_extraction,orders-lead@sample.test,Review the source email and field extraction before any Monday item draft.,Maybe three packers next week
+ord-1006,staffing_order_review,duplicate_order_replay,orders-lead@sample.test,Confirm this is not a forwarded replay before creating a second draft.,Fwd: Need 4 forklift operators Tuesday

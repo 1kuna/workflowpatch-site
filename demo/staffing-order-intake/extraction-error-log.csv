@@ -1,0 +1,2 @@
+email_id,error_code,error_detail
+ord-1007,empty_forwarded_body,Forwarded thread did not include enough body text to extract order fields.
