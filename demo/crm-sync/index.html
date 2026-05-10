@@ -130,6 +130,10 @@
         gap: 14px;
       }
 
+      .grid + .grid {
+        margin-top: 14px;
+      }
+
       .item {
         background: var(--panel);
         border: 1px solid var(--line);
@@ -229,6 +233,21 @@
         <a class="button secondary" href="/demo/crm-sync/ghl-contact-changes.csv">GHL Changes CSV</a>
         <a class="button secondary" href="/demo/crm-sync/runbook.md">Runbook</a>
         <a class="button secondary" href="/demo/crm-sync/process_crm_sync_demo.py">Source Script</a>
+      </div>
+
+      <div class="grid">
+        <div class="item">
+          <h2>Copper Duplicate Guard</h2>
+          <p>Use the same pattern for a Copper or Zapier migration: trigger sample -> match policy -> create, update, or conflict queue.</p>
+        </div>
+        <div class="item">
+          <h2>GHL Activity Sync</h2>
+          <p>Use the same pattern for Gmail, OpenPhone, or form activity: normalize identity -> decide field behavior -> review before write.</p>
+        </div>
+        <div class="item">
+          <h2>Two-Way CRM Drift</h2>
+          <p>Use the same pattern when two systems disagree: hold the row, show the evidence, and make the operator choose the source of truth.</p>
+        </div>
       </div>
 
       <div class="grid">
