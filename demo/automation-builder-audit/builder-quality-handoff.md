@@ -1,6 +1,6 @@
 # Builder Quality Handoff
 
-Generated: 2026-05-10T06:28:00Z
+Generated: 2026-05-10T06:24:00Z
 
 - Builder submissions audited: 5
 - Audit ledger rows: 4

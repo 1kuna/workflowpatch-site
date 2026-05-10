@@ -1,5 +1,5 @@
 submission_id,slice_id,workflow_name,score,verdict,review_summary,processed_at
-sub-3701,slice-001,CRM Lead Routing Audit,100,ready_for_paid_proof,ok,2026-05-10T06:28:00Z
-sub-3702,slice-001,CRM Lead Routing Audit,15,needs_review_before_production,input_contract_incomplete;dedupe_key_missing_or_mismatched;unsafe_retry_policy;missing_conflict_queue;thin_test_matrix,2026-05-10T06:28:00Z
-sub-3704,slice-002,Light Agent Escalation Audit,50,needs_review_before_production,input_contract_incomplete;thin_test_matrix;weak_source_evidence_or_confidence,2026-05-10T06:28:00Z
-sub-3705,slice-003,Appointment Sync Audit,100,ready_for_paid_proof,ok,2026-05-10T06:28:00Z
+sub-3701,slice-001,CRM Lead Routing Audit,100,ready_for_paid_proof,ok,2026-05-10T06:24:00Z
+sub-3702,slice-001,CRM Lead Routing Audit,15,needs_review_before_production,input_contract_incomplete;dedupe_key_missing_or_mismatched;unsafe_retry_policy;missing_conflict_queue;thin_test_matrix,2026-05-10T06:24:00Z
+sub-3704,slice-002,Light Agent Escalation Audit,50,needs_review_before_production,input_contract_incomplete;thin_test_matrix;weak_source_evidence_or_confidence,2026-05-10T06:24:00Z
+sub-3705,slice-003,Appointment Sync Audit,100,ready_for_paid_proof,ok,2026-05-10T06:24:00Z

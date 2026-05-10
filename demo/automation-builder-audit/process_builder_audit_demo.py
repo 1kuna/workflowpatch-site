@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
-GENERATED_AT = "2026-05-10T06:28:00Z"
+GENERATED_AT = "2026-05-10T06:24:00Z"
 
 
 def read_csv(name: str) -> list[dict[str, str]]:
