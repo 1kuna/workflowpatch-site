@@ -1,0 +1,6 @@
+page_id,path,title,html_excerpt,status
+page-001,/guides/local-video-marketing.html,Local Video Marketing Guide,"<h1>Local video marketing</h1><img src='/hero.jpg'><p>Grow fast with short clips.</p>",ready_for_review
+page-002,/services/ai-video-editing.html,AI Video Editing Service,"<h1>AI video editing</h1><meta name='description' content='AI video editing'><p>Best AI video editing for everyone.</p>",ready_for_review
+page-003,/templates/reel-checklist.html,Reel Checklist,"<h1>Reel checklist</h1><p>Use this checklist before publishing.</p><a href=''>Start</a>",ready_for_review
+page-004,/drafts/old-seo-page.html,Old SEO Page,"<h1>Old SEO page</h1><p>Copied launch copy from 2021.</p>",hold
+page-005,,Missing Path Page,"<h1>Broken import</h1><p>No path came through.</p>",ready_for_review

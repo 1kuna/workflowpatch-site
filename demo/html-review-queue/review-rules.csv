@@ -1,0 +1,6 @@
+rule_id,issue_type,severity,match_hint,review_action
+rule-001,missing_alt_text,medium,img tag without alt,add descriptive alt text before upload
+rule-002,thin_meta_description,medium,description under 80 chars,draft a stronger page-specific meta description
+rule-003,empty_link,high,href='',block until destination is known
+rule-004,stale_copy,medium,copied or old year language,review for accuracy before approval
+rule-005,missing_path,high,missing page path,block because output cannot be matched to a file

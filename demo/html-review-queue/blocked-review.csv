@@ -1,0 +1,4 @@
+page_id,path,title,issue_type,severity,decision,evidence,proposed_fix
+page-003,/templates/reel-checklist.html,Reel Checklist,empty_link,high,blocked,link target is empty,Block upload until the destination URL is chosen.
+page-004,/drafts/old-seo-page.html,Old SEO Page,stale_copy,medium,needs_review,page is marked hold or contains stale launch copy,Route to editorial review before any rewrite or upload.
+page-005,missing,Missing Path Page,missing_path,high,blocked,path is empty,Block the row until the original file path is supplied.

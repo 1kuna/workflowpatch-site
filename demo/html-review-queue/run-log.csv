@@ -1,0 +1,6 @@
+page_id,path,issues_found,decision
+page-001,/guides/local-video-marketing.html,1,review_or_ready
+page-002,/services/ai-video-editing.html,1,review_or_ready
+page-003,/templates/reel-checklist.html,1,blocked
+page-004,/drafts/old-seo-page.html,1,review_or_ready
+page-005,missing,1,blocked
