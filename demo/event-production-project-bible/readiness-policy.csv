@@ -1,0 +1,6 @@
+policy_key,threshold,accepted_summary,review_reason,next_action
+budget_green,0.80,Budget is within planned guardrail.,Budget exposure needs producer or finance review.,Confirm change order or reduce committed spend before Phase 2 build.
+milestone_green,10,Milestone timing is inside the normal review window.,Milestone is close or blocked.,Assign owner action before exposing the row to client-facing views.
+vendor_ready,contracted,Vendor readiness can be shown in the review ledger.,Vendor readiness is incomplete.,Confirm vendor owner and next action before project Bible automation.
+rigging_ready,review_ready,Rigging readiness can be shown in the review ledger.,Rigging readiness is missing or blocked.,Resolve rigging dependency before downstream task creation.
+client_visible,client_summary_ready,Client-safe summary can be emitted.,Client-facing summary is missing.,Draft or approve the client-safe summary before client visibility.

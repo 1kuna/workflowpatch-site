@@ -1,0 +1,11 @@
+project_id,project_name,budget_total,committed_spend,next_milestone,days_to_milestone,milestone_status,vendor_status,rigging_status,client_visibility,producer_owner,production_manager,sensitivity,project_phase
+tas-8101,Aerial Gala Launch,240000,168000,Rigging plan approval,12,on_track,contracted,review_ready,client_summary_ready,Gregg Curtis,Maya Ops,non_sensitive_ops,preproduction
+tas-8102,Brand Summit Keynote,180000,177000,Scenic install,5,at_risk,partial,missing,client_summary_ready,Gregg Curtis,Devon Stage,non_sensitive_ops,preproduction
+tas-8103,Studio Immersive Demo,85000,42000,Creative review,21,on_track,contracted,not_required,client_summary_ready,Nina Creative,Maya Ops,non_sensitive_ops,design
+tas-8104,International Arena Build,1250000,910000,Vendor deposits,8,blocked,pending,review_ready,client_summary_missing,Gregg Curtis,Devon Stage,non_sensitive_ops,preproduction
+tas-8105,Private VIP Performance,320000,110000,Talent NDA packet,15,on_track,contracted,review_ready,client_summary_ready,Gregg Curtis,Ari Talent,sensitive_client,preproduction
+tas-8106,Holiday Retail Atrium,145000,61000,Procurement check,18,on_track,pending,review_ready,client_summary_ready,Nina Creative,Maya Ops,non_sensitive_ops,preproduction
+tas-8107,Tour Rigging Refresh,210000,98000,Rigging vendor signoff,4,at_risk,contracted,blocked,client_summary_ready,Gregg Curtis,Devon Stage,non_sensitive_ops,technical
+tas-8108,Archived Museum Install,110000,90000,Closeout archive,-4,complete,contracted,complete,internal_only,Nina Creative,Maya Ops,non_sensitive_ops,complete
+tas-8109,Duplicate Aerial Gala Launch,240000,168000,Rigging plan approval,12,on_track,contracted,review_ready,client_summary_ready,Gregg Curtis,Maya Ops,non_sensitive_ops,preproduction
+tas-8110,Budget Import Error,not_available,50000,Producer check,9,on_track,contracted,review_ready,client_summary_ready,Gregg Curtis,Maya Ops,non_sensitive_ops,preproduction

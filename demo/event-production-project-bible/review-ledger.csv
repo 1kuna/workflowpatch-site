@@ -1,0 +1,3 @@
+project_id,project_name,budget_total,committed_spend,budget_health,milestone_health,vendor_readiness,rigging_readiness,client_visibility,producer_owner,production_manager,accepted_at
+tas-8101,Aerial Gala Launch,240000,168000,on_track,on_track,vendor_ready,rigging_ready,client_ready,Gregg Curtis,Maya Ops,2026-05-10T08:18:00Z
+tas-8103,Studio Immersive Demo,85000,42000,on_track,on_track,vendor_ready,rigging_ready,client_ready,Nina Creative,Maya Ops,2026-05-10T08:18:00Z

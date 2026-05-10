@@ -1528,6 +1528,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Event Production Project Bible</h2>
+            <p>For event-production teams that need a first Project Bible proof around budget health, milestone risk, vendor readiness, rigging status, and role-specific visibility before full Airtable architecture.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>Three redacted project records, budget fields, milestone dates, vendor readiness, rigging status, visibility needs, and owner fields.</div>
+            <div class="step"><strong>Transform</strong>Classify budget exposure, milestone risk, vendor and rigging readiness, duplicate rows, completed projects, sensitive scope, and role visibility.</div>
+            <div class="step"><strong>Destination</strong>Project review ledger, role visibility map, exception queue, hard errors, and a handoff for deciding whether Phase 1 architecture should continue.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Producer and client-facing project control</li>
+                <li>Budget and milestone risk visibility</li>
+                <li>Vendor, rigging, and production-manager readiness</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live Project Bible build from first contact</li>
+                <li>Sensitive client and HR fields stay blocked</li>
+                <li>No Slack, Drive, DocuSign, Make, or Zapier writes</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Ready rows become review-ledger evidence</li>
+                <li>Budget, milestone, vendor, and rigging risks have owner actions</li>
+                <li>Role visibility keeps client-safe fields separate from internal fields</li>
+              </ul>
+              <p><a href="/demo/event-production-project-bible/">View project Bible demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Inventory Room Allocation</h2>
             <p>For staging, rentals, retail ops, and field teams that need inventory assigned to projects or rooms without double-booking.</p>
           </div>
@@ -1596,6 +1635,7 @@
         <a class="button secondary" href="/demo/booking-payment-state/">View Booking State Demo</a>
         <a class="button secondary" href="/demo/signup-access-state/">View Signup Access Demo</a>
         <a class="button secondary" href="/demo/po-budget-bridge/">View PO Budget Demo</a>
+        <a class="button secondary" href="/demo/event-production-project-bible/">View Project Bible Demo</a>
         <a class="button secondary" href="/demo/inventory-room-allocation/">View Inventory Demo</a>
         <a class="button secondary" href="/demo/sms-approval-state/">View SMS Approval Demo</a>
         <a class="button secondary" href="/demo/document-export-manifest/">View Document Export Demo</a>

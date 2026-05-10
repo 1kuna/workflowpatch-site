@@ -1,0 +1,8 @@
+project_id,project_name,reason,producer_owner,production_manager,owner_action
+tas-8102,Brand Summit Keynote,blocked_budget_overrun;milestone_review;vendor_review;rigging_review,Gregg Curtis,Devon Stage,"Resolve the flagged budget, milestone, vendor, rigging, or client-summary item before Phase 2 build scope."
+tas-8104,International Arena Build,milestone_review;vendor_review;client_summary_review,Gregg Curtis,Devon Stage,"Resolve the flagged budget, milestone, vendor, rigging, or client-summary item before Phase 2 build scope."
+tas-8105,Private VIP Performance,sensitive_project_scope,Gregg Curtis,Ari Talent,Use redacted client-safe fields before any proof or visibility automation.
+tas-8106,Holiday Retail Atrium,vendor_review,Nina Creative,Maya Ops,"Resolve the flagged budget, milestone, vendor, rigging, or client-summary item before Phase 2 build scope."
+tas-8107,Tour Rigging Refresh,milestone_review;rigging_review,Gregg Curtis,Devon Stage,"Resolve the flagged budget, milestone, vendor, rigging, or client-summary item before Phase 2 build scope."
+tas-8108,Archived Museum Install,completed_project_archive_review,Nina Creative,Maya Ops,Confirm closeout/archive policy before routing historical rows.
+tas-8109,Duplicate Aerial Gala Launch,duplicate_project_control_row,Gregg Curtis,Maya Ops,Confirm whether this is a duplicate project row or a separate event.
