@@ -1,0 +1,2 @@
+request_id,review_reason,safe_next_step,approval_needed
+AO-1003,client-visible or live-system action needs partner approval,produce dry-run output only,partner approval before client-facing output or live write

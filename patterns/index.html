@@ -397,6 +397,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Agency Overflow QA</h2>
+            <p>For HubSpot, RevOps, automation, or white-label partners that need one client workflow edge case handled without handing over strategy, client ownership, or live-system control.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted CRM export, inbox sample, webhook sample, or request note from the partner.</div>
+            <div class="step"><strong>Transform</strong>Apply scope rules, classify low-risk rows, hold client-visible or live-write rows, and block credentials or bench requests.</div>
+            <div class="step"><strong>Destination</strong>QA ledger, partner review queue, blocked-scope queue, error log, and written handoff.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>HubSpot import QA</li>
+                <li>Email or document triage pilot</li>
+                <li>Webhook or lead-routing overflow</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No white-label legal commitment from first proof</li>
+                <li>No client-facing output without partner approval</li>
+                <li>No secrets, production writes, or broad bench availability</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Low-risk rows produce QA artifacts</li>
+                <li>Live-write rows stay in review</li>
+                <li>Bench or credential rows are blocked</li>
+              </ul>
+              <p><a href="/demo/agency-overflow-qa/">View agency overflow demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Travel Email Classification And Escalation</h2>
             <p>For agency inboxes where Gmail messages need category decisions, Sheets status tracking, Slack escalation, and review gates before any customer-facing automation.</p>
           </div>
@@ -1180,6 +1219,7 @@
         <a class="button secondary" href="/demo/invoice-exception/">View Invoice Exception Demo</a>
         <a class="button secondary" href="/demo/cstore-invoice-reconciliation/">View C-Store Invoice Demo</a>
         <a class="button secondary" href="/demo/crm-sync/">View CRM Sync Demo</a>
+        <a class="button secondary" href="/demo/agency-overflow-qa/">View Agency Overflow Demo</a>
         <a class="button secondary" href="/demo/hubspot-json-stabilization/">View HubSpot JSON Demo</a>
         <a class="button secondary" href="/demo/travel-email-classification/">View Travel Email Demo</a>
         <a class="button secondary" href="/demo/postgres-statement-email/">View Statement Email Demo</a>

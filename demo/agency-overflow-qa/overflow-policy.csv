@@ -1,0 +1,6 @@
+rule_id,condition,outcome,reason
+P1,client_visible output,review,Anything client-facing needs partner approval first
+P2,live update requested,review,Live system writes are dry-run until approved
+P3,broad retainer or bench request,blocked,First proof is one source one transformation one destination
+P4,secret or credential appears,blocked,Credentials and secrets are excluded from first proof
+P5,low-sensitivity internal row,accepted,Allowed to produce QA artifact for partner review
