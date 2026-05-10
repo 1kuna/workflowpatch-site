@@ -1,0 +1,8 @@
+event_id,brief_id,source_record_id,payload_summary,confidence,owner_email,destination_key,correlation_id
+evt-2101,brief-001,lead-441,enterprise lead with budget and timeline,0.92,ops@example.test,hubspot-contact-441,corr-2101
+evt-2102,brief-001,lead-442,lead missing company field,0.81,ops@example.test,,corr-2102
+evt-2103,brief-002,row-771,normalized export row ready for sheet,0.99,data@example.test,sheet-row-771,corr-2103
+evt-2104,brief-002,row-771,duplicate replay of same export row,0.99,data@example.test,sheet-row-771,corr-2103
+evt-2105,brief-003,ticket-882,summary draft cites unsupported claim,0.58,support@example.test,notion-page-882,corr-2105
+evt-2106,brief-003,ticket-883,summary draft with source link,0.88,support@example.test,notion-page-883,corr-2106
+evt-2107,brief-999,row-999,event references an unregistered workflow brief,0.90,ops@example.test,unknown-destination,corr-2107

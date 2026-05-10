@@ -1,0 +1,4 @@
+rule_id,brief_id,rule_name,threshold_or_requirement,review_action
+rule-001,brief-001,qualified_lead_minimum_fields,owner_email and destination_key required,Hold for missing CRM target or owner
+rule-002,brief-002,duplicate_correlation,corr id must be unique,Block duplicate side effects
+rule-003,brief-003,ai_summary_confidence,confidence must be at least 0.80,Review low-confidence or unsupported summary

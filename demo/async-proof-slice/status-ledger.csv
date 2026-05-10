@@ -1,0 +1,4 @@
+event_id,brief_id,workflow_name,source_record_id,destination_system,destination_key,decision,status_note,processed_at
+evt-2101,brief-001,Lead Routing Sample,lead-441,HubSpot,hubspot-contact-441,ready_for_reviewed_delivery,Lead Routing Sample: source lead-441 passed validation for HubSpot.,2026-05-10T06:13:00Z
+evt-2103,brief-002,Ops Export Cleanup,row-771,Google Sheets,sheet-row-771,ready_for_reviewed_delivery,Ops Export Cleanup: source row-771 passed validation for Google Sheets.,2026-05-10T06:13:00Z
+evt-2106,brief-003,AI Summary Check,ticket-883,Notion,notion-page-883,ready_for_reviewed_delivery,AI Summary Check: source ticket-883 passed validation for Notion.,2026-05-10T06:13:00Z

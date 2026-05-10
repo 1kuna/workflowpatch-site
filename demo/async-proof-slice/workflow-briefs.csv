@@ -1,0 +1,4 @@
+brief_id,workflow_name,source_system,destination_system,success_definition,blocked_definition,status_update_channel
+brief-001,Lead Routing Sample,Webhook,HubSpot,qualified lead creates review-ready CRM update,missing company or low confidence routes to review,written status note
+brief-002,Ops Export Cleanup,CSV Export,Google Sheets,valid rows become normalized status ledger,duplicate ids or missing owner route to review,written status note
+brief-003,AI Summary Check,Support Inbox,Notion,approved source rows become summary drafts,unsupported claims or missing source links route to review,written status note

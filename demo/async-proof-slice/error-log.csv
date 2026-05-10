@@ -1,0 +1,2 @@
+event_id,error_code,error_detail
+evt-2107,unknown_brief,Sample event references a workflow brief that is not registered.

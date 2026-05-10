@@ -1,0 +1,4 @@
+event_id,brief_id,workflow_name,reason,review_action
+evt-2102,brief-001,Lead Routing Sample,missing_owner_or_destination,missing company or low confidence routes to review
+evt-2104,brief-002,Ops Export Cleanup,duplicate_correlation_id,Confirm replay intent before any destination write.
+evt-2105,brief-003,AI Summary Check,low_confidence_or_unsupported_output,unsupported claims or missing source links route to review
