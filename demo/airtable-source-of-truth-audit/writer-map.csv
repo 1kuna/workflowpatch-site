@@ -1,0 +1,11 @@
+system,object_name,allowed_write,allowed_read,write_scope,risk_level
+Airtable,Property Listing,no,yes,review fields only,medium
+Supabase,Property Listing,yes,yes,canonical listing fields,medium
+Stacker,Agent Task,yes,yes,status and owner fields,medium
+Make,Agent Task,yes,yes,task creation from approved events,medium
+n8n,Buyer Lead,yes,yes,lead enrichment draft fields,medium
+Polytomic,Duplicate Contact Mirror,no,yes,mirror only,high
+Finance System,Commission Event,yes,yes,finance-owned fields,high
+Supabase,Historical Viewing,no,yes,archive storage only,medium
+Stacker,Marketing Preference,no,yes,display only,high
+Airtable,Viewing Note,yes,yes,notes and status only,low

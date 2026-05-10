@@ -1,0 +1,12 @@
+object_id,object_name,record_count,current_system,proposed_source_of_truth,operational_status,archive_candidate,sensitive_flag,decision_owner
+obj-7001,Property Listing,520000,Airtable,Supabase,active,no,no,Alex Wallemacq
+obj-7002,Buyer Lead,86000,Airtable,Airtable,active,no,no,Revenue Ops
+obj-7003,Agent Task,43000,Stacker,Airtable,active,no,no,Operations
+obj-7004,Historical Viewing,410000,Airtable,Supabase,inactive,yes,no,Operations
+obj-7005,Commission Event,18000,Airtable,Finance System,active,no,yes,Finance
+obj-7006,Duplicate Contact Mirror,90000,Polytomic,Airtable,active,no,no,Revenue Ops
+obj-7007,Unknown Legacy Table,120000,Legacy CSV,,inactive,yes,no,Operations
+obj-7008,Marketing Preference,65000,Airtable,Airtable,active,no,yes,Revenue Ops
+obj-7009,Property Listing,520000,Airtable,Supabase,active,no,no,Alex Wallemacq
+obj-7010,Viewing Note,15000,Stacker,Airtable,active,no,no,Operations
+obj-7011,Malformed Import,not_available,Airtable,Airtable,active,no,no,Operations

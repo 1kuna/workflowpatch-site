@@ -1,0 +1,5 @@
+risk_hint,accepted_summary,review_reason,next_action
+canonical,Source-of-truth decision is ready for architecture review.,Confirm canonical owner and allowed write paths before implementation.,Approve decision pack row or change ownership.
+archive,Archive or mirror candidate is ready for review.,Confirm retention access and rollback expectations before moving records.,Approve archive plan or keep operational.
+write_policy,Allowed-write policy is ready for review.,Confirm writer scope and blocked write paths before any sync build.,Approve write policy or change system permissions.
+blocked,Sensitive or unresolved row requires owner decision.,Do not create implementation tasks until the owner resolves the policy gap.,Resolve blocker before build scope.

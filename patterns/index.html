@@ -1294,6 +1294,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Airtable Source Of Truth Audit</h2>
+            <p>For Airtable-heavy internal tools where high record volume, Stacker portals, sync tools, and finance or revenue objects need one canonical owner before another automation layer is added.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted object inventory, writer map, rough record counts, source-of-truth guesses, and sensitive-object flags.</div>
+            <div class="step"><strong>Transform</strong>Classify canonical owners, writer permissions, duplicate mirrors, archive candidates, sensitive-policy blocks, and missing decision owners.</div>
+            <div class="step"><strong>Destination</strong>Decision pack, write-policy map, archive review queue, blocked decision queue, hard errors, and a runbook for the next scoped build.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Airtable bases over 100k records</li>
+                <li>Stacker, Make, n8n, Supabase, or Polytomic overlap</li>
+                <li>Multiple teams writing the same operational object</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live base access in the first diagnostic</li>
+                <li>No migration promise before write policy approval</li>
+                <li>Finance and sensitive objects stay blocked until owners approve</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Every object has one named source-of-truth decision or block reason</li>
+                <li>Every writer has explicit read/write scope</li>
+                <li>Archive and duplicate decisions stay review-gated</li>
+              </ul>
+              <p><a href="/demo/airtable-source-of-truth-audit/">View Airtable source demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Board Event Routing</h2>
             <p>For Monday.com-style board workflows where status changes should create tasks, queue reviews, or update another system without exposing sensitive client data.</p>
           </div>
@@ -1550,6 +1589,7 @@
         <a class="button secondary" href="/demo/webhook-idempotency/">View Webhook Demo</a>
         <a class="button secondary" href="/demo/n8n-crash-triage/">View n8n Crash Triage Demo</a>
         <a class="button secondary" href="/demo/field-service-action-layer/">View Field-Service Demo</a>
+        <a class="button secondary" href="/demo/airtable-source-of-truth-audit/">View Airtable Source Demo</a>
         <a class="button secondary" href="/demo/scenario-ops-reduction/">View Ops Reduction Demo</a>
         <a class="button secondary" href="/demo/scenario-modularization/">View Modularization Demo</a>
         <a class="button secondary" href="/demo/board-event-routing/">View Board Routing Demo</a>

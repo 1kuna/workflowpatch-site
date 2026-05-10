@@ -1,0 +1,7 @@
+object_id,object_name,record_count,volume_class,current_system,proposed_source_of_truth,decision,owner,accepted_at,review_note
+obj-7001,Property Listing,520000,high_volume,Airtable,Supabase,ready_for_architecture_review,Alex Wallemacq,2026-05-10T08:05:00Z,Source-of-truth decision is ready for architecture review.
+obj-7002,Buyer Lead,86000,standard_volume,Airtable,Airtable,ready_for_architecture_review,Revenue Ops,2026-05-10T08:05:00Z,Source-of-truth decision is ready for architecture review.
+obj-7003,Agent Task,43000,standard_volume,Stacker,Airtable,ready_for_architecture_review,Operations,2026-05-10T08:05:00Z,Source-of-truth decision is ready for architecture review.
+obj-7004,Historical Viewing,410000,high_volume,Airtable,Supabase,ready_for_architecture_review,Operations,2026-05-10T08:05:00Z,Source-of-truth decision is ready for architecture review.
+obj-7006,Duplicate Contact Mirror,90000,standard_volume,Polytomic,Airtable,ready_for_architecture_review,Revenue Ops,2026-05-10T08:05:00Z,Source-of-truth decision is ready for architecture review.
+obj-7010,Viewing Note,15000,standard_volume,Stacker,Airtable,ready_for_architecture_review,Operations,2026-05-10T08:05:00Z,Source-of-truth decision is ready for architecture review.

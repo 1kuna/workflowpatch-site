@@ -1,0 +1,5 @@
+object_id,object_name,reason,owner,next_step
+obj-7005,Commission Event,sensitive_object_policy,Finance,Resolve access and audit requirements before build scope.
+obj-7007,Unknown Legacy Table,missing_source_of_truth,Operations,Choose a canonical owner before implementation planning.
+obj-7008,Marketing Preference,sensitive_object_policy,Revenue Ops,Resolve access and audit requirements before build scope.
+obj-7009,Property Listing,duplicate_object_decision,Alex Wallemacq,Confirm whether this is a duplicate object or a separate mirror.

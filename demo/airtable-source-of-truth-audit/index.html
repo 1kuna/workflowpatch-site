@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.workflowpatch.com/demo/airtable-source-of-truth-audit/">
+    <title>WorkflowPatch Airtable Source Of Truth Audit Demo</title>
+    <meta name="description" content="Mock WorkflowPatch Airtable source-of-truth audit demo with decision pack, write-policy map, archive review queue, blocked decision queue, error log, source script, and runbook.">
+    <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="WorkflowPatch">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WorkflowPatch Airtable Source Of Truth Audit Demo">
+    <meta property="og:description" content="A mock Airtable architecture diagnostic for high-volume internal tools, write policies, archive decisions, blocked records, and hard errors before live system changes.">
+    <meta property="og:url" content="https://www.workflowpatch.com/demo/airtable-source-of-truth-audit/">
+    <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="WorkflowPatch async fixed-scope workflow automation">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2328;
+        --muted: #5f6b72;
+        --line: #d9e0e4;
+        --paper: #fbfcfb;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-dark: #0b4d49;
+        --warning: #9a5b11;
+        --soft: #edf5f3;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.5; }
+      .wrap { width: min(1080px, calc(100% - 32px)); margin: 0 auto; }
+      header { border-bottom: 1px solid var(--line); background: rgba(251, 252, 251, 0.94); }
+      .topbar { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+      .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; }
+      .brand img { width: 32px; height: 32px; }
+      a { color: var(--accent-dark); font-weight: 700; }
+      main { padding: 48px 0; }
+      h1 { font-size: clamp(34px, 6vw, 64px); line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
+      .lede { color: var(--muted); font-size: 19px; max-width: 850px; margin: 0 0 28px; }
+      .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
+      .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
+      .button.secondary { background: transparent; color: var(--accent-dark); }
+      .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+      .item { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+      .item h2 { font-size: 16px; margin: 0 0 8px; }
+      .item p { color: var(--muted); font-size: 14px; margin: 0; }
+      .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); margin-top: 28px; }
+      table { width: 100%; border-collapse: collapse; min-width: 900px; font-size: 14px; }
+      th, td { border-bottom: 1px solid var(--line); padding: 12px; text-align: left; vertical-align: top; }
+      th { background: var(--soft); color: var(--accent-dark); }
+      tr:last-child td { border-bottom: 0; }
+      .status { color: var(--accent-dark); font-weight: 800; }
+      .warn { color: var(--warning); font-weight: 800; }
+      footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
+      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
+        <a href="/start/">Start async fit check</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1>Airtable source-of-truth audit demo output.</h1>
+      <p class="lede">A small mock architecture diagnostic for high-volume Airtable internal tools. It turns sanitized object inventories and writer maps into a source-of-truth decision pack, approval-required write-policy map, archive review queue, blocked decision queue, and hard errors before any live Airtable, Stacker, Make, n8n, Supabase, Polytomic, or production change.</p>
+
+      <div class="links">
+        <a class="button" href="/demo/airtable-source-of-truth-audit/decision-pack.csv">Decision Pack CSV</a>
+        <a class="button secondary" href="/demo/airtable-source-of-truth-audit/write-policy-map.csv">Write Policy Map CSV</a>
+        <a class="button secondary" href="/demo/airtable-source-of-truth-audit/archive-review-queue.csv">Archive Review Queue CSV</a>
+        <a class="button secondary" href="/demo/airtable-source-of-truth-audit/blocked-decision-queue.csv">Blocked Decision Queue CSV</a>
+        <a class="button secondary" href="/demo/airtable-source-of-truth-audit/error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="/demo/airtable-source-of-truth-audit/object-inventory.csv">Object Inventory CSV</a>
+        <a class="button secondary" href="/demo/airtable-source-of-truth-audit/writer-map.csv">Writer Map CSV</a>
+        <a class="button secondary" href="/demo/airtable-source-of-truth-audit/audit-policy.csv">Audit Policy CSV</a>
+        <a class="button secondary" href="/demo/airtable-source-of-truth-audit/runbook.md">Runbook</a>
+        <a class="button secondary" href="/demo/airtable-source-of-truth-audit/process_airtable_source_of_truth_demo.py">Source Script</a>
+      </div>
+
+      <div class="grid">
+        <div class="item">
+          <h2>Object Inventory</h2>
+          <p>High-volume tables, mirrors, and inactive objects are reviewed before build work starts.</p>
+        </div>
+        <div class="item">
+          <h2>Source Of Truth</h2>
+          <p>Each accepted object gets a named canonical owner and architecture review row.</p>
+        </div>
+        <div class="item">
+          <h2>Write Policy</h2>
+          <p>Airtable, Stacker, Make, n8n, Supabase, Polytomic, and finance writes stay explicit.</p>
+        </div>
+        <div class="item">
+          <h2>Blocked Decisions</h2>
+          <p>Sensitive, duplicate, missing-source, or unmapped objects block before implementation.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap" aria-label="Airtable source-of-truth audit sample">
+        <table>
+          <thead>
+            <tr>
+              <th>Object</th>
+              <th>Records</th>
+              <th>Decision</th>
+              <th>Reason</th>
+              <th>Next Queue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Property Listing</td>
+              <td>520,000</td>
+              <td class="status">Architecture review</td>
+              <td>High-volume Airtable object has a proposed Supabase source of truth and explicit writer policy.</td>
+              <td>decision-pack</td>
+            </tr>
+            <tr>
+              <td>Historical Viewing</td>
+              <td>410,000</td>
+              <td class="status">Archive review</td>
+              <td>Inactive high-volume records need retention and rollback approval before migration.</td>
+              <td>archive-review</td>
+            </tr>
+            <tr>
+              <td>Commission Event</td>
+              <td>18,000</td>
+              <td class="warn">Blocked sensitive policy</td>
+              <td>Finance-sensitive objects need owner access and audit decisions before build scope.</td>
+              <td>blocked-decision</td>
+            </tr>
+            <tr>
+              <td>Unknown Legacy Table</td>
+              <td>120,000</td>
+              <td class="warn">Blocked missing source</td>
+              <td>No canonical source of truth is named, so no sync build should start.</td>
+              <td>blocked-decision</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">WorkflowPatch · Alex Reed, Workflow Automation Operator · alex@workflowpatch.com · 2995 East Point Street, East Point, GA 30094</div>
+    </footer>
+  </body>
+</html>

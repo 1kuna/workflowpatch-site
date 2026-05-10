@@ -1,0 +1,9 @@
+object_id,object_name,system,allowed_write,allowed_read,write_scope,risk_level,draft_status,review_reason
+obj-7001,Property Listing,Airtable,no,yes,review fields only,medium,approval_required,Confirm writer scope and blocked write paths before any sync build.
+obj-7001,Property Listing,Supabase,yes,yes,canonical listing fields,medium,approval_required,Confirm writer scope and blocked write paths before any sync build.
+obj-7002,Buyer Lead,n8n,yes,yes,lead enrichment draft fields,medium,approval_required,Confirm writer scope and blocked write paths before any sync build.
+obj-7003,Agent Task,Stacker,yes,yes,status and owner fields,medium,approval_required,Confirm writer scope and blocked write paths before any sync build.
+obj-7003,Agent Task,Make,yes,yes,task creation from approved events,medium,approval_required,Confirm writer scope and blocked write paths before any sync build.
+obj-7004,Historical Viewing,Supabase,no,yes,archive storage only,medium,approval_required,Confirm writer scope and blocked write paths before any sync build.
+obj-7006,Duplicate Contact Mirror,Polytomic,no,yes,mirror only,high,approval_required,Confirm writer scope and blocked write paths before any sync build.
+obj-7010,Viewing Note,Airtable,yes,yes,notes and status only,low,approval_required,Confirm writer scope and blocked write paths before any sync build.

@@ -1,0 +1,2 @@
+object_id,object_name,record_count,archive_status,owner,review_reason,next_action
+obj-7004,Historical Viewing,410000,approval_required,Operations,Confirm retention access and rollback expectations before moving records.,Approve archive plan or keep operational.
