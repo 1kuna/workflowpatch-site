@@ -1,0 +1,6 @@
+item_code,item_name,category,default_vendor,unit,status,allowed_rooms
+TILE-12X24-OAK,Porcelain tile 12x24,tile,Gulf Tile,sqft,active,Primary bath|Kitchen|Outdoor kitchen
+CAB-SHAKER-WHITE,Shaker cabinet white,cabinetry,Bay Cabinet Supply,linear_ft,active,Kitchen|Laundry
+PAVER-TRAVERTINE-16,Travertine paver,hardscape,Stone Yard,sqft,phase_2_hold,Pool deck|Patio
+FIXTURE-MATTE-BLK,Matte black fixture kit,plumbing,Fixture House,each,active,Primary bath|Guest bath
+FLOOR-LVP-WARM,Waterproof LVP flooring,flooring,Floor Source,sqft,active,Kitchen|Laundry|Living room

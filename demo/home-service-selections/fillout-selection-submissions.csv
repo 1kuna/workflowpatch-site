@@ -1,0 +1,8 @@
+submission_id,project_id,room,item_code,quantity,status_requested,submitted_by,notes
+SUB-1001,PRJ-501,Primary bath,TILE-12X24-OAK,180,proposed,sales,warm neutral tile selected during walkthrough
+SUB-1002,PRJ-501,Kitchen,CAB-SHAKER-WHITE,22,approved,sales,match appliance package
+SUB-1003,PRJ-501,Pool deck,PAVER-TRAVERTINE-16,400,proposed,sales,phase 2 item selected before phase approval
+SUB-1004,PRJ-502,Guest bath,FIXTURE-MATTE-BLK,3,approved,sales,vendor lead time needs review
+SUB-1005,PRJ-999,Kitchen,CAB-SHAKER-WHITE,10,approved,sales,unknown project should block
+SUB-1006,PRJ-501,Kitchen,UNKNOWN-SKU,1,approved,sales,unknown catalog item should block
+SUB-1007,PRJ-503,Outdoor kitchen,TILE-12X24-OAK,80,ordered,sales,project is paused

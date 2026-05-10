@@ -1,0 +1,5 @@
+error_id,submission_id,severity,blocked_reason,next_step
+ERR-3001,SUB-1003,review,catalog item is on phase 2 hold,confirm phase approval before vendor draft
+ERR-3002,SUB-1005,error,unknown project id,map or create project before ledger write
+ERR-3003,SUB-1006,error,unknown item code,add catalog item or choose an active approved item
+ERR-3004,SUB-1007,review,project is paused,unblock only after project returns to active state

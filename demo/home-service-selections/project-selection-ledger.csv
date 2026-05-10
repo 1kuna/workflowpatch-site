@@ -1,0 +1,4 @@
+ledger_id,submission_id,project_id,brand,item_code,quantity,decision,status_after,reason,next_queue
+LED-1001,SUB-1001,PRJ-501,Watermark Design Build,TILE-12X24-OAK,180,accepted,proposed,catalog item active and room allowed,selection approval review
+LED-1002,SUB-1002,PRJ-501,Watermark Design Build,CAB-SHAKER-WHITE,22,accepted,approved,catalog item active and room allowed,vendor order draft queue
+LED-1004,SUB-1004,PRJ-502,Manolo Roofing,FIXTURE-MATTE-BLK,3,accepted_with_warning,approved,catalog item active but vendor lead time flagged,vendor order draft queue

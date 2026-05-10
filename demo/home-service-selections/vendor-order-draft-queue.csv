@@ -1,0 +1,3 @@
+draft_id,submission_id,project_id,vendor,item_code,quantity,unit,approval_required,send_state
+ORD-2001,SUB-1002,PRJ-501,Bay Cabinet Supply,CAB-SHAKER-WHITE,22,linear_ft,yes,draft_only
+ORD-2002,SUB-1004,PRJ-502,Fixture House,FIXTURE-MATTE-BLK,3,each,yes,draft_only
