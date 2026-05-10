@@ -1,0 +1,4 @@
+item_id,destination,artifact,approval_state
+DER-1001,CRM,review-ready structured row,ready_for_human_review
+DER-1002,review_sheet,review-ready structured row,ready_for_human_review
+DER-1003,CRM,review-ready structured row,ready_for_human_review

@@ -1,0 +1,10 @@
+item_id,source_type,destination,decision,reason,requested_output
+DER-1001,email,CRM,accepted,destination-ready review artifact,extract account name issue category and urgency
+DER-1002,document,review_sheet,accepted,destination-ready review artifact,extract invoice number vendor date and amount
+DER-1003,crm_export,CRM,accepted,destination-ready review artifact,normalize lifecycle stage and owner queue
+DER-1004,email,CRM,blocked,sensitive customer or client data present,extract customer complaint and draft response
+DER-1005,document,review_sheet,blocked,source is not approved for first proof,extract contract terms
+DER-1006,email,CRM,review,live write or external send requires approval,extract issue category and update live CRM
+DER-1007,email,review_sheet,review,low extraction confidence,extract urgency and next action
+DER-1008,document,review_sheet,review,required extraction fields missing,extract vendor date and total
+DER-1009,crm_export,CRM,blocked,duplicate source key already processed,normalize lifecycle stage and owner queue

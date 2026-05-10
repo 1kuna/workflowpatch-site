@@ -1,0 +1,11 @@
+item_id,source_type,source_label,destination,requested_output,approved_source,contains_sensitive_data,confidence,required_fields_present,duplicate_key,external_action_requested,notes
+DER-1001,email,inbound-support-alias,CRM,extract account name issue category and urgency,yes,no,0.92,yes,msg-7101,no,approved sample email export
+DER-1002,document,pdf-intake-folder,review_sheet,extract invoice number vendor date and amount,yes,no,0.88,yes,doc-4410,no,approved redacted document sample
+DER-1003,crm_export,hubspot-csv,CRM,normalize lifecycle stage and owner queue,yes,no,0.84,yes,crm-9012,no,approved CRM export row
+DER-1004,email,client-forwarded-thread,CRM,extract customer complaint and draft response,yes,yes,0.91,yes,msg-7104,no,contains sensitive customer story
+DER-1005,document,unapproved-drive-link,review_sheet,extract contract terms,unknown,no,0.87,yes,doc-4415,no,source not approved for first proof
+DER-1006,email,inbound-support-alias,CRM,extract issue category and update live CRM,yes,no,0.90,yes,msg-7106,yes,external write requested
+DER-1007,email,inbound-support-alias,review_sheet,extract urgency and next action,yes,no,0.61,yes,msg-7107,no,low model confidence
+DER-1008,document,pdf-intake-folder,review_sheet,extract vendor date and total,yes,no,0.83,no,doc-4418,no,required amount field missing
+DER-1009,crm_export,hubspot-csv,CRM,normalize lifecycle stage and owner queue,yes,no,0.86,yes,crm-9012,no,duplicate export row
+DER-1010,email,,CRM,extract issue category,yes,no,0.80,yes,msg-7110,no,missing source label

@@ -749,6 +749,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Document Email Review</h2>
+            <p>For document, email, or CRM-export pilots where extraction is useful only if confidence, sensitive-data boundaries, duplicate behavior, and live-action approvals are visible.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted document, email, or CRM-export sample from an approved source.</div>
+            <div class="step"><strong>Transform</strong>Extract or classify fields, validate required values, block sensitive data and duplicates, and route uncertain rows to human review.</div>
+            <div class="step"><strong>Destination</strong>Extraction ledger, destination-ready review rows, human-review queue, blocked-item queue, error log, and handoff runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Email or document classification</li>
+                <li>CRM export normalization</li>
+                <li>Human-in-the-loop extraction pilots</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No sensitive client data from first proof</li>
+                <li>No live CRM or ERP write without approval</li>
+                <li>No external email, Slack, SMS, or customer send</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Accepted rows become review-ready artifacts</li>
+                <li>Low-confidence rows stay in human review</li>
+                <li>Unapproved, duplicate, or malformed rows are blocked or errored</li>
+              </ul>
+              <p><a href="/demo/document-email-review/">View document email demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Travel Email Classification And Escalation</h2>
             <p>For agency inboxes where Gmail messages need category decisions, Sheets status tracking, Slack escalation, and review gates before any customer-facing automation.</p>
           </div>
@@ -2003,6 +2042,7 @@
         <a class="button secondary" href="/demo/hubspot-clickup-stabilization/">View HubSpot ClickUp Demo</a>
         <a class="button secondary" href="/demo/revops-integration-qa/">View RevOps QA Demo</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/">View Agency Overflow Demo</a>
+        <a class="button secondary" href="/demo/document-email-review/">View Document Email Demo</a>
         <a class="button secondary" href="/demo/finance-ops-handoff/">View Finance Ops Demo</a>
         <a class="button secondary" href="/demo/mvp-governance-review/">View MVP Governance Demo</a>
         <a class="button secondary" href="/demo/program-ops-kpi/">View Program Ops Demo</a>

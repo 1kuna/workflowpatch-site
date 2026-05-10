@@ -1,0 +1,4 @@
+item_id,review_reason,safe_next_step,no_live_action
+DER-1006,live write or external send requires approval,"inspect source evidence and approve, revise, or block",true
+DER-1007,low extraction confidence,"inspect source evidence and approve, revise, or block",true
+DER-1008,required extraction fields missing,"inspect source evidence and approve, revise, or block",true

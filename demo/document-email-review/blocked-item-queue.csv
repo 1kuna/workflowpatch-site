@@ -1,0 +1,4 @@
+item_id,block_reason,safe_boundary
+DER-1004,sensitive customer or client data present,replace with approved redacted source or keep out of first proof
+DER-1005,source is not approved for first proof,replace with approved redacted source or keep out of first proof
+DER-1009,duplicate source key already processed,replace with approved redacted source or keep out of first proof

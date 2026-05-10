@@ -1,0 +1,9 @@
+rule_id,rule_type,condition,decision
+POL-1,source,approved_source is yes,allow extraction
+POL-2,source,approved_source is not yes,block until source approval
+POL-3,sensitivity,contains_sensitive_data is yes,block before first proof
+POL-4,confidence,confidence below 0.80,route to human review
+POL-5,fields,required_fields_present is no,route to human review
+POL-6,side_effect,external_action_requested is yes,route to human review before any live write or send
+POL-7,duplicate,duplicate_key already processed,block duplicate
+POL-8,error,missing required source fields,write hard error row
