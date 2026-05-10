@@ -1,0 +1,5 @@
+path_id,base_name,path_name,primary_symptom,diagnosis,first_action,risk_level,evidence_needed
+PATH-01,Operations hub,selection status fanout,automation queue delay,queue_pressure_from_cascading_automations,split validation from side effects and add a final-state gate,medium,"run history, redacted path map, record counts, and failure examples"
+PATH-02,Order fulfillment,quote line grouping,script timeout,heavy_script_timeout,profile reads and offload the expensive worker before live edits,high,"run history, redacted path map, record counts, and failure examples"
+PATH-03,Client delivery,project intake router,ui lag,queue_pressure_from_cascading_automations,split validation from side effects and add a final-state gate,medium,"run history, redacted path map, record counts, and failure examples"
+PATH-04,Operations hub,weekly ops rollup,automation queue delay,heavy_script_timeout,profile reads and offload the expensive worker before live edits,high,"run history, redacted path map, record counts, and failure examples"

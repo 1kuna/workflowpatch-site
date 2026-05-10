@@ -903,6 +903,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Airtable Performance Triage</h2>
+            <p>For Airtable teams where automation queue delays, 180-second script timeouts, and linked-record write fanout need diagnosis before a plan upgrade, HyperDB move, or external worker build.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted base map, one slow automation or script path, rough record counts, linked-table shape, and peak-time failure examples.</div>
+            <div class="step"><strong>Transform</strong>Profile trigger, records touched, reads, writes, linked views, downstream automations, queue delay, timeout, and write-conflict risk.</div>
+            <div class="step"><strong>Destination</strong>Triage ledger, offload plan, blocked-risk notes, and a no-live-change handoff for deciding whether implementation should be scoped.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Airtable automation queue delays</li>
+                <li>Scripts timing out near 180 seconds</li>
+                <li>Unclear Enterprise versus architecture decision</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>Redacted map before live base access</li>
+                <li>One worst path first</li>
+                <li>No plan-upgrade or migration promise from first proof</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Each slow path has a diagnosis</li>
+                <li>Offload candidates keep Airtable as the review UI</li>
+                <li>Ambiguous keys and missing owners stay blocked</li>
+              </ul>
+              <p><a href="/demo/airtable-performance-triage/">View Airtable triage demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Board Event Routing</h2>
             <p>For Monday.com-style board workflows where status changes should create tasks, queue reviews, or update another system without exposing sensitive client data.</p>
           </div>

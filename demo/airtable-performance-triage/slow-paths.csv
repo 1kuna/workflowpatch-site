@@ -1,0 +1,5 @@
+path_id,base_id,path_name,trigger,records_touched,linked_tables,script_runtime_seconds,queue_delay_minutes,downstream_automations,write_pattern
+PATH-01,BASE-OPS-01,selection status fanout,record updated in selections table,620,projects vendors orders,34,58,4,updates linked project and vendor rows
+PATH-02,BASE-OPS-02,quote line grouping,button/script creates client quote,1200,items rooms categories,180,12,2,reads many linked fields and writes grouped output
+PATH-03,BASE-OPS-03,project intake router,form submission creates project request,180,clients project stages team members,9,45,5,creates records that trigger downstream notifications
+PATH-04,BASE-OPS-01,weekly ops rollup,scheduled script builds summary,2600,projects orders exceptions invoices,180,8,1,reads full base and writes summary rows

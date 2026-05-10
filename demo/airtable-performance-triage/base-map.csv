@@ -1,0 +1,4 @@
+base_id,base_name,table_count,interface_count,active_users,plan,peak_window,primary_symptom
+BASE-OPS-01,Operations hub,14,7,15,Business,weekday 10:00-14:00,automation queue delay
+BASE-OPS-02,Order fulfillment,9,3,8,Business,weekday 12:00-16:00,script timeout
+BASE-OPS-03,Client delivery,11,5,12,Business,weekday 09:00-11:00,ui lag

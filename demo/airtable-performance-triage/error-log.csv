@@ -1,0 +1,5 @@
+path_id,error_class,example,operator_action
+PATH-01,write_conflict,selection update fires before vendor row is ready,hold row and replay after vendor key exists
+PATH-02,script_timeout,category grouping reaches Airtable script time limit,move grouping to offloaded worker or reduce read set
+PATH-03,cascading_trigger,notification automation fires from intermediate status,add final-state gate before side effects
+PATH-04,peak_window_scan,scheduled rollup scans high-use tables during peak data entry,move batch off-hours or use change ledger

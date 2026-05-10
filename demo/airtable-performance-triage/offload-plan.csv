@@ -1,0 +1,5 @@
+path_id,keep_in_airtable,offload_candidate,review_queue,blocked_reason_policy,next_check
+PATH-01,intake validation and owner assignment,notification or side-effect batching,path-01_review,"block ambiguous keys, duplicate rows, and missing owner fields",compare three dry-run outputs against current expected result
+PATH-02,"trigger, approval state, and review UI",external worker with dry-run output ledger,path-02_review,"block ambiguous keys, duplicate rows, and missing owner fields",compare three dry-run outputs against current expected result
+PATH-03,intake validation and owner assignment,notification or side-effect batching,path-03_review,"block ambiguous keys, duplicate rows, and missing owner fields",compare three dry-run outputs against current expected result
+PATH-04,"trigger, approval state, and review UI",external worker with dry-run output ledger,path-04_review,"block ambiguous keys, duplicate rows, and missing owner fields",compare three dry-run outputs against current expected result
