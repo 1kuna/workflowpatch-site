@@ -1,0 +1,6 @@
+event_id,close_contact_id,email,appointment_id,appointment_status,appointment_time,updated_at,correlation_id
+close-evt-2301,close-101,avery@example.test,appt-7001,booked,2026-05-12T15:00:00Z,2026-05-10T14:00:00Z,corr-2301
+close-evt-2302,close-999,unknown@example.test,appt-7002,booked,2026-05-12T16:00:00Z,2026-05-10T14:03:00Z,corr-2302
+close-evt-2303,close-102,morgan@example.test,appt-7003,canceled,2026-05-12T17:00:00Z,2026-05-10T14:06:00Z,corr-2303
+close-evt-2304,close-102,morgan@example.test,appt-7003,canceled,2026-05-12T17:00:00Z,2026-05-10T14:06:00Z,corr-2303
+close-evt-2309,close-101,avery@example.test,,booked,2026-05-12T18:00:00Z,2026-05-10T14:21:00Z,corr-2309

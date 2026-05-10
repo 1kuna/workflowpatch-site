@@ -1,0 +1,5 @@
+event_id,ghl_contact_id,email,field_name,new_value,updated_at,correlation_id
+ghl-evt-2305,ghl-502,morgan@example.test,lead_source,referral-partner,2026-05-10T14:12:00Z,corr-2305
+ghl-evt-2306,ghl-503,riley.new@example.test,email,riley.new@example.test,2026-05-10T14:15:00Z,corr-2306
+ghl-evt-2307,ghl-501,avery@example.test,phone,+15550109999,2026-05-10T14:16:00Z,corr-2307
+ghl-evt-2308,ghl-404,missing@example.test,notes,Asked for SMS reminder,2026-05-10T14:18:00Z,corr-2308

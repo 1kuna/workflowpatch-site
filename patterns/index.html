@@ -436,6 +436,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>GHL Close Two-Way Sync</h2>
+            <p>For teams syncing appointments and contact fields between Close and GoHighLevel without silent overwrites.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted Close appointment event and one GHL contact-change sample.</div>
+            <div class="step"><strong>Transform</strong>Apply contact map, direction-specific field policy, duplicate key, and source-of-truth rules.</div>
+            <div class="step"><strong>Destination</strong>Dry-run sync ledger, conflict review queue, error log, and written handoff.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Close appointment to GHL activity</li>
+                <li>GHL contact change to Close field</li>
+                <li>Conflict policy before backfill</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live CRM writes first</li>
+                <li>No SMS or customer messages</li>
+                <li>No silent source-of-truth decision</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Matched events reach sync ledger</li>
+                <li>Duplicate or identity changes block</li>
+                <li>Malformed events reach error log</li>
+              </ul>
+              <p><a href="/demo/ghl-close-sync/">View GHL Close demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>HubSpot JSON Stabilization</h2>
             <p>For n8n workflows where landing-page webhooks, AI intent output, and HubSpot writes fail because payload shapes vary or nested arrays break downstream batching.</p>
           </div>

@@ -1,0 +1,7 @@
+field_name,direction,winning_system,review_rule
+appointment_status,close_to_ghl,Close,Close appointment event may update GHL activity when contact match is stable
+appointment_time,close_to_ghl,Close,Close appointment event may update GHL activity when contact match is stable
+phone,ghl_to_close,GHL,Block if Close changed the same identity field during the same sync window
+lead_source,ghl_to_close,GHL,Allow if contact match is stable and source is not blank
+email,ghl_to_close,review_required,Identity field changes require review before either CRM is updated
+notes,ghl_to_close,GHL,Allow only as an internal note draft and never as customer-facing text

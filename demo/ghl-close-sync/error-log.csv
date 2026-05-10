@@ -1,0 +1,2 @@
+event_id,direction,error_code,error_detail
+close-evt-2309,close_to_ghl,missing_required_appointment_field,Appointment events need appointment_id and status for replay-safe sync.

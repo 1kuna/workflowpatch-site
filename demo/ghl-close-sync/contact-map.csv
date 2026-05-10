@@ -1,0 +1,4 @@
+contact_key,email,close_contact_id,ghl_contact_id,contact_owner,contact_source_of_truth,appointment_source_of_truth
+ck-001,avery@example.test,close-101,ghl-501,ops,Close,Close
+ck-002,morgan@example.test,close-102,ghl-502,sales,GHL,Close
+ck-003,riley@example.test,close-103,ghl-503,ops,review_required,Close

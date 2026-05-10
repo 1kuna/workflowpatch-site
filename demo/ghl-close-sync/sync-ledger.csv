@@ -1,0 +1,5 @@
+event_id,direction,contact_key,source_record,destination_record,field_name,decision,decision_detail,processed_at
+close-evt-2301,close_to_ghl,ck-001,appt-7001,ghl-501,appointment_status,ready_for_reviewed_ghl_update,Set GHL appointment status to booked from Close event.,2026-05-10T06:31:00Z
+close-evt-2303,close_to_ghl,ck-002,appt-7003,ghl-502,appointment_status,ready_for_reviewed_ghl_update,Set GHL appointment status to canceled from Close event.,2026-05-10T06:31:00Z
+ghl-evt-2305,ghl_to_close,ck-002,ghl-502,close-102,lead_source,ready_for_reviewed_close_update,Set Close lead_source to referral-partner from GHL change.,2026-05-10T06:31:00Z
+ghl-evt-2307,ghl_to_close,ck-001,ghl-501,close-101,phone,ready_for_reviewed_close_update,Set Close phone to +15550109999 from GHL change.,2026-05-10T06:31:00Z
