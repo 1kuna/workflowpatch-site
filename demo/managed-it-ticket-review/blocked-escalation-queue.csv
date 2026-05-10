@@ -1,0 +1,6 @@
+ticket_id,queue,reason,reviewer,next_step,source_summary
+tkt-4102,security_review,security_sensitive_content,engineer@sample.test,Redact security-sensitive evidence before any summary or client note exists.,Endpoint alert includes raw security finding and user-specific artifact path
+tkt-4103,client_lookup_review,unknown_client,tam@sample.test,Map the client before creating account-manager or client-status output.,Recurring printer tickets need client owner review
+tkt-4104,TAM Review,duplicate_ticket_pattern,tam@sample.test,Confirm whether this is a true repeat before creating another review item.,Workstation setup delayed because device shipment arrived without asset tag
+tkt-4106,Onboarding Review,client_not_active,tam@sample.test,Resolve onboarding or account hold before summarizing this row.,New user setup request is missing department and license type
+tkt-4107,TAM Review,low_confidence_summary,tam@sample.test,Have the service lead review the source row before it enters any summary queue.,User says VPN is sometimes weird and maybe slow

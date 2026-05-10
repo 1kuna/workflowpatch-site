@@ -826,6 +826,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Managed IT Ticket Review</h2>
+            <p>For MSPs and IT service teams that need ticket exports turned into account-review rows and client-summary drafts without exposing security-sensitive details or sending client-facing updates automatically.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One sanitized ticket, chat, monitoring, onboarding, or service activity export with client name, owner, priority, SLA state, summary, and confidence.</div>
+            <div class="step"><strong>Transform</strong>Match active clients, block unknown or inactive accounts, hold security-sensitive rows, suppress duplicates, and keep client-facing summaries approval-required.</div>
+            <div class="step"><strong>Destination</strong>Ticket review ledger, client-summary draft queue, blocked escalation queue, error log, source script, and replayable runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>MSP account review prep</li>
+                <li>TAM or service-lead summaries</li>
+                <li>Helpdesk exports that need guardrails</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live PSA or helpdesk writes</li>
+                <li>Security-sensitive evidence blocked</li>
+                <li>Client-facing copy stays approval-required</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Known active clients enter review only once</li>
+                <li>Unknown, inactive, sensitive, and low-confidence rows are held</li>
+                <li>Malformed rows land in the error log</li>
+              </ul>
+              <p><a href="/demo/managed-it-ticket-review/">View managed IT ticket demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Public Source Monitor</h2>
             <p>For regulated, healthcare-adjacent, or legal-adjacent operations where the first proof must stay on public sources and explicit sensitive-data boundaries.</p>
           </div>
@@ -1420,6 +1459,7 @@
         <a class="button secondary" href="/demo/hubspot-json-stabilization/">View HubSpot JSON Demo</a>
         <a class="button secondary" href="/demo/travel-email-classification/">View Travel Email Demo</a>
         <a class="button secondary" href="/demo/postgres-statement-email/">View Statement Email Demo</a>
+        <a class="button secondary" href="/demo/managed-it-ticket-review/">View Managed IT Demo</a>
         <a class="button secondary" href="/demo/research-digest/">View Research Digest Demo</a>
         <a class="button secondary" href="/demo/public-source-monitor/">View Public Source Demo</a>
         <a class="button secondary" href="/demo/html-review-queue/">View HTML Review Demo</a>

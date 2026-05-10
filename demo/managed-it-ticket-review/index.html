@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.workflowpatch.com/demo/managed-it-ticket-review/">
+    <title>WorkflowPatch Managed IT Ticket Review Demo</title>
+    <meta name="description" content="Mock WorkflowPatch managed IT ticket-review demo with internal review ledger, client-summary draft queue, blocked escalation queue, error log, source script, and runbook.">
+    <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="WorkflowPatch">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WorkflowPatch Managed IT Ticket Review Demo">
+    <meta property="og:description" content="A mock managed IT workflow that turns sanitized ticket exports into review ledgers, approval-required summary drafts, blocked escalation rows, and hard errors.">
+    <meta property="og:url" content="https://www.workflowpatch.com/demo/managed-it-ticket-review/">
+    <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="WorkflowPatch async fixed-scope workflow automation">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2328;
+        --muted: #5f6b72;
+        --line: #d9e0e4;
+        --paper: #fbfcfb;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-dark: #0b4d49;
+        --warning: #9a5b11;
+        --soft: #edf5f3;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.5; }
+      .wrap { width: min(1080px, calc(100% - 32px)); margin: 0 auto; }
+      header { border-bottom: 1px solid var(--line); background: rgba(251, 252, 251, 0.94); }
+      .topbar { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+      .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; }
+      .brand img { width: 32px; height: 32px; }
+      a { color: var(--accent-dark); font-weight: 700; }
+      main { padding: 48px 0; }
+      h1 { font-size: clamp(34px, 6vw, 64px); line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
+      .lede { color: var(--muted); font-size: 19px; max-width: 850px; margin: 0 0 28px; }
+      .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
+      .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
+      .button.secondary { background: transparent; color: var(--accent-dark); }
+      .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+      .item { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+      .item h2 { font-size: 16px; margin: 0 0 8px; }
+      .item p { color: var(--muted); font-size: 14px; margin: 0; }
+      .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); margin-top: 28px; }
+      table { width: 100%; border-collapse: collapse; min-width: 900px; font-size: 14px; }
+      th, td { border-bottom: 1px solid var(--line); padding: 12px; text-align: left; vertical-align: top; }
+      th { background: var(--soft); color: var(--accent-dark); }
+      tr:last-child td { border-bottom: 0; }
+      .status { color: var(--accent-dark); font-weight: 800; }
+      .warn { color: var(--warning); font-weight: 800; }
+      footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
+      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
+        <a href="/start/">Start async fit check</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1>Managed IT ticket-review demo output.</h1>
+      <p class="lede">A small mock workflow that turns sanitized ticket, monitoring, onboarding, and service activity exports into internal review ledgers and approval-required summary drafts. Security-sensitive rows, unknown clients, onboarding holds, duplicates, low-confidence summaries, and malformed rows are blocked visibly before any live PSA, helpdesk, Microsoft tenant, endpoint, or client-facing action.</p>
+
+      <div class="links">
+        <a class="button" href="/demo/managed-it-ticket-review/ticket-review-ledger.csv">Ticket Review Ledger CSV</a>
+        <a class="button secondary" href="/demo/managed-it-ticket-review/client-summary-draft-queue.csv">Summary Draft Queue CSV</a>
+        <a class="button secondary" href="/demo/managed-it-ticket-review/blocked-escalation-queue.csv">Blocked Escalation Queue CSV</a>
+        <a class="button secondary" href="/demo/managed-it-ticket-review/error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="/demo/managed-it-ticket-review/ticket-events.csv">Mock Ticket Events CSV</a>
+        <a class="button secondary" href="/demo/managed-it-ticket-review/client-map.csv">Client Map CSV</a>
+        <a class="button secondary" href="/demo/managed-it-ticket-review/review-policy.csv">Review Policy CSV</a>
+        <a class="button secondary" href="/demo/managed-it-ticket-review/runbook.md">Runbook</a>
+        <a class="button secondary" href="/demo/managed-it-ticket-review/process_managed_it_demo.py">Source Script</a>
+      </div>
+
+      <div class="grid">
+        <div class="item">
+          <h2>Sanitized Ticket Export</h2>
+          <p>Rows start from approved ticket, chat, onboarding, monitoring, or service activity exports.</p>
+        </div>
+        <div class="item">
+          <h2>Account Review Queue</h2>
+          <p>Clean rows route to TAM, account-manager, engineer, or service-lead review with evidence.</p>
+        </div>
+        <div class="item">
+          <h2>Approval Required</h2>
+          <p>Client-facing summary candidates stay as drafts until a person approves the output.</p>
+        </div>
+        <div class="item">
+          <h2>Security Hold</h2>
+          <p>Security-sensitive and unknown-client rows are blocked before summary or destination writes.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap" aria-label="Managed IT ticket-review sample">
+        <table>
+          <thead>
+            <tr>
+              <th>Ticket</th>
+              <th>Client</th>
+              <th>Decision</th>
+              <th>Reason</th>
+              <th>Next Queue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>tkt-4101</td>
+              <td>Northwind Dental</td>
+              <td class="status">Internal review</td>
+              <td>Known active client, sanitized onboarding issue, confidence above threshold.</td>
+              <td>TAM Review</td>
+            </tr>
+            <tr>
+              <td>tkt-4102</td>
+              <td>Harbor Legal</td>
+              <td class="warn">Security hold</td>
+              <td>Endpoint alert includes security-sensitive artifact evidence.</td>
+              <td>security_review</td>
+            </tr>
+            <tr>
+              <td>tkt-4103</td>
+              <td>Unknown Client</td>
+              <td class="warn">Blocked lookup</td>
+              <td>Client cannot be deterministically matched before routing.</td>
+              <td>client_lookup_review</td>
+            </tr>
+            <tr>
+              <td>tkt-4108</td>
+              <td>Atlas Manufacturing</td>
+              <td class="warn">Hard error</td>
+              <td>Source row is missing the ticket summary needed for review.</td>
+              <td>error-log</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">WorkflowPatch · Alex Reed, Workflow Automation Operator · alex@workflowpatch.com · 2995 East Point Street, East Point, GA 30094</div>
+    </footer>
+  </body>
+</html>

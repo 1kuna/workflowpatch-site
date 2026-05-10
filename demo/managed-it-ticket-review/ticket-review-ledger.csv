@@ -1,0 +1,3 @@
+ticket_id,client_key,account_manager,category,priority,sla_state,decision,review_queue,accepted_at,proof
+tkt-4101,northwind-dental,Avery,onboarding,medium,at_risk,accepted_for_internal_review,TAM Review,2026-05-10T07:30:00Z,helpdesk_export -> TAM Review for Avery
+tkt-4105,atlas-manufacturing,Jordan,backup,high,at_risk,accepted_for_internal_review,Account Review,2026-05-10T07:30:00Z,service_activity -> Account Review for Jordan

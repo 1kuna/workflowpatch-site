@@ -1,0 +1,2 @@
+ticket_id,error_code,error_detail
+tkt-4108,missing_required_ticket_field,client=Atlas Manufacturing summary_present=no

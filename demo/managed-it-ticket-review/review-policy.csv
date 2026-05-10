@@ -1,0 +1,5 @@
+category,accepted_summary,review_reason,next_action
+onboarding,Onboarding blocker needs owner review before client status note,missing_or_delayed_setup_fields,Confirm missing setup fields and owner before any client-facing note.
+support,Support pattern needs triage summary and duplicate check,unclear_or_repeated_issue,Confirm issue category and whether the pattern is recurring.
+backup,Backup exception needs account-manager review,backup_or_continuity_risk,Review backup evidence and approve next-action summary.
+security,Security-sensitive row must stay blocked,sensitive_security_content,Redact or separate security evidence before any summary leaves the source.

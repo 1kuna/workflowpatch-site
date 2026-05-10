@@ -1,0 +1,3 @@
+ticket_id,client_key,account_manager,draft_status,draft_summary,review_reason,next_action
+tkt-4101,northwind-dental,Avery,approval_required,Onboarding blocker needs owner review before client status note,missing_or_delayed_setup_fields,Confirm missing setup fields and owner before any client-facing note.
+tkt-4105,atlas-manufacturing,Jordan,approval_required,Backup exception needs account-manager review,backup_or_continuity_risk,Review backup evidence and approve next-action summary.

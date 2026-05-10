@@ -1,0 +1,9 @@
+ticket_id,client_name,source_system,opened_at,summary,category_hint,priority,sla_state,status,owner_email,sensitive_flag,client_facing_candidate,confidence
+tkt-4101,Northwind Dental,helpdesk_export,2026-05-06T13:05:00Z,Workstation setup delayed because device shipment arrived without asset tag,onboarding,medium,at_risk,open,tam@sample.test,no,yes,0.93
+tkt-4102,Harbor Legal,monitoring_export,2026-05-06T13:22:00Z,Endpoint alert includes raw security finding and user-specific artifact path,security,high,breached,open,engineer@sample.test,yes,no,0.96
+tkt-4103,Unknown Client,helpdesk_export,2026-05-06T13:31:00Z,Recurring printer tickets need client owner review,support,low,on_track,open,tam@sample.test,no,yes,0.91
+tkt-4104,Northwind Dental,helpdesk_export,2026-05-06T13:44:00Z,Workstation setup delayed because device shipment arrived without asset tag,onboarding,medium,at_risk,open,tam@sample.test,no,yes,0.93
+tkt-4105,Atlas Manufacturing,service_activity,2026-05-06T14:02:00Z,Backup verification missed two nights and needs account-manager followup,backup,high,at_risk,open,account-manager@sample.test,no,yes,0.89
+tkt-4106,Civic Clinic,helpdesk_export,2026-05-06T14:19:00Z,New user setup request is missing department and license type,onboarding,medium,on_track,open,tam@sample.test,no,no,0.94
+tkt-4107,Northwind Dental,chat_export,2026-05-06T14:38:00Z,User says VPN is sometimes weird and maybe slow,support,medium,on_track,open,tam@sample.test,no,no,0.72
+tkt-4108,Atlas Manufacturing,helpdesk_export,2026-05-06T14:51:00Z,,support,low,on_track,open,tam@sample.test,no,no,0.90
