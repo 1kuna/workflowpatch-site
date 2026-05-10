@@ -1,0 +1,9 @@
+field_name,allowed_in_first_proof,notes
+guest_key,true,Use synthetic or redacted guest key only.
+source_system,true,Use Vemos/Square/Mailchimp-style source label only.
+event_at,true,Use sample or redacted timestamp.
+item_or_segment,true,Use event family, item category, or segment name only.
+purchase_status,true,Use payment state only, not card, receipt, or dispute details.
+marketing_consent,true,Required before marketing action drafts.
+private_guest_notes,false,Exclude private host notes from the first proof.
+payment_instrument_details,false,Exclude card, bank, and processor identifiers.

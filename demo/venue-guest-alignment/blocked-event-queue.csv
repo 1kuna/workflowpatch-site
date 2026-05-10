@@ -1,0 +1,7 @@
+event_id,guest_key,reason,review_owner,next_step
+vga-1204,g-2004,payment_state_review,owner-operator,Confirm the Square payment state before any payment-affecting action.
+vga-1205,g-2005,marketing_consent_missing,owner-operator,Keep Mailchimp or customer-message actions blocked until consent is reviewed.
+vga-1206,g-2006,ambiguous_guest_match,owner-operator,Resolve the Vemos/Square/Mailchimp identity match before writing state rows.
+vga-1207,g-2007,sensitive_guest_scope,owner-operator,Use redacted non-sensitive fields before any first proof.
+vga-1208,g-2008,unknown_event_type,owner-operator,Define the alignment rule before routing this event.
+vga-1209,g-2001,duplicate_replay_key,owner-operator,Confirm whether this event already created a state or action row.

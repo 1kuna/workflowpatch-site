@@ -1,0 +1,4 @@
+event_id,guest_key,source_system,item_or_segment,state_decision,airtable_status,processed_at
+vga-1201,g-2001,Vemos,Friday rooftop,guest_seen,draft_ready,2026-05-10T08:36:00Z
+vga-1202,g-2002,Square,membership deposit,payment_state_received,draft_ready,2026-05-10T08:36:00Z
+vga-1203,g-2003,Mailchimp,VIP list,marketing_segment_review,draft_ready,2026-05-10T08:36:00Z

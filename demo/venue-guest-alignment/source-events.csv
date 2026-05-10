@@ -1,0 +1,11 @@
+event_id,source_system,guest_key,event_type,event_at,item_or_segment,purchase_status,marketing_consent,identity_match_status,mailchimp_member_status,airtable_status,sensitivity,replay_key
+vga-1201,Vemos,g-2001,guest_checkin,2026-05-21T20:30:00-04:00,Friday rooftop,true,true,matched,subscribed,active,non_sensitive_ops,rk-vga-001
+vga-1202,Square,g-2002,purchase_completed,2026-05-21T21:04:00-04:00,membership deposit,paid,true,matched,subscribed,active,non_sensitive_ops,rk-vga-002
+vga-1203,Mailchimp,g-2003,segment_updated,2026-05-22T09:15:00-04:00,VIP list,true,true,matched,subscribed,active,non_sensitive_ops,rk-vga-003
+vga-1204,Square,g-2004,purchase_completed,2026-05-22T19:12:00-04:00,event deposit,refund_pending,true,matched,subscribed,active,non_sensitive_ops,rk-vga-004
+vga-1205,Mailchimp,g-2005,segment_updated,2026-05-22T10:44:00-04:00,member promo,true,false,matched,unsubscribed,active,non_sensitive_ops,rk-vga-005
+vga-1206,Vemos,g-2006,guest_checkin,2026-05-22T21:01:00-04:00,Saturday lounge,true,true,ambiguous,subscribed,active,non_sensitive_ops,rk-vga-006
+vga-1207,Vemos,g-2007,private_note_added,2026-05-22T21:30:00-04:00,host note,true,true,matched,subscribed,active,sensitive_notes,rk-vga-007
+vga-1208,Mailchimp,g-2008,unknown_campaign_event,2026-05-23T08:15:00-04:00,unknown automation,true,true,matched,subscribed,active,non_sensitive_ops,rk-vga-008
+vga-1209,Vemos,g-2001,guest_checkin,2026-05-21T20:30:00-04:00,Friday rooftop,true,true,matched,subscribed,active,non_sensitive_ops,rk-vga-001
+vga-1210,Square,,purchase_completed,2026-05-23T14:12:00-04:00,day pass,paid,true,matched,subscribed,active,non_sensitive_ops,rk-vga-010

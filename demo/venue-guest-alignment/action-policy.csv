@@ -1,0 +1,4 @@
+event_type,state_decision,review_action,requires_marketing_consent,review_owner
+guest_checkin,guest_seen,create_host_review_task,false,owner-operator
+purchase_completed,payment_state_received,create_payment_state_review,true,owner-operator
+segment_updated,marketing_segment_review,create_mailchimp_segment_review,true,owner-operator

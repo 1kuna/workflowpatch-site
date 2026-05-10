@@ -1,0 +1,4 @@
+event_id,guest_key,review_action,destination,customer_message_status,review_owner,draft_status
+vga-1201,g-2001,create_host_review_task,review/action queue,approval_required,owner-operator,dry_run_only
+vga-1202,g-2002,create_payment_state_review,review/action queue,approval_required,owner-operator,dry_run_only
+vga-1203,g-2003,create_mailchimp_segment_review,review/action queue,approval_required,owner-operator,dry_run_only

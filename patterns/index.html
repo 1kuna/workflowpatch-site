@@ -1411,6 +1411,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Venue Guest Alignment</h2>
+            <p>For small venues where Vemos, Square, Mailchimp, and Airtable need one guest/member state path before messages or payment-affecting changes.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted guest, purchase, or segment event family, plus consent, payment state, identity match, and replay fields.</div>
+            <div class="step"><strong>Transform</strong>Validate guest identity, payment ambiguity, marketing consent, source status, duplicate replay keys, and sensitivity rules.</div>
+            <div class="step"><strong>Destination</strong>Airtable-ready guest state ledger, dry-run review/action queue, blocked event queue, hard errors, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Vemos guest state alignment</li>
+                <li>Square purchase-status review</li>
+                <li>Mailchimp segment checks</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live customer messages in first proof</li>
+                <li>Refunds, disputes, and ambiguous matches stay blocked</li>
+                <li>Private notes and payment details stay excluded</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Clean rows become state and action drafts</li>
+                <li>Consent and payment issues block visibly</li>
+                <li>Duplicate or malformed events reach review or error logs</li>
+              </ul>
+              <p><a href="/demo/venue-guest-alignment/">View guest alignment demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Salon Ops State</h2>
             <p>For salons where Jotform requests, Zenoti-style booking changes, Airtable state rows, and Zapier follow-up tasks need one reviewable path before customer messages.</p>
           </div>
@@ -1672,6 +1711,7 @@
         <a class="button secondary" href="/demo/scenario-modularization/">View Modularization Demo</a>
         <a class="button secondary" href="/demo/board-event-routing/">View Board Routing Demo</a>
         <a class="button secondary" href="/demo/booking-payment-state/">View Booking State Demo</a>
+        <a class="button secondary" href="/demo/venue-guest-alignment/">View Guest Alignment Demo</a>
         <a class="button secondary" href="/demo/salon-ops-state/">View Salon Ops Demo</a>
         <a class="button secondary" href="/demo/signup-access-state/">View Signup Access Demo</a>
         <a class="button secondary" href="/demo/po-budget-bridge/">View PO Budget Demo</a>

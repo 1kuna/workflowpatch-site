@@ -1,0 +1,2 @@
+event_id,error_code,error_detail
+vga-1210,missing_required_alignment_field,guest_key=missing event_type=purchase_completed replay_key=rk-vga-010
