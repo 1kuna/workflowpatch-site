@@ -1,0 +1,2 @@
+event_id,account_id,destination_request,reason,review_action
+evt-1005,acct-410,xero_draft_invoice,duplicate_correlation_id,Confirm whether this is a replay before creating another destination artifact.

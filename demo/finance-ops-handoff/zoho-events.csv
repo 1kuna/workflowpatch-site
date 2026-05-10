@@ -1,0 +1,7 @@
+event_id,event_type,account_id,account_name,source_system,destination_request,amount,invoice_ref,drive_folder_hint,crm_activity_type,allowed_auto_write,approval_required,correlation_id
+evt-1001,deal_stage_changed,acct-410,Northline Supplies,Zoho CRM,xero_draft_invoice,1850,INV-DRAFT-410,Northline/Invoices,deal_note,yes,no,corr-410-a
+evt-1002,form_submitted,acct-520,Beacon Hardware,Zoho Forms,drive_folder_and_crm_log,0,,Beacon/Onboarding,onboarding_note,yes,no,corr-520-a
+evt-1003,deal_stage_changed,acct-620,Mayfield Studios,Zoho CRM,xero_draft_invoice,4200,INV-DRAFT-620,Mayfield/Finance,deal_note,no,yes,corr-620-a
+evt-1004,inbox_row,acct-730,Riverway Clinics,Shared Inbox,customer_email_and_crm_log,0,,Riverway/Support,support_note,no,yes,corr-730-a
+evt-1005,deal_stage_changed,acct-410,Northline Supplies,Zoho CRM,xero_draft_invoice,1850,INV-DRAFT-410,Northline/Invoices,deal_note,yes,no,corr-410-a
+evt-1006,deal_stage_changed,acct-999,Unknown Account,Zoho CRM,xero_draft_invoice,940,INV-DRAFT-999,Unknown/Invoices,deal_note,yes,no,corr-999-a

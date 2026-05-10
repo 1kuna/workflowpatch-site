@@ -1,0 +1,5 @@
+account_id,account_name,xero_contact_id,crm_owner,finance_owner,drive_root
+acct-410,Northline Supplies,xero-991,Avery,Sam,Northline
+acct-520,Beacon Hardware,xero-884,Morgan,Sam,Beacon
+acct-620,Mayfield Studios,xero-776,Riley,Pat,Mayfield
+acct-730,Riverway Clinics,xero-332,Taylor,Pat,Riverway

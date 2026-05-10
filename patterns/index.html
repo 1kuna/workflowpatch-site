@@ -1137,6 +1137,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Finance Ops Handoff</h2>
+            <p>For teams that need Zoho events to become Xero, Drive, or CRM handoff artifacts without broad finance-system ownership.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One Zoho CRM, Zoho Forms, inbox, or sheet event plus account and destination rules.</div>
+            <div class="step"><strong>Transform</strong>Validate account mapping, destination policy, duplicate correlation ids, allowed writes, and review gates.</div>
+            <div class="step"><strong>Destination</strong>Reviewed handoff ledger, approval queue, exception queue, error log, and written runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Zoho to Xero drafts</li>
+                <li>Drive folder handoffs</li>
+                <li>CRM activity logging</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No payment approval or accounting export</li>
+                <li>Customer-facing messages require review</li>
+                <li>Payroll, tax, and compliance are excluded</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Allowed rows become handoff artifacts</li>
+                <li>Finance-sensitive rows are held</li>
+                <li>Unknown accounts become hard errors</li>
+              </ul>
+              <p><a href="/demo/finance-ops-handoff/">View finance ops demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>PO Budget Bridge</h2>
             <p>For production, agency, or finance teams that need Airtable purchase orders and Google Sheets budget rows to agree before sync.</p>
           </div>
@@ -1220,6 +1259,7 @@
         <a class="button secondary" href="/demo/cstore-invoice-reconciliation/">View C-Store Invoice Demo</a>
         <a class="button secondary" href="/demo/crm-sync/">View CRM Sync Demo</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/">View Agency Overflow Demo</a>
+        <a class="button secondary" href="/demo/finance-ops-handoff/">View Finance Ops Demo</a>
         <a class="button secondary" href="/demo/hubspot-json-stabilization/">View HubSpot JSON Demo</a>
         <a class="button secondary" href="/demo/travel-email-classification/">View Travel Email Demo</a>
         <a class="button secondary" href="/demo/postgres-statement-email/">View Statement Email Demo</a>

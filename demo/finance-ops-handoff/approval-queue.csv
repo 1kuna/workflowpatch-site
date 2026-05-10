@@ -1,0 +1,3 @@
+event_id,account_id,account_name,destination_request,reason,finance_owner,review_action
+evt-1003,acct-620,Mayfield Studios,xero_draft_invoice,finance_fields_validated,Pat,"Approve, narrow, or block before any destination write or customer-facing action."
+evt-1004,acct-730,Riverway Clinics,customer_email_and_crm_log,customer_facing_message,Pat,"Approve, narrow, or block before any destination write or customer-facing action."

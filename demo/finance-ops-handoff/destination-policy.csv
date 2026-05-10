@@ -1,0 +1,5 @@
+destination_request,allowed_without_review,review_reason,destination_output
+xero_draft_invoice,yes,finance_fields_validated,Xero draft invoice plus CRM activity log
+drive_folder_and_crm_log,yes,internal_document_handoff,Google Drive folder/checklist plus CRM activity log
+customer_email_and_crm_log,no,customer_facing_message,Review queue before any customer message
+payroll_or_tax_update,no,excluded_sensitive_finance,Blocked from first proof

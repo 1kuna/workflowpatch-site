@@ -1,0 +1,2 @@
+event_id,error_code,error_detail
+evt-1006,unknown_account,Source event references an account that is not in the approved account map.
