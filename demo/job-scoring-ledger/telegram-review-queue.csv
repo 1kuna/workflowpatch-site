@@ -1,0 +1,4 @@
+job_id,telegram_channel,message_status,message_preview,approval_needed
+JOB-1001,operator-review-draft,draft_only_not_sent,94 fit: Automation Operations Specialist at Northstar Hosting - https://example.test/jobs/1001,human_review_before_any_telegram_send
+JOB-1002,operator-review-draft,draft_only_not_sent,94 fit: n8n Workflow Builder at Riverbyte Cloud - https://example.test/jobs/1002,human_review_before_any_telegram_send
+JOB-1007,operator-review-draft,draft_only_not_sent,94 fit: Workflow Reliability Engineer at Data Orchard - https://example.test/jobs/1007,human_review_before_any_telegram_send

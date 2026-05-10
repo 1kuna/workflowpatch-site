@@ -1,0 +1,4 @@
+job_id,company,title,reason,detail,next_step
+JOB-1003,Atlas Support,Junior Data Entry Assistant,below_score_threshold,score=18,review_before_any_live_source_or_telegram_action
+JOB-1004,SignalWorks,Automation Operations Specialist,duplicate_job_key,duplicate_key=jhub-role-1001,review_before_any_live_source_or_telegram_action
+JOB-1006,BluePeak Staffing,LinkedIn Growth Scraper,live_source_or_scrape_scope,Use an approved export or API result before scoring.,review_before_any_live_source_or_telegram_action

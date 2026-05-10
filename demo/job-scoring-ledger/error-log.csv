@@ -1,0 +1,2 @@
+job_id,error_code,error_detail
+JOB-1008,missing_required_job_field,apply_url

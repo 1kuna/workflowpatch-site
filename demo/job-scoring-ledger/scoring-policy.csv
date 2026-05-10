@@ -1,0 +1,7 @@
+policy_key,weight,passing_value,notes
+title_match,25,15,Role title should match automation operations, workflow builder, reliability, or RevOps automation.
+skill_match,30,18,Required skills should include n8n plus one destination or monitoring skill.
+remote_match,15,10,Remote or hybrid roles are preferred for this dry-run.
+seniority_match,10,6,Mid and senior roles are in scope; junior admin roles are weak fit.
+compensation_match,10,5,Compensation should be plausible for a specialist role.
+freshness_match,10,5,Fresh rows are preferred, but stale rows can still route to review.

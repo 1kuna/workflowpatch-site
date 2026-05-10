@@ -1,0 +1,5 @@
+job_id,company,title,score,decision,score_parts,destination,processed_at
+JOB-1001,Northstar Hosting,Automation Operations Specialist,94,telegram_review_draft,title_match=25;skill_match=24;remote_match=15;seniority_match=10;compensation_match=10;freshness_match=10,telegram-review,2026-05-10T09:16:00Z
+JOB-1002,Riverbyte Cloud,n8n Workflow Builder,94,telegram_review_draft,title_match=25;skill_match=24;remote_match=15;seniority_match=10;compensation_match=10;freshness_match=10,telegram-review,2026-05-10T09:16:00Z
+JOB-1005,MarketWisp,RevOps Automation Analyst,79,ledger_only_review,title_match=25;skill_match=18;remote_match=10;seniority_match=10;compensation_match=10;freshness_match=6,telegram-review,2026-05-10T09:16:00Z
+JOB-1007,Data Orchard,Workflow Reliability Engineer,94,telegram_review_draft,title_match=25;skill_match=24;remote_match=15;seniority_match=10;compensation_match=10;freshness_match=10,telegram-review,2026-05-10T09:16:00Z

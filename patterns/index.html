@@ -359,6 +359,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Job Scoring Ledger</h2>
+            <p>For job-search workflows where exported rows need explainable scoring, duplicate checks, and review drafts before any live LinkedIn or Telegram automation.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One approved job export or API result with title, skills, location, compensation, freshness, source boundary, and duplicate key.</div>
+            <div class="step"><strong>Transform</strong>Score fit, block duplicate rows, block live-source or scraping scope, hold weak-fit jobs, and log missing required fields.</div>
+            <div class="step"><strong>Destination</strong>Sheets/Airtable-style score ledger, Telegram review drafts, blocked job queue, error log, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>n8n job-search scoring</li>
+                <li>Export-to-ledger review</li>
+                <li>Telegram review draft queues</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live LinkedIn automation first</li>
+                <li>No scraping, credentials, or proxies</li>
+                <li>No Telegram sends or live writes</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Accepted rows explain their score</li>
+                <li>Duplicates and unsafe source scope block visibly</li>
+                <li>Telegram output stays draft-only</li>
+              </ul>
+              <p><a href="/demo/job-scoring-ledger/">View job scoring demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Automation Builder Audit</h2>
             <p>For buyers comparing n8n, Make, CRM, or light-agent builders and needing evidence that a proposed build can survive bad inputs.</p>
           </div>
@@ -1811,6 +1850,7 @@
         <a class="button secondary" href="/demo/finance-ops-handoff/">View Finance Ops Demo</a>
         <a class="button secondary" href="/demo/mvp-governance-review/">View MVP Governance Demo</a>
         <a class="button secondary" href="/demo/program-ops-kpi/">View Program Ops Demo</a>
+        <a class="button secondary" href="/demo/job-scoring-ledger/">View Job Scoring Demo</a>
         <a class="button secondary" href="/demo/hubspot-json-stabilization/">View HubSpot JSON Demo</a>
         <a class="button secondary" href="/demo/travel-email-classification/">View Travel Email Demo</a>
         <a class="button secondary" href="/demo/postgres-statement-email/">View Statement Email Demo</a>

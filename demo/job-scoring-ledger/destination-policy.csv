@@ -1,0 +1,4 @@
+destination,min_score,action,boundary
+telegram-review,80,draft_telegram_review_item,draft_only_no_send
+sheets-only,65,write_scoring_ledger_only,dry_run_ledger_only
+blocked,0,hold_with_reason,no_live_source_action
