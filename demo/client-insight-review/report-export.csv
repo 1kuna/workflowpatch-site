@@ -1,0 +1,11 @@
+row_id,client_ref,channel,period_start,spend,revenue,previous_revenue,evidence_url,date_range_status,campaign_status,source_boundary,draft_requested,duplicate_key,insight_claim
+CIR-4001,client-alpha,paid_search,2026-04-01,2400,8900,6100,redacted://ads/client-alpha/april,complete,active,approved_redacted_export,true,gatorworks-cir-001,search campaign has scale candidate
+CIR-4002,client-bravo,paid_social,2026-04-01,1800,900,1200,redacted://ads/client-bravo/april,complete,active,approved_redacted_export,true,gatorworks-cir-002,paid social spend is not converting
+CIR-4003,client-charlie,seo,2026-04-01,0,4200,1900,redacted://analytics/client-charlie/april,complete,active,approved_redacted_export,true,gatorworks-cir-003,organic landing page is creating opportunity
+CIR-4004,client-delta,email,2026-04-01,350,1100,800,redacted://crm/client-delta/april,missing_range,active,approved_redacted_export,true,gatorworks-cir-004,email report date range is unclear
+CIR-4005,client-echo,display,2026-04-01,900,1400,1600,redacted://ads/client-echo/april,complete,stale_campaign,approved_redacted_export,true,gatorworks-cir-005,display campaign name looks stale
+CIR-4006,client-foxtrot,paid_search,2026-04-01,2100,7600,7000,redacted://ads/client-foxtrot/april,complete,active,live_client_dashboard,true,gatorworks-cir-006,live dashboard row should not be used
+CIR-4007,client-gulf,crm,2026-04-01,0,7000,6800,redacted://crm/client-gulf/april,complete,active,approved_redacted_export,false,gatorworks-cir-007,crm revenue is stable
+CIR-4008,client-hotel,paid_social,2026-04-01,1200,4200,2500,redacted://ads/client-hotel/april,complete,active,approved_redacted_export,true,gatorworks-cir-008,social creative has controlled scale signal
+CIR-4009,client-india,paid_search,2026-04-01,500,1800,1500,redacted://ads/client-india/april,complete,active,approved_redacted_export,true,gatorworks-cir-001,duplicate report row
+CIR-4010,,seo,2026-04-01,0,2300,2200,redacted://analytics/missing-client/april,complete,active,approved_redacted_export,true,gatorworks-cir-010,missing client reference

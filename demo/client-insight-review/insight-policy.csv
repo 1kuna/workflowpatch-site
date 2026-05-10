@@ -1,0 +1,8 @@
+policy_key,condition,decision,boundary
+approved_export,source_boundary must be approved_redacted_export,allow_review,no_live_client_dashboard
+required_fields,row_id client_ref channel period_start revenue previous_revenue evidence_url duplicate_key required,hard_error,no_silent_draft
+duplicate_guard,duplicate_key must be unique,block_duplicate,no_repeated_client_insight
+complete_range,date_range_status must be complete,exception_review,no_client_ready_claim
+fresh_campaign,campaign_status must be active,exception_review,no_stale_campaign_claim
+evidence_required,evidence_url must be present,exception_review,no_unsupported_recommendation
+draft_boundary,draft rows are internal review only,allow_internal_draft,no_external_send_or_client_facing_output

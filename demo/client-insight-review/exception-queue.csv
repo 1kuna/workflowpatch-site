@@ -1,0 +1,4 @@
+row_id,client_ref,exception_type,detail,review_needed
+CIR-4002,client-bravo,spend_revenue_mismatch,spend=1800.00 revenue=900.00,strategist_review_before_client_ready_claim
+CIR-4004,client-delta,date_range_exception,date_range_status=missing_range,strategist_review_before_client_ready_claim
+CIR-4005,client-echo,stale_campaign_exception,campaign_status=stale_campaign,strategist_review_before_client_ready_claim

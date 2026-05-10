@@ -1,0 +1,5 @@
+row_id,client_ref,channel,period_start,spend,revenue,previous_revenue,revenue_delta,roas,decision,evidence_url,processed_at
+CIR-4001,client-alpha,paid_search,2026-04-01,2400.00,8900.00,6100.00,2800.00,3.71,opportunity_candidate,redacted://ads/client-alpha/april,2026-05-10T09:45:00Z
+CIR-4003,client-charlie,seo,2026-04-01,0.00,4200.00,1900.00,2300.00,n/a,opportunity_candidate,redacted://analytics/client-charlie/april,2026-05-10T09:45:00Z
+CIR-4007,client-gulf,crm,2026-04-01,0.00,7000.00,6800.00,200.00,n/a,monitor,redacted://crm/client-gulf/april,2026-05-10T09:45:00Z
+CIR-4008,client-hotel,paid_social,2026-04-01,1200.00,4200.00,2500.00,1700.00,3.50,opportunity_candidate,redacted://ads/client-hotel/april,2026-05-10T09:45:00Z

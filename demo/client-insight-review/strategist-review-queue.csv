@@ -1,0 +1,4 @@
+row_id,client_ref,review_type,evidence_url,review_action
+CIR-4001,client-alpha,opportunity_review,redacted://ads/client-alpha/april,Strategist should review evidence before client-ready recommendation.
+CIR-4003,client-charlie,opportunity_review,redacted://analytics/client-charlie/april,Strategist should review evidence before client-ready recommendation.
+CIR-4008,client-hotel,opportunity_review,redacted://ads/client-hotel/april,Strategist should review evidence before client-ready recommendation.

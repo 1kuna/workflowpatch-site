@@ -1,0 +1,3 @@
+row_id,client_ref,blocked_reason,detail,next_step
+CIR-4006,client-foxtrot,live_client_data_scope,Use approved redacted exports for the first proof.,review_before_any_client_facing_output_or_live_access
+CIR-4009,client-india,duplicate_insight_key,duplicate_key=gatorworks-cir-001,review_before_any_client_facing_output_or_live_access

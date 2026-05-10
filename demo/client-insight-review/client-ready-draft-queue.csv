@@ -1,0 +1,4 @@
+row_id,client_ref,draft_status,draft_summary,client_boundary
+CIR-4001,client-alpha,internal_review_only,paid_search has an opportunity signal; verify evidence before client use.,no_client_facing_send_or_publish
+CIR-4003,client-charlie,internal_review_only,seo has an opportunity signal; verify evidence before client use.,no_client_facing_send_or_publish
+CIR-4008,client-hotel,internal_review_only,paid_social has an opportunity signal; verify evidence before client use.,no_client_facing_send_or_publish

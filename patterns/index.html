@@ -1216,6 +1216,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Client Insight Review</h2>
+            <p>For agency reporting workflows where approved exports need evidence checks, strategist review, and draft-only insight rows before anything client-facing.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One approved redacted ad, analytics, CRM, SEO, email, or report export plus evidence fields and draft format.</div>
+            <div class="step"><strong>Transform</strong>Calculate revenue delta and ROAS, block live-data scope, catch date-range and stale-campaign exceptions, and route opportunity rows for review.</div>
+            <div class="step"><strong>Destination</strong>Opportunity ledger, strategist review queue, draft-only insight queue, exception queue, blocked rows, error log, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Agency reporting review queues</li>
+                <li>Client insight draft prep</li>
+                <li>Monthly performance review checks</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live client data</li>
+                <li>No ad or CRM account access</li>
+                <li>No client-facing output before review</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Opportunity rows cite evidence</li>
+                <li>Exceptions block unsupported claims</li>
+                <li>Draft rows stay internal review only</li>
+              </ul>
+              <p><a href="/demo/client-insight-review/">View client insight demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Campaign Feedback Loop</h2>
             <p>For marketing teams that want AI-assisted campaign iteration without letting unapproved claims, stale metrics, or weak evidence reach customers.</p>
           </div>
@@ -1946,6 +1985,7 @@
         <a class="button secondary" href="/demo/airtable-source-of-truth-audit/">View Airtable Source Demo</a>
         <a class="button secondary" href="/demo/scenario-ops-reduction/">View Ops Reduction Demo</a>
         <a class="button secondary" href="/demo/scenario-modularization/">View Modularization Demo</a>
+        <a class="button secondary" href="/demo/client-insight-review/">View Client Insight Demo</a>
         <a class="button secondary" href="/demo/browser-action-ledger/">View Browser Action Demo</a>
         <a class="button secondary" href="/demo/board-event-routing/">View Board Routing Demo</a>
         <a class="button secondary" href="/demo/booking-payment-state/">View Booking State Demo</a>
