@@ -1,0 +1,4 @@
+event_type,ledger_decision,kpi_action,requires_attendance_present,requires_staffing_clear
+attendance_export,attendance_ready,attendance_completion_snapshot,true,false
+staffing_chart,staffing_ready,staff_coverage_snapshot,false,true
+performance_kpi,kpi_ready,program_health_snapshot,false,false

@@ -1,0 +1,7 @@
+field_family,first_proof_rule,notes
+child_or_family_identifiers,blocked,Use only synthetic or redacted rows in the first proof.
+site_and_week,required,Every accepted row must map to one site and program week.
+attendance_status,reviewed,Missing attendance rows become exception rows before any KPI output.
+staffing_coverage,reviewed,Staffing gaps become exception rows; WorkflowPatch does not make staffing decisions.
+external_messages,excluded,No parent, staff, or child-facing messages leave the proof.
+production_airtable_or_zapier,excluded,The first proof produces dry-run artifacts only.

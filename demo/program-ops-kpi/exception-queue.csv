@@ -1,0 +1,3 @@
+event_id,site_key,program_week,exception_type,detail,next_step
+evt-5204,nory-downtown,2026-W25,missing_attendance_rows,attendance_state=attendance_missing,Confirm attendance source completeness before KPI output.
+evt-5205,nory-brooklyn,2026-W25,staffing_coverage_gap,staffing_state=staffing_gap,Route coverage gap to program ops before reporting.

@@ -1,0 +1,5 @@
+event_id,site_key,program_week,reason,review_owner,next_step
+evt-5206,nory-tribeca,2026-W25,child_family_scope,program-ops,Use synthetic or redacted non-sensitive rows before any first proof.
+evt-5207,nory-unknown,2026-W25,site_week_unmapped,program-ops,Map the source row to one site and program week before KPI output.
+evt-5208,nory-uws,2026-W25,unknown_program_event_type,program-ops,"Define the attendance, staffing, or KPI rule before routing this source."
+evt-5209,nory-boston-cambridge,2026-W25,duplicate_replay_key,program-ops,Confirm whether this site-week row already created a program ledger entry.

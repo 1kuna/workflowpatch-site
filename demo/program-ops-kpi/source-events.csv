@@ -1,0 +1,11 @@
+event_id,source_system,event_type,site_key,program_week,row_owner,attendance_state,staffing_state,kpi_status,identity_match_status,sensitivity,manual_override,replay_key
+evt-5201,Airtable attendance export,attendance_export,nory-tribeca,2026-W25,program-ops,attendance_present,staffing_clear,ready,matched,non_sensitive_ops,false,rk-nory-001
+evt-5202,Airtable staffing chart,staffing_chart,nory-boston-cambridge,2026-W25,site-lead,attendance_present,staffing_clear,ready,matched,non_sensitive_ops,false,rk-nory-002
+evt-5203,Airtable KPI snapshot,performance_kpi,nory-uws,2026-W25,program-ops,attendance_present,staffing_clear,ready,matched,non_sensitive_ops,false,rk-nory-003
+evt-5204,Airtable attendance export,attendance_export,nory-downtown,2026-W25,program-ops,attendance_missing,staffing_clear,needs_review,matched,non_sensitive_ops,false,rk-nory-004
+evt-5205,Airtable staffing chart,staffing_chart,nory-brooklyn,2026-W25,site-lead,attendance_present,staffing_gap,needs_review,matched,non_sensitive_ops,false,rk-nory-005
+evt-5206,Airtable KPI snapshot,performance_kpi,nory-tribeca,2026-W25,program-ops,attendance_present,staffing_clear,ready,matched,child_family_scope,false,rk-nory-006
+evt-5207,Zapier form event,attendance_export,nory-unknown,2026-W25,program-ops,attendance_present,staffing_clear,ready,unmapped,non_sensitive_ops,false,rk-nory-007
+evt-5208,Parent message export,family_message,nory-uws,2026-W25,program-ops,attendance_present,staffing_clear,ready,matched,non_sensitive_ops,false,rk-nory-008
+evt-5209,Airtable staffing chart,staffing_chart,nory-boston-cambridge,2026-W25,site-lead,attendance_present,staffing_clear,ready,matched,non_sensitive_ops,false,rk-nory-002
+evt-5210,Airtable attendance export,attendance_export,,2026-W25,program-ops,attendance_present,staffing_clear,ready,matched,non_sensitive_ops,false,rk-nory-010

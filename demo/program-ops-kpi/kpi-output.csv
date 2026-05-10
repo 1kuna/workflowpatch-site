@@ -1,0 +1,4 @@
+event_id,site_key,program_week,kpi_action,kpi_status,reporting_boundary
+evt-5201,nory-tribeca,2026-W25,attendance_completion_snapshot,dry_run_ready,internal_review_only
+evt-5202,nory-boston-cambridge,2026-W25,staff_coverage_snapshot,dry_run_ready,internal_review_only
+evt-5203,nory-uws,2026-W25,program_health_snapshot,dry_run_ready,internal_review_only

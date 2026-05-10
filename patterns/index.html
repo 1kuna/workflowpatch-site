@@ -320,6 +320,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Program Ops KPI</h2>
+            <p>For education, camp, or cohort programs where attendance, staffing, and KPI rows need one reviewable ledger before automation becomes ongoing support.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted or synthetic attendance export, staffing chart, or KPI source with site and program-week fields.</div>
+            <div class="step"><strong>Transform</strong>Validate required fields, site-week mapping, duplicate replay keys, child/family-data boundaries, attendance completeness, and staffing coverage.</div>
+            <div class="step"><strong>Destination</strong>Program ledger, dry-run KPI output, exception queue, blocked event queue, hard errors, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Attendance tracking</li>
+                <li>Staffing chart review</li>
+                <li>Program KPI reporting</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live child or family data first</li>
+                <li>No staffing decisions</li>
+                <li>No parent or staff-facing messages</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Accepted rows produce a site-week ledger</li>
+                <li>Missing attendance and staffing gaps reach exceptions</li>
+                <li>Sensitive, duplicate, unmapped, and malformed rows block visibly</li>
+              </ul>
+              <p><a href="/demo/program-ops-kpi/">View program ops demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Automation Builder Audit</h2>
             <p>For buyers comparing n8n, Make, CRM, or light-agent builders and needing evidence that a proposed build can survive bad inputs.</p>
           </div>
@@ -1771,6 +1810,7 @@
         <a class="button secondary" href="/demo/agency-overflow-qa/">View Agency Overflow Demo</a>
         <a class="button secondary" href="/demo/finance-ops-handoff/">View Finance Ops Demo</a>
         <a class="button secondary" href="/demo/mvp-governance-review/">View MVP Governance Demo</a>
+        <a class="button secondary" href="/demo/program-ops-kpi/">View Program Ops Demo</a>
         <a class="button secondary" href="/demo/hubspot-json-stabilization/">View HubSpot JSON Demo</a>
         <a class="button secondary" href="/demo/travel-email-classification/">View Travel Email Demo</a>
         <a class="button secondary" href="/demo/postgres-statement-email/">View Statement Email Demo</a>

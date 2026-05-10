@@ -1,0 +1,2 @@
+event_id,error_code,error_detail
+evt-5210,missing_required_program_field,site_key=missing program_week=2026-W25 event_type=attendance_export replay_key=rk-nory-010
