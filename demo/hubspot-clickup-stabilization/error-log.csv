@@ -1,0 +1,2 @@
+event_id,error_code,error_detail
+hs-6108,missing_required_hubspot_field,company=3D Walkabout pipeline=Production Tours deal_id=missing stage=ready_for_site_capture list=Production Ops

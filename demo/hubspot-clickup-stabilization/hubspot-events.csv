@@ -1,0 +1,10 @@
+event_id,company_name,pipeline,deal_id,deal_name,stage,clickup_list,existing_task_id,writeback_field,confidence,sensitive_flag,destructive_flag,change_summary
+hs-6101,3D Walkabout,Production Tours,deal-104,City Tower Matterport Package,ready_for_site_capture,Production Ops,,clickup_task_id,0.95,no,no,Create ClickUp task and write back the task id for a newly ready deal.
+hs-6102,3D Walkabout,Production Tours,deal-105,Mining Site Walkthrough,ready_for_site_capture,Production Ops,task-8842,clickup_task_id,0.94,no,no,Update existing ClickUp task status and write back the latest task state.
+hs-6103,Unknown Studio,Production Tours,deal-203,Retail Walkthrough,ready_for_site_capture,Production Ops,,clickup_task_id,0.91,no,no,Create ClickUp task for an unknown company workspace.
+hs-6104,3D Walkabout,Sales Pipeline,deal-106,Airport XR Pilot,contract_sent,Production Ops,,closed_lost_reason,0.9,no,yes,Overwrite a destructive HubSpot field during task creation.
+hs-6105,3D Walkabout,Production Tours,deal-107,University Campus Scan,ready_for_site_capture,Production Ops,,clickup_task_id,0.72,no,no,Create task but confidence in stage mapping is below threshold.
+hs-6106,3D Walkabout,Production Tours,deal-108,Hospital Site Capture,ready_for_site_capture,Production Ops,,clickup_task_id,0.93,yes,no,Contains access notes that should not leave the CRM export.
+hs-6107,3D Walkabout,Production Tours,deal-104,City Tower Matterport Package,ready_for_site_capture,Production Ops,,clickup_task_id,0.96,no,no,Replay of the same deal-stage event.
+hs-6108,3D Walkabout,Production Tours,,Missing Deal Id,ready_for_site_capture,Production Ops,,clickup_task_id,0.92,no,no,Malformed row without the HubSpot deal id.
+hs-6109,3D Walkabout,Production Tours,deal-109,Warehouse Capture,ready_for_site_capture,Production Ops,,clickup_task_id,0.93,no,no,Create ClickUp task for a clean new deal.

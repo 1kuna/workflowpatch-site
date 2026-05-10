@@ -1,0 +1,6 @@
+event_id,deal_id,queue,reason,next_step,source_summary
+hs-6103,deal-203,company_mapping_review,unknown_or_inactive_company,Map the company workspace before creating a task or write-back preview.,Create ClickUp task for an unknown company workspace.
+hs-6104,deal-106,scope_review,destructive_hubspot_change,Require owner approval before any destructive or revenue-state write-back.,Overwrite a destructive HubSpot field during task creation.
+hs-6105,deal-107,ops-review,low_confidence_stage_map,Review the HubSpot stage and ClickUp status mapping before task preview.,Create task but confidence in stage mapping is below threshold.
+hs-6106,deal-108,sensitive_review,sensitive_site_detail,Redact access notes or sensitive site details before task handoff.,Contains access notes that should not leave the CRM export.
+hs-6107,deal-104,ops-review,duplicate_deal_stage_event,Confirm this is not a replay before another task candidate is created.,Replay of the same deal-stage event.

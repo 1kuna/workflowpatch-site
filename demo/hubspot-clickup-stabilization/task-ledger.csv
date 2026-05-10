@@ -1,0 +1,4 @@
+event_id,company_key,deal_id,deal_name,hubspot_stage,clickup_list,task_action,task_id_preview,decision,owner,accepted_at
+hs-6101,3d-walkabout,deal-104,City Tower Matterport Package,ready_for_site_capture,Production Ops,create_task_candidate,dryrun-deal-104,accepted_for_owner_review,Tim Brickle,2026-05-10T07:58:00Z
+hs-6102,3d-walkabout,deal-105,Mining Site Walkthrough,ready_for_site_capture,Production Ops,update_existing_task,task-8842,accepted_for_owner_review,Tim Brickle,2026-05-10T07:58:00Z
+hs-6109,3d-walkabout,deal-109,Warehouse Capture,ready_for_site_capture,Production Ops,create_task_candidate,dryrun-deal-109,accepted_for_owner_review,Tim Brickle,2026-05-10T07:58:00Z

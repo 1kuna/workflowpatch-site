@@ -1,0 +1,4 @@
+event_id,deal_id,writeback_field,writeback_value_preview,draft_status,draft_summary,review_reason,next_action
+hs-6101,deal-104,clickup_task_id,dryrun-deal-104,approval_required,ClickUp task candidate is ready for owner review.,Review create/update decision and test in sandbox before live activation.,Approve dry-run row or update mapping rules.
+hs-6102,deal-105,clickup_task_id,task-8842,approval_required,Existing ClickUp task update is ready for owner review.,Review status mapping and write-back field before live activation.,Approve dry-run row or correct status map.
+hs-6109,deal-109,clickup_task_id,dryrun-deal-109,approval_required,ClickUp task candidate is ready for owner review.,Review create/update decision and test in sandbox before live activation.,Approve dry-run row or update mapping rules.

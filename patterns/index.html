@@ -437,6 +437,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>HubSpot ClickUp Stabilization</h2>
+            <p>For teams moving HubSpot deal-stage changes into ClickUp while preventing duplicate tasks, bad write-backs, and silent Make scenario drift.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted HubSpot deal-stage event, ClickUp list/status fields, and approved write-back field.</div>
+            <div class="step"><strong>Transform</strong>Decide create/update/block, suppress duplicate deal-stage events, preview write-back values, and route conflicts to review.</div>
+            <div class="step"><strong>Destination</strong>Task ledger, HubSpot write-back preview, conflict queue, error log, source script, and written runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>HubSpot deal to ClickUp task upsert</li>
+                <li>Task id or status write-back preview</li>
+                <li>Duplicate and replay prevention</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live HubSpot or ClickUp writes first</li>
+                <li>No destructive field update without approval</li>
+                <li>Sensitive site details stay blocked</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Clean events reach task ledger</li>
+                <li>Write-backs remain approval-required</li>
+                <li>Duplicates and malformed rows block visibly</li>
+              </ul>
+              <p><a href="/demo/hubspot-clickup-stabilization/">View HubSpot ClickUp demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>GHL Close Two-Way Sync</h2>
             <p>For teams syncing appointments and contact fields between Close and GoHighLevel without silent overwrites.</p>
           </div>
@@ -1493,6 +1532,7 @@
         <a class="button secondary" href="/demo/invoice-exception/">View Invoice Exception Demo</a>
         <a class="button secondary" href="/demo/cstore-invoice-reconciliation/">View C-Store Invoice Demo</a>
         <a class="button secondary" href="/demo/crm-sync/">View CRM Sync Demo</a>
+        <a class="button secondary" href="/demo/hubspot-clickup-stabilization/">View HubSpot ClickUp Demo</a>
         <a class="button secondary" href="/demo/revops-integration-qa/">View RevOps QA Demo</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/">View Agency Overflow Demo</a>
         <a class="button secondary" href="/demo/finance-ops-handoff/">View Finance Ops Demo</a>

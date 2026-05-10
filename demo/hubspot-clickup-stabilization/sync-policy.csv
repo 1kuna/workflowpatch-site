@@ -1,0 +1,4 @@
+risk_hint,accepted_summary,review_reason,next_action
+new_task,ClickUp task candidate is ready for owner review.,Review create/update decision and test in sandbox before live activation.,Approve dry-run row or update mapping rules.
+status_update,Existing ClickUp task update is ready for owner review.,Review status mapping and write-back field before live activation.,Approve dry-run row or correct status map.
+handoff,HubSpot to ClickUp handoff row is ready for owner review.,Review task owner/list/status and HubSpot write-back preview.,Approve owner handoff or request revised mapping.
