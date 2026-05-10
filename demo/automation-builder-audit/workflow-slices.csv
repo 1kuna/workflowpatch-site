@@ -1,0 +1,4 @@
+slice_id,workflow_name,source_system,destination_system,required_contract,dedupe_key,review_boundary
+slice-001,CRM Lead Routing Audit,Website lead webhook,HubSpot deal and Slack review,company email source budget timeline,lead_email+source_campaign,low confidence or missing company routes to review
+slice-002,Light Agent Escalation Audit,Support inbox export,Notion escalation queue,customer issue summary source_link urgency,ticket_id,unsupported AI claims or missing source links route to review
+slice-003,Appointment Sync Audit,Close appointment event,GHL contact activity,contact_id appointment_id status updated_at,appointment_id,partial CRM writes and stale status changes route to review

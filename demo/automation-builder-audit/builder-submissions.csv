@@ -1,0 +1,6 @@
+submission_id,slice_id,artifact_summary,input_contract,dedupe_key,retry_policy,conflict_queue,test_cases,source_links,confidence
+sub-3701,slice-001,"Builder supplied field map, replay rule, and Slack review state","company email source budget timeline",lead_email+source_campaign,"retry API timeouts twice then log",yes,5,yes,0.94
+sub-3702,slice-001,"Builder supplied a happy-path webhook but no duplicate rule","company email source",,"retry by rerunning whole scenario",no,2,yes,0.82
+sub-3703,slice-999,"Builder submitted artifacts for an unregistered flow","contact_id event_id",event_id,"retry once",yes,3,yes,0.88
+sub-3704,slice-002,"Builder supplied AI summary prompt and Notion write step","customer issue summary",ticket_id,"no retry policy",yes,2,no,0.62
+sub-3705,slice-003,"Builder supplied Close to GHL sync with replay notes","contact_id appointment_id status updated_at",appointment_id,"retry transient failures and block stale updates",yes,4,yes,0.91

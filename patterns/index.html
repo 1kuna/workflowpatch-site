@@ -281,6 +281,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Automation Builder Audit</h2>
+            <p>For buyers comparing n8n, Make, CRM, or light-agent builders and needing evidence that a proposed build can survive bad inputs.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One workflow slice plus a redacted builder artifact, proposal, screenshot summary, or test-build notes.</div>
+            <div class="step"><strong>Transform</strong>Check input contract, dedupe key, retry policy, conflict queue, test matrix, and source evidence.</div>
+            <div class="step"><strong>Destination</strong>Audit ledger, risk review queue, reusable test matrix, error log, and written handoff.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>CRM sync builders</li>
+                <li>Lead-routing pilots</li>
+                <li>Light agent workflows</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>Workflow evidence only</li>
+                <li>No personal hiring judgment</li>
+                <li>No live credentials or HR data</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Happy-path claims get tested</li>
+                <li>Missing guardrails reach review</li>
+                <li>Unknown scope reaches error log</li>
+              </ul>
+              <p><a href="/demo/automation-builder-audit/">View builder audit demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Inbox or Order Intake Review Queue</h2>
             <p>For forwarded emails, forms, or exported requests that need extraction, routing, and a safe blocked path.</p>
           </div>

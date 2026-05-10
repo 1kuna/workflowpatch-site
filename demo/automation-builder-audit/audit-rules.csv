@@ -1,0 +1,7 @@
+rule_id,rule_name,requirement,review_action
+rule-001,input_contract_complete,Submission must name the required source fields,Ask builder to define the input contract before implementation
+rule-002,dedupe_key_present,Submission must define a stable dedupe or idempotency key,Block production writes until duplicate behavior is explicit
+rule-003,retry_policy_safe,Retry policy must avoid rerunning the whole side-effect path blindly,Require bounded retry plus error ledger
+rule-004,conflict_queue_visible,Conflicts and uncertain rows must have a visible review queue,Reject happy-path-only build evidence
+rule-005,test_matrix_reusable,At least three reusable tests must be named,Ask for duplicate bad-payload timeout and conflict tests
+rule-006,source_links_present,AI or summary output must preserve source evidence,Hold unsupported claims for review

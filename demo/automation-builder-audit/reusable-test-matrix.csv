@@ -1,0 +1,17 @@
+submission_id,workflow_name,test_case,expected
+sub-3701,CRM Lead Routing Audit,happy_path,Valid source row reaches reviewed destination ledger.
+sub-3701,CRM Lead Routing Audit,duplicate_replay,Duplicate key is blocked or idempotently ignored.
+sub-3701,CRM Lead Routing Audit,bad_payload,"Missing required field routes to review or error, not live write."
+sub-3701,CRM Lead Routing Audit,partial_destination_failure,Retry is bounded and leaves a visible error ledger.
+sub-3702,CRM Lead Routing Audit,happy_path,Valid source row reaches reviewed destination ledger.
+sub-3702,CRM Lead Routing Audit,duplicate_replay,Duplicate key is blocked or idempotently ignored.
+sub-3702,CRM Lead Routing Audit,bad_payload,"Missing required field routes to review or error, not live write."
+sub-3702,CRM Lead Routing Audit,partial_destination_failure,Retry is bounded and leaves a visible error ledger.
+sub-3704,Light Agent Escalation Audit,happy_path,Valid source row reaches reviewed destination ledger.
+sub-3704,Light Agent Escalation Audit,duplicate_replay,Duplicate key is blocked or idempotently ignored.
+sub-3704,Light Agent Escalation Audit,bad_payload,"Missing required field routes to review or error, not live write."
+sub-3704,Light Agent Escalation Audit,partial_destination_failure,Retry is bounded and leaves a visible error ledger.
+sub-3705,Appointment Sync Audit,happy_path,Valid source row reaches reviewed destination ledger.
+sub-3705,Appointment Sync Audit,duplicate_replay,Duplicate key is blocked or idempotently ignored.
+sub-3705,Appointment Sync Audit,bad_payload,"Missing required field routes to review or error, not live write."
+sub-3705,Appointment Sync Audit,partial_destination_failure,Retry is bounded and leaves a visible error ledger.

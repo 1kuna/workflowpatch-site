@@ -1,0 +1,3 @@
+submission_id,workflow_name,risk_flags,review_action
+sub-3702,CRM Lead Routing Audit,input_contract_incomplete;dedupe_key_missing_or_mismatched;unsafe_retry_policy;missing_conflict_queue;thin_test_matrix,"Ask for missing contract, dedupe, retry, conflict, test, or source evidence before trusting the build."
+sub-3704,Light Agent Escalation Audit,input_contract_incomplete;thin_test_matrix;weak_source_evidence_or_confidence,"Ask for missing contract, dedupe, retry, conflict, test, or source evidence before trusting the build."
