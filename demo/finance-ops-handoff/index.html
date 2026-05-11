@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/finance-ops-handoff/">
-    <title>WorkflowPatch Finance Ops Handoff Demo</title>
-    <meta name="description" content="Mock WorkflowPatch Zoho to Xero, Drive, and CRM handoff proof with handoff ledger, approval queue, exception queue, error log, source script, and runbook.">
+    <title>WorkflowPatch Finance Ops Handoff Proof</title>
+    <meta name="description" content="WorkflowPatch finance ops handoff proof with reviewed handoff ledger, approval queue, exception queue, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch Finance Ops Handoff Demo">
-    <meta property="og:description" content="A mock Zoho-to-finance/ops handoff that blocks duplicate, unknown-account, customer-facing, and finance-sensitive rows before live writes.">
+    <meta property="og:title" content="WorkflowPatch Finance Ops Handoff Proof">
+    <meta property="og:description" content="A finance ops handoff proof that blocks duplicate, unknown-account, customer-facing, and finance-sensitive rows before live writes.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/finance-ops-handoff/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -40,7 +40,7 @@
       .brand img { width: 32px; height: 32px; }
       a { color: var(--accent-dark); font-weight: 700; }
       main { padding: 48px 0; }
-      h1 { font-size: clamp(34px, 6vw, 64px); line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
+      h1 { font-size: 52px; line-height: 1.02; margin: 0 0 18px; letter-spacing: 0; max-width: 780px; }
       .lede { color: var(--muted); font-size: 19px; max-width: 820px; margin: 0 0 28px; }
       .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
       .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
@@ -57,7 +57,7 @@
       .status { color: var(--accent-dark); font-weight: 800; }
       .warn { color: var(--warning); font-weight: 800; }
       footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
-      @media (max-width: 820px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+      @media (max-width: 820px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } h1 { font-size: 38px; } }
     </style>
   </head>
   <body>
@@ -69,8 +69,8 @@
     </header>
 
     <main class="wrap">
-      <h1>Finance ops handoff demo output.</h1>
-      <p class="lede">A small mock workflow that takes Zoho CRM, Zoho Forms, or inbox events and prepares reviewed handoff artifacts for Xero, Google Drive, and CRM activity logs. Duplicate, unknown-account, customer-facing, and finance-sensitive rows stay visible before any live write happens.</p>
+      <h1>Finance ops handoff proof.</h1>
+      <p class="lede">A first paid slice for teams whose CRM, forms, inbox, and finance tools need a reviewed handoff before Xero, Drive, CRM, payroll, tax, or customer-facing action. Duplicate, unknown-account, customer-facing, and finance-sensitive rows stay visible before any live write happens.</p>
 
       <div class="links">
         <a class="button" href="/demo/finance-ops-handoff/handoff-ledger.csv">Handoff Ledger CSV</a>
@@ -87,11 +87,11 @@
       <div class="grid">
         <div class="item">
           <h2>Input</h2>
-          <p>Mock Zoho CRM, Zoho Forms, and inbox events plus an approved account map and destination policy.</p>
+          <p>Redacted or synthetic CRM, form, inbox, and sheet events plus an approved account map and destination policy.</p>
         </div>
         <div class="item">
           <h2>Output</h2>
-          <p>Safe rows become reviewed handoff ledger entries for Xero drafts, Drive folders, and CRM activity logs.</p>
+          <p>Safe rows become reviewed handoff ledger entries for finance drafts, Drive folders, and CRM activity logs.</p>
         </div>
         <div class="item">
           <h2>Failure Path</h2>

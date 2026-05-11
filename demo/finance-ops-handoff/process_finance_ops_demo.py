@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch finance/ops handoff demo outputs."""
+"""Generate the WorkflowPatch finance ops handoff proof outputs."""
 
 from __future__ import annotations
 

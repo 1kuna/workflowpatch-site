@@ -1,10 +1,10 @@
-# Finance Ops Handoff Demo Runbook
+# Finance Ops Handoff Proof Runbook
 
-This mock proof demonstrates one Zoho-to-finance/ops handoff without connecting to live Zoho, Xero, Google Drive, CRM, email, payroll, tax, or accounting systems.
+This proof demonstrates one CRM/forms/inbox-to-finance-ops handoff without connecting to live Zoho, Xero, Google Drive, CRM, email, payroll, tax, or accounting systems.
 
 ## Inputs
 
-- `zoho-events.csv`: mock Zoho CRM, Zoho Forms, and inbox-style events.
+- `zoho-events.csv`: redacted or synthetic CRM, forms, and inbox-style events.
 - `account-map.csv`: approved account-to-Xero, CRM-owner, finance-owner, and Drive-root map.
 - `destination-policy.csv`: destination rules for Xero drafts, Drive/CRM handoffs, customer messages, and excluded sensitive finance actions.
 
@@ -33,4 +33,4 @@ This mock proof demonstrates one Zoho-to-finance/ops handoff without connecting 
 
 ## First Client Slice
 
-For a live client, start with one repeated manual handoff: one source event/export, one destination contract, allowed automatic writes, review-gated fields, and one failure example. The first sprint should produce a ledger, approval queue, exception/error rows, and a written runbook before broader contractor or company-wide automation work is considered.
+For a live client, start with one repeated manual handoff: one source event/export, one destination contract, allowed automatic writes, review-gated fields, and one failure example. The first sprint should produce a ledger, approval queue, exception/error rows, and a written runbook before broader contractor, accounting, payout, tax, or company-wide automation work is considered.
