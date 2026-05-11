@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/revops-integration-qa/">
-    <title>WorkflowPatch RevOps Integration QA Demo</title>
-    <meta name="description" content="Mock WorkflowPatch RevOps integration QA demo with owner review ledger, handoff queue, blocked record queue, error log, source script, and runbook.">
+    <title>WorkflowPatch RevOps Integration QA Proof</title>
+    <meta name="description" content="WorkflowPatch RevOps integration QA proof with owner review ledger, handoff queue, blocked record queue, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch RevOps Integration QA Demo">
-    <meta property="og:description" content="A mock RevOps workflow that turns sanitized integration exports into owner-review ledgers, approval-required handoff drafts, blocked record rows, and hard errors.">
+    <meta property="og:title" content="WorkflowPatch RevOps Integration QA Proof">
+    <meta property="og:description" content="A RevOps proof slice that turns sanitized integration exports into owner-review ledgers, approval-required handoff drafts, blocked record rows, and hard errors.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/revops-integration-qa/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -40,7 +40,7 @@
       .brand img { width: 32px; height: 32px; }
       a { color: var(--accent-dark); font-weight: 700; }
       main { padding: 48px 0; }
-      h1 { font-size: clamp(34px, 6vw, 64px); line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
+      h1 { font-size: 54px; line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
       .lede { color: var(--muted); font-size: 19px; max-width: 850px; margin: 0 0 28px; }
       .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
       .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
@@ -57,7 +57,7 @@
       .status { color: var(--accent-dark); font-weight: 800; }
       .warn { color: var(--warning); font-weight: 800; }
       footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
-      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } h1 { font-size: 38px; } }
     </style>
   </head>
   <body>
@@ -69,8 +69,8 @@
     </header>
 
     <main class="wrap">
-      <h1>RevOps integration QA demo output.</h1>
-      <p class="lede">A small mock workflow that turns sanitized HubSpot, Salesforce, Marketo, BigQuery, CSV, or integration exports into owner-review ledgers and approval-required handoff drafts. Unknown clients, unapproved system boundaries, destructive or policy-affecting changes, sensitive details, duplicates, low-confidence QA rows, and malformed records are blocked visibly before any live CRM, campaign, billing, client-system, or production write.</p>
+      <h1>RevOps integration QA proof.</h1>
+      <p class="lede">A first paid slice for HubSpot, Salesforce, RevOps, CPQ, attribution, and integration partners: one sanitized export or sync issue becomes an owner-review ledger, approval-required handoff draft, blocked-record queue, and error log. Unknown clients, unapproved system boundaries, destructive or policy-affecting changes, sensitive details, duplicates, low-confidence QA rows, and malformed records stop before any live CRM, campaign, billing, client-system, or production write.</p>
 
       <div class="links">
         <a class="button" href="/demo/revops-integration-qa/qa-ledger.csv">QA Ledger CSV</a>
@@ -86,19 +86,19 @@
 
       <div class="grid">
         <div class="item">
-          <h2>Sanitized Integration Export</h2>
+          <h2>Sanitized Source</h2>
           <p>Rows start from approved CRM, attribution, import preview, sync issue, or client handoff exports.</p>
         </div>
         <div class="item">
-          <h2>Owner Review Queue</h2>
+          <h2>Owner Review</h2>
           <p>Clean rows route to RevOps, implementation, attribution, or integration owners with evidence.</p>
         </div>
         <div class="item">
-          <h2>Approval Required</h2>
+          <h2>Draft Handoff</h2>
           <p>Owner handoff candidates stay as drafts until a person approves the output.</p>
         </div>
         <div class="item">
-          <h2>Blocked Record Queue</h2>
+          <h2>Record Blocks</h2>
           <p>Sensitive, destructive, duplicate, and unapproved-boundary rows stop before destination writes.</p>
         </div>
       </div>

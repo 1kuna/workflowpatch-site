@@ -1,10 +1,10 @@
-# RevOps Integration QA Demo Runbook
+# RevOps Integration QA Proof Runbook
 
-Purpose: prove a HubSpot, Salesforce, Marketo, BigQuery, CSV, or agency-overflow QA workflow with sanitized exports before touching live CRM credentials, client workspaces, customer records, campaign sends, or production writes.
+Purpose: prove the first paid slice for a HubSpot, Salesforce, Marketo, BigQuery, CSV, CPQ, attribution, or agency-overflow QA workflow with sanitized exports before touching live CRM credentials, client workspaces, customer records, campaign sends, billing state, or production writes.
 
 Inputs:
 
-- `integration-events.csv`: mock integration/export, sync issue, import preview, attribution, or handoff rows.
+- `integration-events.csv`: mock or redacted integration/export, sync issue, import preview, attribution, quote/deal, or handoff rows.
 - `client-map.csv`: mock client, owner, review queue, account status, and approved system boundary table.
 - `qa-policy.csv`: risk-specific summary, review reason, and next-action rules.
 
