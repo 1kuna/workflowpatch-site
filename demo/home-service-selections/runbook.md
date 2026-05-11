@@ -1,10 +1,10 @@
-# WorkflowPatch Home-Service Selections Runbook
+# WorkflowPatch Home-Service Selections Proof Runbook
 
-This mock proof shows a safe first slice for a home-service Airtable and Fillout system.
+This proof shows a safe first paid slice for a home-service Airtable and Fillout-style selections system.
 
 ## Inputs
 
-- `fillout-selection-submissions.csv`: mock sales-team selection rows.
+- `fillout-selection-submissions.csv`: mock or redacted sales-team selection rows.
 - `master-items-catalog.csv`: active and held master catalog items.
 - `project-records.csv`: project and brand state.
 
@@ -23,4 +23,4 @@ This mock proof shows a safe first slice for a home-service Airtable and Fillout
 
 ## Boundary
 
-This demo uses mock data only. It does not connect to Airtable, Fillout, vendors, customer records, accounting systems, or live project records.
+This proof uses mock data only. It does not connect to Airtable, Fillout, vendors, customer records, accounting systems, or live project records.

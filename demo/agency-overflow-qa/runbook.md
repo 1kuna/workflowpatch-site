@@ -1,10 +1,10 @@
-# Agency Overflow QA Demo Runbook
+# Agency Overflow QA Proof Runbook
 
-Purpose: show how WorkflowPatch handles a narrow agency or partner overflow slice without taking over strategy, client ownership, broad bench availability, live writes, or customer-facing work.
+Purpose: show the first paid slice for a narrow agency or partner overflow workflow without taking over strategy, client ownership, broad bench availability, live writes, or customer-facing work.
 
 Inputs:
 
-- One redacted source export, inbox sample, webhook sample, lead form, order event, or CRM sample.
+- One redacted client export, inbox sample, webhook sample, lead form, order event, or CRM sample.
 - One target destination or review output.
 - The partner's approval boundary for anything client-visible.
 - Fields that must be blocked, redacted, or left untouched.
