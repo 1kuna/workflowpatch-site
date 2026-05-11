@@ -136,6 +136,23 @@
         font-size: 14px;
       }
 
+      nav {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      a {
+        color: var(--accent-dark);
+        font-weight: 700;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-size: 14px;
+      }
+
       .hero {
         display: grid;
         grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
@@ -391,7 +408,12 @@
     <header>
       <div class="wrap topbar">
         <div class="brand"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</div>
-        <div class="mode">Async-only workflow implementation</div>
+        <nav aria-label="Primary">
+          <a href="/start/">Fit Check</a>
+          <a href="/sprint/">Pricing</a>
+          <a href="/demo/">Demos</a>
+          <a href="mailto:alex@workflowpatch.com">Email Alex</a>
+        </nav>
       </div>
     </header>
 
@@ -407,7 +429,7 @@
             <a class="button secondary" href="/delivery/">Sample Handoff</a>
             <a class="button secondary" href="/patterns/">Reference Patterns</a>
           </div>
-          <p class="hero-note">The first reply is written scope, not a calendar link. Send one source, one broken step, one destination, and a redacted sample if you have it. No credentials are needed for the fit check.</p>
+          <p class="hero-note">The first reply is written scope, not a calendar link. Send one source, one broken step, one destination, and a redacted sample if you have it. No credentials are needed for the fit check. Paid fixed sprints are usually $2,500-$3,000 after written scope.</p>
         </div>
 
         <div class="proof" aria-label="Demo workflow preview">
