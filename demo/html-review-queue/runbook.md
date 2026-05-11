@@ -1,6 +1,13 @@
-# HTML Review Queue Demo Runbook
+# HTML Review Queue Proof Runbook
 
 Purpose: prove a first batch of HTML pages can be reviewed as an approval queue instead of promising a full-site rewrite or upload.
+
+Useful first buyer sample:
+
+- 10 to 20 HTML files or excerpts that represent the broader site,
+- the current review prompt, SEO checklist, or quality rules,
+- one example of what counts as approval-ready for a changed page,
+- any page types, brand claims, or code paths that should stay blocked.
 
 Inputs:
 
