@@ -716,6 +716,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Sales AI Handoff</h2>
+            <p>For revenue teams adding AI to lead response, call summaries, and CRM handoffs without letting draft automation touch live prospects first.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted or synthetic HubSpot, RingCentral, form, call-summary, or lead-activity sample.</div>
+            <div class="step"><strong>Transform</strong>Apply duplicate, consent, sensitive-data, and missing-field rules while preserving source evidence.</div>
+            <div class="step"><strong>Destination</strong>Sales handoff ledger, lead response review queue, CRM preview, blocked-action queue, error log, and written handoff.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Lead response routing</li>
+                <li>Call-summary handoffs</li>
+                <li>HubSpot owner-review queues</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live CRM writes</li>
+                <li>No outbound calls, email, or SMS</li>
+                <li>No prospect-facing AI replies</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Clean rows reach owner review</li>
+                <li>Duplicates and missing consent block safely</li>
+                <li>Sensitive transcript rows are rejected visibly</li>
+              </ul>
+              <p><a href="/demo/sales-ai-handoff/">View sales AI handoff proof</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>HubSpot JSON Stabilization</h2>
             <p>For n8n workflows where landing-page webhooks, AI intent output, and HubSpot writes fail because payload shapes vary or nested arrays break downstream batching.</p>
           </div>
@@ -2166,6 +2205,7 @@
         <a class="button secondary" href="/demo/copper-duplicate-cleanup/">View Copper Duplicate Demo</a>
         <a class="button secondary" href="/demo/hubspot-clickup-stabilization/">View HubSpot ClickUp Demo</a>
         <a class="button secondary" href="/demo/revops-integration-qa/">View RevOps QA Demo</a>
+        <a class="button secondary" href="/demo/sales-ai-handoff/">View Sales AI Handoff Proof</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/">View Agency Overflow Demo</a>
         <a class="button secondary" href="/demo/document-email-review/">View Document Email Demo</a>
         <a class="button secondary" href="/demo/finance-ops-handoff/">View Finance Ops Demo</a>

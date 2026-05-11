@@ -1,0 +1,4 @@
+preview_id,event_id,crm_object,fields_preview,status
+SAH-C-3001,SAH-E-1001,HubSpot contact,"lead_source=demo_request; owner=sales_ops; ai_summary=needs staffing automation timeline",draft_only
+SAH-C-3002,SAH-E-1003,HubSpot contact,"lifecycle_stage=SQL; score_reason=pricing page plus staffing page viewed",draft_only
+SAH-C-3003,SAH-E-1002,HubSpot activity,"activity_type=missed_call; followup_channel=email_first; consent_check=required",review_required

@@ -1,0 +1,7 @@
+ledger_id,event_id,status,destination,evidence,next_action
+SAH-L-1001,SAH-E-1001,ready_for_owner_review,Lead response review queue,HubSpot form has email company role and source page,Sales owner reviews draft before reply or CRM write
+SAH-L-1002,SAH-E-1002,review_required,Lead response review queue,RingCentral call summary exists but phone consent is unknown,Confirm channel and choose email-first response
+SAH-L-1003,SAH-E-1003,ready_for_crm_preview,CRM update preview,HubSpot lifecycle change plus page-view evidence,Review lead score reason before any property update
+SAH-L-1004,SAH-E-1004,duplicate_blocked,Blocked action queue,Same normalized company domain and open review row,Merge evidence into existing owner review
+SAH-L-1005,SAH-E-1005,sensitive_blocked,Blocked action queue,Transcript contains payment-card fragments and private notes,Exclude from proof and request a redacted or synthetic sample
+SAH-L-1006,SAH-E-1006,error,Error log,Webhook event missing email and company fields,Fix source contract before retry

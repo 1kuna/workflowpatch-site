@@ -1,0 +1,6 @@
+rule_id,rule,action
+SAH-R-01,Lead has email or verified company domain and no sensitive content,create owner review row
+SAH-R-02,Phone or call transcript exists but channel consent is unknown,hold for review before outbound
+SAH-R-03,Existing account or same normalized domain already has an open owner review row,block duplicate action
+SAH-R-04,Payload contains payment fragments private notes credentials or unapproved sensitive text,block and request redacted sample
+SAH-R-05,Required CRM keys are missing,write hard error and do not create CRM preview

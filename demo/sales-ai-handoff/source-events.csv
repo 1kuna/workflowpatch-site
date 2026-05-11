@@ -1,0 +1,7 @@
+event_id,source,received_at,summary,channel,contains_sensitive,owner_hint
+SAH-E-1001,HubSpot form export,2026-05-11T09:04:00-04:00,Inbound demo request from mid-market operations lead asking about remote sales staffing,email,no,sales_ops
+SAH-E-1002,RingCentral call summary export,2026-05-11T09:18:00-04:00,Missed call with voicemail asking about pricing and implementation timing,phone,no,sales_ops
+SAH-E-1003,HubSpot lifecycle change,2026-05-11T09:22:00-04:00,Existing contact moved from MQL to SQL after two high-intent page views,crm_event,no,revops
+SAH-E-1004,HubSpot form export,2026-05-11T09:31:00-04:00,Duplicate demo request from the same company and normalized email domain,email,no,sales_ops
+SAH-E-1005,RingCentral transcript export,2026-05-11T09:47:00-04:00,Call transcript includes payment-card fragments and private notes,phone,yes,blocked
+SAH-E-1006,Webhook event,2026-05-11T10:03:00-04:00,Lead source payload missing email and company fields,api,no,error

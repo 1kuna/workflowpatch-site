@@ -1,0 +1,4 @@
+review_id,event_id,owner,draft_action,reason
+SAH-Q-2001,SAH-E-1001,sales_ops,Email-first response draft,Inbound demo request has clean source evidence and no sensitive content
+SAH-Q-2002,SAH-E-1002,sales_ops,Call-summary follow-up review,Voicemail is high intent but outbound channel needs human confirmation
+SAH-Q-2003,SAH-E-1003,revops,Lead-score reason review,Lifecycle change should be explained before any automated score update

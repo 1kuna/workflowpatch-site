@@ -1,0 +1,4 @@
+block_id,event_id,block_reason,evidence
+SAH-B-4001,SAH-E-1004,duplicate_company_domain,Existing owner review row for same normalized domain
+SAH-B-4002,SAH-E-1005,sensitive_transcript,Payment-card fragments and private notes are outside first-proof scope
+SAH-B-4003,SAH-E-1002,unknown_phone_consent,Phone follow-up held until owner confirms approved channel
