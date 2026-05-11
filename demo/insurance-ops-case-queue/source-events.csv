@@ -1,0 +1,9 @@
+event_id,source_system,event_type,received_at,agent_or_case_key,summary,risk_note
+IOQ-1001,Agent contracting inbox,appointment_packet_received,2026-05-11T08:12:00Z,agent-1452,Agent appointment packet received with W9 E&O certificate AML proof and state request,clean contracting packet
+IOQ-1002,HubSpot,new_agent_lead,2026-05-11T08:19:00Z,lead-7720,New independent agent lead requests fixed-annuity carrier appointment and onboarding materials,requires owner assignment
+IOQ-1003,RingCentral,missed_call_log,2026-05-11T08:27:00Z,+15550102221,Agent left voicemail asking about appointment status,phone maps to known agent but summary needs review
+IOQ-1004,BigMarker,webinar_registration,2026-05-11T08:44:00Z,agent-1452,Agent registered for product training webinar but appointment state is still pending,training/onboarding dependency
+IOQ-1005,Carrier status sheet,case_status_change,2026-05-11T09:03:00Z,case-8831,Carrier marks case pending because E&O certificate expiration is missing,case-processing exception
+IOQ-1006,Agent contracting inbox,appointment_packet_received,2026-05-11T09:14:00Z,agent-1452,Duplicate packet resend for the same agent and carrier request,duplicate contracting packet
+IOQ-1007,Agent contracting inbox,appointment_packet_received,2026-05-11T09:25:00Z,agent-2019,Packet includes consumer application details mixed with contracting paperwork,consumer-data boundary
+IOQ-1008,Zapier,automation_run_error,2026-05-11T09:37:00Z,,Failed automation run missing agent id and case id,hard source-contract error

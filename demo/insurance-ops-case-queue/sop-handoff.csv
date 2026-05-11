@@ -1,0 +1,6 @@
+sop_id,topic,trigger,evidence,team_handoff
+SOP-01,Contracting packet readiness,Appointment packet received,IOQ-1001 ready for review,Use required-document checklist before any carrier appointment work
+SOP-02,Duplicate packet handling,Same agent packet arrives twice,IOQ-1006 duplicate blocked,Merge evidence into open review row instead of creating a second task
+SOP-03,Case pending exception,Carrier case status changes to pending,IOQ-1005 queued exception,Review missing document reason before any agent-facing status update
+SOP-04,Training dependency,Webinar registration while appointment pending,IOQ-1004 queued dependency,Keep onboarding/training reminders internal until appointment state is clear
+SOP-05,Sensitive data boundary,Consumer application details mixed into ops packet,IOQ-1007 blocked,Strip consumer data and use redacted contracting-only examples for first proof

@@ -1,0 +1,9 @@
+ledger_id,event_id,decision,status,destination,evidence,next_action
+IOQ-L-1001,IOQ-1001,create contracting readiness row,ready for review,Contracting review ledger,W9 E&O AML and state request present,Operations owner reviews before carrier appointment
+IOQ-L-1002,IOQ-1002,assign onboarding owner,review required,Agent onboarding queue,New agent lead has no owner yet,Assign owner and confirm carrier/state path
+IOQ-L-1003,IOQ-1003,draft status-review task,ready for review,Case follow-up queue,Phone maps to known agent but voicemail summary needs review,Owner reviews before any status reply
+IOQ-L-1004,IOQ-1004,hold webinar dependency,review required,Onboarding dependency queue,Training registration exists while appointment is pending,Decide whether training reminder is appropriate
+IOQ-L-1005,IOQ-1005,case exception review,review required,Case-processing exception queue,Carrier status says E&O expiration missing,Request internal document review before status update
+IOQ-L-1006,IOQ-1006,merge duplicate packet,duplicate blocked,Blocked operations queue,Same agent carrier and state request already open,Merge evidence into IOQ-L-1001
+IOQ-L-1007,IOQ-1007,reject sensitive mixed packet,blocked,Blocked sensitive queue,Consumer application details mixed into contracting packet,Remove consumer data and resubmit redacted contracting-only sample
+IOQ-L-1008,IOQ-1008,reject malformed automation event,error,Automation source contract,No agent id case id or email present,Fix Zapier payload contract before retry

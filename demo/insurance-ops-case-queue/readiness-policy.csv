@@ -1,0 +1,9 @@
+policy_id,check,target_state,required,write_behavior,review_rule
+POL-01,agent_identity_present,contracting_review,yes,match_only,Block if agent id or email cannot be matched
+POL-02,w9_received,contracting_review,yes,review_row,Queue missing document before carrier appointment
+POL-03,e_and_o_current,contracting_review,yes,review_row,Queue expired or missing E&O before carrier appointment
+POL-04,aml_training_proof,contracting_review,yes,review_row,Queue missing AML proof before carrier appointment
+POL-05,state_appointment_requested,contracting_review,yes,review_row,Hold if state or carrier request is ambiguous
+POL-06,case_status_reason,case_exception_review,yes,review_row,Require owner review before any status reply
+POL-07,no_consumer_application_data,blocked_sensitive,yes,block,Reject mixed consumer application or financial suitability details
+POL-08,unique_replay_key,blocked_duplicate,yes,block,Suppress duplicate packet and merge evidence into open review row

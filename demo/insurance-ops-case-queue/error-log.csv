@@ -1,0 +1,4 @@
+error_id,event_id,error_type,severity,evidence,resolution
+ERR-01,IOQ-1008,missing_identity,hard,Automation payload has no agent id case id or email,Fix required source fields before retry
+ERR-02,IOQ-1007,consumer_data_in_source,hard,Contracting packet includes consumer application details,Remove consumer data and resend redacted contracting sample
+ERR-03,IOQ-1005,missing_required_case_reason,warning,E&O expiration is referenced but not attached,Review packet and request missing document internally

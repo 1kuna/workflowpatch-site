@@ -1,0 +1,5 @@
+queue_id,event_id,exception_type,status,evidence,owner_action
+CEQ-01,IOQ-1005,missing_e_and_o_expiration,review required,Carrier pending reason references missing E&O expiration,Check contracting packet and request updated certificate if needed
+CEQ-02,IOQ-1002,unassigned_agent_onboarding,review required,New agent lead has no operations owner,Assign owner before onboarding task creation
+CEQ-03,IOQ-1004,training_before_appointment_ready,review required,Webinar registration exists while appointment state is pending,Decide whether to send internal reminder or wait
+CEQ-04,IOQ-1003,status_reply_requires_review,ready for review,Voicemail is mapped but status response may mention appointment status,Owner reviews draft before any reply

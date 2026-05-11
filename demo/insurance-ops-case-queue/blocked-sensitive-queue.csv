@@ -1,0 +1,5 @@
+block_id,event_id,blocked_action,reason,evidence,retry_condition
+BSQ-01,IOQ-1006,create second contracting row,Duplicate packet for same agent carrier and state,IOQ-1001 is already open,Merge packet evidence into open review row
+BSQ-02,IOQ-1007,process mixed consumer packet,Consumer application and suitability details are not part of first proof,Packet includes consumer details,Provide redacted contracting-only sample
+BSQ-03,IOQ-1003,send appointment status reply,External message requires owner approval,Voicemail summary has not been reviewed,Owner approves exact reply externally
+BSQ-04,IOQ-1008,retry malformed automation run,Missing identity keys would create bad records,Zapier payload has no agent id case id or email,Fix payload contract and replay with idempotency key
