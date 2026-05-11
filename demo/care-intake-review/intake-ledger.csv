@@ -1,0 +1,7 @@
+ledger_id,event_id,status,matched_policy,destination_candidate,evidence,next_action
+CIR-L-1001,CIR-1001,ready_for_review,CIR-POL-06,crm_intake_review,"redacted form fields; email preferred; no clinical detail",route to intake owner review
+CIR-L-1002,CIR-1002,review_required,CIR-POL-02,scheduling_review,"callback request exists but phone consent is unknown",confirm channel consent before any outbound draft
+CIR-L-1003,CIR-1003,outbound_blocked,CIR-POL-03,consent_ledger,"STOP event token captured",suppress future SMS drafts
+CIR-L-1004,CIR-1004,review_required,CIR-POL-04,crm_duplicate_review,"duplicate email hash matched prior event",human review before CRM create
+CIR-L-1005,CIR-1005,blocked,CIR-POL-01,none,"clinical note attachment detected",exclude from proof and request redacted sample
+CIR-L-1006,CIR-1006,ledger_only,CIR-POL-05,workflow_hypothesis,"public automation role signal",scope non-PHI intake and scheduling proof

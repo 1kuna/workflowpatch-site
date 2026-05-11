@@ -1,0 +1,7 @@
+policy_id,condition,action,reason
+CIR-POL-01,boundary_tag=sensitive_block,block,Do not ingest PHI or clinical details in first proof scope
+CIR-POL-02,phone consent unknown,review,Do not stage outbound SMS without explicit consent evidence
+CIR-POL-03,message=STOP,block_outbound,Respect opt-out before any message draft
+CIR-POL-04,duplicate email hash seen,review,Prevent duplicate CRM or scheduling rows
+CIR-POL-05,public_signal only,ledger_only,Use public role evidence for workflow hypothesis only
+CIR-POL-06,clean intake with email channel,stage_review,Prepare internal review row before CRM or scheduling write

@@ -1,0 +1,7 @@
+event_id,source_channel,received_at,subject_or_type,synthetic_payload,boundary_tag
+CIR-1001,web_form,2026-05-11T13:05:00Z,new-service-request,"guardian-name redacted; service area=Queens; preferred channel=email; requested service=initial consult",non_phi
+CIR-1002,email,2026-05-11T13:11:00Z,scheduling-followup,"existing-case token redacted; requested callback window=Tuesday afternoon; phone consent=unknown",non_phi_review
+CIR-1003,sms_opt_in,2026-05-11T13:16:00Z,STOP,"mobile token redacted; message=STOP",consent_event
+CIR-1004,web_form,2026-05-11T13:21:00Z,new-service-request,"guardian-name redacted; service area=Brooklyn; duplicate email hash=7d1a; requested service=diagnostic",non_phi
+CIR-1005,email,2026-05-11T13:31:00Z,clinical-detail,"unapproved clinical notes attached; child details present",sensitive_block
+CIR-1006,job_board,2026-05-11T13:42:00Z,ops-automation-signal,"public role asks for lead handling, scheduling, outreach, CRM updates, dashboards, monitoring, and error handling",public_signal

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/">
     <title>WorkflowPatch</title>
-    <meta name="description" content="Async fixed-scope workflow automation: one source, one transformation, one destination, with logging, QA, approval path, runbook, and optional care.">
+    <meta name="description" content="Fixed-scope workflow automation repairs with written scope, dry-run proof, logging, QA, and handoff.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WorkflowPatch">
-    <meta property="og:description" content="Async fixed-scope workflow automation with logging, QA, approval paths, runbooks, and optional care.">
+    <meta property="og:description" content="Fixed-scope workflow repairs with written scope, dry-run proof, logging, QA, and handoff.">
     <meta property="og:url" content="https://www.workflowpatch.com/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -25,7 +25,7 @@
         "name": "WorkflowPatch",
         "url": "https://www.workflowpatch.com/",
         "email": "alex@workflowpatch.com",
-        "description": "Async fixed-scope workflow automation for teams with manual work stuck between inboxes, spreadsheets, CRM, tickets, exports, or reporting.",
+        "description": "Fixed-scope workflow automation repairs for teams with manual work stuck between inboxes, spreadsheets, CRM, tickets, exports, or reporting.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "2995 East Point Street",
@@ -479,12 +479,39 @@
           grid-template-columns: 1fr;
         }
 
+        .topbar {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 10px;
+          padding: 12px 0;
+        }
+
+        nav {
+          justify-content: flex-start;
+        }
+
         .hero {
           padding-top: 40px;
         }
 
+        .hero > div,
+        .proof {
+          max-width: 340px;
+          width: 100%;
+        }
+
         h1 {
           font-size: 42px;
+        }
+
+        .actions {
+          display: grid;
+          grid-template-columns: 1fr;
+          max-width: 340px;
+        }
+
+        .button {
+          width: 100%;
         }
 
         .row {
@@ -513,15 +540,15 @@
     <main>
       <section class="wrap hero">
         <div>
-          <p class="eyebrow">Async workflow automation</p>
-          <h1>Workflow repairs for messy handoffs.</h1>
-          <p class="lede">Fixed-scope builds for teams losing time between inboxes, sheets, CRMs, tickets, and reports. One broken step gets mapped, tested, documented, and handed off without calls.</p>
+          <p class="eyebrow">Fixed-scope automation repair</p>
+          <h1>Fix one broken workflow handoff.</h1>
+          <p class="lede">WorkflowPatch turns one source to destination step into a tested handoff with logs, QA, and review gates. Written scope first. Dry-run proof before access.</p>
           <div class="actions">
-            <a class="button" href="/start/">Start Fit Check</a>
-            <a class="button secondary" href="/demo/">View Proof Library</a>
+            <a class="button" href="/start/">Send Fit Check</a>
+            <a class="button secondary" href="/demo/">View Demos</a>
             <a class="button secondary" href="/sprint/">Sprint Brief</a>
           </div>
-          <p class="hero-note">No payment or system access before written scope. Mock proof is available first.</p>
+          <p class="hero-note">No credentials, production writes, or payment links in the first pass.</p>
         </div>
 
         <aside class="proof" aria-label="WorkflowPatch service summary">
@@ -533,19 +560,19 @@
             <div class="summary-list">
               <div class="summary-line">
                 <strong>Timeline</strong>
-                <span>5 business days</span>
+                <span>3-5 business days</span>
               </div>
               <div class="summary-line">
                 <strong>Scope</strong>
-                <span>One source to one destination</span>
+                <span>One workflow slice</span>
               </div>
               <div class="summary-line">
                 <strong>Proof</strong>
-                <span>Dry run before live access</span>
+                <span>Mock or redacted dry run</span>
               </div>
               <div class="summary-line">
-                <strong>Price</strong>
-                <span>$2,500-$3,000 fixed</span>
+                <strong>Terms</strong>
+                <span>Fixed after written scope</span>
               </div>
             </div>
           </div>
@@ -554,18 +581,18 @@
 
       <section class="band">
         <div class="wrap">
-          <h2>Where it fits.</h2>
+          <h2>Best-fit repairs.</h2>
           <div class="grid">
             <div class="item">
-              <h3>Manual Intake</h3>
+              <h3>Intake</h3>
               <p>Forms, emails, CSVs, or tickets need cleanup, routing, or owner review.</p>
             </div>
             <div class="item">
-              <h3>System Handoffs</h3>
+              <h3>Sync</h3>
               <p>CRM, helpdesk, Airtable, Sheets, or project tools drift out of sync.</p>
             </div>
             <div class="item">
-              <h3>Review Gates</h3>
+              <h3>Review</h3>
               <p>Customer-facing drafts, edge cases, and bad rows need visible approval paths.</p>
             </div>
           </div>
@@ -592,7 +619,7 @@
               <p class="note"><a href="/demo/revops-integration-qa/">View RevOps proof</a></p>
             </div>
           </div>
-          <p class="note"><a href="/demo/">Browse the full proof library.</a> Demos use mock data and show the delivery shape: source, script, review queue, error log, and runbook.</p>
+          <p class="note"><a href="/demo/">Browse the proof library.</a> Demos use mock data and show the delivery shape: source, script, review queue, error log, and runbook.</p>
         </div>
       </section>
 
@@ -625,9 +652,9 @@
           <h2>Pricing.</h2>
           <div class="pricing">
             <div class="item">
-              <h3>Free Teardown Note</h3>
+              <h3>Fit Check</h3>
               <div class="price">Free</div>
-              <p>A short async note on one likely workflow patch. No implementation.</p>
+              <p>A short written read on whether one workflow slice is worth scoping. No implementation.</p>
             </div>
             <div class="item">
               <h3>Founding Sprint</h3>

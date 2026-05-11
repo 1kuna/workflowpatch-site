@@ -1,0 +1,4 @@
+review_id,ledger_id,owner,review_reason,draft_internal_note,external_action
+CIR-R-1001,CIR-L-1001,intake_ops,clean intake needs owner acceptance,"Review service area, confirm preferred email path, then prepare CRM write plan.",none
+CIR-R-1002,CIR-L-1002,scheduling_ops,phone consent unknown,"Confirm permitted contact channel before staging callback or reminder draft.",none
+CIR-R-1003,CIR-L-1004,intake_ops,possible duplicate,"Compare duplicate hash against existing CRM record before create/update.",none

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/start/">
     <title>Start Async Fit Check | WorkflowPatch</title>
-    <meta name="description" content="Start an async WorkflowPatch fit check with the exact information needed to scope one source, one transformation, and one destination.">
+    <meta name="description" content="Send a written WorkflowPatch fit check for one source-to-destination workflow repair.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Start Async Fit Check | WorkflowPatch">
-    <meta property="og:description" content="Send the exact details needed to scope one fixed async workflow patch.">
+    <meta property="og:description" content="Send the details needed to scope one fixed workflow repair with dry-run proof before access.">
     <meta property="og:url" content="https://www.workflowpatch.com/start/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -289,12 +289,39 @@
           grid-template-columns: 1fr;
         }
 
+        .topbar {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 10px;
+          padding: 12px 0;
+        }
+
+        nav {
+          justify-content: flex-start;
+        }
+
         main {
           padding-top: 34px;
         }
 
+        .hero > div,
+        .fit-panel {
+          max-width: 340px;
+          width: 100%;
+        }
+
         h1 {
           font-size: 40px;
+        }
+
+        .actions {
+          display: grid;
+          grid-template-columns: 1fr;
+          max-width: 340px;
+        }
+
+        .button {
+          width: 100%;
         }
 
         .flow-row {
@@ -319,8 +346,8 @@
     <main>
       <section class="wrap hero">
         <div>
-          <h1>Start with the workflow, not a sales call.</h1>
-          <p class="lede">Send the smallest useful version of the problem. If it fits one source, one transformation, and one destination, WorkflowPatch can map a fixed async sprint. No credentials are needed for the fit check.</p>
+          <h1>Send a written fit check.</h1>
+          <p class="lede">Share one broken source-to-destination handoff and one redacted sample. WorkflowPatch replies with the smallest scope, exclusions, and proof shape before any payment or system access.</p>
           <div class="actions">
             <a class="button" href="mailto:alex@workflowpatch.com?subject=WorkflowPatch%20Async%20Fit%20Check&body=Company%3A%0AWebsite%3A%0AWorkflow%20you%20want%20patched%3A%0ACurrent%20source%3A%0ACurrent%20manual%20step%3A%0ADesired%20destination%3A%0AHow%20often%20it%20runs%3A%0AExpected%20weekly%20volume%3A%0ACost-sensitive%20channels%20%28SMS%2FWhatsApp%2FAI%2Fdatabase%29%20if%20any%3A%0AWhat%20breaks%20if%20it%20stays%20manual%3A%0AWho%20approves%20external%20output%3A%0ATools%20or%20accounts%20involved%20(no%20credentials)%3A%0ASample%20or%20redacted%20data%20available%20within%2024%20hours%3A%0ADeadline%3A">Send Fit Check</a>
             <a class="button secondary" href="/patterns/">Compare Patterns</a>
@@ -335,7 +362,7 @@
           <div class="fit-body">
             <div class="flow-row">
               <strong>Source</strong>
-              <span>Inbox, form, export, CRM object, ticket, sheet, webhook, or ready API.</span>
+              <span>Inbox, form, export, CRM object, ticket, sheet, webhook, or API.</span>
             </div>
             <div class="flow-row">
               <strong>Transform</strong>
@@ -343,7 +370,7 @@
             </div>
             <div class="flow-row">
               <strong>Destination</strong>
-              <span>Review queue, CRM, sheet, helpdesk, Slack/Teams alert, report, or email draft.</span>
+              <span>Review queue, CRM, sheet, helpdesk, alert, report, or draft.</span>
             </div>
           </div>
         </div>
@@ -422,7 +449,7 @@
           <div class="grid">
             <div class="item">
               <h3>1. Fit Check</h3>
-              <p>Alex reviews the workflow async and replies with the smallest version that can be built and tested cleanly.</p>
+              <p>WorkflowPatch reviews the workflow and replies with the smallest version that can be built and tested cleanly.</p>
             </div>
             <div class="item">
               <h3>2. Written Scope</h3>

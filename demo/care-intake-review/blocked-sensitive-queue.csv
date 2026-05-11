@@ -1,0 +1,3 @@
+blocked_id,event_id,block_reason,evidence,operator_instruction
+CIR-B-1001,CIR-1003,opt_out_event,"STOP message token",suppress outbound SMS drafts and log consent change only
+CIR-B-1002,CIR-1005,sensitive_or_clinical_detail,"clinical note attachment marker",do not process; ask for synthetic or redacted non-PHI sample
