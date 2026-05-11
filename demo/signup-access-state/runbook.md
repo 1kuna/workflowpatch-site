@@ -1,14 +1,14 @@
-# Signup Access State Demo Runbook
+# Access State Proof Runbook
 
 This mock proof demonstrates one Phase 1 onboarding/access workflow without connecting to real landing pages, auth providers, payment processors, or email tools.
 
 ## First Buyer Slice
 
-- Source: redacted Stripe purchase/refund events plus Rewardful attribution and Skool/Zendo/Airtable field rules.
-- Transformation: match purchase attribution, decide access state, block ambiguous/refunded/missing-attribution cases, and log errors.
-- Destination: Airtable-style access ledger, Skool/Zendo access action queue, review queue, and written handoff.
+- Source: redacted signup, purchase/refund, or company/user access events plus payment, attribution, role, or company-scope rules.
+- Transformation: match the relevant access evidence, decide access state, block ambiguous/refunded/missing-attribution/company-scope cases, and log errors.
+- Destination: Airtable-style access ledger, platform access action queue, review queue, and written handoff.
 
-Useful sample: one successful paid signup, one failed/refunded/cancelled event, one missing-attribution case, Airtable fields, expected Skool/Zendo access states, and the manual-review rule.
+Useful sample: one allowed user or purchase, one blocked or failed case, one ambiguous role/company/attribution case, destination fields, expected access states, and the manual-review rule.
 
 ## Inputs
 
@@ -30,7 +30,7 @@ Useful sample: one successful paid signup, one failed/refunded/cancelled event, 
 - Restricted partner access is held for manual approval.
 - No outbound email is sent by the demo; draft rows stay approval-required.
 - Duplicate or existing-user signals are held for review instead of creating another account.
-- No live refund, access, or customer-message action is part of the first proof.
+- No live refund, permission edit, access, or customer-message action is part of the first proof.
 
 ## Acceptance Checks
 
@@ -42,4 +42,4 @@ Useful sample: one successful paid signup, one failed/refunded/cancelled event, 
 
 ## First Client Slice
 
-For a live client, start with one signup source, one access decision, and one destination ledger. The first proof should use redacted sample events and should define whether identity and content access are handled by a real auth/front-end system, with Airtable used for onboarding operations and review state.
+For a live client, start with one signup or access source, one access decision, and one destination ledger. The first proof should use redacted or synthetic sample events and should define whether identity and content access are handled by a real auth/front-end system, with Airtable used for onboarding operations and review state.

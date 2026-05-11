@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/signup-access-state/">
-    <title>WorkflowPatch Signup Access State Demo</title>
-    <meta name="description" content="Mock WorkflowPatch purchase-to-access demo with onboarding ledger, attribution and access decisions, email draft queue, review rows, error log, source script, and runbook.">
+    <title>WorkflowPatch Access State Proof</title>
+    <meta name="description" content="Mock WorkflowPatch access-state proof with onboarding ledger, payment or company access decisions, email draft queue, review rows, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch Signup Access State Demo">
-    <meta property="og:description" content="A mock purchase-to-access workflow that separates grants, payment holds, verification holds, approvals, and hard errors before live platform changes.">
+    <meta property="og:title" content="WorkflowPatch Access State Proof">
+    <meta property="og:description" content="A mock access-state workflow that separates grants, payment holds, company-scope holds, approvals, and hard errors before live platform changes.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/signup-access-state/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -69,8 +69,8 @@
     </header>
 
     <main class="wrap">
-      <h1>Purchase-to-access state proof.</h1>
-      <p class="lede">A first slice for Stripe payment events, Rewardful attribution, Skool/Zendo access states, and an Airtable ledger. The proof decides access-ready, pending payment, missing attribution, or manual review before any live access change, refund action, customer message, or platform write.</p>
+      <h1>Access state proof.</h1>
+      <p class="lede">A first slice for purchase-to-access or company-scoped portal access. The proof can use Stripe or Rewardful-style payment evidence, Skool/Zendo-style content states, or Airtable/Softr-style company roles. It decides access-ready, pending payment, missing attribution, company-scope hold, or manual review before any live access change, refund action, customer message, permission edit, or platform write.</p>
 
       <div class="links">
         <a class="button" href="/demo/signup-access-state/onboarding-ledger.csv">Onboarding Ledger CSV</a>
@@ -86,15 +86,15 @@
       <div class="grid">
         <div class="item">
           <h2>First Slice</h2>
-          <p>Stripe purchase/refund event -> Rewardful attribution check -> Skool/Zendo access action queue.</p>
+          <p>Signup or purchase event -> payment/company/role check -> access ledger or review queue.</p>
         </div>
         <div class="item">
           <h2>Useful Sample</h2>
-          <p>One paid signup, one refund or failed payment, one missing-attribution case, and Airtable field rules.</p>
+          <p>One allowed user, one blocked user, payment or company rules, role fields, and malformed examples.</p>
         </div>
         <div class="item">
           <h2>Boundary</h2>
-          <p>No live Stripe, Rewardful, Skool, Zendo, Airtable, email, refund, or access change happens in the proof.</p>
+          <p>No live Stripe, Rewardful, Skool, Zendo, Airtable, Softr, email, refund, permission, or access change happens in the proof.</p>
         </div>
       </div>
 
