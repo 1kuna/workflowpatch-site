@@ -1,6 +1,6 @@
 # Access State Proof Runbook
 
-This mock proof demonstrates one Phase 1 onboarding/access workflow without connecting to real landing pages, auth providers, payment processors, or email tools.
+This proof demonstrates one Phase 1 onboarding/access workflow with redacted or synthetic inputs and without connecting to real landing pages, auth providers, payment processors, or email tools.
 
 ## First Buyer Slice
 
@@ -12,7 +12,7 @@ Useful sample: one allowed user or purchase, one blocked or failed case, one amb
 
 ## Inputs
 
-- `signup-events.csv`: mock signup events from landing pages.
+- `signup-events.csv`: redacted or synthetic signup events from landing pages.
 - `content-access-catalog.csv`: requested tier rules and content groups.
 
 ## Outputs
