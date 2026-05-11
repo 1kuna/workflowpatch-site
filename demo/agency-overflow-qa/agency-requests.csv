@@ -5,3 +5,4 @@ AO-1003,RevOps partner,Webhook payload lacks company id,Webhook sample,HubSpot u
 AO-1004,White-label team,Client asks for broad retainer,SOW note,Client Slack,Take over support bench,yes,scope
 AO-1005,HubSpot partner,Lead routing rules changed,Lead CSV,Owner review queue,Apply routing and confidence flag,no,low
 AO-1006,Automation studio,Unknown API key appears in sample,Request note,Runbook,Build production connector,no,secret
+AO-1007,Agency partner,Webhook fired without destination mapping,Webhook sample,,,no,low

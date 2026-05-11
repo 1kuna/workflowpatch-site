@@ -1,1 +1,2 @@
 request_id,error
+AO-1007,"missing required fields: target_destination, requested_action"

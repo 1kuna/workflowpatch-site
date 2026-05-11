@@ -218,7 +218,7 @@
 
     <main class="wrap">
       <h1>Agency overflow QA demo output.</h1>
-      <p class="lede">A small mock workflow for agency and partner overflow work across CRM, marketing ops, lead routing, attribution, APIs, and webhooks. One client workflow event becomes validation, routing, a reviewable destination update, and an error log. Client-visible rows wait for approval, broad bench requests are blocked, and secrets stay out of scope. No client data, live CRM write, customer message, or white-label commitment is used.</p>
+      <p class="lede">A small mock workflow for agency and partner overflow work across CRM, marketing ops, lead routing, attribution, APIs, and webhooks. One client workflow event becomes validation, routing, a reviewable destination update, and an error log. Client-visible rows wait for approval, broad bench requests are blocked, malformed rows fail loudly, and secrets stay out of scope. No client data, live CRM write, customer message, or white-label commitment is used.</p>
 
       <div class="links">
         <a class="button" href="/demo/agency-overflow-qa/qa-ledger.csv">QA Ledger CSV</a>
@@ -324,6 +324,14 @@
               <td>Runbook</td>
               <td class="warn">blocked</td>
               <td>Secret or credential appears in sample.</td>
+            </tr>
+            <tr>
+              <td>AO-1007</td>
+              <td>Agency partner</td>
+              <td>Webhook sample</td>
+              <td>Not provided</td>
+              <td class="warn">error</td>
+              <td>Missing required destination and action fields.</td>
             </tr>
           </tbody>
         </table>
