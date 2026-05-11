@@ -1,2 +1,2 @@
 company_key,company_name,account_status,allowed_pipelines,allowed_clickup_lists,allowed_writeback_fields,owner,review_queue
-3d-walkabout,3D Walkabout,active,Production Tours|Sales Pipeline,Production Ops|Postproduction Ops,clickup_task_id|clickup_task_status|closed_lost_reason,Tim Brickle,ops-review
+example-studio,Example Studio,active,Production Tours|Sales Pipeline,Production Ops|Postproduction Ops,clickup_task_id|clickup_task_status|closed_lost_reason,Delivery Ops,ops-review

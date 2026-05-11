@@ -1,6 +1,6 @@
-# HubSpot ClickUp Stabilization Demo Runbook
+# HubSpot ClickUp Handoff Proof Runbook
 
-This mock proof shows the first WorkflowPatch slice for a HubSpot to ClickUp stabilization request where sales-stage changes need to become production or project handoff work without duplicate tasks, silent write-back drift, or unmanaged live writes.
+This redacted or synthetic proof shows the first WorkflowPatch slice for a HubSpot to ClickUp handoff request where sales-stage changes need to become production or project handoff work without duplicate tasks, silent write-back drift, or unmanaged live writes.
 
 ## Inputs
 
