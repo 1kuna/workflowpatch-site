@@ -1,0 +1,6 @@
+requested_action,system_boundary,decision,review_reason,destination_queue
+update_license_state,GHL or operator ledger,allowed_dry_run,Status updates can be prepared as ledger rows but require client-system mapping before live write,licensing-state-ledger
+payout_release,Gusto payout,review_required,Money movement requires explicit approval and authenticated Gusto review,approval-review-queue
+payroll_change,Gusto payroll,review_required,Payroll or contractor state cannot be changed from an automation signal alone,approval-review-queue
+customer_message,Testimonial.io or email,review_required,Customer-facing request must be reviewed before any external message,approval-review-queue
+production_write,Any live account,blocked,Live production writes are outside the proof boundary,blocked-action-queue

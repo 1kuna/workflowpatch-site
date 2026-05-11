@@ -1,0 +1,2 @@
+event_id,source_system,client_id,requested_action,reason,next_step,processed_at
+evt-5906,Whop,client-101,update_license_state,duplicate_correlation_id,Confirm replay intent before creating another status row.,2026-05-10T23:18:00Z

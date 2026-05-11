@@ -1,0 +1,4 @@
+event_id,client_id,client_email,client_name,source_system,event_type,license_status,destination,decision,decision_detail,processed_at
+evt-5901,client-101,owner@example-client.test,Northline Studio,GoHighLevel,opportunity_won,ready_to_license,licensing-state-ledger,ready_for_reviewed_status_update,Prepare ready_to_license licensing state from GoHighLevel signal.,2026-05-10T23:18:00Z
+evt-5902,client-101,owner@example-client.test,Northline Studio,Whop,membership_active,active,licensing-state-ledger,ready_for_reviewed_status_update,Prepare active licensing state from Whop signal.,2026-05-10T23:18:00Z
+evt-5905,client-102,ops@example-client.test,Cedar Ops,Google Sheets,status_override,hold,licensing-state-ledger,ready_for_reviewed_status_update,Prepare hold licensing state from Google Sheets signal.,2026-05-10T23:18:00Z

@@ -1,0 +1,2 @@
+event_id,source_system,error_code,error_detail
+evt-5908,GoHighLevel,missing_client_id,A licensing state row needs a stable client id before it can be matched or written.

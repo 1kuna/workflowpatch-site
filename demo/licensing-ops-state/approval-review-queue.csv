@@ -1,0 +1,4 @@
+event_id,source_system,client_id,client_email,client_name,requested_action,review_reason,operator_note,processed_at
+evt-5903,Gusto,client-101,owner@example-client.test,Northline Studio,payout_release,Money movement requires explicit approval and authenticated Gusto review,Payout ready signal needs approval before any money movement.,2026-05-10T23:18:00Z
+evt-5904,Testimonial.io,client-101,owner@example-client.test,Northline Studio,customer_message,Customer-facing request must be reviewed before any external message,Customer testimonial request needs approval before external send.,2026-05-10T23:18:00Z
+evt-5907,Gusto,client-103,payroll@example-client.test,Harbor Pilot,payroll_change,Payroll or contractor state cannot be changed from an automation signal alone,Payroll setup should be reviewed before touching Gusto.,2026-05-10T23:18:00Z
