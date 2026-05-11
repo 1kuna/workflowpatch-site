@@ -162,10 +162,19 @@
       }
 
       h1 {
-        font-size: 68px;
+        font-size: 62px;
         line-height: 0.94;
         margin: 0 0 24px;
         max-width: 840px;
+        letter-spacing: 0;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--accent-dark);
+        font-size: 13px;
+        font-weight: 800;
+        text-transform: uppercase;
         letter-spacing: 0;
       }
 
@@ -243,6 +252,39 @@
         padding: 18px;
         display: grid;
         gap: 12px;
+      }
+
+      .summary-list {
+        display: grid;
+        gap: 0;
+      }
+
+      .summary-line {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: baseline;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .summary-line:first-child {
+        padding-top: 0;
+      }
+
+      .summary-line:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .summary-line strong {
+        font-size: 14px;
+      }
+
+      .summary-line span {
+        color: var(--muted);
+        font-size: 14px;
+        text-align: right;
       }
 
       .row {
@@ -471,78 +513,60 @@
     <main>
       <section class="wrap hero">
         <div>
-          <h1>One painful workflow patched in 5 business days.</h1>
-          <p class="lede">Fixed-scope automation for messy handoffs between inboxes, sheets, CRMs, tickets, and reports. Async by default. Proof before access.</p>
+          <p class="eyebrow">Async workflow automation</p>
+          <h1>Workflow repairs for messy handoffs.</h1>
+          <p class="lede">Fixed-scope builds for teams losing time between inboxes, sheets, CRMs, tickets, and reports. One broken step gets mapped, tested, documented, and handed off without calls.</p>
           <div class="actions">
-            <a class="button" href="/start/">Start Async Fit Check</a>
+            <a class="button" href="/start/">Start Fit Check</a>
+            <a class="button secondary" href="/demo/">View Proof Library</a>
             <a class="button secondary" href="/sprint/">Sprint Brief</a>
-            <a class="button secondary" href="/demo/">View Demo Output</a>
-            <a class="button secondary" href="/delivery/">Sample Handoff</a>
-            <a class="button secondary" href="/patterns/">Reference Patterns</a>
           </div>
-          <p class="hero-note">Start with one source, one broken step, and one destination. If it fits, written scope comes before payment or access.</p>
+          <p class="hero-note">No payment or system access before written scope. Mock proof is available first.</p>
         </div>
 
-        <div class="proof" aria-label="Demo workflow preview">
+        <aside class="proof" aria-label="WorkflowPatch service summary">
           <div class="proof-head">
-            <strong>Demo Review Queue</strong>
-            <span class="pill">No client data</span>
+            <strong>Fixed Sprint</strong>
+            <span class="pill">Async only</span>
           </div>
           <div class="proof-body">
-            <div class="row">
-              <div><strong>REQ-1001</strong><span class="status">Ready</span></div>
-              <div>Sales inquiry classified from a website request with a draft owner handoff.</div>
-              <div class="status">Approval required</div>
-            </div>
-            <div class="row">
-              <div><strong>REQ-1002</strong><span class="status">Ready</span></div>
-              <div>Ticket/reporting request routed to service desk with a summary next step.</div>
-              <div class="status">Approval required</div>
-            </div>
-            <div class="row">
-              <div><strong>REQ-1004</strong><span class="status warn">Error</span></div>
-              <div>Missing contact fields are not silently processed; they are routed to manual review.</div>
-              <div class="status warn">Manual review</div>
+            <div class="summary-list">
+              <div class="summary-line">
+                <strong>Timeline</strong>
+                <span>5 business days</span>
+              </div>
+              <div class="summary-line">
+                <strong>Scope</strong>
+                <span>One source to one destination</span>
+              </div>
+              <div class="summary-line">
+                <strong>Proof</strong>
+                <span>Dry run before live access</span>
+              </div>
+              <div class="summary-line">
+                <strong>Price</strong>
+                <span>$2,500-$3,000 fixed</span>
+              </div>
             </div>
           </div>
-        </div>
+        </aside>
       </section>
 
       <section class="band">
         <div class="wrap">
-          <h2>Simple by design.</h2>
-          <div class="principles">
-            <div class="principle-card">
-              <strong>Small scope</strong>
-              <p>One source. One transformation. One destination.</p>
-            </div>
-            <div class="principle-card">
-              <strong>Visible proof</strong>
-              <p>Dry-run outputs show accepted rows, blocked rows, and errors before live access.</p>
-            </div>
-            <div class="principle-card">
-              <strong>Fixed terms</strong>
-              <p>Scope, exclusions, and acceptance checks are written before payment.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="band">
-        <div class="wrap">
-          <h2>Scope</h2>
+          <h2>Where it fits.</h2>
           <div class="grid">
             <div class="item">
-              <h3>One Source</h3>
-              <p>Inbox, form, CSV/export, CRM object, ticket export, spreadsheet, webhook, or ready API.</p>
+              <h3>Manual Intake</h3>
+              <p>Forms, emails, CSVs, or tickets need cleanup, routing, or owner review.</p>
             </div>
             <div class="item">
-              <h3>One Transformation</h3>
-              <p>Summarize, classify, route, draft, enrich, deduplicate, score, or generate a structured report.</p>
+              <h3>System Handoffs</h3>
+              <p>CRM, helpdesk, Airtable, Sheets, or project tools drift out of sync.</p>
             </div>
             <div class="item">
-              <h3>One Destination</h3>
-              <p>Sheet, Airtable, CRM, helpdesk, email draft, Slack/Teams alert, or report output.</p>
+              <h3>Review Gates</h3>
+              <p>Customer-facing drafts, edge cases, and bad rows need visible approval paths.</p>
             </div>
           </div>
         </div>
@@ -550,355 +574,25 @@
 
       <section class="band">
         <div class="wrap">
-          <h2>Proof when you want it.</h2>
+          <h2>Proof before access.</h2>
           <div class="grid">
-            <div class="item">
-              <h3>Request Triage</h3>
-              <p>Turn inbox, form, ticket, or CSV rows into a review queue.</p>
-              <p class="note"><a href="/demo/">View request demo</a></p>
-            </div>
-            <div class="item">
-              <h3>HTML Review Queue</h3>
-              <p>Find page issues and produce upload-ready fix notes.</p>
-              <p class="note"><a href="/demo/html-review-queue/">View HTML review demo</a></p>
-            </div>
-            <div class="item">
-              <h3>HubSpot ClickUp Stabilization</h3>
-              <p>Preview deal-to-task handoffs before anything writes live.</p>
-              <p class="note"><a href="/demo/hubspot-clickup-stabilization/">View HubSpot ClickUp demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Staffing Order Intake</h3>
-              <p>Extract forwarded orders into draft-only ops rows.</p>
-              <p class="note"><a href="/demo/staffing-order-intake/">View staffing order demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Booking Payment State</h3>
-              <p>Separate confirmed bookings, tentative holds, conflicts, and errors.</p>
-              <p class="note"><a href="/demo/booking-payment-state/">View booking state demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Work Order Intake</h3>
-              <p>Convert shared-inbox work orders into action plans and review holds.</p>
-              <p class="note"><a href="/demo/work-order-intake/">View work-order demo</a></p>
-            </div>
-          </div>
-          <details class="proof-library">
-            <summary>Browse the full proof library</summary>
-            <div class="grid">
             <div class="item">
               <h3>Request Triage</h3>
               <p>Inbox, form, ticket, or CSV rows become review items with blocked rows visible.</p>
-              <p class="note"><a href="/demo/">View request demo</a></p>
+              <p class="note"><a href="/demo/">View request proof</a></p>
             </div>
             <div class="item">
-              <h3>Invoice Exceptions</h3>
-              <p>Invoice lines are checked against a pricebook and routed to accepted, exception, or error rows.</p>
-              <p class="note"><a href="/demo/invoice-exception/">View invoice demo</a></p>
+              <h3>HubSpot ClickUp</h3>
+              <p>Deal-stage events become task candidates, write-back previews, conflicts, and errors.</p>
+              <p class="note"><a href="/demo/hubspot-clickup-stabilization/">View handoff proof</a></p>
             </div>
             <div class="item">
-              <h3>C-Store Invoice Reconciliation</h3>
-              <p>Vendor aliases, pricebook checks, invoice/store summaries, and exception spend stay reviewable before payment or export.</p>
-              <p class="note"><a href="/demo/cstore-invoice-reconciliation/">View c-store invoice demo</a></p>
-            </div>
-            <div class="item">
-              <h3>POS Daily Reconciliation</h3>
-              <p>Toast-style item rows become business-date summary rows, blocked-row evidence, and a reconciliation report before Sheets updates.</p>
-              <p class="note"><a href="/demo/pos-daily-reconciliation/">View POS reconciliation demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Invoice Trigger Fallback</h3>
-              <p>QuickBooks invoice exports and Zap run timestamps become a fallback ledger, delayed-trigger review queue, blocked sends, and hard errors.</p>
-              <p class="note"><a href="/demo/invoice-trigger-fallback/">View trigger fallback demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Invoice Reminder Safety</h3>
-              <p>Payment state, reply/dispute signals, and reminder history are checked before any customer reminder draft exists.</p>
-              <p class="note"><a href="/demo/invoice-reminder-safety/">View reminder safety demo</a></p>
-            </div>
-            <div class="item">
-              <h3>CRM Sync Conflicts</h3>
-              <p>Contact and appointment updates are matched, written to a ledger, or held for conflict review.</p>
-              <p class="note"><a href="/demo/crm-sync/">View CRM demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Copper Duplicate Cleanup</h3>
-              <p>Zapier or Make trigger payloads become dry-run Copper create/update candidates, duplicate holds, and error rows before any CRM write.</p>
-              <p class="note"><a href="/demo/copper-duplicate-cleanup/">View Copper duplicate demo</a></p>
-            </div>
-            <div class="item">
-              <h3>HubSpot ClickUp Stabilization</h3>
-              <p>Deal-stage events become ClickUp task candidates, write-back previews, conflict rows, and hard errors.</p>
-              <p class="note"><a href="/demo/hubspot-clickup-stabilization/">View HubSpot ClickUp demo</a></p>
-            </div>
-            <div class="item">
-              <h3>RevOps Integration QA</h3>
-              <p>CRM, CPQ, attribution, and integration exports become owner review rows, handoff drafts, blocked records, and hard errors.</p>
-              <p class="note"><a href="/demo/revops-integration-qa/">View RevOps QA proof</a></p>
-            </div>
-            <div class="item">
-              <h3>GHL Close Sync</h3>
-              <p>Close appointment events and GHL contact changes move through a field policy, contact map, conflict queue, and dry-run sync ledger.</p>
-              <p class="note"><a href="/demo/ghl-close-sync/">View GHL Close demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Licensing Ops State</h3>
-              <p>GHL, Whop, Gusto, Testimonial.io, and operator-sheet events become reviewed client status rows, approval queues, blocked actions, and hard errors.</p>
-              <p class="note"><a href="/demo/licensing-ops-state/">View licensing ops demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Agency Overflow QA</h3>
-              <p>Partner overflow requests become one-slice QA artifacts, approval holds, blocked-scope rows, and error logs before any client-facing work.</p>
-              <p class="note"><a href="/demo/agency-overflow-qa/">View agency overflow demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Document Email Review</h3>
-              <p>Documents, emails, and CRM exports become extraction ledgers, review queues, blocked rows, and hard errors before any live write or send.</p>
-              <p class="note"><a href="/demo/document-email-review/">View document email demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Finance Ops Handoff</h3>
-              <p>Zoho events become reviewed Xero, Drive, and CRM handoff artifacts while duplicates, unknown accounts, and finance-sensitive rows are blocked.</p>
-              <p class="note"><a href="/demo/finance-ops-handoff/">View finance ops demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Async Proof Slice</h3>
-              <p>One workflow brief and redacted sample events become a status ledger, review queue, error log, and written update before any ongoing work.</p>
-              <p class="note"><a href="/demo/async-proof-slice/">View proof slice demo</a></p>
-            </div>
-            <div class="item">
-              <h3>MVP Governance Review</h3>
-              <p>Investor-update or product-map sources become review-state rows, approval-required drafts, blocked communication rows, and hard errors.</p>
-              <p class="note"><a href="/demo/mvp-governance-review/">View MVP governance demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Program Ops KPI</h3>
-              <p>Attendance, staffing, and KPI rows become a program ledger, exception queue, reporting output, blocked rows, and hard errors.</p>
-              <p class="note"><a href="/demo/program-ops-kpi/">View program ops demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Builder Audit</h3>
-              <p>Automation artifacts are checked for contracts, dedupe keys, retry policy, conflict queues, tests, and source evidence before ongoing work.</p>
-              <p class="note"><a href="/demo/automation-builder-audit/">View builder audit demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Workflow Reliability Ledger</h3>
-              <p>Workflow events become accepted rows, fallback review rows, blocked live actions, monitoring handoffs, and hard errors before production promotion.</p>
-              <p class="note"><a href="/demo/workflow-reliability-ledger/">View reliability ledger demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Silent Output Audit</h3>
-              <p>Valid-looking workflow runs are checked for wrong tools, wrong context, bad tone, broken metrics, and client-visible mistakes.</p>
-              <p class="note"><a href="/demo/silent-output-audit/">View silent-output demo</a></p>
-            </div>
-            <div class="item">
-              <h3>HubSpot JSON Stabilization</h3>
-              <p>Landing-page payloads and AI outputs are normalized before HubSpot review, with malformed JSON and weak confidence blocked.</p>
-              <p class="note"><a href="/demo/hubspot-json-stabilization/">View HubSpot JSON demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Travel Email Classification</h3>
-              <p>Gmail rows become Sheets status updates, Slack escalation drafts, review holds, and loop-protection blocks.</p>
-              <p class="note"><a href="/demo/travel-email-classification/">View travel email demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Lead Routing Review</h3>
-              <p>Lead, activity, and reporting rows are checked for routing exceptions, blocked records, and approval-gated CRM output.</p>
-              <p class="note"><a href="/demo/lead-qualification-review/">View lead review demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Lead Review Ledger</h3>
-              <p>Lead-form rows become CRM ledger entries, internal review rows, blocked actions, and hard errors before any WhatsApp or review request.</p>
-              <p class="note"><a href="/demo/lead-review-ledger/">View lead ledger demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Statement Emails</h3>
-              <p>Database rows are grouped into weekly statement drafts with duplicate suppression and blocked rows.</p>
-              <p class="note"><a href="/demo/postgres-statement-email/">View statement demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Support Reply Approval</h3>
-              <p>Customer emails become sourced draft replies, review rows, duplicate-send holds, and hard errors.</p>
-              <p class="note"><a href="/demo/support-reply-approval/">View support reply demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Managed IT Review</h3>
-              <p>Sanitized ticket, monitoring, onboarding, and assessment rows become account review output with sensitive rows blocked.</p>
-              <p class="note"><a href="/demo/managed-it-ticket-review/">View managed IT demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Research Digest</h3>
-              <p>Source rows are scored against a watchlist and split into digest-ready or review-needed outputs.</p>
-              <p class="note"><a href="/demo/research-digest/">View digest demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Job Scoring Ledger</h3>
-              <p>Approved job exports become scored ledger rows, Telegram review drafts, blocked jobs, and hard errors.</p>
-              <p class="note"><a href="/demo/job-scoring-ledger/">View job scoring demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Public Source Monitor</h3>
-              <p>Public-source events get provenance, boundary tags, canaries, review rows, and sensitive-data blocks before regulated scope expands.</p>
-              <p class="note"><a href="/demo/public-source-monitor/">View public-source demo</a></p>
-            </div>
-            <div class="item">
-              <h3>HTML Review Queue</h3>
-              <p>Sample pages become issue rows, fix drafts, upload blockers, and run logs before any full-site rewrite.</p>
-              <p class="note"><a href="/demo/html-review-queue/">View HTML review demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Listing ROI Scan</h3>
-              <p>Listing snapshots are compared with recent comps before any market-wide scrape or investor claim.</p>
-              <p class="note"><a href="/demo/listing-roi-scan/">View listing ROI demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Commerce Performance Brief</h3>
-              <p>Ads, catalog, market, and royalty rows become a metric ledger, Slack review queue, blocked rows, and evidence-backed brief.</p>
-              <p class="note"><a href="/demo/commerce-performance-brief/">View commerce demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Client Insight Review</h3>
-              <p>Redacted report exports become opportunity ledgers, strategist review rows, draft queues, exceptions, and blocked insight rows.</p>
-              <p class="note"><a href="/demo/client-insight-review/">View client insight demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Campaign Feedback Loop</h3>
-              <p>Campaign briefs, approved claims, metrics, and AI draft candidates become a review-gated next-test ledger.</p>
-              <p class="note"><a href="/demo/campaign-feedback-loop/">View campaign demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Product Content QA Ledger</h3>
-              <p>Product catalog facts, content requests, and AI asset metadata become QA rows, blocked-output rows, and publish holds.</p>
-              <p class="note"><a href="/demo/product-content-qa-ledger/">View product-content QA demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Shipping Notifications</h3>
-              <p>Ready orders become customer-update drafts, while not-live tracking becomes internal alerts.</p>
-              <p class="note"><a href="/demo/shipping-notification/">View shipping demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Reverse Logistics Routing</h3>
-              <p>Return and overstock events become route-review rows, while blocked channels and missing policies stay visible.</p>
-              <p class="note"><a href="/demo/reverse-logistics-routing/">View reverse logistics demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Webhook Idempotency</h3>
-              <p>Signed events are checked for duplicate keys, tenant mismatches, unsupported types, and replay evidence.</p>
-              <p class="note"><a href="/demo/webhook-idempotency/">View webhook demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Browser Action Ledger</h3>
-              <p>Approved rows become dry-run browser/API action plans, failure taxonomy, alert rules, and blocked scope rows.</p>
-              <p class="note"><a href="/demo/browser-action-ledger/">View browser action demo</a></p>
-            </div>
-            <div class="item">
-              <h3>n8n Crash Triage</h3>
-              <p>Crash signals become triage rows, backup checks, and migration gates before a MySQL to Postgres cutover.</p>
-              <p class="note"><a href="/demo/n8n-crash-triage/">View n8n triage demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Field-Service Action Layer</h3>
-              <p>Voice/chat requests become dry-run work-order actions, approval prompts, blocked rows, and error logs.</p>
-              <p class="note"><a href="/demo/field-service-action-layer/">View field-service demo</a></p>
-            </div>
-            <div class="item">
-              <h3>3PL Ops Control Layer</h3>
-              <p>WMS, ERP, MES, scanner, and operator-sheet signals become dry-run action ledgers, standards reviews, approvals, blocks, and errors.</p>
-              <p class="note"><a href="/demo/3pl-ops-control-layer/">View 3PL ops demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Work Order Intake</h3>
-              <p>Shared-Gmail work orders become FACIL-IT write plans, Chat summaries, blocked reviews, and errors.</p>
-              <p class="note"><a href="/demo/work-order-intake/">View work-order demo</a></p>
-            </div>
-            <div class="item">
-              <h3>SMS Approval State</h3>
-              <p>Opted-in SMS rows move through conversation state, Slack review, approved outbound queue, and error logs.</p>
-              <p class="note"><a href="/demo/sms-approval-state/">View SMS approval demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Document Export Manifest</h3>
-              <p>CRM documents are matched to destination records, transfer-ready rows, export-only fallbacks, and exceptions.</p>
-              <p class="note"><a href="/demo/document-export-manifest/">View export demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Contract Packet State</h3>
-              <p>Hire rows move through review, ready-to-send, reminder, escalation, filing, and blocked states before any candidate-facing action.</p>
-              <p class="note"><a href="/demo/contract-packet-state/">View contract state demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Ops Reduction</h3>
-              <p>Scenario runs are audited for duplicate triggers, immediate retries, missing gates, and operations saved.</p>
-              <p class="note"><a href="/demo/scenario-ops-reduction/">View ops reduction demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Scenario Modularization</h3>
-              <p>Large Make/n8n scenarios are split into safe module boundaries with idempotency keys, dry-run gates, and error paths.</p>
-              <p class="note"><a href="/demo/scenario-modularization/">View modularization demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Airtable Performance Triage</h3>
-              <p>Slow automations and scripts are profiled into timeout, queue-delay, write-fanout, and offload decisions before live base access.</p>
-              <p class="note"><a href="/demo/airtable-performance-triage/">View Airtable triage demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Airtable Source Of Truth Audit</h3>
-              <p>High-volume bases are mapped into canonical owners, write policies, archive reviews, and blocked decisions before any migration or sync build.</p>
-              <p class="note"><a href="/demo/airtable-source-of-truth-audit/">View Airtable source demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Monday Board Routing</h3>
-              <p>Redacted Monday-style events are routed, held for review, blocked as sensitive, or logged as errors before any live write.</p>
-              <p class="note"><a href="/demo/board-event-routing/">View board routing demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Staffing Order Intake</h3>
-              <p>Forwarded staffing orders become draft-only rows, blocked alerts, or extraction errors before any inbox or Monday write.</p>
-              <p class="note"><a href="/demo/staffing-order-intake/">View staffing order demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Booking Payment State</h3>
-              <p>Form rows and payment notices become confirmed bookings, tentative holds, payment reminders, conflicts, or errors.</p>
-              <p class="note"><a href="/demo/booking-payment-state/">View booking state demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Property Booking Sync</h3>
-              <p>Property, booking, and owner updates become Airtable state rows, HubSpot sync-review rows, exceptions, or blocked sync evidence.</p>
-              <p class="note"><a href="/demo/property-booking-sync/">View property sync demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Venue Guest Alignment</h3>
-              <p>Vemos, Square, and Mailchimp-style events become Airtable guest state, review actions, blocked rows, or hard errors.</p>
-              <p class="note"><a href="/demo/venue-guest-alignment/">View guest alignment demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Salon Ops State</h3>
-              <p>Jotform and Zenoti-style salon events become Airtable client/service state, Zapier action drafts, blocked rows, or hard errors.</p>
-              <p class="note"><a href="/demo/salon-ops-state/">View salon ops demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Signup Access State</h3>
-              <p>Signup rows become onboarding ledger entries, payment holds, verification holds, manual reviews, or hard errors.</p>
-              <p class="note"><a href="/demo/signup-access-state/">View signup access demo</a></p>
-            </div>
-            <div class="item">
-              <h3>PO Budget Bridge</h3>
-              <p>Google Sheets expense rows are checked against Airtable projects and POs before any budget sync or accounting update.</p>
-              <p class="note"><a href="/demo/po-budget-bridge/">View PO budget demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Event Production Project Bible</h3>
-              <p>Redacted project rows become budget, milestone, vendor, rigging, and role-visibility review evidence before any full base build.</p>
-              <p class="note"><a href="/demo/event-production-project-bible/">View project Bible demo</a></p>
-            </div>
-            <div class="item">
-              <h3>Inventory Allocation</h3>
-              <p>Inventory selections become room-level reservations, move queues, conflicts, or errors before warehouse action.</p>
-              <p class="note"><a href="/demo/inventory-room-allocation/">View inventory demo</a></p>
+              <h3>RevOps QA</h3>
+              <p>CRM, CPQ, attribution, and integration exports become owner review rows.</p>
+              <p class="note"><a href="/demo/revops-integration-qa/">View RevOps proof</a></p>
             </div>
           </div>
-          </details>
-          <p class="note">Demos use mock data and show the delivery shape: source, script, review queue, error log, and runbook.</p>
+          <p class="note"><a href="/demo/">Browse the full proof library.</a> Demos use mock data and show the delivery shape: source, script, review queue, error log, and runbook.</p>
         </div>
       </section>
 
@@ -908,19 +602,19 @@
           <div class="process">
             <div class="step-card">
               <strong>1. Fit Check</strong>
-              <p>Send the source, manual step, destination, and one redacted sample.</p>
+              <p>Send the broken step and one redacted sample.</p>
             </div>
             <div class="step-card">
-              <strong>2. Written Scope</strong>
-              <p>You get the build boundary, acceptance checks, and exclusions before payment.</p>
+              <strong>2. Scope</strong>
+              <p>Build boundary, exclusions, and acceptance checks are written first.</p>
             </div>
             <div class="step-card">
-              <strong>3. Payment And Access</strong>
-              <p>Work starts after payment plus usable sample data or tool access.</p>
+              <strong>3. Build</strong>
+              <p>The patch is tested with logs, review states, and blocked-row handling.</p>
             </div>
             <div class="step-card">
-              <strong>4. Delivery</strong>
-              <p>Delivery includes QA evidence, logging, approval path, and a short runbook.</p>
+              <strong>4. Handoff</strong>
+              <p>You get the artifact, QA evidence, and a short runbook.</p>
             </div>
           </div>
         </div>
@@ -928,89 +622,36 @@
 
       <section class="band">
         <div class="wrap">
-          <h2>Packages</h2>
+          <h2>Pricing.</h2>
           <div class="pricing">
             <div class="item">
               <h3>Free Teardown Note</h3>
               <div class="price">Free</div>
-              <p>A short async note on one likely workflow patch. Public details or buyer-provided bullets only. No implementation.</p>
+              <p>A short async note on one likely workflow patch. No implementation.</p>
             </div>
             <div class="item">
-              <h3>Founding WorkflowPatch Sprint</h3>
+              <h3>Founding Sprint</h3>
               <div class="price">$2,500</div>
-              <p>Fixed-scope build with first-month care included. Ongoing care is $500/month after month 1.</p>
+              <p>Fixed-scope build with first-month care included. Ongoing care is optional.</p>
               <p class="note"><a href="/sprint/">View sprint brief</a></p>
             </div>
             <div class="item">
-              <h3>Priority WorkflowPatch Sprint</h3>
+              <h3>Priority Sprint</h3>
               <div class="price">$3,000</div>
-              <p>One-time fixed-scope build with tests, logging, approval path, and runbook. No retainer required.</p>
+              <p>One-time fixed-scope build with tests, logging, approval path, and runbook.</p>
               <p class="note"><a href="/sprint/">View sprint brief</a></p>
             </div>
           </div>
-          <p class="note">Work starts after payment, accepted scope, and access/data readiness. No live calls are required.</p>
-        </div>
-      </section>
-
-      <section class="band">
-        <div class="wrap">
-          <h2>Guardrails</h2>
-          <div class="grid">
-            <div class="item">
-              <h3>Human Approval</h3>
-              <p>External or customer-facing AI output stays in draft/review until a human approves it.</p>
-            </div>
-            <div class="item">
-              <h3>Visible Failure</h3>
-              <p>Errors and unsupported rows go to a log or manual-review queue instead of disappearing.</p>
-            </div>
-            <div class="item">
-              <h3>Clean Boundaries</h3>
-              <p>No fake guarantees, no sensitive regulated workflow by default, and no secrets committed to code.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="band" id="demo">
-        <div class="wrap">
-          <h2>Demo Output</h2>
-          <div class="grid">
-            <div class="item">
-              <h3>Processed</h3>
-              <p>6 sample rows run through a request review workflow using non-client demo data.</p>
-            </div>
-            <div class="item">
-              <h3>Review Queue</h3>
-              <p>4 rows were ready for human review; customer-facing drafts stayed approval-required.</p>
-            </div>
-            <div class="item">
-              <h3>Error Handling</h3>
-              <p>2 invalid rows were routed to visible manual review instead of being silently processed.</p>
-            </div>
-          </div>
-          <p class="note">Valid rows create review items. Invalid rows create errors. External copy stays in review. <a href="/demo/">Open the mock review queue.</a></p>
+          <p class="note">Work starts after payment, accepted scope, and access/data readiness.</p>
         </div>
       </section>
 
       <section class="band" id="intake">
         <div class="wrap">
-          <h2>Async Intake</h2>
+          <h2>Start async.</h2>
           <div class="contact-box">
-            <p>Email <a href="mailto:alex@workflowpatch.com">alex@workflowpatch.com</a> with the workflow you want checked. A good first version fits into one source, one transformation, and one destination.</p>
-            <ul class="intake">
-              <li>Company and website</li>
-              <li>Current manual workflow</li>
-              <li>Source system or file</li>
-              <li>Desired output or destination</li>
-              <li>How often the workflow runs</li>
-              <li>What breaks if it stays manual</li>
-              <li>Who approves customer-facing output</li>
-              <li>Tools/accounts involved, without credentials</li>
-              <li>Whether sample data is available within 24 hours</li>
-              <li>Deadline that matters</li>
-            </ul>
-            <p class="note"><a href="/start/">Open the guided async fit check.</a></p>
+            <p>Email <a href="mailto:alex@workflowpatch.com">alex@workflowpatch.com</a> with the workflow, the source, the desired destination, and one redacted sample. Credentials are not needed for the first pass.</p>
+            <p class="note"><a href="/start/">Open the guided fit check.</a></p>
           </div>
         </div>
       </section>
