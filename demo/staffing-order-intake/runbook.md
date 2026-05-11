@@ -2,6 +2,13 @@
 
 Purpose: prove a staffing order-intake guardrail before touching a live inbox, Make scenario, Monday.com board, staffing-client data, or production write path.
 
+Useful first buyer sample:
+
+- one redacted forwarded order email that should create a draft row,
+- one order that should be blocked because the client does not match cleanly,
+- the Monday client lookup field and required order fields,
+- the alert destination or written handoff note wanted for blocked rows.
+
 Inputs:
 
 - `order-emails.csv`: mock forwarded staffing order emails with extracted fields.

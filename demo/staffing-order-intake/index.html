@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/staffing-order-intake/">
-    <title>WorkflowPatch Staffing Order Intake Demo</title>
-    <meta name="description" content="Mock WorkflowPatch staffing order-intake demo with order draft ledger, blocked alert queue, extraction error log, source script, and runbook.">
+    <title>WorkflowPatch Staffing Order Intake Proof</title>
+    <meta name="description" content="Mock WorkflowPatch staffing order-intake proof with Monday client lookup, order draft ledger, blocked alert queue, extraction error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch Staffing Order Intake Demo">
+    <meta property="og:title" content="WorkflowPatch Staffing Order Intake Proof">
     <meta property="og:description" content="A mock staffing order-intake workflow with Monday client lookup, draft-only order rows, blocked alerts, extraction errors, source script, and runbook.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/staffing-order-intake/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
@@ -55,6 +55,12 @@
       .item { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
       .item h2 { font-size: 16px; margin: 0 0 8px; }
       .item p { color: var(--muted); font-size: 14px; margin: 0; }
+      .split { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr); gap: 16px; margin-top: 18px; }
+      .callout { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; }
+      .callout h2 { font-size: 18px; margin: 0 0 10px; }
+      .callout p { color: var(--muted); margin: 0 0 12px; }
+      .callout ul { margin: 0; padding-left: 20px; color: var(--muted); }
+      .callout li { margin: 6px 0; }
       .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); margin-top: 28px; }
       table { width: 100%; border-collapse: collapse; min-width: 860px; font-size: 14px; }
       th, td { border-bottom: 1px solid var(--line); padding: 12px; text-align: left; vertical-align: top; }
@@ -63,7 +69,7 @@
       .status { color: var(--accent-dark); font-weight: 800; }
       .warn { color: var(--warning); font-weight: 800; }
       footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
-      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+      @media (max-width: 920px) { .grid, .split { grid-template-columns: 1fr; } main { padding-top: 34px; } }
     </style>
   </head>
   <body>
@@ -75,8 +81,8 @@
     </header>
 
     <main class="wrap">
-      <h1>Staffing order-intake demo output.</h1>
-      <p class="lede">A small mock workflow that turns forwarded staffing order emails into draft-only Monday-style order rows. Unknown clients, billing holds, missing fields, low-confidence extraction, duplicate replays, and empty forwarded bodies are blocked visibly before any live inbox, Make.com, Monday.com, or staffing-client data is touched.</p>
+      <h1>Staffing order-intake guardrail proof.</h1>
+      <p class="lede">A small mock workflow that turns forwarded staffing order emails into draft-only Monday-style order rows. It proves the client lookup and failure boundary before a live inbox, Make.com scenario, Monday.com board, staffing-client data, or production write path is touched.</p>
 
       <div class="links">
         <a class="button" href="/demo/staffing-order-intake/order-draft-ledger.csv">Order Draft Ledger CSV</a>
@@ -106,6 +112,29 @@
           <h2>Draft Only</h2>
           <p>Accepted orders stop as reviewable drafts until the buyer separately approves live writes.</p>
         </div>
+      </div>
+
+      <div class="split">
+        <section class="callout">
+          <h2>What this proves</h2>
+          <p>The first slice is the intake decision layer: one forwarded order format, one Monday client lookup, one draft order shape, and one blocked-alert trail for anything unsafe.</p>
+          <ul>
+            <li>Known active clients become draft order rows with lookup evidence.</li>
+            <li>Unknown clients, billing holds, missing fields, low confidence, and duplicate replays stop before AutoFlow item creation.</li>
+            <li>Empty or malformed forwarded emails create hard error rows instead of silent misses.</li>
+            <li>The output is reviewable before live Make or Monday.com writes.</li>
+          </ul>
+        </section>
+        <section class="callout">
+          <h2>Useful first sample</h2>
+          <p>A paid proof would start from redacted or synthetic order emails, not inbox or Monday.com access.</p>
+          <ul>
+            <li>One forwarded order email that should create a draft row.</li>
+            <li>One order that should be blocked because the client does not match cleanly.</li>
+            <li>The Monday client lookup field and required order fields.</li>
+            <li>The alert destination or handoff note your team wants for blocked rows.</li>
+          </ul>
+        </section>
       </div>
 
       <div class="table-wrap" aria-label="Staffing order intake sample">
