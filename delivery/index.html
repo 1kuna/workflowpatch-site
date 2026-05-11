@@ -262,12 +262,13 @@
       <p class="lede">A paid sprint should not end with a vague "it's done." This sample shows the kind of scope summary, QA evidence, artifacts, and acceptance checks WorkflowPatch ships with.</p>
       <div class="actions">
         <a class="button" href="/start/">Start Async Fit Check</a>
+        <a class="button secondary" href="/demo/agency-overflow-qa/">View Agency Overflow QA</a>
         <a class="button secondary" href="/demo/crm-sync/">View CRM Sync Demo</a>
         <a class="button secondary" href="/demo/webhook-idempotency/">View Webhook Demo</a>
         <a class="button secondary" href="/patterns/">Reference Patterns</a>
       </div>
 
-      <div class="note">This is a sample handoff, not a client case study. It uses mock CRM sync details to show the operating standard before a buyer shares real data or pays for a sprint.</div>
+      <div class="note">This is a sample handoff, not a client case study. It uses mock CRM sync details to show the operating standard before a buyer shares real data or pays for a sprint; agency overflow readers can also inspect the mock QA ledger.</div>
 
       <section>
         <h2>Where This Shape Fits</h2>
@@ -275,6 +276,10 @@
           <div class="item">
             <h3>Client Workflow Overflow</h3>
             <p>Lead, order, or form event -> validation and routing decision -> CRM, Monday, or Sheet update with an error log and handoff.</p>
+          </div>
+          <div class="item">
+            <h3>Agency Overflow QA</h3>
+            <p>One approved client slice -> internal QA evidence -> approval queue, blocked scope, and handoff before anything client-visible ships.</p>
           </div>
           <div class="item">
             <h3>Document Or Email Pilot</h3>
