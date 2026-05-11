@@ -1,0 +1,8 @@
+event_id,source_system,event_type,received_at,contact_key,company,summary,risk_note
+HRQ-1001,Vercel form,lead_form_submit,2026-05-11T09:12:00Z,ops@northline.example,Northline Logistics,New demo request with company size source page and target pipeline,clean form row
+HRQ-1002,RingCentral,call_log,2026-05-11T09:18:00Z,+15550101112,Northline Logistics,Inbound call should append to existing HubSpot contact and deal,phone maps to known email
+HRQ-1003,HubSpot,deal_stage_change,2026-05-11T09:25:00Z,deal-4421,Northline Logistics,Deal moved to proposal but forecast category stayed unset,forecast hygiene gap
+HRQ-1004,Vercel form,lead_form_submit,2026-05-11T09:31:00Z,ops@northline.example,Northline Logistics,Duplicate form submit from same company and source page,duplicate contact-domain risk
+HRQ-1005,RingCentral,call_recording_notice,2026-05-11T09:42:00Z,+15550107770,Unknown,Call recording metadata present without approved transcript or consent status,block recording-dependent write
+HRQ-1006,HubSpot,property_update,2026-05-11T09:49:00Z,contact-8830,Harbor Clinic,Lifecycle changed to SQL with missing owner and no lead source,missing required routing fields
+HRQ-1007,Vercel form,lead_form_submit,2026-05-11T10:03:00Z,,Cedar Works,Form payload missing email phone and existing HubSpot id,hard source-contract error

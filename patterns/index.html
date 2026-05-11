@@ -755,6 +755,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>HubSpot RingCentral QA</h2>
+            <p>For RevOps teams cleaning form mapping, call logging, contact matching, dashboard inputs, and forecast hygiene before any live CRM or phone-system action.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted or synthetic HubSpot event, RingCentral call/activity event, and Vercel-form row.</div>
+            <div class="step"><strong>Transform</strong>Apply field-map policy, identity matching, duplicate guards, forecast hygiene checks, and recording-source blocks.</div>
+            <div class="step"><strong>Destination</strong>Sync review ledger, dashboard queue, blocked write queue, SOP handoff, error log, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>RingCentral to HubSpot activity QA</li>
+                <li>Vercel form to HubSpot mapping</li>
+                <li>Forecast and dashboard hygiene</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live HubSpot writes first</li>
+                <li>No call recordings or credentials</li>
+                <li>No outbound calls, email, or SMS</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Clean rows reach review ledger</li>
+                <li>Duplicates and recordings block visibly</li>
+                <li>Malformed form events reach error log</li>
+              </ul>
+              <p><a href="/demo/hubspot-ringcentral-qa/">View HubSpot RingCentral proof</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>HubSpot JSON Stabilization</h2>
             <p>For n8n workflows where landing-page webhooks, AI intent output, and HubSpot writes fail because payload shapes vary or nested arrays break downstream batching.</p>
           </div>
@@ -2206,6 +2245,7 @@
         <a class="button secondary" href="/demo/hubspot-clickup-stabilization/">View HubSpot ClickUp Demo</a>
         <a class="button secondary" href="/demo/revops-integration-qa/">View RevOps QA Demo</a>
         <a class="button secondary" href="/demo/sales-ai-handoff/">View Sales AI Handoff Proof</a>
+        <a class="button secondary" href="/demo/hubspot-ringcentral-qa/">View HubSpot RingCentral Proof</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/">View Agency Overflow Demo</a>
         <a class="button secondary" href="/demo/document-email-review/">View Document Email Demo</a>
         <a class="button secondary" href="/demo/finance-ops-handoff/">View Finance Ops Demo</a>

@@ -1,0 +1,4 @@
+error_id,event_id,error_type,severity,evidence,resolution
+ERR-01,HRQ-1007,missing_identity,hard,Form payload has no email phone or CRM id,Fix Vercel form validation and hidden-field mapping
+ERR-02,HRQ-1005,unapproved_recording_source,hard,Recording metadata cannot support CRM note write,Use approved call summary only
+ERR-03,HRQ-1006,missing_required_routing_fields,warning,SQL lifecycle has no owner or lead source,Update owner and source policy before live workflow

@@ -1,0 +1,5 @@
+sop_id,topic,trigger,evidence,team_handoff
+SOP-01,Vercel form mapping,Malformed or source-missing form event,HRQ-1007 failed identity contract,Document required email phone company domain source page and hidden campaign fields
+SOP-02,RingCentral activity review,Call log or recording metadata without clear consent,HRQ-1005 blocked recording-dependent write,Train team to use approved summaries and block raw recordings from first proof
+SOP-03,Forecast hygiene,Proposal-stage deal lacks forecast category,HRQ-1003 queued forecast review,Add owner checklist before executive dashboard rollup
+SOP-04,Duplicate handling,Same company domain enters open review twice,HRQ-1004 duplicate blocked,Merge evidence into review row instead of creating a second contact

@@ -1,0 +1,5 @@
+block_id,event_id,blocked_action,reason,evidence,retry_condition
+BWQ-01,HRQ-1004,create duplicate contact,Open review already exists for same email and domain,HRQ-1001 has pending create preview,Merge evidence or close first review row
+BWQ-02,HRQ-1005,append call recording note,No approved transcript or consent status,Only recording metadata is available,Provide approved summary and channel policy
+BWQ-03,HRQ-1006,auto-assign SQL owner,Missing lead source and owner policy,SQL event lacks attribution and owner id,Provide owner rule and source map
+BWQ-04,HRQ-1007,write malformed form row,No usable identity key,Payload has company only,Fix form validation and resend

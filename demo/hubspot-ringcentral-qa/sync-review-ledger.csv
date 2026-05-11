@@ -1,0 +1,8 @@
+ledger_id,event_id,decision,status,target_object,evidence,next_action
+HRQ-L-1001,HRQ-1001,create company and contact preview,ready for review,HubSpot company/contact,Email company and source page present,Owner reviews mapped fields before CRM write
+HRQ-L-1002,HRQ-1002,append call activity preview,ready for review,HubSpot activity,Phone maps to Northline contact and company,Confirm consent/source then approve activity append
+HRQ-L-1003,HRQ-1003,stage hygiene review,review required,HubSpot deal,Deal stage changed but forecast category missing,Sales ops picks forecast category or blocks change
+HRQ-L-1004,HRQ-1004,merge into open review row,duplicate blocked,HubSpot contact/company,Same normalized email and company domain as HRQ-1001,Attach evidence to existing review row
+HRQ-L-1005,HRQ-1005,block recording-derived write,blocked,HubSpot activity,Recording metadata present without approved transcript or consent,Reject activity write and request approved summary
+HRQ-L-1006,HRQ-1006,owner and source review,review required,HubSpot contact/deal,Lifecycle SQL missing owner and lead source,Assign owner and fix source map before write
+HRQ-L-1007,HRQ-1007,reject malformed form event,error,Vercel form contract,No email phone or CRM id present,Fix form mapping contract before retry

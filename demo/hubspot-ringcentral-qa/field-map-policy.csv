@@ -1,0 +1,9 @@
+policy_id,source_field,target_object,target_field,required,write_behavior,review_rule
+MAP-01,email,contact,email,yes,match_only,Block if missing or conflicts with phone match
+MAP-02,company_domain,company,domain,yes,match_or_create_preview,Block duplicate domain if open review row exists
+MAP-03,ringcentral_phone,contact,phone,no,append_preview,Review if consent or identity match is unknown
+MAP-04,call_summary,activity,call_note,no,draft_only,Do not write from recording metadata or unapproved transcript
+MAP-05,deal_stage,deal,dealstage,yes,write_preview,Review if forecast category is missing after stage change
+MAP-06,forecast_category,deal,forecast_category,no,write_preview,Queue for owner review before any forecast change
+MAP-07,lead_source,contact,hs_analytics_source,yes,write_preview,Block missing source until form mapping is fixed
+MAP-08,owner_id,contact,hubspot_owner_id,yes,write_preview,Queue unassigned SQL rows for owner review

@@ -1,0 +1,5 @@
+queue_id,event_id,metric_impact,status,evidence,owner_action
+DFQ-01,HRQ-1003,forecast reliability,review required,Proposal-stage deal has no forecast category,Choose forecast category or block dashboard inclusion
+DFQ-02,HRQ-1006,pipeline visibility,review required,SQL lifecycle has no owner and no lead source,Assign owner and repair source attribution
+DFQ-03,HRQ-1001,conversion reporting,ready for review,Form source page and campaign fields are present,Confirm source mapping before dashboard rollup
+DFQ-04,HRQ-1007,automation health,error,Malformed form event cannot join dashboard,Fix required fields in Vercel-to-HubSpot mapping
