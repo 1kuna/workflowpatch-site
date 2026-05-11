@@ -6,3 +6,4 @@ POL-04,live_action_requested is yes,blocked,0,blocked action queue,Do not enroll
 POL-05,clean clinic account fit,accepted,82,owner review queue,Create review evidence only.
 POL-06,clean demo or buying-committee signal,accepted,88,owner review queue,Create review evidence only.
 POL-07,clean expansion or activation risk signal,accepted,79,owner review queue,Create review evidence only.
+POL-08,clean marketing automation intent signal,accepted,84,owner review queue,Create review evidence only.

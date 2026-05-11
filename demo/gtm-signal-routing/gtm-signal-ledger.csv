@@ -7,3 +7,5 @@ GSL-1005,GTM-8105,northlakeclinic.example,blocked,0,blocked action queue,Duplica
 GSL-1006,GTM-8106,,error,0,error log,Webhook missing company domain and owner,Fix source contract before retry.
 GSL-1007,GTM-8107,riversideclinic.example,blocked,0,blocked action queue,Sensitive clinical detail pasted into source,Use redacted account-level summary only.
 GSL-1008,GTM-8108,westsidehealth.example,blocked,0,blocked action queue,Live outbound enrollment requested,Keep proof to draft-only CRM preview.
+GSL-1009,GTM-8109,brightpath.example,accepted,84,owner review queue,Qualified conversation has product fit and consent note,Review routing fields before destination preview.
+GSL-1010,GTM-8110,cedarcrm.example,blocked,0,blocked action queue,AI outbound send requested from Apollo enrichment,Keep proof to draft-only owner review.

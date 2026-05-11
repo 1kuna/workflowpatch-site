@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/gtm-signal-routing/">
     <title>WorkflowPatch GTM Signal Routing Proof</title>
-    <meta name="description" content="WorkflowPatch GTM signal routing proof with synthetic Clay, HubSpot, call-intel, and product events routed to scoring ledgers, owner review, CRM previews, blocked actions, and error logs before live CRM writes or outbound actions.">
+    <meta name="description" content="WorkflowPatch GTM signal routing proof with synthetic Clay, HubSpot, Qualified, Apollo, Slack, call-intel, and product events routed to scoring ledgers, owner review, destination previews, blocked actions, and error logs before live CRM writes or outbound actions.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WorkflowPatch GTM Signal Routing Proof">
-    <meta property="og:description" content="A first paid slice for revenue teams wiring Clay, HubSpot, call intelligence, product signals, and enrichment into reviewable GTM handoffs.">
+    <meta property="og:description" content="A first paid slice for revenue and marketing teams wiring Clay, HubSpot, Qualified, Apollo, Slack, call intelligence, product signals, and enrichment into reviewable GTM handoffs.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/gtm-signal-routing/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -212,7 +212,7 @@
 
     <main class="wrap">
       <h1>GTM signal routing proof.</h1>
-      <p class="lede">A first paid slice for revenue teams wiring Clay, HubSpot, call intelligence, product usage, and enrichment into one reviewable operating layer. Synthetic events become a GTM signal ledger, owner-review queue, draft-only CRM previews, blocked actions, and hard errors before any live CRM write, sequence enrollment, or prospect-facing message.</p>
+      <p class="lede">A first paid slice for revenue and marketing teams wiring Clay, HubSpot, Qualified, Apollo, Slack, call intelligence, product usage, and enrichment into one reviewable operating layer. Synthetic events become a GTM signal ledger, owner-review queue, draft-only destination previews, blocked actions, and hard errors before any live CRM write, sequence enrollment, AI send, or prospect-facing message.</p>
 
       <div class="links">
         <a class="button" href="/demo/gtm-signal-routing/gtm-signal-ledger.csv">GTM Signal Ledger CSV</a>
@@ -229,15 +229,15 @@
       <div class="grid">
         <div class="item">
           <h2>Input</h2>
-          <p>Eight synthetic GTM events across Clay, HubSpot, call intelligence, product usage, and webhooks. No credentials, prospect lists, recordings, PHI, or customer data.</p>
+          <p>Ten synthetic GTM events across Clay, HubSpot, Qualified, Apollo, Slack, call intelligence, product usage, and webhooks. No credentials, prospect lists, recordings, PHI, or customer data.</p>
         </div>
         <div class="item">
           <h2>Output</h2>
-          <p>Eight ledger rows, four owner-review rows, four CRM preview rows, three blocked actions, and one hard error with evidence.</p>
+          <p>Ten ledger rows, five owner-review rows, five destination preview rows, four blocked actions, and one hard error with evidence.</p>
         </div>
         <div class="item">
           <h2>Failure Path</h2>
-          <p>Duplicate account keys, sensitive source data, missing company fields, and live sequence requests are stopped before they touch production.</p>
+          <p>Duplicate account keys, sensitive source data, missing company fields, live sequence requests, and AI outbound sends are stopped before they touch production.</p>
         </div>
       </div>
 
@@ -280,6 +280,20 @@
               <td>Error log</td>
               <td>Webhook event missing company domain and owner</td>
               <td>Fix source contract before retry.</td>
+            </tr>
+            <tr>
+              <td>GSL-1009</td>
+              <td class="status">accepted</td>
+              <td>Owner review queue</td>
+              <td>Qualified conversation has product fit and consent note</td>
+              <td>Review routing fields before destination preview.</td>
+            </tr>
+            <tr>
+              <td>GSL-1010</td>
+              <td class="warn">blocked</td>
+              <td>Blocked action queue</td>
+              <td>AI outbound send requested from Apollo enrichment</td>
+              <td>Keep proof to draft-only owner review.</td>
             </tr>
           </tbody>
         </table>

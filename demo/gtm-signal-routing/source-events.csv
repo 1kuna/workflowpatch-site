@@ -7,3 +7,5 @@ GTM-8105,Clay enrichment table,clinic account,northlakeclinic.example,duplicate 
 GTM-8106,Webhook,lead,,missing company domain and owner,unknown,no,no,,no,Malformed source event.
 GTM-8107,Call transcript paste,lead,riversideclinic.example,contains patient or clinical note details,sales ops,yes,yes,riversideclinic.example-sensitive,no,Blocked sensitive source.
 GTM-8108,HubSpot workflow,contact,westsidehealth.example,requests sequence enrollment before approval,sales ops,yes,no,westsidehealth.example-auto-sequence,yes,Live outbound action blocked.
+GTM-8109,Qualified conversation,lead,brightpath.example,chat-qualified buying signal with product fit and consent note,marketing ops,yes,no,brightpath.example-qualified-fit,no,Ready for routing review.
+GTM-8110,Slack request,contact,cedarcrm.example,asks AI to draft and send outbound sequence from Apollo enrichment,sales ops,yes,no,cedarcrm.example-ai-outbound,yes,Live AI outbound action blocked.
