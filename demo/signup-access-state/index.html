@@ -40,7 +40,7 @@
       .brand img { width: 32px; height: 32px; }
       a { color: var(--accent-dark); font-weight: 700; }
       main { padding: 48px 0; }
-      h1 { font-size: clamp(34px, 6vw, 64px); line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
+      h1 { font-size: 60px; line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
       .lede { color: var(--muted); font-size: 19px; max-width: 820px; margin: 0 0 28px; }
       .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
       .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
@@ -57,7 +57,7 @@
       .status { color: var(--accent-dark); font-weight: 800; }
       .warn { color: var(--warning); font-weight: 800; }
       footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
-      @media (max-width: 820px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+      @media (max-width: 820px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } h1 { font-size: 40px; } }
     </style>
   </head>
   <body>
@@ -69,8 +69,8 @@
     </header>
 
     <main class="wrap">
-      <h1>Signup access state demo output.</h1>
-      <p class="lede">A small mock purchase-to-access workflow. It turns signup and payment events into an Airtable-style ledger, attribution/access decisions, email drafts, review rows, and hard errors. This is a dry run only: no live Stripe, Rewardful, Skool, Zendo, Airtable, or content-access changes are made.</p>
+      <h1>Purchase-to-access state proof.</h1>
+      <p class="lede">A first slice for Stripe payment events, Rewardful attribution, Skool/Zendo access states, and an Airtable ledger. The proof decides access-ready, pending payment, missing attribution, or manual review before any live access change, refund action, customer message, or platform write.</p>
 
       <div class="links">
         <a class="button" href="/demo/signup-access-state/onboarding-ledger.csv">Onboarding Ledger CSV</a>
@@ -85,16 +85,16 @@
 
       <div class="grid">
         <div class="item">
-          <h2>Purchase State</h2>
-          <p>Paid, verified, consented events can move to access-ready; missing payment, verification, or consent stays blocked.</p>
+          <h2>First Slice</h2>
+          <p>Stripe purchase/refund event -> Rewardful attribution check -> Skool/Zendo access action queue.</p>
         </div>
         <div class="item">
-          <h2>Dry-Run Ledger</h2>
-          <p>Every decision lands in a reviewable ledger row with source evidence before any platform write.</p>
+          <h2>Useful Sample</h2>
+          <p>One paid signup, one refund or failed payment, one missing-attribution case, and Airtable field rules.</p>
         </div>
         <div class="item">
-          <h2>Access Boundary</h2>
-          <p>No live Stripe, Rewardful, Skool, Zendo, Airtable, emails, or content access changes happen in the demo.</p>
+          <h2>Boundary</h2>
+          <p>No live Stripe, Rewardful, Skool, Zendo, Airtable, email, refund, or access change happens in the proof.</p>
         </div>
       </div>
 

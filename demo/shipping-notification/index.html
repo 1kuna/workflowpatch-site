@@ -86,7 +86,7 @@
       }
 
       h1 {
-        font-size: clamp(34px, 6vw, 64px);
+        font-size: 60px;
         line-height: 0.98;
         margin: 0 0 18px;
         letter-spacing: 0;
@@ -205,6 +205,10 @@
         main {
           padding-top: 34px;
         }
+
+        h1 {
+          font-size: 40px;
+        }
       }
     </style>
   </head>
@@ -217,8 +221,8 @@
     </header>
 
     <main class="wrap">
-      <h1>Shipping notification demo output.</h1>
-      <p class="lede">A small mock workflow for Shopify-style shipping updates. It checks ready orders against carrier status, applies a notify/no-notify rule, and creates draft-only customer messages for approval. Delayed or missing tracking becomes an ops alert, malformed rows become an error log, and no live customer email is sent.</p>
+      <h1>Shipping notification gate proof.</h1>
+      <p class="lede">A first slice for a Google Sheet ready row plus tracking number. The proof checks carrier status and ETA evidence, decides notify or hold, creates customer email drafts for approval, and routes delayed or missing tracking to ops alerts. No live customer email, Supermail, Gmail, weather claim, or ETA promise is sent.</p>
 
       <div class="links">
         <a class="button" href="/demo/shipping-notification/notification-queue.csv">Notification Queue CSV</a>
@@ -232,16 +236,16 @@
 
       <div class="grid">
         <div class="item">
-          <h2>Notify Rule</h2>
-          <p>Ready orders only move forward when the order row and carrier row agree: fulfilled, tracking present, and status live.</p>
+          <h2>First Slice</h2>
+          <p>Google Sheet ready row -> carrier status and ETA evidence -> customer draft or ops alert.</p>
         </div>
         <div class="item">
-          <h2>Draft-Only Queue</h2>
-          <p>Customer-facing updates become approval-required draft rows with evidence, not automatic sends.</p>
+          <h2>Useful Sample</h2>
+          <p>One ready order, one not-live tracking case, required customer fields, and the duplicate rule.</p>
         </div>
         <div class="item">
-          <h2>Ops Alerts</h2>
-          <p>Delayed tracking, missing carriers, and malformed rows are separated before the customer ever sees a message.</p>
+          <h2>Boundary</h2>
+          <p>Customer-facing updates stay draft-only until the notify/no-notify rule is accepted in writing.</p>
         </div>
       </div>
 

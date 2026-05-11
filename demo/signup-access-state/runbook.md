@@ -2,6 +2,14 @@
 
 This mock proof demonstrates one Phase 1 onboarding/access workflow without connecting to real landing pages, auth providers, payment processors, or email tools.
 
+## First Buyer Slice
+
+- Source: redacted Stripe purchase/refund events plus Rewardful attribution and Skool/Zendo/Airtable field rules.
+- Transformation: match purchase attribution, decide access state, block ambiguous/refunded/missing-attribution cases, and log errors.
+- Destination: Airtable-style access ledger, Skool/Zendo access action queue, review queue, and written handoff.
+
+Useful sample: one successful paid signup, one failed/refunded/cancelled event, one missing-attribution case, Airtable fields, expected Skool/Zendo access states, and the manual-review rule.
+
 ## Inputs
 
 - `signup-events.csv`: mock signup events from landing pages.
@@ -22,6 +30,7 @@ This mock proof demonstrates one Phase 1 onboarding/access workflow without conn
 - Restricted partner access is held for manual approval.
 - No outbound email is sent by the demo; draft rows stay approval-required.
 - Duplicate or existing-user signals are held for review instead of creating another account.
+- No live refund, access, or customer-message action is part of the first proof.
 
 ## Acceptance Checks
 

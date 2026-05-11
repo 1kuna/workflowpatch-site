@@ -40,7 +40,7 @@
       .brand img { width: 32px; height: 32px; }
       a { color: var(--accent-dark); font-weight: 700; }
       main { padding: 48px 0; }
-      h1 { font-size: clamp(34px, 6vw, 64px); line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
+      h1 { font-size: 60px; line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
       .lede { color: var(--muted); font-size: 19px; max-width: 790px; margin: 0 0 28px; }
       .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
       .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
@@ -57,7 +57,7 @@
       .status { color: var(--accent-dark); font-weight: 800; }
       .warn { color: var(--warning); font-weight: 800; }
       footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
-      @media (max-width: 820px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+      @media (max-width: 820px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } h1 { font-size: 40px; } }
     </style>
   </head>
   <body>
@@ -69,8 +69,8 @@
     </header>
 
     <main class="wrap">
-      <h1>Booking payment state demo output.</h1>
-      <p class="lede">A small mock booking/payment-state workflow. It checks each form submission against class capacity, ridercoach availability, payment status, and contact data before creating a booking ledger. Customer follow-ups are approval-required drafts; no phone, SMS, MSF RES, browser action, or live customer output is used.</p>
+      <h1>Booking/payment state proof.</h1>
+      <p class="lede">A first slice for a Wix form row, trusted Stripe or Gmail payment notice, Airtable class inventory, and ridercoach availability. The proof decides confirmed booking, tentative unpaid hold, alternate-date queue, conflict, or error before any phone AI, SMS, MSF RES browser action, payment action, or live customer message.</p>
 
       <div class="links">
         <a class="button" href="/demo/booking-payment-state/booking-ledger.csv">Booking Ledger CSV</a>
@@ -86,16 +86,16 @@
 
       <div class="grid">
         <div class="item">
-          <h2>State Check</h2>
-          <p>Capacity, coach, payment, and contact fields decide confirmed booking, tentative hold, conflict, or hard error.</p>
+          <h2>First Slice</h2>
+          <p>Wix form row -> payment/capacity/coach check -> booking ledger or approval-required follow-up draft.</p>
         </div>
         <div class="item">
-          <h2>Approval Drafts</h2>
-          <p>Unpaid or changed-slot rows produce reminder drafts for review instead of live customer messages.</p>
+          <h2>Useful Sample</h2>
+          <p>One paid form row, one unpaid row, class capacity rules, coach availability, and duplicate-booking rules.</p>
         </div>
         <div class="item">
-          <h2>Live-System Boundary</h2>
-          <p>The mock stops before phone, SMS, MSF RES, browser actions, or customer-facing sends.</p>
+          <h2>Boundary</h2>
+          <p>Phone, SMS, MSF RES, payment actions, and customer messages stay out until separately scoped.</p>
         </div>
       </div>
 
