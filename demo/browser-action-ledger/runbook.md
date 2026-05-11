@@ -1,8 +1,15 @@
-# WorkflowPatch Browser Action Ledger Demo Runbook
+# WorkflowPatch Browser Action Reliability Proof Runbook
 
-This is a synthetic dry-run proof for browser/API marketing workflows. It turns approved source rows into action plans, blocked scope rows, failure taxonomy rows, alert rules, and hard errors.
+This is a dry-run proof for browser/API workflows that need reliability evidence before any live action. It turns approved source rows into action plans, blocked scope rows, failure taxonomy rows, alert rules, and hard errors.
 
 It does not perform live scraping, bypass anti-bot controls, manage proxies, handle credentials, submit forms, operate accounts, or touch production marketing tools.
+
+## First Paid Slice
+
+- Source: one approved-source export, allowed API row sample, or redacted target-flow note set.
+- Transformation: browser/API action planning, dry-run state logging, duplicate checks, selector/API/rate-limit taxonomy, alert rules, and a written runbook.
+- Destination: dry-run action ledger, blocked-action queue, failure taxonomy, alert rules, error log, and handoff notes.
+- Useful sample: 10 to 30 approved rows, expected state transitions, allowed action boundaries, known selector/API failure examples, retry expectations, and blocked/error examples.
 
 ## Regenerate
 
