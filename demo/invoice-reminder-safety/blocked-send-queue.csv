@@ -1,0 +1,4 @@
+invoice_id,block_reason,evidence,next_check
+INV-1002,already_paid,payment total 640 covers amount 640,No reminder. Reconcile and close.
+INV-1004,not_due,2 days overdue; first reminder threshold is 3,Check again after 2026-05-11.
+INV-1005,customer_replied,payment_promise received 2026-05-06,Check promised payment date before any template send.

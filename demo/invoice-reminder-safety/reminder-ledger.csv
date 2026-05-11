@@ -1,0 +1,7 @@
+invoice_id,customer_name,days_overdue,paid_amount,next_state,evidence
+INV-1001,Northstar Ops,9,0,stage_2_review,stage 2 is due; no payment or reply event found
+INV-1002,Harbor Print,16,640,paid_blocked,payment total covers invoice
+INV-1003,Civic Booths,14,0,dispute_review,reply classified as dispute
+INV-1004,Blue Finch Studio,2,0,not_due,below first reminder threshold
+INV-1005,Red Maple Supply,20,0,reply_review,reply classified as payment_promise
+INV-1008,Parkline Repairs,8,400,stage_2_review,stage 2 is due; partial payment 400 of 900 found

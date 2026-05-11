@@ -1,0 +1,3 @@
+invoice_id,customer_email,classification,received_at,review_note
+INV-1003,ops@civicbooths.example,dispute,2026-05-04,Pause reminders and ask owner to review booth count.
+INV-1005,ap@redmaple.example,payment_promise,2026-05-06,Pause automated reminders until promised payment date passes.

@@ -1,0 +1,3 @@
+invoice_id,customer_email,stage,template_id,draft_subject,approval_status,evidence
+INV-1001,ap@northstar.example,2,overdue_check,Quick invoice check for INV-1001,needs human approval,9 days overdue; no payment or reply event found
+INV-1008,accounts@parkline.example,2,overdue_check,Quick invoice check for INV-1008,needs human approval,8 days overdue; partial payment 400 of 900 found

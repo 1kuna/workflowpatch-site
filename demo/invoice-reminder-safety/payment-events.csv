@@ -1,0 +1,3 @@
+event_id,invoice_id,amount,received_at,reference
+PAY-2001,INV-1002,640,2026-05-03,bank reference INV-1002
+PAY-2002,INV-1008,400,2026-05-06,partial bank transfer

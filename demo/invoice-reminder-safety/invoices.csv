@@ -1,0 +1,9 @@
+invoice_id,customer_name,customer_email,amount,due_date,last_reminder_stage,status_override,owner
+INV-1001,Northstar Ops,ap@northstar.example,1800,2026-05-01,0,,Maya
+INV-1002,Harbor Print,finance@harborprint.example,640,2026-04-24,1,,Leo
+INV-1003,Civic Booths,ops@civicbooths.example,2400,2026-04-26,1,,Maya
+INV-1004,Blue Finch Studio,billing@bluefinch.example,950,2026-05-08,0,,Leo
+INV-1005,Red Maple Supply,ap@redmaple.example,3100,2026-04-20,3,,Maya
+INV-1006,Missing Email Co,,720,2026-05-02,0,,Leo
+INV-1001,Northstar Duplicate,ap2@northstar.example,1800,2026-05-01,0,,Maya
+INV-1008,Parkline Repairs,accounts@parkline.example,900,2026-05-02,0,,Maya

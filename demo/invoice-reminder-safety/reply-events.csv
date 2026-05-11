@@ -1,0 +1,3 @@
+event_id,invoice_id,from_email,received_at,classification,excerpt
+REP-3001,INV-1003,ops@civicbooths.example,2026-05-04,dispute,"Can you pause this? The booth count is wrong."
+REP-3002,INV-1005,ap@redmaple.example,2026-05-06,payment_promise,"Payment is scheduled for Friday."

@@ -1,0 +1,4 @@
+stage,threshold_days_after_due,template_id,description
+1,3,soft_heads_up,Polite reminder after the due date.
+2,7,overdue_check,Clear overdue note with payment link repeated.
+3,14,blocker_check,Ask whether anything is blocking payment and escalate internally.
