@@ -1,0 +1,4 @@
+slice_id,source_pattern,transformation,destination_review,boundary
+copper-opportunity-upsert,one Zapier or Copper trigger payload,match/upsert policy with create/update/no-write decision,duplicate/conflict queue plus run log,no all-workflow rebuild or live writes before dry-run approval
+ghl-activity-sync,one Gmail or OpenPhone activity,normalize contact keys and do-not-overwrite fields,GHL review queue plus sync ledger,no external messages or live GHL writes before approval
+two-way-crm-drift,one CRM change event,compare identity fields and source-of-truth policy,conflict queue with reviewer action,no silent overwrite

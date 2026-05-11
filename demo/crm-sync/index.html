@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/crm-sync/">
-    <title>WorkflowPatch CRM Sync Demo</title>
-    <meta name="description" content="Mock WorkflowPatch CRM sync demo with sync ledger, conflict queue, error log, source script, and runbook.">
+    <title>WorkflowPatch CRM Sync And Duplicate Guard Demo</title>
+    <meta name="description" content="Mock WorkflowPatch CRM sync and duplicate guard demo with sync ledger, conflict queue, error log, first-slice map, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch CRM Sync Demo">
-    <meta property="og:description" content="A mock CRM sync workflow with contact mapping, conflict queue, sync ledger, error log, source script, and runbook.">
+    <meta property="og:title" content="WorkflowPatch CRM Sync And Duplicate Guard Demo">
+    <meta property="og:description" content="A mock CRM sync workflow with contact mapping, conflict queue, sync ledger, first-slice map, error log, source script, and runbook.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/crm-sync/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -222,17 +222,51 @@
 
     <main class="wrap">
       <h1>CRM sync demo output.</h1>
-      <p class="lede">A small mock workflow that checks Close appointment events and GHL contact changes against a contact map. Safe rows become a sync ledger; identity mismatches become a conflict queue; malformed rows become an error log. No client data, credentials, or live CRM writes are used.</p>
+      <p class="lede">A small mock workflow that checks CRM events against a contact map before any create or update decision. It maps to Copper duplicate cleanup, Gmail/OpenPhone-to-GHL sync, and two-way CRM drift: safe rows become a sync ledger; identity mismatches become a conflict queue; malformed rows become an error log. No client data, credentials, or live CRM writes are used.</p>
 
       <div class="links">
         <a class="button" href="/demo/crm-sync/sync-ledger.csv">Sync Ledger CSV</a>
         <a class="button secondary" href="/demo/crm-sync/conflict-queue.csv">Conflict Queue CSV</a>
         <a class="button secondary" href="/demo/crm-sync/error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="/demo/crm-sync/first-slice-map.csv">First Slice Map CSV</a>
         <a class="button secondary" href="/demo/crm-sync/contact-map.csv">Contact Map CSV</a>
         <a class="button secondary" href="/demo/crm-sync/close-appointments.csv">Close Events CSV</a>
         <a class="button secondary" href="/demo/crm-sync/ghl-contact-changes.csv">GHL Changes CSV</a>
         <a class="button secondary" href="/demo/crm-sync/runbook.md">Runbook</a>
         <a class="button secondary" href="/demo/crm-sync/process_crm_sync_demo.py">Source Script</a>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>First slice</th>
+              <th>Source</th>
+              <th>Decision</th>
+              <th>Boundary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Copper duplicate guard</td>
+              <td>One Zapier or Copper trigger payload.</td>
+              <td>Match/upsert policy with create, update, no-write, or conflict outcome.</td>
+              <td>No all-workflow rebuild and no live write before dry-run approval.</td>
+            </tr>
+            <tr>
+              <td>GHL activity sync</td>
+              <td>One Gmail or OpenPhone activity sample.</td>
+              <td>Normalize contact keys, preserve do-not-overwrite fields, and stage GHL-ready rows.</td>
+              <td>No external messages and no live GHL write before approval.</td>
+            </tr>
+            <tr>
+              <td>Two-way CRM drift</td>
+              <td>One CRM change event with conflicting identity or ownership fields.</td>
+              <td>Hold the row, show the conflicting evidence, and require reviewer choice.</td>
+              <td>No silent overwrite.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <div class="grid">

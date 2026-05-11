@@ -7,6 +7,7 @@ This is a mock WorkflowPatch demo. It uses no client data, no credentials, and n
 - `contact-map.csv`: current known mapping between Close contacts and GHL contacts.
 - `close-appointments.csv`: mock appointment events from Close.
 - `ghl-contact-changes.csv`: mock contact-field changes from GHL.
+- `first-slice-map.csv`: how the same guardrail maps to Copper duplicate cleanup, Gmail/OpenPhone-to-GHL sync, and two-way CRM drift.
 
 ## Command
 
@@ -24,6 +25,7 @@ python3 demo/crm-sync/process_crm_sync_demo.py
 
 - A valid Close appointment for a mapped contact lands in the sync ledger.
 - A valid GHL contact change for a mapped contact lands in the sync ledger.
+- A Copper or GHL first slice can be scoped to one trigger/activity, one match policy, and one review queue before live writes.
 - A Close appointment whose email belongs to a different Close contact is blocked.
 - An unmapped Close appointment becomes a conflict, not a blind contact create.
 - A GHL change whose identifiers disagree with the contact map is blocked.
@@ -34,4 +36,4 @@ python3 demo/crm-sync/process_crm_sync_demo.py
 - No CRM write is executed.
 - No contact is created automatically.
 - No phone, SMS, email, or payment action is triggered.
-- No promise is made about Close, GHL, or any third-party API availability.
+- No promise is made about Copper, Close, GHL, or any third-party API availability.
