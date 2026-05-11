@@ -1,0 +1,5 @@
+run_id,block_reason,safe_boundary
+run-9102,bad output reached a client-visible path: wrong_tool_or_action; tone_drift; business_metric_out_of_bounds,"hold before live workflow edits, customer messages, or client-visible publication"
+run-9106,source is not approved for first proof,"hold before live workflow edits, customer messages, or client-visible publication"
+run-9107,duplicate replay key already audited,"hold before live workflow edits, customer messages, or client-visible publication"
+run-9109,sensitive client or customer data present,"hold before live workflow edits, customer messages, or client-visible publication"

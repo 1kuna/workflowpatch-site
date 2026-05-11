@@ -1,0 +1,6 @@
+run_id,workflow_family,status,client_safe_summary
+run-9101,Renewal Risk Digest,ok,No action needed from the client-facing view.
+run-9103,Support Summary Bot,needs_attention,Needs attention: output looked successful but failed an internal expectation check.
+run-9104,Quote Builder,needs_attention,Needs attention: an alert fired and the output needs review before trust is restored.
+run-9105,Slack Incident Digest,needs_attention,Needs attention: an alert fired and the output needs review before trust is restored.
+run-9110,Review Response Draft,needs_attention,Needs attention: output looked successful but failed an internal expectation check.

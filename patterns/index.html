@@ -437,6 +437,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Silent Output Audit</h2>
+            <p>For n8n or Make workflows that technically succeed but still choose the wrong tool, use the wrong context, write the wrong tone, or drift on a business metric.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>Two or three redacted workflow exports, flow maps, run samples, or incident examples from the highest-risk workflow family.</div>
+            <div class="step"><strong>Transform</strong>Compare expected action, observed action, expected context, observed context, tone, metric range, alert state, source approval, and duplicate key.</div>
+            <div class="step"><strong>Destination</strong>Internal audit ledger, clean client-facing status view, review queue, blocked-action queue, error log, and written handoff.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Client workflow reliability</li>
+                <li>AI agent tool-choice mistakes</li>
+                <li>Valid-looking wrong email or CRM output</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No full observability platform first</li>
+                <li>No raw debug table shown to clients</li>
+                <li>No production edits before proof acceptance</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Wrong tool or context reaches review</li>
+                <li>Client-visible bad output blocks</li>
+                <li>Clean status view stays separate from internals</li>
+              </ul>
+              <p><a href="/demo/silent-output-audit/">View silent-output demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Inbox or Order Intake Review Queue</h2>
             <p>For forwarded emails, forms, or exported requests that need extraction, routing, and a safe blocked path.</p>
           </div>

@@ -1,0 +1,10 @@
+run_id,workflow_family,source_trigger,decision,reason_code,reason,client_visibility
+run-9101,Renewal Risk Digest,daily CRM export,accepted,ready,"expected action, context, tone, and metric checks passed",safe_summary_only
+run-9102,Appointment Reschedule Agent,calendar webhook,blocked,client_visible_bad_output,bad output reached a client-visible path: wrong_tool_or_action; tone_drift; business_metric_out_of_bounds,safe_summary_only
+run-9103,Support Summary Bot,helpdesk export,review,silent_bad_output,workflow looked successful but violated: context_drift,safe_summary_only
+run-9104,Quote Builder,deal stage change,review,flagged_bad_output,alerted run still needs review: business_metric_out_of_bounds,safe_summary_only
+run-9105,Slack Incident Digest,workflow error digest,review,flagged_bad_output,alerted run still needs review: business_metric_out_of_bounds,safe_summary_only
+run-9106,Client Status Digest,unknown shared spreadsheet,blocked,unapproved_source,source is not approved for first proof,safe_summary_only
+run-9107,Renewal Risk Digest,replayed CRM export,blocked,duplicate,duplicate replay key already audited,safe_summary_only
+run-9109,Invoice Reply Agent,inbox trigger,blocked,sensitive_data,sensitive client or customer data present,safe_summary_only
+run-9110,Review Response Draft,review webhook,review,silent_bad_output,workflow looked successful but violated: tone_drift,safe_summary_only

@@ -1,0 +1,6 @@
+workflow_family,required_check,why_it_matters,client_safe_view
+Appointment Reschedule Agent,observed_action must match expected_action,Wrong tool choices can send a real customer message from a workflow that appeared successful,Show only needs attention until the action is approved
+Support Summary Bot,observed_context_key must match expected_context_key,Wrong context can produce a plausible summary for the wrong customer or ticket,Show context mismatch without exposing raw support text
+Quote Builder,observed_metric must stay inside expected metric range,Wrong business metrics can make a quote look valid while margin is broken,Show business metric outside guardrail
+Slack Incident Digest,observed_metric must stay inside expected alert range,Alert floods hide the real issue and train operators to ignore warnings,Show alert noise needs triage
+Review Response Draft,observed_tone must match expected_tone,AI can produce customer-ready wording when the intended output was an owner note,Show output style mismatch

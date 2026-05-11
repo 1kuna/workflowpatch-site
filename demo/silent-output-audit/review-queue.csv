@@ -1,0 +1,5 @@
+run_id,review_reason,expected_action,observed_action,expected_context_key,observed_context_key,safe_next_step
+run-9103,workflow looked successful but violated: context_drift,summarize_ticket,summarize_ticket,ticket-991|customer-blue,ticket-884|customer-red,review with redacted evidence before changing production workflow behavior
+run-9104,alerted run still needs review: business_metric_out_of_bounds,create_quote_review,create_quote_review,deal-553|quote-v2,deal-553|quote-v2,review with redacted evidence before changing production workflow behavior
+run-9105,alerted run still needs review: business_metric_out_of_bounds,create_internal_alert,create_internal_alert,workflow-12|2026-05-10,workflow-12|2026-05-10,review with redacted evidence before changing production workflow behavior
+run-9110,workflow looked successful but violated: tone_drift,draft_owner_reply,draft_owner_reply,review-77|location-3,review-77|location-3,review with redacted evidence before changing production workflow behavior
