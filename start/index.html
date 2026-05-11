@@ -219,6 +219,12 @@
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       }
 
+      .example-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
       .item {
         border: 1px solid var(--line);
         background: var(--panel);
@@ -278,7 +284,8 @@
       @media (max-width: 860px) {
         .hero,
         .grid,
-        .checklist {
+        .checklist,
+        .example-grid {
           grid-template-columns: 1fr;
         }
 
@@ -365,6 +372,42 @@
               </ol>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap">
+          <h2>Useful First Examples</h2>
+          <div class="example-grid">
+            <div class="item">
+              <h3>CRM Sync</h3>
+              <ol>
+                <li>One sample source record or trigger.</li>
+                <li>The matching rule for existing contacts or deals.</li>
+                <li>The fields that should update in the destination CRM.</li>
+                <li>One duplicate or conflict case that should be held for review.</li>
+              </ol>
+            </div>
+            <div class="item">
+              <h3>Agency Overflow</h3>
+              <ol>
+                <li>One approved client workflow brief or request.</li>
+                <li>The current handoff path and owner.</li>
+                <li>What must stay internal, draft-only, or approval-gated.</li>
+                <li>One scope boundary that should block the row.</li>
+              </ol>
+            </div>
+            <div class="item">
+              <h3>Document Or Email Review</h3>
+              <ol>
+                <li>One redacted document, email, or export sample.</li>
+                <li>The fields that should be extracted or classified.</li>
+                <li>The destination row, ticket, draft, or review queue shape.</li>
+                <li>One malformed or low-confidence case that should not pass silently.</li>
+              </ol>
+            </div>
+          </div>
+          <p class="note">A screenshot, CSV row, copied sample, or redacted payload is enough for the fit check. Do not send passwords, API keys, live customer secrets, or regulated data in the first email.</p>
         </div>
       </section>
 
