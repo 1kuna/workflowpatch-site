@@ -1,0 +1,5 @@
+queue_id,event_id,owner,stakeholder,follow_up_needed,due_at,message_draft_status,notes
+FU-7002,evt-7002,Admin Ops,Barcelona Workspace owner,missing receipt for card charge,2026-05-14,draft_internal_only,no vendor message or accounting submission
+FU-7005,evt-7005,People Ops,Office admin,equipment checklist confirmation,2026-05-17,draft_internal_only,no payroll HRIS or shipping action
+FU-7006,evt-7006,Revenue Ops,Account owner,approve corrected-invoice wording before customer send,2026-05-19,draft_owner_review,no external email send in proof
+FU-7008,evt-7008,Revenue Ops,Sales owner,resolve activation date versus billing line mismatch,2026-05-22,draft_internal_only,no CRM or invoice overwrite

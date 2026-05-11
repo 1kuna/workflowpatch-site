@@ -1,0 +1,9 @@
+event_id,source,event_type,owner,counterparty,amount_eur,due_date,requested_action,sensitive_flag,evidence,status_hint
+evt-7001,Stripe export,billing_validation,Revenue Ops,Orion Retail,2400,2026-05-18,validate invoice and stage collection follow-up,no,contract id and renewal date present,ready
+evt-7002,Shared inbox,receipt_collection,Admin Ops,Barcelona Workspace,0,2026-05-14,chase missing receipt for card expense,no,card charge and vendor name present,ready
+evt-7003,Auditor request,iso_evidence,Security Ops,External auditor,0,2026-05-20,collect access-review evidence,no,request references approved ISO 27001 folder,review
+evt-7004,Holded export,supplier_payment,Finance Ops,CloudVoice SL,1260,2026-05-16,release supplier payment,yes,bank detail changed in latest email,blocked
+evt-7005,Slack request,admin_deadline,People Ops,New hire pack,0,2026-05-17,confirm equipment and onboarding checklist,no,asset id and owner present,ready
+evt-7006,Google Drive,billing_validation,Revenue Ops,Northwind Travel,3100,2026-05-19,send corrected invoice,yes,customer-facing send requested,review
+evt-7007,Email attachment,tax_documentation,Finance Ops,Gestoria partner,0,2026-05-21,file VAT and IRPF support pack,yes,tax filing action requested,blocked
+evt-7008,CRM renewal,billing_validation,Sales Ops,Atlas Airlines,4500,2026-05-22,compare renewal activation to billing line,no,activation date differs from invoice date,review

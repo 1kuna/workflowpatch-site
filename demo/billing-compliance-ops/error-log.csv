@@ -1,0 +1,3 @@
+error_id,event_id,error_type,details,resolution
+ERR-7004,evt-7004,sensitive_payment_action,bank detail changed before supplier payment request,blocked before any payment or vendor message
+ERR-7007,evt-7007,tax_filing_scope,tax filing action requested in source event,blocked and routed to accountant-owned review

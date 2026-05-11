@@ -1,0 +1,7 @@
+ledger_id,event_id,decision,destination,owner,reason,evidence
+BCL-7001,evt-7001,accepted,billing-control-ledger,Revenue Ops,account amount due date and renewal evidence present,stage invoice validation row and internal collection reminder
+BCL-7002,evt-7002,accepted,follow-up-queue,Admin Ops,receipt chase is internal and does not move money or message a customer,stage internal receipt request
+BCL-7003,evt-7003,review,evidence-request-queue,Security Ops,audit evidence can be collected but compliance conclusion remains owner-reviewed,prepare evidence request row
+BCL-7005,evt-7005,accepted,follow-up-queue,People Ops,onboarding checklist follow-up is internal and has asset evidence,stage equipment confirmation request
+BCL-7006,evt-7006,review,follow-up-queue,Revenue Ops,corrected invoice requires customer-facing approval,stage draft-only owner review row
+BCL-7008,evt-7008,review,billing-control-ledger,Revenue Ops,renewal activation date conflicts with billing date,hold for account-owner decision

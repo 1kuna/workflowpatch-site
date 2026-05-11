@@ -1,0 +1,7 @@
+rule_id,rule,destination,blocked_when,review_owner
+POL-1,Invoice and renewal rows can be staged only when account, amount, due date, and source evidence are present,billing-control-ledger,missing account amount due date or source evidence,Revenue Ops
+POL-2,Receipt chases can create internal follow-up drafts only,follow-up-queue,external customer/vendor send requested,Admin Ops
+POL-3,Audit requests can collect evidence references but cannot certify compliance,evidence-request-queue,certification legal opinion or framework guarantee requested,Security Ops
+POL-4,Bank payment payroll tax and filing actions are blocked from first proof,blocked-action-queue,bank payroll tax filing payout or legal action requested,Finance Ops
+POL-5,Customer-facing billing messages stay draft-only until owner approval,follow-up-queue,live send or production CRM update requested,Revenue Ops
+POL-6,Duplicate or conflicting billing state becomes review work not a silent overwrite,ops-control-ledger,activation renewal or amount conflict appears,Revenue Ops

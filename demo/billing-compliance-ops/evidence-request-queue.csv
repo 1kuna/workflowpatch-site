@@ -1,0 +1,3 @@
+request_id,event_id,framework,artifact_needed,owner,status,blocker
+ER-7003,evt-7003,ISO 27001,access review export and approval note,Security Ops,needs_owner_review,proof collects evidence references only
+ER-7007,evt-7007,VAT and IRPF,external accountant support pack,Finance Ops,blocked,tax filing and legal/accounting judgment excluded

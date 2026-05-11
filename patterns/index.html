@@ -2158,6 +2158,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Billing Compliance Ops</h2>
+            <p>For teams that need invoices, receipts, audit requests, admin deadlines, and stakeholder chases tracked without accidental payment, filing, or customer-facing action.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>Synthetic or redacted billing, receipt, audit, admin, inbox, Drive, CRM, and deadline rows.</div>
+            <div class="step"><strong>Transform</strong>Validate evidence, owner, due date, destination policy, sensitive actions, and review gates.</div>
+            <div class="step"><strong>Destination</strong>Control ledger, internal follow-up queue, evidence request queue, blocked action queue, error log, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Billing cycle follow-up</li>
+                <li>Receipt and admin deadline chasing</li>
+                <li>Audit evidence collection</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No bank, payroll, tax, or filing action</li>
+                <li>Customer-facing messages stay draft-only</li>
+                <li>Compliance conclusions remain owner-reviewed</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Safe rows become internal work queues</li>
+                <li>Audit rows preserve evidence references</li>
+                <li>Payment and filing requests are blocked</li>
+              </ul>
+              <p><a href="/demo/billing-compliance-ops/">View billing compliance proof</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>PO Budget Bridge</h2>
             <p>For production, agency, or finance teams that need Airtable purchase orders and Google Sheets budget rows to agree before sync.</p>
           </div>
@@ -2290,6 +2329,7 @@
         <a class="button secondary" href="/demo/agency-overflow-qa/">View Agency Overflow Demo</a>
         <a class="button secondary" href="/demo/document-email-review/">View Document Email Demo</a>
         <a class="button secondary" href="/demo/finance-ops-handoff/">View Finance Ops Proof</a>
+        <a class="button secondary" href="/demo/billing-compliance-ops/">View Billing Compliance Proof</a>
         <a class="button secondary" href="/demo/mvp-governance-review/">View MVP Governance Demo</a>
         <a class="button secondary" href="/demo/program-ops-kpi/">View Program Ops Demo</a>
         <a class="button secondary" href="/demo/job-scoring-ledger/">View Job Scoring Demo</a>

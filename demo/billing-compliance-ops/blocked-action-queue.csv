@@ -1,0 +1,4 @@
+block_id,event_id,blocked_action,reason,next_safe_action
+BL-7004,evt-7004,release supplier payment,bank detail changed and payment action is out of first-proof scope,ask owner to verify vendor bank change outside WorkflowPatch
+BL-7007,evt-7007,file VAT and IRPF support pack,tax filing action and accounting judgment are excluded,stage source checklist for accountant review only
+BL-7006,evt-7006,send corrected invoice to customer,customer-facing send requires approval,keep draft in owner review queue
