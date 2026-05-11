@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/board-event-routing/">
-    <title>WorkflowPatch Board Event Routing Demo</title>
-    <meta name="description" content="Mock WorkflowPatch board event routing demo with routing ledger, review queue, error log, source script, and runbook.">
+    <title>WorkflowPatch Monday Board Routing Proof</title>
+    <meta name="description" content="Mock WorkflowPatch Monday board and n8n routing proof with redacted events, routing ledger, review queue, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch Board Event Routing Demo">
-    <meta property="og:description" content="A mock board-event routing workflow with sensitive-data blocking, duplicate review, routing ledger, error log, source script, and runbook.">
+    <meta property="og:title" content="WorkflowPatch Monday Board Routing Proof">
+    <meta property="og:description" content="A mock Monday/n8n routing proof with sensitive-data blocking, duplicate review, routing ledger, error log, source script, and runbook.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/board-event-routing/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -76,8 +76,8 @@
     </header>
 
     <main class="wrap">
-      <h1>Board event routing demo output.</h1>
-      <p class="lede">A small mock workflow that checks redacted Monday.com-style board events before routing. Safe rows become a routing ledger; sensitive, duplicate, or unknown-status rows become a review queue; malformed rows become an error log. No client data, case data, credentials, or live board writes are used.</p>
+      <h1>Monday/n8n redacted routing proof.</h1>
+      <p class="lede">A small mock workflow that checks redacted Monday.com-style board events before an n8n route or support handoff. Safe rows become a routing ledger; sensitive legal or client-matter rows, duplicate replays, and unknown statuses become a review queue; malformed rows become an error log. No client data, case data, credentials, legal advice, or live board writes are used.</p>
 
       <div class="links">
         <a class="button" href="/demo/board-event-routing/routing-ledger.csv">Routing Ledger CSV</a>
@@ -91,31 +91,31 @@
 
       <div class="grid">
         <div class="item">
-          <h2>Input</h2>
-          <p>Eight mock board events with status changes, owners, sensitivity labels, and duplicate replay evidence.</p>
+          <h2>Redacted Board Events</h2>
+          <p>Eight mock Monday-style events with status changes, owners, sensitivity labels, and duplicate replay evidence.</p>
         </div>
         <div class="item">
-          <h2>Output</h2>
-          <p>Three rows are safe enough for routing, with destination, action, reviewer, and timestamped proof.</p>
+          <h2>Dry-Run Routing Ledger</h2>
+          <p>Three rows are safe enough for a draft n8n route, with destination, action, reviewer, and timestamped proof.</p>
         </div>
         <div class="item">
-          <h2>Failure Path</h2>
+          <h2>Visible Failure Path</h2>
           <p>Sensitive rows, unknown statuses, duplicate replays, and missing owners are held visibly before any write.</p>
         </div>
       </div>
 
       <div class="grid">
         <div class="item">
-          <h2>Forwarded Order Email</h2>
-          <p>Messy intake can be normalized into required fields before a board item is ever drafted.</p>
+          <h2>First Slice</h2>
+          <p>Start with one non-sensitive board schema, one status-change family, and one destination or review queue.</p>
         </div>
         <div class="item">
-          <h2>Monday Client Lookup</h2>
-          <p>Client matching is treated as a gate, not a guess, so accepted rows carry routing evidence.</p>
+          <h2>No Case Data</h2>
+          <p>Confidential matter details stay out of the first proof; sensitivity labels are treated as routing blockers.</p>
         </div>
         <div class="item">
-          <h2>Blocked Unknown Client</h2>
-          <p>Orders without a clean client match become review alerts instead of silent bad AutoFlow items.</p>
+          <h2>Support Handoff</h2>
+          <p>The useful output is a small ledger, blocked-row queue, error log, and runbook before any ongoing support scope.</p>
         </div>
       </div>
 
