@@ -1,0 +1,3 @@
+event_id,decision,matched_copper_id,write_mode,fields_to_write,blocked_fields,evidence
+EVT-9001,update_existing,OPP-102,dry_run_update,stage,owner,matched by external_key; existing_stage=proposal incoming_stage=verbal yes
+EVT-9002,create_new,,dry_run_create,"company,person_email,opportunity_name,stage",owner,no existing Copper record matched external_key=CUST-BENJIS-77 email=buyer@benjisplants.example

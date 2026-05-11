@@ -1,0 +1,2 @@
+event_id,error,evidence,blocked_at
+EVT-9006,payload is not approved for dry-run processing,payload_status=unapproved_live_payload,2026-05-11T09:22:00-04:00

@@ -1,0 +1,5 @@
+event_id,decision,matched_copper_id,evidence,reviewer_action
+EVT-9003,hold_multiple_matches,OPP-118|OPP-119,Benjis PlantCare / Wholesale orchid reorder matched multiple Copper records,Merge or select the canonical Copper record before migration.
+EVT-9004,hold_missing_email,,company=Benjis PlantCare opportunity=Event plant rental renewal,Require a match key before create or update.
+EVT-9005,hold_sensitive_status_change,PER-301,incoming person update would change lifecycle status to inactive,Approve lifecycle/status change explicitly before update.
+EVT-9005,hold_duplicate_event,,event id already appeared in this dry run,Confirm replay behavior before any Copper write.

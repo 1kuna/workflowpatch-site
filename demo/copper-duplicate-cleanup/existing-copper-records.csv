@@ -1,0 +1,5 @@
+copper_id,object_type,external_key,company,person_email,opportunity_name,stage,owner,updated_at
+OPP-102,opportunity,CUST-BENJIS-44,Benjis PlantCare,ximena@benjisplants.example,Spring plant maintenance renewal,proposal,Ximena,2026-05-08T15:12:00-04:00
+OPP-118,opportunity,,Benjis PlantCare,ops@benjisplants.example,Wholesale orchid reorder,open,Maria,2026-05-08T16:40:00-04:00
+OPP-119,opportunity,,Benjis PlantCare,ops@benjisplants.example,Wholesale orchid reorder,open,Maria,2026-05-08T16:42:00-04:00
+PER-301,person,CUST-BENJIS-51,Northside Nursery,buyer@northside.example,,active,Jon,2026-05-07T09:21:00-04:00

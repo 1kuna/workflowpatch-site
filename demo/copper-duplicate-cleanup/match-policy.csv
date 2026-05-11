@@ -1,0 +1,3 @@
+object_type,match_order,do_not_overwrite_fields,review_conditions
+opportunity,external_key then company+opportunity_name,owner,"multiple candidate records; missing person_email; stage regression; unapproved payload"
+person,external_key then person_email,owner,"duplicate event id; inactive update; missing email; unapproved payload"

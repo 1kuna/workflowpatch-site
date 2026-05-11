@@ -1,0 +1,8 @@
+event_id,source_workflow,object_type,external_key,company,person_email,opportunity_name,stage,owner,event_type,payload_status,updated_at
+EVT-9001,zapier-migration-1,opportunity,CUST-BENJIS-44,Benjis PlantCare,ximena@benjisplants.example,Spring plant maintenance renewal,verbal yes,Ximena,update,approved_sample,2026-05-11T09:16:00-04:00
+EVT-9002,zapier-migration-2,opportunity,CUST-BENJIS-77,Benjis PlantCare,buyer@benjisplants.example,Interior account expansion,qualification,Riley,create,approved_sample,2026-05-11T09:17:00-04:00
+EVT-9003,zapier-migration-3,opportunity,,Benjis PlantCare,ops@benjisplants.example,Wholesale orchid reorder,proposal,Maria,update,approved_sample,2026-05-11T09:18:00-04:00
+EVT-9004,zapier-migration-4,opportunity,,Benjis PlantCare,,Event plant rental renewal,open,Lee,create,approved_sample,2026-05-11T09:19:00-04:00
+EVT-9005,zapier-migration-5,person,CUST-BENJIS-51,Northside Nursery,buyer@northside.example,,inactive,Ana,update,approved_sample,2026-05-11T09:20:00-04:00
+EVT-9005,zapier-migration-5,person,CUST-BENJIS-51,Northside Nursery,buyer@northside.example,,inactive,Ana,update,approved_sample,2026-05-11T09:21:00-04:00
+EVT-9006,zapier-migration-2,opportunity,CUST-BENJIS-88,Benjis PlantCare,newbuyer@benjisplants.example,Corporate lobby plant care,open,Sam,create,unapproved_live_payload,2026-05-11T09:22:00-04:00
