@@ -1,0 +1,9 @@
+event_id,source,object_type,company_domain,signal,owner,required_keys_present,sensitive_scope,duplicate_key,live_action_requested,notes
+GTM-8101,Clay enrichment table,clinic account,northlakeclinic.example,target-region clinic group with EMR fit,revenue ops,yes,no,northlakeclinic.example-clinic-fit,no,Ready for account scoring.
+GTM-8102,HubSpot form,lead,valleyfamily.example,pricing page demo request with role and company,sales ops,yes,no,valleyfamily.example-demo-interest,no,Ready for owner review.
+GTM-8103,Attention call summary,account note,harborprimary.example,call mentions integration timing and buying committee,customer success,yes,no,harborprimary.example-call-intent,no,Internal summary only.
+GTM-8104,Product usage export,customer account,oakridgecare.example,low activation plus high seat potential,customer success,yes,no,oakridgecare.example-expansion-risk,no,Route expansion-risk review.
+GTM-8105,Clay enrichment table,clinic account,northlakeclinic.example,duplicate ICP account from Apollo waterfall,revenue ops,yes,no,northlakeclinic.example-clinic-fit,no,Duplicate of GTM-8101.
+GTM-8106,Webhook,lead,,missing company domain and owner,unknown,no,no,,no,Malformed source event.
+GTM-8107,Call transcript paste,lead,riversideclinic.example,contains patient or clinical note details,sales ops,yes,yes,riversideclinic.example-sensitive,no,Blocked sensitive source.
+GTM-8108,HubSpot workflow,contact,westsidehealth.example,requests sequence enrollment before approval,sales ops,yes,no,westsidehealth.example-auto-sequence,yes,Live outbound action blocked.

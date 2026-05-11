@@ -1,0 +1,2 @@
+error_id,event_id,severity,error_type,message,next_fix
+ERR-5101,GTM-8106,hard,missing_required_key,Webhook event has no company_domain and no owner,Require source system to send company_domain owner and object_type.

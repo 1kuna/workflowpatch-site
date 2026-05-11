@@ -1,0 +1,4 @@
+block_id,ledger_id,reason,blocked_action,review_note
+BAQ-4101,GSL-1005,duplicate_account_key,second CRM update draft,Merge duplicate evidence into the accepted account review.
+BAQ-4102,GSL-1007,sensitive_source_data,process transcript paste,Replace with redacted account-level summary.
+BAQ-4103,GSL-1008,live_outbound_requested,sequence enrollment,Keep proof to draft-only preview until scope and access are approved.

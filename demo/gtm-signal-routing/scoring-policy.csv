@@ -1,0 +1,8 @@
+policy_id,condition,decision,score_delta,route,boundary
+POL-01,required_keys_present is no,error,0,error log,Do not infer missing company or owner keys.
+POL-02,sensitive_scope is yes,blocked,0,blocked action queue,Do not process patient clinical details or private customer data.
+POL-03,duplicate_key has open accepted row,blocked,0,blocked action queue,Do not create duplicate CRM or sequence actions.
+POL-04,live_action_requested is yes,blocked,0,blocked action queue,Do not enroll sequences or write CRM records from proof data.
+POL-05,clean clinic account fit,accepted,82,owner review queue,Create review evidence only.
+POL-06,clean demo or buying-committee signal,accepted,88,owner review queue,Create review evidence only.
+POL-07,clean expansion or activation risk signal,accepted,79,owner review queue,Create review evidence only.

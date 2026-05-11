@@ -1,0 +1,9 @@
+ledger_id,event_id,normalized_account,status,score,route,evidence,next_action
+GSL-1001,GTM-8101,northlakeclinic.example,accepted,82,owner review queue,Clay account has target-region fit and required fields,Review account score before CRM update.
+GSL-1002,GTM-8102,valleyfamily.example,accepted,88,owner review queue,HubSpot form includes role company and source page,Review handoff before sales sequence or task.
+GSL-1003,GTM-8103,harborprimary.example,accepted,86,owner review queue,Attention summary has buying committee and integration timing,Review call-intel note before CRM preview.
+GSL-1004,GTM-8104,oakridgecare.example,accepted,79,owner review queue,Product usage export shows activation risk and seat potential,Review CS expansion alert before any customer message.
+GSL-1005,GTM-8105,northlakeclinic.example,blocked,0,blocked action queue,Duplicate account key already has accepted row,Merge evidence into GSL-1001.
+GSL-1006,GTM-8106,,error,0,error log,Webhook missing company domain and owner,Fix source contract before retry.
+GSL-1007,GTM-8107,riversideclinic.example,blocked,0,blocked action queue,Sensitive clinical detail pasted into source,Use redacted account-level summary only.
+GSL-1008,GTM-8108,westsidehealth.example,blocked,0,blocked action queue,Live outbound enrollment requested,Keep proof to draft-only CRM preview.

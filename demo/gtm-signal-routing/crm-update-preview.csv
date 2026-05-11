@@ -1,0 +1,5 @@
+preview_id,ledger_id,destination,object,field_policy,draft_update
+CRM-3101,GSL-1001,HubSpot,company,append-only note plus score field,Set GTM signal score to 82 and add source evidence note.
+CRM-3102,GSL-1002,HubSpot,contact,task draft only,Draft owner task for inbound demo follow-up after review.
+CRM-3103,GSL-1003,HubSpot,company,append-only call-intel summary,Draft account note with buying committee and integration-timing summary.
+CRM-3104,GSL-1004,HubSpot,company,internal CS alert only,Draft expansion-risk alert for owner review.

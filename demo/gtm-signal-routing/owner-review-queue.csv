@@ -1,0 +1,5 @@
+review_id,ledger_id,owner,review_type,summary,approval_needed
+ORQ-2101,GSL-1001,revenue ops,account score review,Confirm ICP score and target segment before CRM preview,yes
+ORQ-2102,GSL-1002,sales ops,inbound handoff review,Confirm lifecycle stage and owner before sales task draft,yes
+ORQ-2103,GSL-1003,customer success,call-intel handoff review,Confirm buying committee note and next-step field before CRM preview,yes
+ORQ-2104,GSL-1004,customer success,expansion-risk review,Confirm risk reason and expansion owner before internal alert,yes
