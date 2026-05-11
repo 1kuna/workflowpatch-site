@@ -1,4 +1,4 @@
-# Booking Payment State Demo Runbook
+# Booking Payment State Proof Runbook
 
 Purpose: prove a scheduling/payment workflow can separate confirmed bookings, unpaid tentative holds, unavailable preferences, and malformed submissions before any live customer messages are sent.
 

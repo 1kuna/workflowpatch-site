@@ -1,4 +1,4 @@
-# Shipping Notification Demo Runbook
+# Shipping Notification Gate Proof Runbook
 
 This demo shows the delivery shape for a fulfillment or customer-update workflow.
 
