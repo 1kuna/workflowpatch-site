@@ -1,0 +1,4 @@
+block_id,ledger_id,blocked_action,reason,safe_alternative
+BLK-301,AIOL-1005,use billing exception details,sensitive financial data boundary,use synthetic or redacted billing event fields
+BLK-302,AIOL-1006,write enriched fields to Salesforce,live CRM write requested before approval,produce draft-only CRM update preview
+BLK-303,AIOL-1008,send company-wide AI workflow instructions,live rollout requested without metric or approval,produce rollout checklist and review gate

@@ -1,0 +1,7 @@
+review_id,ledger_id,owner_question,sample_needed,output_preview
+REV-501,AIOL-1001,Which owner decides the stale-lead threshold,5-10 redacted lead-routing rows,lead owner review ledger
+REV-502,AIOL-1002,Which CS leader owns renewal-risk escalation,5-10 redacted account-risk rows,CS review queue
+REV-503,AIOL-1003,Which campaign metric controls the next-test queue,5-10 redacted campaign result rows,campaign learning queue
+REV-504,AIOL-1004,What quality target makes a support reply acceptable,5-10 redacted support cases,reply QA ledger
+REV-505,AIOL-1007,Which adoption signal should trigger CS review,5-10 redacted product usage rows,CS adoption queue
+REV-506,AIOL-1009,Which executive scorecard fields are useful weekly,5-10 redacted KPI rows,AI ops scorecard preview

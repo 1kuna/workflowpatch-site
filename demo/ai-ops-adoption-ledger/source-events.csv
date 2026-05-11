@@ -1,0 +1,11 @@
+event_id,source,team,request_type,system,requested_action,has_owner,has_success_metric,has_approval,has_sensitive_data,requested_live_action
+evt-9001,sales-ops-brief,Sales,lead-routing-cleanup,HubSpot,route stale high-intent leads to owner review,yes,yes,yes,no,no
+evt-9002,customer-success-notes,Customer Success,renewal-risk-triage,Intercom,flag accounts with repeated support friction,yes,yes,yes,no,no
+evt-9003,marketing-request,Marketing,campaign-learning-loop,Segment,turn campaign results into next-test queue,yes,yes,yes,no,no
+evt-9004,support-export,Support,reply-draft-review,Zendesk,draft support replies from public help-center context,yes,no,yes,no,no
+evt-9005,finance-ops-note,Finance,billing-exception-handoff,Stripe,route billing exceptions to owner review,yes,yes,yes,yes,no
+evt-9006,revops-webhook,RevOps,crm-field-update,Salesforce,write enriched firmographic fields to CRM,yes,yes,no,no,yes
+evt-9007,product-usage-feed,Product,adoption-signal-routing,BigQuery,route low-adoption accounts to CS review,yes,yes,yes,no,no
+evt-9008,ops-slack-thread,Operations,tool-adoption-rollout,Notion,send company-wide AI workflow instructions,yes,no,no,no,yes
+evt-9009,snowflake-export,Analytics,metric-digest,dbt,produce weekly AI ops adoption scorecard,yes,yes,yes,no,no
+evt-9010,malformed-request,Unknown,missing-context,Retool,build automation from screenshot,missing,no,no,no,no

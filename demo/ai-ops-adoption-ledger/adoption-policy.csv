@@ -1,0 +1,7 @@
+policy_id,check,accepted_when,block_reason
+pol-01,owner_present,has_owner is yes,missing accountable owner
+pol-02,success_metric_present,has_success_metric is yes,missing measurable adoption or quality target
+pol-03,approval_present,has_approval is yes,missing business owner approval
+pol-04,sensitive_data_boundary,has_sensitive_data is no,sensitive row needs redaction or exclusion
+pol-05,no_live_action,requested_live_action is no,live system action requested before scope
+pol-06,source_contract,team and system are known,source context is malformed
