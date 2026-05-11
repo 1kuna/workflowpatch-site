@@ -1,6 +1,6 @@
-# Campaign Feedback Loop Demo Runbook
+# Campaign Feedback Loop Proof Runbook
 
-This is a mock WorkflowPatch proof pack. It does not use client data, ESP credentials, ad accounts, CRM credentials, social accounts, or live connected systems.
+This WorkflowPatch proof pack uses redacted or synthetic campaign inputs. It does not use client data, ESP credentials, ad accounts, CRM credentials, social accounts, or live connected systems.
 
 ## Source
 
@@ -8,6 +8,13 @@ This is a mock WorkflowPatch proof pack. It does not use client data, ESP creden
 - `asset-primitives.csv`: approved claims, banned terms, and asset approval status.
 - `performance-events.csv`: recent performance rows by campaign.
 - `candidate-outputs.csv`: AI-style next-test drafts and proposed external copy.
+
+Useful buyer sample:
+
+- one campaign family or lifecycle segment,
+- a redacted performance export,
+- approved and banned claim examples,
+- the review destination where proposed outputs should land.
 
 ## Transformation
 
@@ -20,6 +27,10 @@ This is a mock WorkflowPatch proof pack. It does not use client data, ESP creden
 - `blocked-output-queue.csv`: drafts or campaigns that must not be sent.
 - `error-log.csv`: missing or mismatched source evidence.
 - `brief-draft.md`: sample internal brief grounded in the ledger.
+
+## Live Boundary
+
+The first slice stops at internal review artifacts. It does not publish, schedule, send, update CRM records, modify ads, change social posts, touch customer data, or claim campaign lift.
 
 ## Acceptance Checks
 
