@@ -1,0 +1,9 @@
+event_id,event_type,source_system,site_area,work_order_id,item_id,quantity,current_state,requested_action,target_state,cycle_minutes,dwell_minutes,error_count,correlation_id,event_time,operator_note
+evt-6601,truck_unload_scan,WMS,receiving,wo-3001,sku-axle-17,48,arrived,stage_for_inspection,inspection_ready,18,24,0,corr-3pl-7001,2026-05-10T15:10:00Z,Unload completed and needs inspection staging.
+evt-6602,quality_hold,MES,quality,wo-3001,sku-axle-17,4,inspection_ready,release_to_line,line_ready,41,96,1,corr-3pl-7002,2026-05-10T15:18:00Z,Quality hold exists for a partial quantity.
+evt-6603,line_shortage,ERP,line-side,wo-3002,sku-bracket-42,120,kitting_ready,move_to_line,line_ready,22,38,0,corr-3pl-7003,2026-05-10T15:26:00Z,Line-side shortage signal asks for move recommendation.
+evt-6604,label_reprint,WMS,labeling,wo-3003,sku-label-04,120,labeled,reprint_label,labeled,8,12,0,corr-3pl-7004,2026-05-10T15:34:00Z,Label damage found at outbound staging.
+evt-6605,manual_override,Operator Sheet,kitting,wo-3004,sku-kit-88,12,kitting_ready,skip_quality_gate,line_ready,14,18,0,corr-3pl-7005,2026-05-10T15:41:00Z,Operator override tries to skip a quality gate.
+evt-6606,truck_unload_scan,WMS,receiving,wo-3001,sku-axle-17,48,arrived,stage_for_inspection,inspection_ready,18,24,0,corr-3pl-7001,2026-05-10T15:43:00Z,Duplicate replay of unload event.
+evt-6607,edge_sensor_fault,Edge Scanner,receiving,wo-3005,sku-sensor-11,32,unknown,stage_for_inspection,inspection_ready,0,0,4,corr-3pl-7007,2026-05-10T15:47:00Z,Scanner sent faulted state with no cycle or dwell reading.
+evt-6608,missing_work_order,WMS,receiving,,sku-unknown,10,arrived,stage_for_inspection,inspection_ready,10,11,0,corr-3pl-7008,2026-05-10T15:52:00Z,Work order id is missing.

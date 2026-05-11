@@ -1,0 +1,6 @@
+action_id,event_id,source_system,site_area,work_order_id,item_id,quantity,current_state,proposed_action,target_state,write_status,decision_detail,processed_at
+ACT-6601,evt-6601,WMS,receiving,wo-3001,sku-axle-17,48,arrived,stage_for_inspection,inspection_ready,dry_run_only,Prepare stage_for_inspection review from WMS signal.,2026-05-10T23:32:00Z
+ACT-6602,evt-6602,MES,quality,wo-3001,sku-axle-17,4,inspection_ready,release_to_line,line_ready,dry_run_only,Prepare release_to_line review from MES signal.,2026-05-10T23:32:00Z
+ACT-6603,evt-6603,ERP,line-side,wo-3002,sku-bracket-42,120,kitting_ready,move_to_line,line_ready,dry_run_only,Prepare move_to_line review from ERP signal.,2026-05-10T23:32:00Z
+ACT-6604,evt-6604,WMS,labeling,wo-3003,sku-label-04,120,labeled,reprint_label,labeled,dry_run_only,Prepare reprint_label review from WMS signal.,2026-05-10T23:32:00Z
+ACT-6607,evt-6607,Edge Scanner,receiving,wo-3005,sku-sensor-11,32,unknown,stage_for_inspection,inspection_ready,dry_run_only,Prepare stage_for_inspection review from Edge Scanner signal.,2026-05-10T23:32:00Z

@@ -1,0 +1,2 @@
+event_id,source_system,error_code,error_detail
+evt-6608,WMS,missing_work_order_id,A control-layer event needs a stable work_order_id before routing or action review.

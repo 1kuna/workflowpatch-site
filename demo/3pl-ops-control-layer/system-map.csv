@@ -1,0 +1,7 @@
+system_name,system_type,role_in_proof,live_write_allowed
+WMS,warehouse,source event and proposed destination,no
+ERP,planning,source event and proposed destination,no
+MES,manufacturing,source event and proposed destination,no
+Edge Scanner,floor input,source signal only,no
+Operator Sheet,manual override source,review source only,no
+Approval Queue,human review,proof destination only,no

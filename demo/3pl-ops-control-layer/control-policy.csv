@@ -1,0 +1,7 @@
+requested_action,policy,state_gate,human_review_required,blocked_reason,destination_queue
+stage_for_inspection,allowed,current_state must be arrived,no,,action-ledger
+release_to_line,review_required,current_state must be inspection_ready,yes,Quality and partial-release signals require supervisor approval,approval-queue
+move_to_line,allowed,current_state must be kitting_ready,yes,Line-side move needs human approval before physical movement,approval-queue
+reprint_label,review_required,current_state must be labeled,yes,Label reprint can affect traceability and needs review,approval-queue
+skip_quality_gate,blocked,never allowed,yes,Quality gate bypass is not allowed from automation,blocked-action-queue
+production_write,blocked,never allowed,yes,Live WMS ERP MES or floor-control write is outside proof boundary,blocked-action-queue

@@ -1,0 +1,4 @@
+metric_name,threshold,unit,review_rule
+cycle_minutes,30,minutes,Review when cycle time exceeds the standard.
+dwell_minutes,60,minutes,Review when dwell time exceeds the standard.
+error_count,2,count,Review when repeated errors appear for a work order or source.

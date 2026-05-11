@@ -1,0 +1,4 @@
+event_id,work_order_id,metric_name,observed_value,threshold,unit,review_rule,processed_at
+evt-6602,wo-3001,cycle_minutes,41,30,minutes,Review when cycle time exceeds the standard.,2026-05-10T23:32:00Z
+evt-6602,wo-3001,dwell_minutes,96,60,minutes,Review when dwell time exceeds the standard.,2026-05-10T23:32:00Z
+evt-6607,wo-3005,error_count,4,2,count,Review when repeated errors appear for a work order or source.,2026-05-10T23:32:00Z
