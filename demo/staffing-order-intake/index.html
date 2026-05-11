@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/staffing-order-intake/">
     <title>WorkflowPatch Staffing Order Intake Proof</title>
-    <meta name="description" content="Mock WorkflowPatch staffing order-intake proof with Monday client lookup, order draft ledger, blocked alert queue, extraction error log, source script, and runbook.">
+    <meta name="description" content="WorkflowPatch staffing order-intake guardrail proof with Monday client lookup, order draft ledger, blocked alert queue, extraction error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WorkflowPatch Staffing Order Intake Proof">
-    <meta property="og:description" content="A mock staffing order-intake workflow with Monday client lookup, draft-only order rows, blocked alerts, extraction errors, source script, and runbook.">
+    <meta property="og:description" content="A staffing order-intake guardrail proof with Monday client lookup, draft-only order rows, blocked alerts, extraction errors, source script, and runbook.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/staffing-order-intake/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -46,7 +46,7 @@
       .brand img { width: 32px; height: 32px; }
       a { color: var(--accent-dark); font-weight: 700; }
       main { padding: 48px 0; }
-      h1 { font-size: clamp(34px, 6vw, 64px); line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
+      h1 { font-size: 58px; line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; max-width: 920px; }
       .lede { color: var(--muted); font-size: 19px; max-width: 810px; margin: 0 0 28px; }
       .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
       .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
@@ -69,7 +69,7 @@
       .status { color: var(--accent-dark); font-weight: 800; }
       .warn { color: var(--warning); font-weight: 800; }
       footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
-      @media (max-width: 920px) { .grid, .split { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+      @media (max-width: 920px) { .grid, .split { grid-template-columns: 1fr; } main { padding-top: 34px; } h1 { font-size: 38px; } }
     </style>
   </head>
   <body>
@@ -82,7 +82,7 @@
 
     <main class="wrap">
       <h1>Staffing order-intake guardrail proof.</h1>
-      <p class="lede">A small mock workflow that turns forwarded staffing order emails into draft-only Monday-style order rows. It proves the client lookup and failure boundary before a live inbox, Make.com scenario, Monday.com board, staffing-client data, or production write path is touched.</p>
+      <p class="lede">A small guardrail proof that turns redacted or synthetic staffing order emails into draft-only Monday-style order rows. It proves the client lookup and failure boundary before a live inbox, Make.com scenario, Monday.com board, staffing-client data, or production write path is touched.</p>
 
       <div class="links">
         <a class="button" href="/demo/staffing-order-intake/order-draft-ledger.csv">Order Draft Ledger CSV</a>
