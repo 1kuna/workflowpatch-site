@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch n8n crash triage demo outputs.
+"""Generate the WorkflowPatch n8n crash triage proof outputs.
 
-The demo is intentionally local and synthetic. It models the first safe proof
+The proof is intentionally local and synthetic. It models the first safe proof
 slice for a self-hosted n8n stability incident: triage evidence before any live
 database migration or credential movement.
 """

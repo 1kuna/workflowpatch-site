@@ -1,6 +1,6 @@
 # n8n Crash Triage Runbook
 
-This is a mock WorkflowPatch proof surface. It uses no client data, no credentials, no live n8n instance, and no database connection.
+This proof surface uses redacted or synthetic evidence. It uses no client data, no credentials, no live n8n instance, and no database connection.
 
 ## First Slice
 

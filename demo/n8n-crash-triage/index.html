@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/n8n-crash-triage/">
-    <title>WorkflowPatch n8n Crash Triage Demo</title>
-    <meta name="description" content="Mock WorkflowPatch self-hosted n8n crash triage demo with incident signals, triage ledger, migration gates, backup checks, source script, and runbook.">
+    <title>WorkflowPatch n8n Crash Triage Proof</title>
+    <meta name="description" content="WorkflowPatch self-hosted n8n crash triage proof with incident signals, triage ledger, migration gates, backup checks, source script, and runbook before live migration or credential movement.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch n8n Crash Triage Demo">
-    <meta property="og:description" content="A mock self-hosted n8n stability workflow that blocks unsafe migration steps until logs, backups, restore proof, credential boundaries, and rollback gates are visible.">
+    <meta property="og:title" content="WorkflowPatch n8n Crash Triage Proof">
+    <meta property="og:description" content="A self-hosted n8n stability proof that blocks unsafe migration steps until logs, backups, restore proof, credential boundaries, and rollback gates are visible.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/n8n-crash-triage/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -86,7 +86,7 @@
       }
 
       h1 {
-        font-size: clamp(34px, 6vw, 64px);
+        font-size: 54px;
         line-height: 0.98;
         margin: 0 0 18px;
         letter-spacing: 0;
@@ -205,6 +205,10 @@
         main {
           padding-top: 34px;
         }
+
+        h1 {
+          font-size: 38px;
+        }
       }
     </style>
   </head>
@@ -217,15 +221,15 @@
     </header>
 
     <main class="wrap">
-      <h1>n8n crash triage demo output.</h1>
-      <p class="lede">A small mock workflow for self-hosted n8n instability. Incident signals become a triage ledger, migration-readiness gates, backup verification checks, and blocked rows before anyone attempts a MySQL to Postgres cutover. No client data, credentials, live n8n instance, or database connection is used.</p>
+      <h1>n8n crash triage proof.</h1>
+      <p class="lede">A first paid slice for self-hosted n8n instability. Redacted or synthetic incident signals become a triage ledger, migration-readiness gates, backup verification checks, and blocked rows before anyone attempts a MySQL to Postgres cutover. No client data, credentials, live n8n instance, or database connection is used.</p>
 
       <div class="links">
         <a class="button" href="/demo/n8n-crash-triage/triage-ledger.csv">Triage Ledger CSV</a>
         <a class="button secondary" href="/demo/n8n-crash-triage/migration-readiness.csv">Migration Readiness CSV</a>
         <a class="button secondary" href="/demo/n8n-crash-triage/backup-verification.csv">Backup Verification CSV</a>
         <a class="button secondary" href="/demo/n8n-crash-triage/error-log.csv">Error Log CSV</a>
-        <a class="button secondary" href="/demo/n8n-crash-triage/incident-signals.csv">Mock Signals CSV</a>
+        <a class="button secondary" href="/demo/n8n-crash-triage/incident-signals.csv">Source Signals CSV</a>
         <a class="button secondary" href="/demo/n8n-crash-triage/runbook.md">Runbook</a>
         <a class="button secondary" href="/demo/n8n-crash-triage/process_n8n_crash_triage_demo.py">Source Script</a>
       </div>
@@ -233,7 +237,7 @@
       <div class="grid">
         <div class="item">
           <h2>Input</h2>
-          <p>Eight synthetic incident signals from Docker logs, n8n env, MySQL status, retention settings, workflow history, and backup notes.</p>
+          <p>Eight redacted or synthetic incident signals from Docker logs, n8n env, MySQL status, retention settings, workflow history, and backup notes.</p>
         </div>
         <div class="item">
           <h2>Output</h2>
