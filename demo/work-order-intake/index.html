@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/work-order-intake/">
-    <title>WorkflowPatch Work Order Intake Demo</title>
-    <meta name="description" content="Mock WorkflowPatch work-order intake demo with FACIL-IT write plan, Google Chat summary queue, blocked review queue, error log, source script, and runbook.">
+    <title>WorkflowPatch Work-Order Intake Proof</title>
+    <meta name="description" content="WorkflowPatch work-order intake proof with redacted shared-inbox emails, dry-run destination write plan, reviewer summary queue, blocked review queue, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch Work Order Intake Demo">
-    <meta property="og:description" content="A mock shared-Gmail work-order intake workflow with FACIL-IT dry-run write plans, Google Chat summary queues, blocked rows, errors, source script, and runbook.">
+    <meta property="og:title" content="WorkflowPatch Work-Order Intake Proof">
+    <meta property="og:description" content="A work-order intake proof that turns redacted shared-inbox emails into dry-run write plans, reviewer summaries, blocked rows, errors, source script, and runbook.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/work-order-intake/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -46,7 +46,7 @@
       .brand img { width: 32px; height: 32px; }
       a { color: var(--accent-dark); font-weight: 700; }
       main { padding: 48px 0; }
-      h1 { font-size: clamp(34px, 6vw, 64px); line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
+      h1 { font-size: 58px; line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
       .lede { color: var(--muted); font-size: 19px; max-width: 830px; margin: 0 0 28px; }
       .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
       .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
@@ -63,7 +63,7 @@
       .status { color: var(--accent-dark); font-weight: 800; }
       .warn { color: var(--warning); font-weight: 800; }
       footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
-      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } h1 { font-size: 38px; } }
     </style>
   </head>
   <body>
@@ -75,8 +75,8 @@
     </header>
 
     <main class="wrap">
-      <h1>Work-order intake demo output.</h1>
-      <p class="lede">A small mock workflow that turns shared-Gmail work-order emails into parsed work-order rows, dry-run FACIL-IT write plans, Google Chat summary queue rows, blocked review rows, and error logs. No live Gmail, FACIL-IT, Google Workspace, Google Chat, customer data, vendor data, or production work orders are used.</p>
+      <h1>Work-order intake proof.</h1>
+      <p class="lede">A first paid slice for facilities, field-service, property, or operations teams with work orders trapped in a shared inbox. One redacted or synthetic email batch becomes a parsed work-order ledger, dry-run destination write plan, reviewer summary queue, blocked review rows, and error log before any live inbox, FACIL-IT, Google Chat, customer data, vendor data, or production work order is touched.</p>
 
       <div class="links">
         <a class="button" href="/demo/work-order-intake/work-order-ledger.csv">Work Order Ledger CSV</a>
@@ -94,16 +94,16 @@
 
       <div class="grid">
         <div class="item">
-          <h2>Shared Gmail Intake</h2>
-          <p>Mock work-order emails are parsed into stable WO, store, trade, priority, window, and attachment fields.</p>
+          <h2>Redacted Intake</h2>
+          <p>Approved work-order samples are parsed into stable WO, site, trade, priority, window, and attachment fields.</p>
         </div>
         <div class="item">
-          <h2>FACIL-IT Write Plan</h2>
+          <h2>Write Plan</h2>
           <p>Accepted rows stop as dry-run create or update candidates with idempotency keys and approval required.</p>
         </div>
         <div class="item">
-          <h2>Google Chat Queue</h2>
-          <p>Reviewer-ready summaries are queued as text only. The proof does not send Chat messages.</p>
+          <h2>Review Summary</h2>
+          <p>Reviewer-ready summaries are queued as text only. The proof does not send notifications.</p>
         </div>
         <div class="item">
           <h2>Blocked Review</h2>
@@ -128,7 +128,7 @@
               <td>WO-18471</td>
               <td class="status">Dry-run write plan</td>
               <td>Known active site, required fields present, attachment state ready.</td>
-              <td>Review the FACIL-IT payload and Chat summary before live scope.</td>
+              <td>Review the destination payload and summary before live scope.</td>
             </tr>
             <tr>
               <td>wo-2002</td>

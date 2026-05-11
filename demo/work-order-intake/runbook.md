@@ -1,6 +1,13 @@
-# Work Order Intake Demo Runbook
+# Work-Order Intake Proof Runbook
 
-Purpose: prove a shared-Gmail work-order intake path before touching live Gmail, FACIL-IT, Google Workspace, Google Chat, production work orders, customer data, vendor data, or any live write path.
+Purpose: prove a shared-inbox work-order intake path before touching live Gmail, FACIL-IT, Google Workspace, Google Chat, production work orders, customer data, vendor data, or any live write path.
+
+First paid slice:
+
+- Source: two to ten redacted or synthetic work-order emails from a shared inbox.
+- Transformation: parse work-order fields, validate location and destination-field requirements, detect duplicates, handle attachment state, and block weak or ambiguous rows.
+- Destination: reviewable work-order ledger, dry-run destination write plan, reviewer summary queue, blocked review queue, error log, and written handoff.
+- Useful sample: one clean work order, one missing WO number, one ambiguous location or site id, one duplicate or failed attachment case, and the approved destination field map.
 
 Inputs:
 
