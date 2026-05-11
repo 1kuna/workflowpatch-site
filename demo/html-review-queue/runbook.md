@@ -11,7 +11,7 @@ Useful first buyer sample:
 
 Inputs:
 
-- `html-pages.csv`: mock page paths, titles, and small HTML excerpts.
+- `html-pages.csv`: redacted or synthetic page paths, titles, and small HTML excerpts.
 - `review-rules.csv`: review rules for SEO, code, stale copy, and upload blockers.
 
 Outputs:
