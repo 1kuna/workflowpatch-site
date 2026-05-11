@@ -4,10 +4,11 @@ Purpose: show how WorkflowPatch handles a narrow agency or partner overflow slic
 
 Inputs:
 
-- One redacted source export, inbox sample, webhook sample, or CRM sample.
+- One redacted source export, inbox sample, webhook sample, lead form, order event, or CRM sample.
 - One target destination or review output.
 - The partner's approval boundary for anything client-visible.
 - Fields that must be blocked, redacted, or left untouched.
+- `overflow-slice-map.csv`: how the same guardrail maps to CRM lead routing, attribution webhook QA, and agency handoff QA.
 
 Process:
 
@@ -22,6 +23,7 @@ Acceptance checks:
 
 - Internal low-risk rows produce QA artifacts.
 - Client-visible rows are held for partner approval.
+- CRM, lead-routing, attribution, API, and webhook slices stay scoped to one source, one decision rule, and one reviewable destination.
 - Broad retainer or bench requests are blocked.
 - Secrets or credentials are excluded.
 - No live CRM, client, vendor, inbox, or production write occurs from the first proof.

@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/agency-overflow-qa/">
-    <title>WorkflowPatch Agency Overflow QA Demo</title>
-    <meta name="description" content="Mock WorkflowPatch agency overflow QA demo with QA ledger, review queue, blocked-scope rows, error log, source script, and runbook.">
+    <title>WorkflowPatch Agency Overflow QA And Routing Demo</title>
+    <meta name="description" content="Mock WorkflowPatch agency overflow QA demo with CRM/lead-routing slice map, QA ledger, review queue, blocked-scope rows, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch Agency Overflow QA Demo">
-    <meta property="og:description" content="A mock partner overflow workflow with QA ledger, review queue, blocked scope, error log, source script, and runbook.">
+    <meta property="og:title" content="WorkflowPatch Agency Overflow QA And Routing Demo">
+    <meta property="og:description" content="A mock partner overflow workflow with CRM, lead-routing, attribution, webhook QA, blocked scope, error log, source script, and runbook.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/agency-overflow-qa/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -218,17 +218,51 @@
 
     <main class="wrap">
       <h1>Agency overflow QA demo output.</h1>
-      <p class="lede">A small mock workflow for agency and partner overflow work. Internal rows become QA artifacts, client-visible rows wait for approval, broad bench requests are blocked, and secrets stay out of scope. No client data, live CRM write, customer message, or white-label commitment is used.</p>
+      <p class="lede">A small mock workflow for agency and partner overflow work across CRM, marketing ops, lead routing, attribution, APIs, and webhooks. One client workflow event becomes validation, routing, a reviewable destination update, and an error log. Client-visible rows wait for approval, broad bench requests are blocked, and secrets stay out of scope. No client data, live CRM write, customer message, or white-label commitment is used.</p>
 
       <div class="links">
         <a class="button" href="/demo/agency-overflow-qa/qa-ledger.csv">QA Ledger CSV</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/review-queue.csv">Review Queue CSV</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/blocked-scope.csv">Blocked Scope CSV</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="/demo/agency-overflow-qa/overflow-slice-map.csv">Overflow Slice Map CSV</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/agency-requests.csv">Mock Requests CSV</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/overflow-policy.csv">Policy CSV</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/runbook.md">Runbook</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/process_agency_overflow_demo.py">Source Script</a>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Overflow slice</th>
+              <th>Source</th>
+              <th>Decision</th>
+              <th>Boundary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CRM lead routing</td>
+              <td>One lead form or CRM export.</td>
+              <td>Validate required fields, choose routing owner, and stage the destination update.</td>
+              <td>No live CRM, Monday, Sheet, or API write before partner approval.</td>
+            </tr>
+            <tr>
+              <td>Attribution webhook QA</td>
+              <td>One approved webhook payload.</td>
+              <td>Normalize campaign/source fields and block missing account IDs.</td>
+              <td>No client-facing report before review.</td>
+            </tr>
+            <tr>
+              <td>Agency handoff QA</td>
+              <td>One client workflow brief or order event.</td>
+              <td>Check scope risk, approval boundary, replay key, and handoff evidence.</td>
+              <td>No broad bench retainer or white-label commitment.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <div class="grid">

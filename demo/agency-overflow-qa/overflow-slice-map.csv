@@ -1,0 +1,4 @@
+slice_id,source_pattern,transformation,destination_review,boundary
+crm-lead-routing,one lead form or CRM export,validate required fields and choose routing owner,CRM/Monday/Sheet update preview plus error log,no live CRM write before partner approval
+attribution-webhook,one approved webhook payload,normalize campaign/source fields and block missing account ids,attribution review queue plus blocked payload log,no client-facing report before review
+agency-handoff-qa,one client workflow brief or order event,check scope risk approval boundary and replay key,QA ledger plus runbook handoff,no broad bench retainer or white-label commitment
