@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/shipping-notification/">
     <title>WorkflowPatch Shipping Notification Demo</title>
-    <meta name="description" content="Mock WorkflowPatch shipping notification demo with notification queue, ops alerts, error log, source script, and runbook.">
+    <meta name="description" content="Mock WorkflowPatch shipping notification demo with notify/no-notify rules, draft-only customer messages, ops alerts, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WorkflowPatch Shipping Notification Demo">
-    <meta property="og:description" content="A mock fulfillment workflow with customer-update drafts, operations alerts, error log, source script, and runbook.">
+    <meta property="og:description" content="A mock fulfillment workflow with notify/no-notify checks, customer-update drafts, operations alerts, error log, source script, and runbook.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/shipping-notification/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -218,7 +218,7 @@
 
     <main class="wrap">
       <h1>Shipping notification demo output.</h1>
-      <p class="lede">A small mock workflow that checks ready orders against carrier status before drafting customer updates. Safe rows become a human-approved notification queue; not-live tracking creates an operations alert; malformed rows become an error log. No client data, credentials, carrier APIs, or live email sends are used.</p>
+      <p class="lede">A small mock workflow for Shopify-style shipping updates. It checks ready orders against carrier status, applies a notify/no-notify rule, and creates draft-only customer messages for approval. Delayed or missing tracking becomes an ops alert, malformed rows become an error log, and no live customer email is sent.</p>
 
       <div class="links">
         <a class="button" href="/demo/shipping-notification/notification-queue.csv">Notification Queue CSV</a>
@@ -232,16 +232,16 @@
 
       <div class="grid">
         <div class="item">
-          <h2>Input</h2>
-          <p>Six mock order rows and four mock carrier-status rows from a fulfillment workflow.</p>
+          <h2>Notify Rule</h2>
+          <p>Ready orders only move forward when the order row and carrier row agree: fulfilled, tracking present, and status live.</p>
         </div>
         <div class="item">
-          <h2>Accepted</h2>
-          <p>Two ready orders with live tracking become customer-update drafts that still need human approval.</p>
+          <h2>Draft-Only Queue</h2>
+          <p>Customer-facing updates become approval-required draft rows with evidence, not automatic sends.</p>
         </div>
         <div class="item">
-          <h2>Blocked</h2>
-          <p>Two internal alerts and two hard errors are visible before any customer email could be sent.</p>
+          <h2>Ops Alerts</h2>
+          <p>Delayed tracking, missing carriers, and malformed rows are separated before the customer ever sees a message.</p>
         </div>
       </div>
 

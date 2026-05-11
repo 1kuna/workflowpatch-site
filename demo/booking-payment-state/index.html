@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/booking-payment-state/">
     <title>WorkflowPatch Booking Payment State Demo</title>
-    <meta name="description" content="Mock WorkflowPatch booking/payment state demo with booking ledger, follow-up queue, conflict queue, error log, source script, and runbook.">
+    <meta name="description" content="Mock WorkflowPatch booking/payment-state demo with capacity, coach, payment, approval-required follow-up drafts, conflict queue, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WorkflowPatch Booking Payment State Demo">
-    <meta property="og:description" content="A mock booking/payment workflow that separates paid confirmations, unpaid holds, conflicts, and hard errors before live customer messages.">
+    <meta property="og:description" content="A mock booking/payment-state workflow that separates paid confirmations, unpaid holds, conflicts, and hard errors before live phone, SMS, or customer messages.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/booking-payment-state/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -70,7 +70,7 @@
 
     <main class="wrap">
       <h1>Booking payment state demo output.</h1>
-      <p class="lede">A small mock workflow that checks form submissions, class capacity, ridercoach availability, and payment notifications. Paid rows become confirmed bookings; unpaid rows become tentative holds with approval-required reminders; unavailable preferences and malformed rows stay visible before any customer message is sent.</p>
+      <p class="lede">A small mock booking/payment-state workflow. It checks each form submission against class capacity, ridercoach availability, payment status, and contact data before creating a booking ledger. Customer follow-ups are approval-required drafts; no phone, SMS, MSF RES, browser action, or live customer output is used.</p>
 
       <div class="links">
         <a class="button" href="/demo/booking-payment-state/booking-ledger.csv">Booking Ledger CSV</a>
@@ -86,16 +86,16 @@
 
       <div class="grid">
         <div class="item">
-          <h2>Input</h2>
-          <p>Seven mock form submissions, class inventory rows, and payment notifications.</p>
+          <h2>State Check</h2>
+          <p>Capacity, coach, payment, and contact fields decide confirmed booking, tentative hold, conflict, or hard error.</p>
         </div>
         <div class="item">
-          <h2>Output</h2>
-          <p>Safe rows become confirmed bookings or tentative holds with state and evidence preserved.</p>
+          <h2>Approval Drafts</h2>
+          <p>Unpaid or changed-slot rows produce reminder drafts for review instead of live customer messages.</p>
         </div>
         <div class="item">
-          <h2>Failure Path</h2>
-          <p>Unavailable class preferences, missing contacts, and payment-needed rows are held for review.</p>
+          <h2>Live-System Boundary</h2>
+          <p>The mock stops before phone, SMS, MSF RES, browser actions, or customer-facing sends.</p>
         </div>
       </div>
 

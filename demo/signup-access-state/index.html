@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/signup-access-state/">
     <title>WorkflowPatch Signup Access State Demo</title>
-    <meta name="description" content="Mock WorkflowPatch signup and access-state demo with onboarding ledger, access review queue, email draft queue, error log, source script, and runbook.">
+    <meta name="description" content="Mock WorkflowPatch purchase-to-access demo with onboarding ledger, attribution and access decisions, email draft queue, review rows, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WorkflowPatch Signup Access State Demo">
-    <meta property="og:description" content="A mock onboarding workflow that separates access grants, payment holds, verification holds, manual approvals, and hard errors before live emails or content access.">
+    <meta property="og:description" content="A mock purchase-to-access workflow that separates grants, payment holds, verification holds, approvals, and hard errors before live platform changes.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/signup-access-state/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -70,7 +70,7 @@
 
     <main class="wrap">
       <h1>Signup access state demo output.</h1>
-      <p class="lede">A small mock workflow that turns signup events into an onboarding ledger, content-access decisions, email drafts, review rows, and hard errors. Airtable is treated as the operating ledger; real authentication and content access stay outside the mock until the architecture is explicit.</p>
+      <p class="lede">A small mock purchase-to-access workflow. It turns signup and payment events into an Airtable-style ledger, attribution/access decisions, email drafts, review rows, and hard errors. This is a dry run only: no live Stripe, Rewardful, Skool, Zendo, Airtable, or content-access changes are made.</p>
 
       <div class="links">
         <a class="button" href="/demo/signup-access-state/onboarding-ledger.csv">Onboarding Ledger CSV</a>
@@ -85,16 +85,16 @@
 
       <div class="grid">
         <div class="item">
-          <h2>Input</h2>
-          <p>Seven mock signup events and an access catalog for free, founding, course, and partner tiers.</p>
+          <h2>Purchase State</h2>
+          <p>Paid, verified, consented events can move to access-ready; missing payment, verification, or consent stays blocked.</p>
         </div>
         <div class="item">
-          <h2>Output</h2>
-          <p>Safe rows become granted or pending onboarding states with evidence preserved.</p>
+          <h2>Dry-Run Ledger</h2>
+          <p>Every decision lands in a reviewable ledger row with source evidence before any platform write.</p>
         </div>
         <div class="item">
-          <h2>Failure Path</h2>
-          <p>Missing email, existing-user, no-consent, payment, verification, and restricted-access cases stay visible.</p>
+          <h2>Access Boundary</h2>
+          <p>No live Stripe, Rewardful, Skool, Zendo, Airtable, emails, or content access changes happen in the demo.</p>
         </div>
       </div>
 
