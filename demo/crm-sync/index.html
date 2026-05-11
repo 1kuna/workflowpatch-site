@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/crm-sync/">
-    <title>WorkflowPatch CRM Sync And Duplicate Guard Demo</title>
-    <meta name="description" content="Mock WorkflowPatch CRM sync and duplicate guard demo with sync ledger, conflict queue, error log, first-slice map, source script, and runbook.">
+    <title>WorkflowPatch CRM Sync Review Proof</title>
+    <meta name="description" content="WorkflowPatch CRM sync review proof with redacted CRM and activity events, sync ledger, conflict queue, error log, first-slice map, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch CRM Sync And Duplicate Guard Demo">
-    <meta property="og:description" content="A mock CRM sync workflow with contact mapping, conflict queue, sync ledger, first-slice map, error log, source script, and runbook.">
+    <meta property="og:title" content="WorkflowPatch CRM Sync Review Proof">
+    <meta property="og:description" content="A CRM sync review proof with contact mapping, conflict queue, sync ledger, first-slice map, error log, source script, and runbook.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/crm-sync/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -86,7 +86,7 @@
       }
 
       h1 {
-        font-size: clamp(34px, 6vw, 64px);
+        font-size: 58px;
         line-height: 0.98;
         margin: 0 0 18px;
         letter-spacing: 0;
@@ -209,6 +209,10 @@
         main {
           padding-top: 34px;
         }
+
+        h1 {
+          font-size: 38px;
+        }
       }
     </style>
   </head>
@@ -221,8 +225,8 @@
     </header>
 
     <main class="wrap">
-      <h1>CRM sync demo output.</h1>
-      <p class="lede">A small mock workflow that checks CRM and activity events against a contact map before any create or update decision. It maps to Copper duplicate cleanup, Gmail/OpenPhone-to-GHL sync, and two-way CRM drift: safe rows become a sync ledger; identity mismatches become a conflict queue; malformed rows become an error log. No client data, credentials, phone calls, messages, or live CRM writes are used.</p>
+      <h1>CRM sync review proof.</h1>
+      <p class="lede">A first paid slice for RevOps, sales ops, and agency teams with contact or activity data drifting between tools. One redacted CRM or activity export is checked against a contact map before any create, update, append, or overwrite decision. Safe rows become a sync ledger, identity mismatches become a conflict queue, and malformed rows become an error log. No client data, credentials, phone calls, messages, or live CRM writes are used.</p>
 
       <div class="links">
         <a class="button" href="/demo/crm-sync/sync-ledger.csv">Sync Ledger CSV</a>
@@ -300,7 +304,7 @@
         </div>
       </div>
 
-      <div class="table-wrap" aria-label="CRM sync demo table">
+      <div class="table-wrap" aria-label="CRM sync proof table">
         <table>
           <thead>
             <tr>

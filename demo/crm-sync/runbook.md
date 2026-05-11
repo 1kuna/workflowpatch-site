@@ -1,6 +1,13 @@
-# CRM Sync Demo Runbook
+# CRM Sync Review Proof Runbook
 
-This is a mock WorkflowPatch demo. It uses no client data, no credentials, and no connected CRM accounts.
+Purpose: prove a CRM sync review path before touching live CRM records, client data, credentials, phone calls, messages, payment actions, or connected CRM accounts.
+
+First paid slice:
+
+- Source: one redacted CRM, appointment, form, email, phone, or activity export.
+- Transformation: normalize identity fields, compare against the contact map, classify accepted rows, conflicts, and hard errors, and preserve reviewer evidence.
+- Destination: sync ledger, conflict queue, error log, first-slice map, and written handoff.
+- Useful sample: one clean mapped row, one identity conflict, one unmapped or missing-identity row, and the fields that must never be overwritten.
 
 ## Inputs
 
