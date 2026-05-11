@@ -2,3 +2,5 @@ event_id,source,issue,evidence,reviewer_action
 APT-7002,close appointment,email maps to a different Close contact,event_close=CLOSE-999 mapped_close=CLOSE-202 mapped_ghl=GHL-502,Confirm the correct Close contact before creating or updating the GHL appointment.
 APT-7004,close appointment,contact not mapped to GHL,close_contact_id=CLOSE-404 email=newlead@newco.test,Approve a new GHL contact mapping or merge with an existing contact first.
 CHG-8802,ghl contact change,provided identifiers disagree with contact map,event=CLOSE-999/GHL-777/buyer@clearwater.test mapped=CLOSE-303/GHL-503/buyer@clearwater.test,Resolve the identity conflict before writing the change back to Close.
+ACT-9103,openphone activity,activity not mapped to GHL contact,email=missing phone=+15559990000,Map or create the contact before syncing the activity.
+ACT-9104,gmail activity,email and phone map to different contacts,email maps CLOSE-202/GHL-502 phone maps CLOSE-303/GHL-503,Pick the correct contact before appending the activity to GHL.

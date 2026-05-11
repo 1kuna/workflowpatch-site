@@ -26,12 +26,18 @@ def normalize_email(value: str) -> str:
     return value.strip().lower()
 
 
+def normalize_phone(value: str) -> str:
+    return "".join(ch for ch in value if ch.isdigit() or ch == "+")
+
+
 def main() -> int:
     contact_map = read_csv("contact-map.csv")
     close_events = read_csv("close-appointments.csv")
     ghl_changes = read_csv("ghl-contact-changes.csv")
+    activity_events = read_csv("activity-events.csv")
 
     by_email = {normalize_email(row["email"]): row for row in contact_map}
+    by_phone = {normalize_phone(row["phone"]): row for row in contact_map if row.get("phone", "").strip()}
     by_close = {row["close_contact_id"]: row for row in contact_map}
     by_ghl = {row["ghl_contact_id"]: row for row in contact_map}
 
@@ -147,6 +153,64 @@ def main() -> int:
                 "action": f"update {row['field']}",
                 "status": "ready for sync",
                 "evidence": f"{row['field']}={row['new_value']} updated_at={row['updated_at']}",
+            }
+        )
+
+    for row in activity_events:
+        event_id = row["activity_id"]
+        email = normalize_email(row["email"])
+        phone = normalize_phone(row["phone"])
+        if not email and not phone:
+            errors.append(
+                {
+                    "event_id": event_id,
+                    "source": f"{row['channel']} activity",
+                    "error": "missing activity identity",
+                    "evidence": "email=missing phone=missing",
+                    "blocked_at": row["occurred_at"],
+                }
+            )
+            continue
+
+        email_match = by_email.get(email) if email else None
+        phone_match = by_phone.get(phone) if phone else None
+        if email_match and phone_match and email_match["ghl_contact_id"] != phone_match["ghl_contact_id"]:
+            conflicts.append(
+                {
+                    "event_id": event_id,
+                    "source": f"{row['channel']} activity",
+                    "issue": "email and phone map to different contacts",
+                    "evidence": (
+                        f"email maps {email_match['close_contact_id']}/{email_match['ghl_contact_id']} "
+                        f"phone maps {phone_match['close_contact_id']}/{phone_match['ghl_contact_id']}"
+                    ),
+                    "reviewer_action": "Pick the correct contact before appending the activity to GHL.",
+                }
+            )
+            continue
+
+        mapped = email_match or phone_match
+        if not mapped:
+            conflicts.append(
+                {
+                    "event_id": event_id,
+                    "source": f"{row['channel']} activity",
+                    "issue": "activity not mapped to GHL contact",
+                    "evidence": f"email={email or 'missing'} phone={phone or 'missing'}",
+                    "reviewer_action": "Map or create the contact before syncing the activity.",
+                }
+            )
+            continue
+
+        accepted.append(
+            {
+                "event_id": event_id,
+                "source": f"{row['channel']} activity",
+                "target": "ghl activity",
+                "contact_key": f"{mapped['close_contact_id']}/{mapped['ghl_contact_id']}",
+                "action": row["desired_ghl_action"],
+                "status": "ready for review",
+                "evidence": f"{row['activity_type']} at {row['occurred_at']} summary={row['summary']}",
             }
         )
 

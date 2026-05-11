@@ -4,9 +4,10 @@ This is a mock WorkflowPatch demo. It uses no client data, no credentials, and n
 
 ## Inputs
 
-- `contact-map.csv`: current known mapping between Close contacts and GHL contacts.
+- `contact-map.csv`: current known mapping between Close contacts, GHL contacts, emails, and phones.
 - `close-appointments.csv`: mock appointment events from Close.
 - `ghl-contact-changes.csv`: mock contact-field changes from GHL.
+- `activity-events.csv`: mock Gmail and OpenPhone activity events for the GHL review path.
 - `first-slice-map.csv`: how the same guardrail maps to Copper duplicate cleanup, Gmail/OpenPhone-to-GHL sync, and two-way CRM drift.
 
 ## Command
@@ -25,10 +26,12 @@ python3 demo/crm-sync/process_crm_sync_demo.py
 
 - A valid Close appointment for a mapped contact lands in the sync ledger.
 - A valid GHL contact change for a mapped contact lands in the sync ledger.
+- A valid Gmail or OpenPhone activity for a mapped contact lands in the sync ledger for review.
 - A Copper or GHL first slice can be scoped to one trigger/activity, one match policy, and one review queue before live writes.
 - A Close appointment whose email belongs to a different Close contact is blocked.
 - An unmapped Close appointment becomes a conflict, not a blind contact create.
 - A GHL change whose identifiers disagree with the contact map is blocked.
+- A Gmail/OpenPhone activity whose email and phone map to different contacts is blocked.
 - A row with no usable identity is written to the error log.
 
 ## Non-Goals

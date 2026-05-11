@@ -222,13 +222,14 @@
 
     <main class="wrap">
       <h1>CRM sync demo output.</h1>
-      <p class="lede">A small mock workflow that checks CRM events against a contact map before any create or update decision. It maps to Copper duplicate cleanup, Gmail/OpenPhone-to-GHL sync, and two-way CRM drift: safe rows become a sync ledger; identity mismatches become a conflict queue; malformed rows become an error log. No client data, credentials, or live CRM writes are used.</p>
+      <p class="lede">A small mock workflow that checks CRM and activity events against a contact map before any create or update decision. It maps to Copper duplicate cleanup, Gmail/OpenPhone-to-GHL sync, and two-way CRM drift: safe rows become a sync ledger; identity mismatches become a conflict queue; malformed rows become an error log. No client data, credentials, phone calls, messages, or live CRM writes are used.</p>
 
       <div class="links">
         <a class="button" href="/demo/crm-sync/sync-ledger.csv">Sync Ledger CSV</a>
         <a class="button secondary" href="/demo/crm-sync/conflict-queue.csv">Conflict Queue CSV</a>
         <a class="button secondary" href="/demo/crm-sync/error-log.csv">Error Log CSV</a>
         <a class="button secondary" href="/demo/crm-sync/first-slice-map.csv">First Slice Map CSV</a>
+        <a class="button secondary" href="/demo/crm-sync/activity-events.csv">Activity Events CSV</a>
         <a class="button secondary" href="/demo/crm-sync/contact-map.csv">Contact Map CSV</a>
         <a class="button secondary" href="/demo/crm-sync/close-appointments.csv">Close Events CSV</a>
         <a class="button secondary" href="/demo/crm-sync/ghl-contact-changes.csv">GHL Changes CSV</a>
@@ -287,15 +288,15 @@
       <div class="grid">
         <div class="item">
           <h2>Input</h2>
-          <p>Three mapped contacts, four mock Close appointment events, and four mock GHL contact changes.</p>
+          <p>Three mapped contacts, four mock Close appointment events, four mock GHL contact changes, and five Gmail/OpenPhone activity events.</p>
         </div>
         <div class="item">
           <h2>Accepted</h2>
-          <p>Three rows pass contact-identity checks and land in a reviewer-approved sync ledger.</p>
+          <p>Five rows pass contact-identity checks and land in a reviewer-approved sync ledger.</p>
         </div>
         <div class="item">
           <h2>Blocked</h2>
-          <p>Three business conflicts and two hard errors are visible before any CRM write happens.</p>
+          <p>Five business conflicts and three hard errors are visible before any CRM write happens.</p>
         </div>
       </div>
 
@@ -319,6 +320,13 @@
               <td>Approve appointment upsert into GHL.</td>
             </tr>
             <tr>
+              <td>ACT-9102</td>
+              <td class="status">ready for review</td>
+              <td>accepted OpenPhone activity</td>
+              <td>Phone maps to CLOSE-202/GHL-502.</td>
+              <td>Approve call activity append into GHL.</td>
+            </tr>
+            <tr>
               <td>APT-7002</td>
               <td class="warn">blocked</td>
               <td>Close identity conflict</td>
@@ -331,6 +339,13 @@
               <td>GHL identity conflict</td>
               <td>Provided ids disagree with the contact map for buyer@clearwater.test.</td>
               <td>Resolve the mapping before writing back to Close.</td>
+            </tr>
+            <tr>
+              <td>ACT-9104</td>
+              <td class="warn">blocked</td>
+              <td>Gmail/OpenPhone identity conflict</td>
+              <td>Email maps to one contact while the phone maps to another.</td>
+              <td>Choose the correct contact before appending activity.</td>
             </tr>
             <tr>
               <td>CHG-8803</td>

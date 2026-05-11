@@ -1,0 +1,6 @@
+activity_id,channel,email,phone,activity_type,summary,occurred_at,desired_ghl_action
+ACT-9101,gmail,alex@acme.test,,inbound email,Asked whether the onboarding checklist can be sent to the sales team,2026-05-09T11:02:00-04:00,append conversation note
+ACT-9102,openphone,,+15550102020,missed call,Known contact missed-call event from OpenPhone,2026-05-09T11:08:00-04:00,append call activity
+ACT-9103,openphone,,+15559990000,sms,Unknown number asked for pricing by text,2026-05-09T11:15:00-04:00,hold for contact mapping
+ACT-9104,gmail,ops@northstar.test,+15550303030,inbound email,Email and phone identifiers point to different mapped contacts,2026-05-09T11:19:00-04:00,hold for identity review
+ACT-9105,gmail,,,inbound email,Forwarded message without usable sender identity,2026-05-09T11:22:00-04:00,reject until identity is present

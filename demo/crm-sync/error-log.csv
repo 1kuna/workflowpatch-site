@@ -1,3 +1,4 @@
 event_id,source,error,evidence,blocked_at
 APT-7003,close appointment,missing required identity or appointment field,close_contact_id=CLOSE-303 email=missing start_at=2026-05-14T10:30:00-04:00,2026-05-09T09:35:00-04:00
 CHG-8803,ghl contact change,missing contact identity,email=missing close_contact_id=missing ghl_contact_id=missing,2026-05-09T10:09:00-04:00
+ACT-9105,gmail activity,missing activity identity,email=missing phone=missing,2026-05-09T11:22:00-04:00

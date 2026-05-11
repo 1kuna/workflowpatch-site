@@ -1,4 +1,4 @@
-close_contact_id,ghl_contact_id,email,close_updated_at,ghl_updated_at
-CLOSE-101,GHL-501,alex@acme.test,2026-05-08T15:10:00-04:00,2026-05-08T15:05:00-04:00
-CLOSE-202,GHL-502,ops@northstar.test,2026-05-08T16:00:00-04:00,2026-05-08T15:42:00-04:00
-CLOSE-303,GHL-503,buyer@clearwater.test,2026-05-08T17:15:00-04:00,2026-05-08T17:21:00-04:00
+close_contact_id,ghl_contact_id,email,phone,close_updated_at,ghl_updated_at
+CLOSE-101,GHL-501,alex@acme.test,+15550101010,2026-05-08T15:10:00-04:00,2026-05-08T15:05:00-04:00
+CLOSE-202,GHL-502,ops@northstar.test,+15550102020,2026-05-08T16:00:00-04:00,2026-05-08T15:42:00-04:00
+CLOSE-303,GHL-503,buyer@clearwater.test,+15550303030,2026-05-08T17:15:00-04:00,2026-05-08T17:21:00-04:00
