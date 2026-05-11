@@ -1,10 +1,10 @@
-# Managed IT Ticket Review Demo Runbook
+# Managed IT Review Proof Runbook
 
-Purpose: prove a managed-IT support, onboarding, or account-review workflow with sanitized exports before touching live PSA/helpdesk credentials, endpoint data, security findings, client secrets, or customer-facing sends.
+Purpose: prove the first paid slice for a managed-IT support, onboarding, assessment, or account-review workflow with sanitized exports before touching live PSA/helpdesk credentials, endpoint data, security findings, client secrets, or customer-facing sends.
 
 Inputs:
 
-- `ticket-events.csv`: mock sanitized ticket, monitoring, chat, onboarding, or service activity rows.
+- `ticket-events.csv`: mock sanitized ticket, monitoring, chat, onboarding, assessment, or service activity rows.
 - `client-map.csv`: mock client/account-manager lookup table.
 - `review-policy.csv`: category-specific review and next-action rules.
 

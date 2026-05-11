@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/managed-it-ticket-review/">
-    <title>WorkflowPatch Managed IT Ticket Review Demo</title>
-    <meta name="description" content="Mock WorkflowPatch managed IT ticket-review demo with internal review ledger, client-summary draft queue, blocked escalation queue, error log, source script, and runbook.">
+    <title>WorkflowPatch Managed IT Review Proof</title>
+    <meta name="description" content="WorkflowPatch managed IT review proof with sanitized ticket, monitoring, onboarding, and service rows routed into review ledgers, approval drafts, blocked queues, and error logs.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch Managed IT Ticket Review Demo">
-    <meta property="og:description" content="A mock managed IT workflow that turns sanitized ticket exports into review ledgers, approval-required summary drafts, blocked escalation rows, and hard errors.">
+    <meta property="og:title" content="WorkflowPatch Managed IT Review Proof">
+    <meta property="og:description" content="A managed IT proof slice that turns sanitized ticket, monitoring, onboarding, and service rows into review ledgers, approval drafts, blocked queues, and hard errors.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/managed-it-ticket-review/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -40,7 +40,7 @@
       .brand img { width: 32px; height: 32px; }
       a { color: var(--accent-dark); font-weight: 700; }
       main { padding: 48px 0; }
-      h1 { font-size: clamp(34px, 6vw, 64px); line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
+      h1 { font-size: 54px; line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
       .lede { color: var(--muted); font-size: 19px; max-width: 850px; margin: 0 0 28px; }
       .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
       .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
@@ -57,7 +57,7 @@
       .status { color: var(--accent-dark); font-weight: 800; }
       .warn { color: var(--warning); font-weight: 800; }
       footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
-      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } h1 { font-size: 38px; } }
     </style>
   </head>
   <body>
@@ -69,8 +69,8 @@
     </header>
 
     <main class="wrap">
-      <h1>Managed IT ticket-review demo output.</h1>
-      <p class="lede">A small mock workflow that turns sanitized ticket, monitoring, onboarding, and service activity exports into internal review ledgers and approval-required summary drafts. Security-sensitive rows, unknown clients, onboarding holds, duplicates, low-confidence summaries, and malformed rows are blocked visibly before any live PSA, helpdesk, Microsoft tenant, endpoint, or client-facing action.</p>
+      <h1>Managed IT review proof.</h1>
+      <p class="lede">A first paid slice for MSPs and IT teams: sanitized ticket, monitoring, onboarding, or assessment rows become an internal review ledger and approval-required summary drafts. Security-sensitive rows, unknown clients, duplicates, low-confidence summaries, and malformed records are blocked before any live PSA, helpdesk, Microsoft tenant, endpoint, or client-facing action.</p>
 
       <div class="links">
         <a class="button" href="/demo/managed-it-ticket-review/ticket-review-ledger.csv">Ticket Review Ledger CSV</a>
@@ -86,19 +86,19 @@
 
       <div class="grid">
         <div class="item">
-          <h2>Sanitized Ticket Export</h2>
-          <p>Rows start from approved ticket, chat, onboarding, monitoring, or service activity exports.</p>
+          <h2>Sanitized Source Rows</h2>
+          <p>Rows start from approved ticket, chat, onboarding, monitoring, assessment, or service exports.</p>
         </div>
         <div class="item">
-          <h2>Account Review Queue</h2>
+          <h2>Review Ledger</h2>
           <p>Clean rows route to TAM, account-manager, engineer, or service-lead review with evidence.</p>
         </div>
         <div class="item">
-          <h2>Approval Required</h2>
+          <h2>Drafts Need Approval</h2>
           <p>Client-facing summary candidates stay as drafts until a person approves the output.</p>
         </div>
         <div class="item">
-          <h2>Security Hold</h2>
+          <h2>Sensitive Rows Stop</h2>
           <p>Security-sensitive and unknown-client rows are blocked before summary or destination writes.</p>
         </div>
       </div>

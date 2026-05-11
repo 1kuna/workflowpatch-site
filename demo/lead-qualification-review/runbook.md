@@ -1,15 +1,15 @@
-# Lead Qualification Review Runbook
+# Lead Routing Review Proof Runbook
 
 This is a mock WorkflowPatch proof surface. It uses sample `.example` leads only.
 
 ## Purpose
 
-Show the first safe slice for a sales or marketing automation request:
+Show the first safe slice for a sales, marketing, RevOps, or HubSpot routing request:
 
 1. Normalize source rows.
 2. Score only the evidence that is present.
 3. Block duplicate, unpermitted, or malformed rows.
-4. Put review-ready rows in an approval queue before any CRM write or outreach.
+4. Put review-ready rows in an owner approval queue before any CRM write, report update, or outreach.
 
 ## Inputs
 
@@ -32,6 +32,7 @@ Show the first safe slice for a sales or marketing automation request:
 - Existing CRM contacts land in `blocked-leads.csv`.
 - Rows without clear permission or buyer-created context are blocked before outreach.
 - Review-ready rows include the evidence and owner needed for a human decision.
+- Routing and reporting outputs stay dry-run or approval-gated until separately scoped.
 
 ## Regenerate
 
