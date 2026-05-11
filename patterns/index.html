@@ -1261,6 +1261,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Care Intake Review</h2>
+            <p>For care-provider operations where lead, scheduling, consent, and outreach state must be reviewed without touching PHI or live messaging systems first.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted or synthetic intake, scheduling, opt-out, or operations signal plus target destination fields.</div>
+            <div class="step"><strong>Transform</strong>Apply consent, duplicate, sensitive-data, and channel rules while preserving source evidence.</div>
+            <div class="step"><strong>Destination</strong>Intake ledger, scheduling review queue, blocked-sensitive queue, error log, and written handoff.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Lead intake routing</li>
+                <li>Scheduling review queues</li>
+                <li>Consent-state cleanup</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No PHI or patient records</li>
+                <li>No live scheduling or CRM writes</li>
+                <li>No SMS sends or compliance promises</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Clean rows reach internal review</li>
+                <li>Opt-outs and missing consent block safely</li>
+                <li>Sensitive rows land in the blocked queue</li>
+              </ul>
+              <p><a href="/demo/care-intake-review/">View care intake demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Listing ROI Evidence Slice</h2>
             <p>For real-estate research teams that need a narrow proof of opportunity detection before funding a market-wide data system.</p>
           </div>
@@ -2139,6 +2178,7 @@
         <a class="button secondary" href="/demo/managed-it-ticket-review/">View Managed IT Demo</a>
         <a class="button secondary" href="/demo/research-digest/">View Research Digest Demo</a>
         <a class="button secondary" href="/demo/public-source-monitor/">View Public Source Demo</a>
+        <a class="button secondary" href="/demo/care-intake-review/">View Care Intake Demo</a>
         <a class="button secondary" href="/demo/html-review-queue/">View HTML Review Demo</a>
         <a class="button secondary" href="/demo/listing-roi-scan/">View Listing ROI Demo</a>
         <a class="button secondary" href="/demo/commerce-performance-brief/">View Commerce Demo</a>
