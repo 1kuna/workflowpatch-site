@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.workflowpatch.com/demo/product-content-qa-ledger/">
+    <title>WorkflowPatch Product Content QA Ledger Demo</title>
+    <meta name="description" content="Mock WorkflowPatch ecommerce product-content QA ledger with asset lineage, blocked publish queue, review queue, error log, source script, and runbook.">
+    <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="WorkflowPatch">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WorkflowPatch Product Content QA Ledger Demo">
+    <meta property="og:description" content="A mock product-content QA proof for ecommerce AI assets before live publishing, paid media APIs, or creative-stack ownership.">
+    <meta property="og:url" content="https://www.workflowpatch.com/demo/product-content-qa-ledger/">
+    <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="WorkflowPatch async fixed-scope workflow automation">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2328;
+        --muted: #5f6b72;
+        --line: #d9e0e4;
+        --paper: #fbfcfb;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-dark: #0b4d49;
+        --warning: #9a5b11;
+        --soft: #edf5f3;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.5; }
+      .wrap { width: min(1080px, calc(100% - 32px)); margin: 0 auto; }
+      header { border-bottom: 1px solid var(--line); background: rgba(251, 252, 251, 0.94); }
+      .topbar { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+      .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; }
+      .brand img { width: 32px; height: 32px; }
+      a { color: var(--accent-dark); font-weight: 700; }
+      main { padding: 48px 0; }
+      h1 { font-size: clamp(34px, 6vw, 64px); line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; }
+      .lede { color: var(--muted); font-size: 19px; max-width: 850px; margin: 0 0 28px; }
+      .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
+      .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
+      .button.secondary { background: transparent; color: var(--accent-dark); }
+      .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+      .item { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+      .item h2 { font-size: 16px; margin: 0 0 8px; }
+      .item p { color: var(--muted); font-size: 14px; margin: 0; }
+      .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); margin-top: 28px; }
+      table { width: 100%; border-collapse: collapse; min-width: 900px; font-size: 14px; }
+      th, td { border-bottom: 1px solid var(--line); padding: 12px; text-align: left; vertical-align: top; }
+      th { background: var(--soft); color: var(--accent-dark); }
+      tr:last-child td { border-bottom: 0; }
+      .status { color: var(--accent-dark); font-weight: 800; }
+      .warn { color: var(--warning); font-weight: 800; }
+      footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
+      @media (max-width: 820px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
+        <a href="/start/">Start async fit check</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <h1>Product content QA ledger demo output.</h1>
+      <p class="lede">A mock ecommerce AI-content proof that turns product catalog rows, content requests, and candidate media metadata into an asset QA ledger, review queue, blocked-output queue, publish hold queue, and hard error log. No client product files, paid image APIs, ComfyUI server, commerce account, scheduler, or live ad account is connected.</p>
+
+      <div class="links">
+        <a class="button" href="/demo/product-content-qa-ledger/product-content-qa-ledger.csv">QA Ledger CSV</a>
+        <a class="button secondary" href="/demo/product-content-qa-ledger/review-queue.csv">Review Queue CSV</a>
+        <a class="button secondary" href="/demo/product-content-qa-ledger/blocked-output-queue.csv">Blocked Output CSV</a>
+        <a class="button secondary" href="/demo/product-content-qa-ledger/publish-hold-queue.csv">Publish Hold CSV</a>
+        <a class="button secondary" href="/demo/product-content-qa-ledger/error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="/demo/product-content-qa-ledger/brief-draft.md">Brief Draft</a>
+        <a class="button secondary" href="/demo/product-content-qa-ledger/runbook.md">Runbook</a>
+        <a class="button secondary" href="/demo/product-content-qa-ledger/process_product_content_qa_demo.py">Source Script</a>
+      </div>
+
+      <div class="grid">
+        <div class="item">
+          <h2>Input</h2>
+          <p>Mock product catalog rows, approved facts, banned claims, requested asset changes, publish targets, and candidate-output metadata.</p>
+        </div>
+        <div class="item">
+          <h2>QA Checks</h2>
+          <p>Product identity, active status, background-only changes, approved claims, banned terms, image size, metadata, and live-publish holds.</p>
+        </div>
+        <div class="item">
+          <h2>Output</h2>
+          <p>Asset QA ledger, review queue, blocked-output queue, publish hold queue, error log, brief draft, and handoff boundary.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap" aria-label="Product content QA ledger">
+        <table>
+          <thead>
+            <tr>
+              <th>Request</th>
+              <th>Product</th>
+              <th>Channel</th>
+              <th>Score</th>
+              <th>Decision</th>
+              <th>Reason</th>
+              <th>Next Step</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>REQ-901</td>
+              <td>LAMP-001</td>
+              <td>Instagram</td>
+              <td>0.94</td>
+              <td class="status">accepted_for_review</td>
+              <td>Identity, approved facts, metadata, and draft state are intact.</td>
+              <td>Add to asset review packet.</td>
+            </tr>
+            <tr>
+              <td>REQ-902</td>
+              <td>LAMP-002</td>
+              <td>Shopify PDP</td>
+              <td>0.91</td>
+              <td class="status">accepted_for_review</td>
+              <td>Clean product cutout with approved product facts and preserved metadata.</td>
+              <td>Add to product-page review packet.</td>
+            </tr>
+            <tr>
+              <td>REQ-904</td>
+              <td>LAMP-004</td>
+              <td>Google Shopping</td>
+              <td>0.82</td>
+              <td class="warn">blocked</td>
+              <td>Candidate changes product details, drops AI metadata, and contains banned claims.</td>
+              <td>Regenerate or route to manual QA.</td>
+            </tr>
+            <tr>
+              <td>REQ-905</td>
+              <td>LAMP-001</td>
+              <td>Instagram</td>
+              <td>0.76</td>
+              <td class="warn">publish_hold</td>
+              <td>Live publish requested before QA handoff.</td>
+              <td>Keep in draft until channel owner approval.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">WorkflowPatch is async-only. This page is a mock proof pack, not a claim that these exact tools or results were delivered for a client.</div>
+    </footer>
+  </body>
+</html>

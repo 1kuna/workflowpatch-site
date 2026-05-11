@@ -1,0 +1,7 @@
+candidate_id,request_id,product_identity_match,background_only_change,dimension_px,metadata_preserved,clip_similarity,approved_claim_terms,caption_draft,render_status
+CAND-901,REQ-901,yes,yes,1600,yes,0.94,"matte black finish; linen shade; 62 inch height","Matte black arc lamp for a quiet reading corner.",ready
+CAND-902,REQ-902,yes,yes,1500,yes,0.91,"walnut base; oatmeal shade; USB-C port","Clean product cutout for the walnut table lamp.",ready
+CAND-903,REQ-903,yes,yes,1080,yes,0.90,"powder-coated frame; weather-resistant","Weather-resistant patio lighting, ready for evening.",ready
+CAND-904,REQ-904,yes,no,1500,no,0.82,"brushed brass stem; milk glass globe","Designer crystal globe lamp guaranteed to elevate any room.",ready
+CAND-905,REQ-905,no,no,1200,no,0.76,"matte black finish","Best lamp, now with a limited-time price badge.",ready
+CAND-906,REQ-906,unknown,unknown,1024,no,0.00,"","Prompt-only synthetic product room video.",failed

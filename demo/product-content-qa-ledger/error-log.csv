@@ -1,0 +1,2 @@
+request_id,status,reason,evidence
+REQ-906,error,product id missing from source of truth,LAMP-999

@@ -1,0 +1,2 @@
+request_id,product_id,publish_target,reason,reviewer_action
+REQ-905,LAMP-001,Buffer,live publish requested before QA handoff,"Keep the asset in draft until product identity, claims, metadata, and channel policy are approved."

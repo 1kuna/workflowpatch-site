@@ -1,0 +1,7 @@
+request_id,product_id,channel,asset_type,source_image_ref,requested_change,publish_target,requested_status
+REQ-901,LAMP-001,Instagram,scene_image,src/lamp-001-main.jpg,"Replace white studio background with warm reading nook; keep product geometry unchanged.",Buffer,draft
+REQ-902,LAMP-002,Shopify PDP,main_image,src/lamp-002-main.jpg,"Remove background and upscale to 1500 square; no props.",Shopify,approval_required
+REQ-903,LAMP-003,Meta ad,video_scene,src/lamp-003-main.jpg,"Animate rain on patio table.",Meta Ads,draft
+REQ-904,LAMP-004,Google Shopping,scene_image,src/lamp-004-main.jpg,"Add modern apartment background with product centered.",Merchant Center,draft
+REQ-905,LAMP-001,Instagram,scene_image,src/lamp-001-main.jpg,"Change shade color to charcoal and add price badge.",Buffer,live_publish_requested
+REQ-906,LAMP-999,TikTok,video_scene,src/missing.jpg,"Create a room video from prompt only.",Later,draft

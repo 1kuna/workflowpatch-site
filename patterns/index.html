@@ -1372,6 +1372,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Product Content QA Ledger</h2>
+            <p>For ecommerce teams testing AI product imagery, video scenes, captions, or schedulers where product identity and publish state need to be checked before anything goes live.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One product catalog row family, representative source image references, requested asset changes, candidate-output metadata, and publish target fields.</div>
+            <div class="step"><strong>Transform</strong>Validate product identity, active status, background-only changes, approved facts, banned claims, image size, AI metadata, and live-publish requests.</div>
+            <div class="step"><strong>Destination</strong>Product-content QA ledger, review queue, blocked-output queue, publish hold queue, error log, brief draft, and handoff boundary.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>AI product image review</li>
+                <li>Generated lifestyle-scene QA</li>
+                <li>Asset source-of-truth ledgers</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live commerce account access in the proof</li>
+                <li>No paid media API or model spend</li>
+                <li>No publish-ready state without QA evidence</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Product id maps to approved facts</li>
+                <li>Product changes and banned claims are blocked</li>
+                <li>Live-publish requests stay held</li>
+              </ul>
+              <p><a href="/demo/product-content-qa-ledger/">View product-content QA demo</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>Reverse Logistics Routing</h2>
             <p>For returns, overstock, resale, repair, and recovery workflows where brand guardrails must block unsafe routes before live operations move inventory.</p>
           </div>

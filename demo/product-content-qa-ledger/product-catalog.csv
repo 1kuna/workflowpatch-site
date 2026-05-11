@@ -1,0 +1,5 @@
+product_id,name,category,approved_facts,banned_terms,status
+LAMP-001,Arc Floor Lamp,Floor lamp,"matte black finish; linen shade; 62 inch height; warm white bulb included","best; guaranteed; lifetime; luxury designer",active
+LAMP-002,Walnut Table Lamp,Table lamp,"walnut base; oatmeal shade; USB-C port; 18 inch height","cheap; made in Italy; medical-grade",active
+LAMP-003,Outdoor Lantern,Outdoor light,"powder-coated frame; weather-resistant; clear glass","waterproof; unbreakable",paused
+LAMP-004,Glass Globe Floor Lamp,Floor lamp,"brushed brass stem; milk glass globe; dimmer switch","handmade; crystal; guaranteed",active
