@@ -162,7 +162,7 @@
       }
 
       h1 {
-        font-size: clamp(40px, 7vw, 76px);
+        font-size: 68px;
         line-height: 0.94;
         margin: 0 0 24px;
         max-width: 840px;
@@ -187,7 +187,7 @@
         margin-top: 18px;
         color: var(--muted);
         font-size: 14px;
-        max-width: 680px;
+        max-width: 620px;
       }
 
       .button {
@@ -339,6 +339,52 @@
         gap: 14px;
       }
 
+      .principles {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .principle-card {
+        border: 1px solid var(--line);
+        background: var(--panel);
+        border-radius: 8px;
+        padding: 16px;
+      }
+
+      .principle-card strong {
+        display: block;
+        color: var(--accent-dark);
+        margin-bottom: 8px;
+      }
+
+      .principle-card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .proof-library {
+        margin-top: 18px;
+      }
+
+      .proof-library summary {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        min-height: 42px;
+        padding: 0 14px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+        color: var(--accent-dark);
+        font-weight: 700;
+      }
+
+      .proof-library .grid {
+        margin-top: 16px;
+      }
+
       .step-card {
         border: 1px solid var(--line);
         background: var(--panel);
@@ -386,12 +432,17 @@
         .hero,
         .pricing,
         .grid,
+        .principles,
         .process {
           grid-template-columns: 1fr;
         }
 
         .hero {
           padding-top: 40px;
+        }
+
+        h1 {
+          font-size: 42px;
         }
 
         .row {
@@ -412,7 +463,7 @@
           <a href="/start/">Fit Check</a>
           <a href="/sprint/">Pricing</a>
           <a href="/demo/">Demos</a>
-          <a href="mailto:alex@workflowpatch.com">Email Alex</a>
+          <a href="mailto:alex@workflowpatch.com">Email</a>
         </nav>
       </div>
     </header>
@@ -421,7 +472,7 @@
       <section class="wrap hero">
         <div>
           <h1>One painful workflow patched in 5 business days.</h1>
-          <p class="lede">Async fixed-scope automation for teams with manual work stuck between inboxes, spreadsheets, CRM, tickets, exports, or reporting. Start with a small teardown note. No calls required.</p>
+          <p class="lede">Fixed-scope automation for messy handoffs between inboxes, sheets, CRMs, tickets, and reports. Async by default. Proof before access.</p>
           <div class="actions">
             <a class="button" href="/start/">Start Async Fit Check</a>
             <a class="button secondary" href="/sprint/">Sprint Brief</a>
@@ -429,7 +480,7 @@
             <a class="button secondary" href="/delivery/">Sample Handoff</a>
             <a class="button secondary" href="/patterns/">Reference Patterns</a>
           </div>
-          <p class="hero-note">The first reply is written scope, not a calendar link. Send one source, one broken step, one destination, and a redacted sample if you have it. No credentials are needed for the fit check. Paid fixed sprints are usually $2,500-$3,000 after written scope.</p>
+          <p class="hero-note">Start with one source, one broken step, and one destination. If it fits, written scope comes before payment or access.</p>
         </div>
 
         <div class="proof" aria-label="Demo workflow preview">
@@ -459,6 +510,26 @@
 
       <section class="band">
         <div class="wrap">
+          <h2>Simple by design.</h2>
+          <div class="principles">
+            <div class="principle-card">
+              <strong>Small scope</strong>
+              <p>One source. One transformation. One destination.</p>
+            </div>
+            <div class="principle-card">
+              <strong>Visible proof</strong>
+              <p>Dry-run outputs show accepted rows, blocked rows, and errors before live access.</p>
+            </div>
+            <div class="principle-card">
+              <strong>Fixed terms</strong>
+              <p>Scope, exclusions, and acceptance checks are written before payment.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap">
           <h2>Scope</h2>
           <div class="grid">
             <div class="item">
@@ -479,8 +550,42 @@
 
       <section class="band">
         <div class="wrap">
-          <h2>Pick the closest proof.</h2>
+          <h2>Proof when you want it.</h2>
           <div class="grid">
+            <div class="item">
+              <h3>Request Triage</h3>
+              <p>Turn inbox, form, ticket, or CSV rows into a review queue.</p>
+              <p class="note"><a href="/demo/">View request demo</a></p>
+            </div>
+            <div class="item">
+              <h3>HTML Review Queue</h3>
+              <p>Find page issues and produce upload-ready fix notes.</p>
+              <p class="note"><a href="/demo/html-review-queue/">View HTML review demo</a></p>
+            </div>
+            <div class="item">
+              <h3>HubSpot ClickUp Stabilization</h3>
+              <p>Preview deal-to-task handoffs before anything writes live.</p>
+              <p class="note"><a href="/demo/hubspot-clickup-stabilization/">View HubSpot ClickUp demo</a></p>
+            </div>
+            <div class="item">
+              <h3>Staffing Order Intake</h3>
+              <p>Extract forwarded orders into draft-only ops rows.</p>
+              <p class="note"><a href="/demo/staffing-order-intake/">View staffing order demo</a></p>
+            </div>
+            <div class="item">
+              <h3>Booking Payment State</h3>
+              <p>Separate confirmed bookings, tentative holds, conflicts, and errors.</p>
+              <p class="note"><a href="/demo/booking-payment-state/">View booking state demo</a></p>
+            </div>
+            <div class="item">
+              <h3>Work Order Intake</h3>
+              <p>Convert shared-inbox work orders into action plans and review holds.</p>
+              <p class="note"><a href="/demo/work-order-intake/">View work-order demo</a></p>
+            </div>
+          </div>
+          <details class="proof-library">
+            <summary>Browse the full proof library</summary>
+            <div class="grid">
             <div class="item">
               <h3>Request Triage</h3>
               <p>Inbox, form, ticket, or CSV rows become review items with blocked rows visible.</p>
@@ -792,29 +897,30 @@
               <p class="note"><a href="/demo/inventory-room-allocation/">View inventory demo</a></p>
             </div>
           </div>
-          <p class="note">The demos use mock data. The point is the delivery shape: source files, processing script, review queue, error log, and runbook.</p>
+          </details>
+          <p class="note">Demos use mock data and show the delivery shape: source, script, review queue, error log, and runbook.</p>
         </div>
       </section>
 
       <section class="band">
         <div class="wrap">
-          <h2>What happens after you reply.</h2>
+          <h2>How it ships.</h2>
           <div class="process">
             <div class="step-card">
               <strong>1. Fit Check</strong>
-              <p>Send the source, manual step, destination, and one redacted sample. If it is too broad, it gets narrowed.</p>
+              <p>Send the source, manual step, destination, and one redacted sample.</p>
             </div>
             <div class="step-card">
               <strong>2. Written Scope</strong>
-              <p>You get one source, one transformation, one destination, acceptance checks, and exclusions before payment.</p>
+              <p>You get the build boundary, acceptance checks, and exclusions before payment.</p>
             </div>
             <div class="step-card">
               <strong>3. Payment And Access</strong>
-              <p>Work starts only after payment, accepted scope, and usable sample data or tool access are ready.</p>
+              <p>Work starts after payment plus usable sample data or tool access.</p>
             </div>
             <div class="step-card">
               <strong>4. Delivery</strong>
-              <p>The handoff includes QA evidence, visible logging, approval path, and a short runbook. <a href="/delivery/">View a sample.</a></p>
+              <p>Delivery includes QA evidence, logging, approval path, and a short runbook.</p>
             </div>
           </div>
         </div>
@@ -842,7 +948,7 @@
               <p class="note"><a href="/sprint/">View sprint brief</a></p>
             </div>
           </div>
-          <p class="note">Work starts after payment, accepted scope, and access/data readiness. No live calls are required. A private emergency scope is available only when urgency and fit justify it.</p>
+          <p class="note">Work starts after payment, accepted scope, and access/data readiness. No live calls are required.</p>
         </div>
       </section>
 
@@ -883,7 +989,7 @@
               <p>2 invalid rows were routed to visible manual review instead of being silently processed.</p>
             </div>
           </div>
-          <p class="note">The demo acceptance checks are simple: valid rows create review items, invalid rows create error rows, external copy stays in review, and duplicate IDs are not processed twice. <a href="/demo/">Open the mock review queue, error log, and runbook.</a> For the full menu, use the proof directory above or the <a href="/patterns/">Reference Patterns</a>.</p>
+          <p class="note">Valid rows create review items. Invalid rows create errors. External copy stays in review. <a href="/demo/">Open the mock review queue.</a></p>
         </div>
       </section>
 
