@@ -1,12 +1,19 @@
 # HubSpot ClickUp Stabilization Demo Runbook
 
-This mock proof shows the first WorkflowPatch slice for a HubSpot to ClickUp stabilization request.
+This mock proof shows the first WorkflowPatch slice for a HubSpot to ClickUp stabilization request where sales-stage changes need to become production or project handoff work without duplicate tasks, silent write-back drift, or unmanaged live writes.
 
 ## Inputs
 
 - `hubspot-events.csv`: sanitized HubSpot deal-stage events and proposed write-back fields.
 - `clickup-map.csv`: approved company, pipeline, ClickUp list, and write-back boundaries.
 - `sync-policy.csv`: owner-review copy for create/update handoff candidates.
+
+Useful first buyer sample:
+
+- one redacted HubSpot deal that should create or update a ClickUp task,
+- the ClickUp list, status, and required task fields,
+- the HubSpot field that should store the ClickUp task ID or status,
+- one duplicate or ambiguous example that should be held for review.
 
 ## Outputs
 

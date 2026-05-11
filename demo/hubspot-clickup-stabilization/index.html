@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/hubspot-clickup-stabilization/">
-    <title>WorkflowPatch HubSpot ClickUp Stabilization Demo</title>
-    <meta name="description" content="Mock WorkflowPatch HubSpot to ClickUp stabilization demo with task ledger, write-back preview, conflict queue, error log, source script, and runbook.">
+    <title>WorkflowPatch HubSpot ClickUp Production Handoff Proof</title>
+    <meta name="description" content="Mock WorkflowPatch HubSpot to ClickUp production handoff proof with task ledger, write-back preview, conflict queue, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch HubSpot ClickUp Stabilization Demo">
+    <meta property="og:title" content="WorkflowPatch HubSpot ClickUp Production Handoff Proof">
     <meta property="og:description" content="A mock HubSpot to ClickUp guardrail workflow that keeps task upserts, write-back previews, duplicate checks, conflicts, and hard errors visible before live writes.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/hubspot-clickup-stabilization/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
@@ -49,6 +49,12 @@
       .item { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
       .item h2 { font-size: 16px; margin: 0 0 8px; }
       .item p { color: var(--muted); font-size: 14px; margin: 0; }
+      .split { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr); gap: 16px; margin-top: 18px; }
+      .callout { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; }
+      .callout h2 { font-size: 18px; margin: 0 0 10px; }
+      .callout p { color: var(--muted); margin: 0 0 12px; }
+      .callout ul { margin: 0; padding-left: 20px; color: var(--muted); }
+      .callout li { margin: 6px 0; }
       .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); margin-top: 28px; }
       table { width: 100%; border-collapse: collapse; min-width: 900px; font-size: 14px; }
       th, td { border-bottom: 1px solid var(--line); padding: 12px; text-align: left; vertical-align: top; }
@@ -57,7 +63,7 @@
       .status { color: var(--accent-dark); font-weight: 800; }
       .warn { color: var(--warning); font-weight: 800; }
       footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
-      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } }
+      @media (max-width: 920px) { .grid, .split { grid-template-columns: 1fr; } main { padding-top: 34px; } }
     </style>
   </head>
   <body>
@@ -69,8 +75,8 @@
     </header>
 
     <main class="wrap">
-      <h1>HubSpot ClickUp stabilization demo output.</h1>
-      <p class="lede">A small mock workflow that turns sanitized HubSpot deal-stage events into ClickUp task upsert candidates, HubSpot write-back previews, conflict rows, and hard errors. Duplicate deals, unknown companies, sensitive site details, destructive write-backs, low-confidence stage maps, and malformed events are blocked visibly before any live HubSpot, ClickUp, Make, or production write.</p>
+      <h1>HubSpot to ClickUp production handoff proof.</h1>
+      <p class="lede">A small mock workflow for teams that sell and deliver production projects in separate systems. It turns sanitized HubSpot deal-stage events into ClickUp task upsert candidates, HubSpot write-back previews, conflict rows, and hard errors. Duplicate deals, unknown companies, sensitive site details, destructive write-backs, low-confidence stage maps, and malformed events are blocked visibly before any live HubSpot, ClickUp, Make, or production write.</p>
 
       <div class="links">
         <a class="button" href="/demo/hubspot-clickup-stabilization/task-ledger.csv">Task Ledger CSV</a>
@@ -87,7 +93,7 @@
       <div class="grid">
         <div class="item">
           <h2>HubSpot Deal Event</h2>
-          <p>Rows start from one approved deal-stage trigger, not an entire CRM rebuild.</p>
+          <p>Rows start from one approved stage trigger, not an entire CRM rebuild.</p>
         </div>
         <div class="item">
           <h2>ClickUp Upsert Guard</h2>
@@ -101,6 +107,29 @@
           <h2>Conflict Queue</h2>
           <p>Unknown, sensitive, destructive, duplicate, and low-confidence rows stop visibly.</p>
         </div>
+      </div>
+
+      <div class="split">
+        <section class="callout">
+          <h2>What this proves</h2>
+          <p>This is the narrow first slice before a live integration: one HubSpot trigger, one ClickUp destination, one write-back field, and a reviewable log for everything that should not move automatically.</p>
+          <ul>
+            <li>Clean stage events become owner-reviewed ClickUp create/update rows.</li>
+            <li>Existing task IDs are reused instead of creating duplicate work.</li>
+            <li>Write-back values are previewed before touching HubSpot.</li>
+            <li>Risky records are held with a reason and next review queue.</li>
+          </ul>
+        </section>
+        <section class="callout">
+          <h2>Useful first sample</h2>
+          <p>A paid proof would start from a redacted export, not live credentials.</p>
+          <ul>
+            <li>One HubSpot deal that should create or update a ClickUp task.</li>
+            <li>The ClickUp list, status, and required task fields.</li>
+            <li>The HubSpot field that should store the ClickUp task ID or status.</li>
+            <li>One duplicate or ambiguous example that should be held for review.</li>
+          </ul>
+        </section>
       </div>
 
       <div class="table-wrap" aria-label="HubSpot ClickUp stabilization sample">
