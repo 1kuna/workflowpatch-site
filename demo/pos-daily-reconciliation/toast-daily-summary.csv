@@ -1,0 +1,6 @@
+business_date,revenue_center,time_bucket,reporting_category,expected_total
+2026-05-08,Cafe,Lunch,Cafe Beverage,32.00
+2026-05-08,Cafe,Lunch,Food,182.00
+2026-05-08,Cafe,Dinner,Beer,112.00
+2026-05-08,BYT,Dinner,Wine,108.00
+2026-05-08,BYT,Dinner,Liquor,65.00

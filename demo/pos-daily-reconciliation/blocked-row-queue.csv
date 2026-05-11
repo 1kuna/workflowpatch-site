@@ -1,0 +1,2 @@
+order_item_id,business_date,revenue_center,toast_guid,issue_type,review_reason,evidence,processed_at
+TOAST-1005,2026-05-08,BYT,GUID-UNKNOWN-MOD,unknown_category_guid,Toast GUID is missing from the active category map.,toast_guid=GUID-UNKNOWN-MOD source_file=toast-items-2026-05-08.json,2026-05-11T08:03:00-04:00

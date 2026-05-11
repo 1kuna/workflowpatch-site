@@ -1,0 +1,6 @@
+toast_guid,sales_category,reporting_category,active
+GUID-ESPRESSO,N/A Bev,Cafe Beverage,true
+GUID-TURKEY,Food,Food,true
+GUID-BEER-IPA,Beer,Beer,true
+GUID-WINE-GLASS,Wine,Wine,true
+GUID-COCKTAIL,Liquor,Liquor,true
