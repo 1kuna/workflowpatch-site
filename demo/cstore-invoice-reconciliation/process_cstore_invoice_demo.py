@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch c-store invoice reconciliation demo outputs.
+"""Generate the WorkflowPatch c-store invoice reconciliation proof outputs.
 
-This demo uses mock data only. It models a convenience-store invoice control
-path: normalize vendor names, match line items to a pricebook, block mismatches
-to an exception queue, summarize invoice/store reconciliation, and keep hard
-parsing or duplicate errors visible.
+This proof uses redacted or synthetic sample data only. It models a
+convenience-store invoice control path: normalize vendor names, match line
+items to a pricebook, block mismatches to an exception queue, summarize
+invoice/store reconciliation, and keep hard parsing or duplicate errors visible.
 """
 
 from __future__ import annotations

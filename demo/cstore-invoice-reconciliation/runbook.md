@@ -1,14 +1,14 @@
-# WorkflowPatch C-Store Invoice Reconciliation Demo Runbook
+# WorkflowPatch C-Store Invoice Reconciliation Proof Runbook
 
-Demo workflow:
+Proof workflow:
 
-`mock c-store invoice lines -> vendor map + pricebook -> accepted ledger + exception queue + reconciliation summary + error log`
+`redacted or synthetic invoice lines -> vendor map + pricebook -> accepted ledger + exception queue + reconciliation summary + error log`
 
 ## Inputs
 
-- Mock invoice-line CSV with invoice id, store id, vendor name, SKU, quantity, unit price, line total, and source file.
-- Mock vendor map with observed names and canonical vendor accounts.
-- Mock pricebook with approved unit prices, categories, and variance limits.
+- Redacted or synthetic invoice-line CSV with invoice id, store id, vendor name, SKU, quantity, unit price, line total, and source file.
+- Redacted or synthetic vendor map with observed names and canonical vendor accounts.
+- Redacted or synthetic pricebook with approved unit prices, categories, and variance limits.
 - No real invoices, no credentials, no payment approvals, no vendor messages, and no connected accounts.
 
 ## Processing Rules
