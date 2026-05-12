@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/start/">
-    <title>Start Async Fit Check | WorkflowPatch</title>
-    <meta name="description" content="Send a written WorkflowPatch fit check for one source-to-destination workflow repair.">
+    <title>Start A Fit Check | WorkflowPatch</title>
+    <meta name="description" content="Send a short async WorkflowPatch fit check for one messy workflow handoff.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Start Async Fit Check | WorkflowPatch">
-    <meta property="og:description" content="Send the details needed to scope one fixed workflow repair with dry-run proof before access.">
+    <meta property="og:title" content="Start A Fit Check | WorkflowPatch">
+    <meta property="og:description" content="Send a short async WorkflowPatch fit check for one messy workflow handoff.">
     <meta property="og:url" content="https://www.workflowpatch.com/start/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -115,6 +115,25 @@
         font-size: 19px;
         max-width: 760px;
         margin: 0 0 26px;
+      }
+
+      .quick-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 22px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .quick-list li {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: #fff;
+        color: var(--accent-dark);
+        font-size: 13px;
+        font-weight: 800;
+        padding: 7px 10px;
       }
 
       .actions {
@@ -328,6 +347,30 @@
           grid-template-columns: 1fr;
         }
       }
+
+      @media (max-width: 560px) {
+        main {
+          padding-top: 26px;
+        }
+
+        .hero {
+          padding-bottom: 30px;
+        }
+
+        h1 {
+          font-size: 36px;
+          margin-bottom: 18px;
+        }
+
+        .lede {
+          font-size: 18px;
+          margin-bottom: 22px;
+        }
+
+        .fit-panel {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -346,12 +389,18 @@
     <main>
       <section class="wrap hero">
         <div>
-          <h1>Send a written fit check.</h1>
-          <p class="lede">Share one broken source-to-destination handoff and one redacted sample. WorkflowPatch replies with the smallest scope, exclusions, and proof shape before any payment or system access.</p>
+          <h1>Send the stuck handoff.</h1>
+          <p class="lede">Send the source, the destination, and one redacted example. WorkflowPatch replies with the smallest useful scope, exclusions, and proof shape before payment or system access.</p>
           <div class="actions">
-            <a class="button" href="mailto:alex@workflowpatch.com?subject=WorkflowPatch%20Async%20Fit%20Check&body=Company%3A%0AWebsite%3A%0AWorkflow%20you%20want%20patched%3A%0ACurrent%20source%3A%0ACurrent%20manual%20step%3A%0ADesired%20destination%3A%0AHow%20often%20it%20runs%3A%0AExpected%20weekly%20volume%3A%0ACost-sensitive%20channels%20%28SMS%2FWhatsApp%2FAI%2Fdatabase%29%20if%20any%3A%0AWhat%20breaks%20if%20it%20stays%20manual%3A%0AWho%20approves%20external%20output%3A%0ATools%20or%20accounts%20involved%20(no%20credentials)%3A%0ASample%20or%20redacted%20data%20available%20within%2024%20hours%3A%0ADeadline%3A">Send Fit Check</a>
-            <a class="button secondary" href="/patterns/">Compare Patterns</a>
+            <a class="button" href="mailto:alex@workflowpatch.com?subject=WorkflowPatch%20Fit%20Check&body=Company%3A%0AWebsite%3A%0AStuck%20workflow%3A%0ACurrent%20source%3A%0ADesired%20destination%3A%0AWhat%20happens%20manually%20today%3A%0AExpected%20weekly%20volume%3A%0ACost-sensitive%20channels%20%28SMS%2FWhatsApp%2FAI%2Fdatabase%29%20if%20any%3A%0AOne%20redacted%20sample%20available%3A%0ADeadline%3A">Open Email Draft</a>
+            <a class="button secondary" href="/demo/">View Proofs</a>
           </div>
+          <ul class="quick-list" aria-label="Fit check details">
+            <li>One source</li>
+            <li>One destination</li>
+            <li>One redacted example</li>
+            <li>No credentials</li>
+          </ul>
         </div>
 
         <div class="fit-panel" aria-label="Workflow fit preview">
@@ -378,23 +427,22 @@
 
       <section class="band">
         <div class="wrap">
-          <h2>What To Send</h2>
+          <h2>What to send.</h2>
           <div class="checklist">
             <div class="item">
-              <h3>Required</h3>
+              <h3>Enough to start</h3>
               <ol>
                 <li>Company and website.</li>
-                <li>The workflow you want patched.</li>
-                <li>The current source and desired destination.</li>
-                <li>What happens manually today.</li>
-                <li>What breaks if it stays manual.</li>
-                <li>Expected weekly volume and any cost-sensitive channels.</li>
-                <li>Whether redacted sample data is available within 24 hours.</li>
+                <li>The handoff you want patched.</li>
+                <li>The current source.</li>
+                <li>The desired destination.</li>
+                <li>Expected weekly volume.</li>
+                <li>Any cost-sensitive channels.</li>
                 <li>No credentials or secrets in the first email.</li>
               </ol>
             </div>
             <div class="item">
-              <h3>Helpful</h3>
+              <h3>Even better</h3>
               <ol>
                 <li>Two example inputs that should succeed.</li>
                 <li>One example input that should be blocked or reviewed.</li>
@@ -409,7 +457,7 @@
 
       <section class="band">
         <div class="wrap">
-          <h2>Useful First Examples</h2>
+          <h2>Good first slices.</h2>
           <div class="example-grid">
             <div class="item">
               <h3>CRM Sync</h3>
@@ -439,17 +487,17 @@
               </ol>
             </div>
           </div>
-          <p class="note">A screenshot, CSV row, copied sample, or redacted payload is enough for the fit check. Do not send passwords, API keys, live customer secrets, or regulated data in the first email.</p>
+          <p class="note">A screenshot, CSV row, copied sample, or redacted payload is enough for the first pass. Do not send passwords, API keys, live customer secrets, or regulated data.</p>
         </div>
       </section>
 
       <section class="band">
         <div class="wrap">
-          <h2>What Happens Next</h2>
+          <h2>What happens next.</h2>
           <div class="grid">
             <div class="item">
               <h3>1. Fit Check</h3>
-              <p>WorkflowPatch reviews the workflow and replies with the smallest version that can be built and tested cleanly.</p>
+              <p>WorkflowPatch replies with the smallest useful version that can be built and tested cleanly.</p>
             </div>
             <div class="item">
               <h3>2. Written Scope</h3>
@@ -460,7 +508,7 @@
               <p>Work starts after payment and access/data readiness. Delivery includes QA evidence, logging, and a runbook.</p>
             </div>
           </div>
-          <p class="note">No implementation starts from the free fit check. Payment links are sent only after the written scope is accepted.</p>
+          <p class="note">No implementation starts from the free fit check. Payment links are sent only after written scope is accepted.</p>
         </div>
       </section>
 
@@ -468,8 +516,8 @@
         <div class="wrap">
           <h2>Email</h2>
           <div class="email-box">
-            <p>Email <a href="mailto:alex@workflowpatch.com">alex@workflowpatch.com</a> or use the button below to open a prefilled fit-check draft.</p>
-            <a class="button" href="mailto:alex@workflowpatch.com?subject=WorkflowPatch%20Async%20Fit%20Check&body=Company%3A%0AWebsite%3A%0AWorkflow%20you%20want%20patched%3A%0ACurrent%20source%3A%0ACurrent%20manual%20step%3A%0ADesired%20destination%3A%0AHow%20often%20it%20runs%3A%0AExpected%20weekly%20volume%3A%0ACost-sensitive%20channels%20%28SMS%2FWhatsApp%2FAI%2Fdatabase%29%20if%20any%3A%0AWhat%20breaks%20if%20it%20stays%20manual%3A%0AWho%20approves%20external%20output%3A%0ATools%20or%20accounts%20involved%20(no%20credentials)%3A%0ASample%20or%20redacted%20data%20available%20within%2024%20hours%3A%0ADeadline%3A">Open Email Draft</a>
+            <p>Email <a href="mailto:alex@workflowpatch.com">alex@workflowpatch.com</a> or use the button below to open a short fit-check draft.</p>
+            <a class="button" href="mailto:alex@workflowpatch.com?subject=WorkflowPatch%20Fit%20Check&body=Company%3A%0AWebsite%3A%0AStuck%20workflow%3A%0ACurrent%20source%3A%0ADesired%20destination%3A%0AWhat%20happens%20manually%20today%3A%0AExpected%20weekly%20volume%3A%0ACost-sensitive%20channels%20%28SMS%2FWhatsApp%2FAI%2Fdatabase%29%20if%20any%3A%0AOne%20redacted%20sample%20available%3A%0ADeadline%3A">Open Email Draft</a>
           </div>
         </div>
       </section>
