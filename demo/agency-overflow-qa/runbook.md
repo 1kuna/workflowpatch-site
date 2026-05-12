@@ -4,8 +4,9 @@ Purpose: show the first paid slice for a narrow automation QA or partner-overflo
 
 Inputs:
 
-- One redacted client export, inbox sample, webhook sample, lead form, order event, or CRM sample.
+- One redacted client intake note, workflow brief, client export, inbox sample, webhook sample, lead form, order event, or CRM sample.
 - One target destination, owner-review output, or handoff note.
+- One typed build-spec or acceptance-check expectation if the buyer already knows what "done" should mean.
 - The owner's approval boundary for anything client-visible or production-facing.
 - Fields that must be blocked, redacted, or left untouched.
 - `overflow-slice-map.csv`: how the same guardrail maps to CRM lead routing, attribution webhook QA, and agency handoff QA.

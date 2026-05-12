@@ -2,7 +2,7 @@
 
 ## Source
 
-Use redacted or synthetic rows from cross-functional AI operations requests: Sales, Customer Success, Marketing, Support, Finance, RevOps, Product, Internal Ops, Analytics, or similar teams. The useful first sample is 5-10 rows with source, team, requested action, system, owner, success metric, approval state, sensitive-data boundary, and whether a live action was requested. For internal-ops stacks, include agent/tool-action requests from systems such as Claude Code, MCP servers, Clay, Trigger.dev, Obsidian, workflow builders, reporting tools, or CRM previews.
+Use redacted or synthetic rows from executive workflow notes, client workflow briefs, or cross-functional AI operations requests: Sales, Customer Success, Marketing, Support, Finance, RevOps, Product, Internal Ops, Analytics, or similar teams. The useful first sample is 5-10 rows with source, team, requested action, system, owner, success metric, approval state, sensitive-data boundary, and whether a live action was requested. For internal-ops stacks, include agent/tool-action requests from systems such as Claude Code, MCP servers, Clay, Trigger.dev, Obsidian, workflow builders, reporting tools, or CRM previews.
 
 ## Transformation
 
