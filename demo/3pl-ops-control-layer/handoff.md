@@ -9,4 +9,4 @@ Generated: 2026-05-10T23:32:00Z
 - Blocked action rows: 2
 - Hard errors: 1
 
-This proof treats WMS, ERP, MES, edge scanner, and operator-sheet signals as production-sensitive inputs. It prepares dry-run proposed actions, standards review evidence, approval rows, blocked action rows, and hard errors before any live system, inventory, fulfillment, line-side, or floor-control action.
+This proof treats WMS, ERP, MES, edge scanner, and operator-sheet signals as production-sensitive inputs. It uses redacted or synthetic events to prepare dry-run proposed actions, standards review evidence, approval rows, blocked action rows, and hard errors before any live system, inventory, fulfillment, line-side, or floor-control action.
