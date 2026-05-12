@@ -1,8 +1,8 @@
 request_id,partner,client_signal,source_type,target_destination,requested_action,client_visible,sensitivity
-AO-1001,HubSpot delivery partner,Client import has duplicate companies,CRM export,HubSpot import review,Dedupe and flag owner,no,low
+AO-1001,Automation delivery partner,Client import has duplicate companies,CRM export,HubSpot import review,Dedupe and flag owner,no,low
 AO-1002,Automation studio,Inbox pilot needs categories,Email export,Review queue,Classify and draft internal next action,no,low
 AO-1003,RevOps partner,Webhook payload lacks company id,Webhook sample,HubSpot update,Normalize and update live,yes,medium
-AO-1004,White-label team,Client asks for broad retainer,SOW note,Client Slack,Take over support bench,yes,scope
+AO-1004,Partner ops team,Client asks for broad support coverage,SOW note,Client-visible Slack,Take over support bench,yes,scope
 AO-1005,HubSpot partner,Lead routing rules changed,Lead CSV,Owner review queue,Apply routing and confidence flag,no,low
 AO-1006,Automation studio,Unknown API key appears in sample,Request note,Runbook,Build production connector,no,secret
 AO-1007,Agency partner,Webhook fired without destination mapping,Webhook sample,,,no,low

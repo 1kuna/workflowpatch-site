@@ -1,7 +1,7 @@
 request_id,partner,source_type,target_destination,qa_decision,reason,next_artifact
-AO-1001,HubSpot delivery partner,CRM export,HubSpot import review,accepted,internal QA artifact can be drafted,qa ledger
+AO-1001,Automation delivery partner,CRM export,HubSpot import review,accepted,internal QA artifact can be drafted,qa ledger
 AO-1002,Automation studio,Email export,Review queue,accepted,internal QA artifact can be drafted,qa ledger
 AO-1003,RevOps partner,Webhook sample,HubSpot update,review,client-visible or live-system action needs partner approval,approval or block queue
-AO-1004,White-label team,SOW note,Client Slack,blocked,request is broad retainer or bench availability,approval or block queue
+AO-1004,Partner ops team,SOW note,Client-visible Slack,blocked,"request is broad retainer, support bench, or delivery ownership",approval or block queue
 AO-1005,HubSpot partner,Lead CSV,Owner review queue,accepted,internal QA artifact can be drafted,qa ledger
 AO-1006,Automation studio,Request note,Runbook,blocked,secret or credential appears in sample,approval or block queue

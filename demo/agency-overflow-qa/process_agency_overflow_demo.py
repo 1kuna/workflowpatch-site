@@ -35,7 +35,7 @@ def classify(row: dict[str, str]) -> tuple[str, str]:
     if sensitivity in {"secret", "credential"}:
         return "blocked", "secret or credential appears in sample"
     if sensitivity == "scope" or "take over" in action or "support bench" in action:
-        return "blocked", "request is broad retainer or bench availability"
+        return "blocked", "request is broad retainer, support bench, or delivery ownership"
     if client_visible or "update live" in action or "production" in action:
         return "review", "client-visible or live-system action needs partner approval"
     return "accepted", "internal QA artifact can be drafted"
