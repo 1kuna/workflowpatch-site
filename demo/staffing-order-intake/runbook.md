@@ -11,8 +11,8 @@ Useful first buyer sample:
 
 Inputs:
 
-- `order-emails.csv`: mock forwarded staffing order emails with extracted fields.
-- `client-map.csv`: mock Monday client lookup table with account and billing state.
+- `order-emails.csv`: redacted or synthetic forwarded staffing order emails with extracted fields.
+- `client-map.csv`: redacted or synthetic Monday client lookup table with account and billing state.
 - `extraction-policy.csv`: required-field and confidence rules.
 
 Outputs:
