@@ -83,7 +83,7 @@ def detect_issues(page: dict[str, str]) -> list[dict[str, str]]:
             {
                 "issue_type": "no_blocking_issue",
                 "severity": "low",
-                "evidence": "required checks passed on the mock excerpt",
+                "evidence": "required checks passed on the provided proof excerpt",
                 "proposed_fix": "Keep page in the ready queue.",
                 "decision": "ready",
             }
