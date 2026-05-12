@@ -1,4 +1,4 @@
-item_id,destination,artifact,approval_state
-DER-1001,CRM,review-ready structured row,ready_for_human_review
-DER-1002,review_sheet,review-ready structured row,ready_for_human_review
-DER-1003,CRM,review-ready structured row,ready_for_human_review
+item_id,destination,artifact,approval_state,evidence_packet,allowed_next_action
+DER-1001,CRM,review-ready structured row,ready_for_human_review,inbound-support-alias,owner can approve destination write after inspection
+DER-1002,review_sheet,review-ready structured row,ready_for_human_review,pdf-intake-folder,owner can approve destination write after inspection
+DER-1003,CRM,review-ready structured row,ready_for_human_review,hubspot-csv,owner can approve destination write after inspection

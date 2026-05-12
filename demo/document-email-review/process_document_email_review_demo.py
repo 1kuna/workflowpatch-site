@@ -18,7 +18,7 @@ def read_csv(name: str) -> list[dict[str, str]]:
 
 def write_csv(name: str, fieldnames: list[str], rows: list[dict[str, str]]) -> None:
     with (ROOT / name).open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -85,14 +85,18 @@ def main() -> None:
                     "destination": row["destination"],
                     "artifact": "review-ready structured row",
                     "approval_state": "ready_for_human_review",
+                    "evidence_packet": row["source_label"],
+                    "allowed_next_action": "owner can approve destination write after inspection",
                 }
             )
         elif decision == "review":
             review_rows.append(
                 {
                     "item_id": row["item_id"],
+                    "evidence_packet": row["source_label"],
                     "review_reason": reason,
                     "safe_next_step": "inspect source evidence and approve, revise, or block",
+                    "decision_options": "approve | revise | block",
                     "no_live_action": "true",
                 }
             )
@@ -112,10 +116,14 @@ def main() -> None:
     )
     write_csv(
         "destination-ready.csv",
-        ["item_id", "destination", "artifact", "approval_state"],
+        ["item_id", "destination", "artifact", "approval_state", "evidence_packet", "allowed_next_action"],
         destination_rows,
     )
-    write_csv("human-review-queue.csv", ["item_id", "review_reason", "safe_next_step", "no_live_action"], review_rows)
+    write_csv(
+        "human-review-queue.csv",
+        ["item_id", "evidence_packet", "review_reason", "safe_next_step", "decision_options", "no_live_action"],
+        review_rows,
+    )
     write_csv("blocked-item-queue.csv", ["item_id", "block_reason", "safe_boundary"], blocked_rows)
     write_csv("error-log.csv", ["item_id", "error"], error_rows)
     print(

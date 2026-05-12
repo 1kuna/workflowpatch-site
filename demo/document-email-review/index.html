@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/document-email-review/">
-    <title>WorkflowPatch Document Email Review Demo</title>
-    <meta name="description" content="WorkflowPatch document and email review proof with extraction ledger, review queue, blocked rows, error log, source script, and runbook.">
+    <title>WorkflowPatch Document Email Review Proof</title>
+    <meta name="description" content="WorkflowPatch document and email review proof with extraction ledger, owner review queue, correction decisions, blocked rows, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WorkflowPatch Document Email Review Demo">
-    <meta property="og:description" content="A mock document, email, and CRM export review workflow with extraction ledger, human review, blocked rows, error log, source script, and runbook.">
+    <meta property="og:title" content="WorkflowPatch Document Email Review Proof">
+    <meta property="og:description" content="A document, email, and CRM export review workflow with extraction ledger, owner review decisions, blocked rows, error log, source script, and runbook.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/document-email-review/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -218,7 +218,7 @@
 
     <main class="wrap">
       <h1>Document/email review proof.</h1>
-      <p class="lede">A redacted or synthetic proof for document, email, and CRM-export automation. Approved rows become review-ready structured artifacts, low-confidence rows wait for human review, and sensitive data, unapproved sources, duplicates, malformed inputs, and live actions are blocked. No client data, credentials, browser account, CRM write, ERP write, or external send is used.</p>
+      <p class="lede">A redacted or synthetic proof for document, email, and CRM-export automation. Approved rows become review-ready artifacts with source evidence, uncertain rows wait for an owner to approve, revise, or block, and sensitive data, unapproved sources, duplicates, malformed inputs, and live actions are stopped before any destination write. No client data, credentials, browser account, CRM write, ERP write, or external send is used.</p>
 
       <div class="links">
         <a class="button" href="/demo/document-email-review/extraction-ledger.csv">Extraction Ledger CSV</a>
@@ -238,8 +238,8 @@
           <p>First proof starts from redacted email, document, or CRM-export samples that are explicitly approved.</p>
         </div>
         <div class="item">
-          <h2>Review Gates</h2>
-          <p>Low-confidence extraction, missing fields, and live-write requests become human review rows.</p>
+          <h2>Owner Review</h2>
+          <p>Low-confidence extraction, missing fields, and live-write requests become approve, revise, or block rows.</p>
         </div>
         <div class="item">
           <h2>Hard Blocks</h2>
@@ -247,7 +247,7 @@
         </div>
       </div>
 
-      <div class="table-wrap" aria-label="Document email review ledger sample">
+      <div class="table-wrap" aria-label="Document email review proof table">
         <table>
           <thead>
             <tr>
@@ -257,6 +257,7 @@
               <th>Decision</th>
               <th>Why</th>
               <th>Requested Output</th>
+              <th>Owner Gate</th>
             </tr>
           </thead>
           <tbody>
@@ -267,6 +268,7 @@
               <td class="status">accepted</td>
               <td>Destination-ready review artifact.</td>
               <td>Extract account name, issue category, and urgency.</td>
+              <td>Inspect evidence, then approve destination write.</td>
             </tr>
             <tr>
               <td>DER-1006</td>
@@ -275,6 +277,7 @@
               <td class="warn">review</td>
               <td>Live write or external send requires approval.</td>
               <td>Extract issue category and update live CRM.</td>
+              <td>Approve, revise, or block. No live write occurs.</td>
             </tr>
             <tr>
               <td>DER-1004</td>
@@ -283,6 +286,7 @@
               <td class="warn">blocked</td>
               <td>Sensitive customer or client data present.</td>
               <td>Extract customer complaint and draft response.</td>
+              <td>Replace with redacted source or keep blocked.</td>
             </tr>
             <tr>
               <td>DER-1010</td>
@@ -291,6 +295,7 @@
               <td class="warn">error</td>
               <td>Missing required source label.</td>
               <td>Extract issue category.</td>
+              <td>Fix the source row before it can enter review.</td>
             </tr>
           </tbody>
         </table>
