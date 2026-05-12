@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch browser action ledger demo outputs."""
+"""Generate the WorkflowPatch browser action ledger proof outputs."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch Airtable performance triage demo outputs."""
+"""Generate the WorkflowPatch Airtable performance triage proof outputs."""
 
 from __future__ import annotations
 

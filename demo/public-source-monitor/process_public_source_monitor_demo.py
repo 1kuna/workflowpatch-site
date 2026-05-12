@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch public-source monitor demo outputs.
+"""Generate the WorkflowPatch public-source monitor proof outputs.
 
 The demo is local and synthetic. It models a safe first proof for regulated or
 legal-adjacent operations: public-source monitoring with provenance, review

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch event-production Project Bible demo outputs."""
+"""Generate the WorkflowPatch event-production Project Bible proof outputs."""
 
 from __future__ import annotations
 

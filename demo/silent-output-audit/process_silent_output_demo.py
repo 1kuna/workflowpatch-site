@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch silent-output audit demo outputs."""
+"""Generate the WorkflowPatch silent-output audit proof outputs."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch scenario modularization demo outputs."""
+"""Generate the WorkflowPatch scenario modularization proof outputs."""
 
 from __future__ import annotations
 

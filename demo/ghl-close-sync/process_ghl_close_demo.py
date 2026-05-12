@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch GHL/Close sync demo outputs."""
+"""Generate the WorkflowPatch GHL/Close sync proof outputs."""
 
 from __future__ import annotations
 

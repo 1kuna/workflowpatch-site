@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch webhook idempotency demo outputs."""
+"""Generate the WorkflowPatch webhook idempotency proof outputs."""
 
 from __future__ import annotations
 

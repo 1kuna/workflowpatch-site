@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch Postgres statement email demo outputs."""
+"""Generate the WorkflowPatch Postgres statement email proof outputs."""
 
 from __future__ import annotations
 

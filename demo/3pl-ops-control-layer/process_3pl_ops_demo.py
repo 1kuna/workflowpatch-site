@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch 3PL operations control-layer demo outputs."""
+"""Generate the WorkflowPatch 3PL operations control-layer proof outputs."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch HTML review queue demo outputs."""
+"""Generate the WorkflowPatch HTML review queue proof outputs."""
 
 from __future__ import annotations
 

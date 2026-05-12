@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch campaign feedback loop demo outputs."""
+"""Generate the WorkflowPatch campaign feedback loop proof outputs."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch inventory/room allocation demo outputs."""
+"""Generate the WorkflowPatch inventory/room allocation proof outputs."""
 
 from __future__ import annotations
 

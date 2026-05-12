@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch venue guest alignment demo outputs."""
+"""Generate the WorkflowPatch venue guest alignment proof outputs."""
 
 from __future__ import annotations
 

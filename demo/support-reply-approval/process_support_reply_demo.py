@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch support reply approval demo outputs."""
+"""Generate the WorkflowPatch support reply approval proof outputs."""
 
 from __future__ import annotations
 

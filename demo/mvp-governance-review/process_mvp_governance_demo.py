@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch MVP governance review demo outputs."""
+"""Generate the WorkflowPatch MVP governance review proof outputs."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch home-service selections demo outputs."""
+"""Generate the WorkflowPatch home-service selections proof outputs."""
 
 from __future__ import annotations
 

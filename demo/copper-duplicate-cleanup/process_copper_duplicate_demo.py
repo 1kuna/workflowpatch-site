@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch Copper duplicate-cleanup demo outputs."""
+"""Generate the WorkflowPatch Copper duplicate-cleanup proof outputs."""
 
 from __future__ import annotations
 

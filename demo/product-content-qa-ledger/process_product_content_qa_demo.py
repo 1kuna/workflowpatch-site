@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch product content QA ledger demo outputs."""
+"""Generate the WorkflowPatch product content QA ledger proof outputs."""
 
 from __future__ import annotations
 

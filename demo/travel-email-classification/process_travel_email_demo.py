@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch travel email classification demo outputs."""
+"""Generate the WorkflowPatch travel email classification proof outputs."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch POS daily reconciliation demo outputs.
+"""Generate the WorkflowPatch POS daily reconciliation proof outputs.
 
 This demo uses mock data only. It models the first useful slice for a
 restaurant POS reporting repair: group Toast item rows by business date,

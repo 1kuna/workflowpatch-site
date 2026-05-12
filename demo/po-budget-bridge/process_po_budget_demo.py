@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch PO/budget bridge demo outputs."""
+"""Generate the WorkflowPatch PO/budget bridge proof outputs."""
 
 from __future__ import annotations
 

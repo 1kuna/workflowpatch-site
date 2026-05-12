@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch invoice trigger fallback demo outputs."""
+"""Generate the WorkflowPatch invoice trigger fallback proof outputs."""
 
 from __future__ import annotations
 

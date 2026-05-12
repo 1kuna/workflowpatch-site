@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch staffing order-intake demo outputs."""
+"""Generate the WorkflowPatch staffing order-intake proof outputs."""
 
 from __future__ import annotations
 

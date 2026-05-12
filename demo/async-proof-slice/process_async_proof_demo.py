@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch async proof-slice demo outputs."""
+"""Generate the WorkflowPatch async proof-slice proof outputs."""
 
 from __future__ import annotations
 

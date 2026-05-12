@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch reverse logistics routing demo outputs."""
+"""Generate the WorkflowPatch reverse logistics routing proof outputs."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch program ops KPI demo outputs."""
+"""Generate the WorkflowPatch program ops KPI proof outputs."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch RevOps integration QA demo outputs."""
+"""Generate the WorkflowPatch RevOps integration QA proof outputs."""
 
 from __future__ import annotations
 

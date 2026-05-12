@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch document export manifest demo outputs."""
+"""Generate the WorkflowPatch document export manifest proof outputs."""
 
 from __future__ import annotations
 

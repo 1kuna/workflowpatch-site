@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch invoice reminder safety demo outputs."""
+"""Generate the WorkflowPatch invoice reminder safety proof outputs."""
 
 from __future__ import annotations
 

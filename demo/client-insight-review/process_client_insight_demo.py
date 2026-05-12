@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch client insight review demo outputs."""
+"""Generate the WorkflowPatch client insight review proof outputs."""
 
 from __future__ import annotations
 

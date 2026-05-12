@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch HubSpot JSON stabilization demo outputs."""
+"""Generate the WorkflowPatch HubSpot JSON stabilization proof outputs."""
 
 from __future__ import annotations
 

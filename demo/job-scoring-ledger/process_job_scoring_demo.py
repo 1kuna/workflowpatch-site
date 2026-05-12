@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch job scoring ledger demo outputs."""
+"""Generate the WorkflowPatch job scoring ledger proof outputs."""
 
 from __future__ import annotations
 

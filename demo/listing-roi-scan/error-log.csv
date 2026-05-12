@@ -1,2 +1,2 @@
 listing_id,source,error,evidence
-L-1007,Mock Portal C,"missing listing id, asking price, or valid listed date",asking_price_aed=missing listed_at=2026-05-09
+L-1007,Sample Portal C,"missing listing id, asking price, or valid listed date",asking_price_aed=missing listed_at=2026-05-09

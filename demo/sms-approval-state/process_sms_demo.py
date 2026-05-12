@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch SMS approval state demo outputs."""
+"""Generate the WorkflowPatch SMS approval state proof outputs."""
 
 from __future__ import annotations
 

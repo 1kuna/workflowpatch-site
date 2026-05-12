@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch public demo outputs from mock input.
+"""Generate the WorkflowPatch public proof outputs from mock input.
 
 This demo is intentionally small and deterministic. It shows the delivery
 shape WorkflowPatch cares about: validate first, block unsafe rows visibly,

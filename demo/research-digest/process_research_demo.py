@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch research digest demo outputs."""
+"""Generate the WorkflowPatch research digest proof outputs."""
 
 from __future__ import annotations
 

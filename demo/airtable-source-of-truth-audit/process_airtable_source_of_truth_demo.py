@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch Airtable source-of-truth audit demo outputs."""
+"""Generate the WorkflowPatch Airtable source-of-truth audit proof outputs."""
 
 from __future__ import annotations
 

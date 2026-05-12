@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch invoice exception demo outputs.
+"""Generate the WorkflowPatch invoice exception proof outputs.
 
 This demo uses mock data only. It models a small finance-ops safety pattern:
 accept rows only when the invoice id is stable, the SKU is known, the unit

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch contract packet state demo outputs."""
+"""Generate the WorkflowPatch contract packet state proof outputs."""
 
 from __future__ import annotations
 

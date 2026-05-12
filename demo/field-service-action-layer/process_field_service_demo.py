@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch field-service action-layer demo outputs."""
+"""Generate the WorkflowPatch field-service action-layer proof outputs."""
 
 from __future__ import annotations
 
