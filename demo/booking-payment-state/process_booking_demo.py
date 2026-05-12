@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch booking/payment state demo outputs."""
+"""Generate the WorkflowPatch booking/payment state proof outputs."""
 
 from __future__ import annotations
 

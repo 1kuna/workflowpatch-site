@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch shipping notification demo outputs."""
+"""Generate the WorkflowPatch shipping notification proof outputs."""
 
 from __future__ import annotations
 

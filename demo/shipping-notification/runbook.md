@@ -1,6 +1,6 @@
 # Shipping Notification Gate Proof Runbook
 
-This demo shows the delivery shape for a fulfillment or customer-update workflow.
+This proof shows the delivery shape for a fulfillment or customer-update workflow.
 
 ## First Buyer Slice
 
@@ -12,7 +12,7 @@ Useful sample: one ready order, one delayed or missing tracking case, required c
 
 ## Scope
 
-- Source: mock order export plus mock carrier-status export.
+- Source: redacted or synthetic order export plus carrier-status export.
 - Transformation: decide whether each order can safely receive a shipping-update draft.
 - Destination: notification queue, operations alert queue, and error log.
 

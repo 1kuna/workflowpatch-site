@@ -12,9 +12,9 @@ Useful sample: one paid form row, one unpaid row, one capacity or coach conflict
 
 Inputs:
 
-- `form-submissions.csv`: mock Wix-style form rows with two preferred class times.
-- `class-inventory.csv`: mock class capacity, confirmed count, coach availability, and enrollment link.
-- `payment-notifications.csv`: mock Stripe/Gmail payment notifications.
+- `form-submissions.csv`: redacted or synthetic Wix-style form rows with two preferred class times.
+- `class-inventory.csv`: redacted or synthetic class capacity, confirmed count, coach availability, and enrollment link.
+- `payment-notifications.csv`: redacted or synthetic Stripe/Gmail payment notifications.
 
 Outputs:
 
