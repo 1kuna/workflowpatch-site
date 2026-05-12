@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/browser-action-ledger/">
     <title>WorkflowPatch Browser Action Reliability Proof</title>
-    <meta name="description" content="WorkflowPatch browser action reliability proof with approved source rows, dry-run action ledger, blocked action queue, failure taxonomy, alert rules, error log, source script, and runbook.">
+    <meta name="description" content="WorkflowPatch browser and device-action reliability proof with approved source rows, dry-run action ledger, blocked action queue, failure taxonomy, alert rules, error log, source script, and runbook.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WorkflowPatch Browser Action Reliability Proof">
-    <meta property="og:description" content="A dry-run proof for browser/API workflows: approved rows, action plans, blocked scope rows, selector/API failure taxonomy, alert rules, and hard errors before live action.">
+    <meta property="og:description" content="A dry-run proof for browser, API, or device-action workflows: approved rows, action plans, blocked scope rows, selector/API failure taxonomy, alert rules, and hard errors before live action.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/browser-action-ledger/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -39,25 +39,32 @@
       .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; }
       .brand img { width: 32px; height: 32px; }
       a { color: var(--accent-dark); font-weight: 700; }
-      main { padding: 48px 0; }
-      h1 { font-size: 58px; line-height: 0.98; margin: 0 0 18px; letter-spacing: 0; max-width: 920px; }
-      .lede { color: var(--muted); font-size: 19px; max-width: 890px; margin: 0 0 28px; }
-      .links { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
+      main { padding: 42px 0 48px; }
+      .eyebrow { color: var(--accent-dark); font-size: 13px; font-weight: 800; margin: 0 0 10px; text-transform: uppercase; letter-spacing: 0; }
+      h1 { font-size: 48px; line-height: 1; margin: 0 0 18px; letter-spacing: 0; max-width: 860px; }
+      .lede { color: var(--muted); font-size: 18px; max-width: 900px; margin: 0 0 26px; }
+      .links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
       .button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 14px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; }
       .button.secondary { background: transparent; color: var(--accent-dark); }
+      .metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 18px; }
+      .metric { border: 1px solid var(--line); border-radius: 8px; background: var(--panel); padding: 14px; min-height: 96px; }
+      .metric strong { display: block; font-size: 28px; line-height: 1; margin-bottom: 8px; }
+      .metric span { color: var(--muted); display: block; font-size: 13px; }
       .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
       .item { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
       .item h2 { font-size: 16px; margin: 0 0 8px; }
       .item p { color: var(--muted); font-size: 14px; margin: 0; }
+      .notice { border: 1px solid #e3c98c; border-radius: 8px; background: #fbf4e7; color: #68400a; padding: 14px 16px; margin-top: 26px; font-size: 14px; }
       .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); margin-top: 28px; }
-      table { width: 100%; border-collapse: collapse; min-width: 900px; font-size: 14px; }
+      table { width: 100%; border-collapse: collapse; min-width: 820px; font-size: 14px; }
       th, td { border-bottom: 1px solid var(--line); padding: 12px; text-align: left; vertical-align: top; }
       th { background: var(--soft); color: var(--accent-dark); }
       tr:last-child td { border-bottom: 0; }
       .status { color: var(--accent-dark); font-weight: 800; }
       .warn { color: var(--warning); font-weight: 800; }
       footer { border-top: 1px solid var(--line); padding: 26px 0 38px; color: var(--muted); font-size: 14px; }
-      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } h1 { font-size: 38px; } }
+      @media (max-width: 920px) { .metrics, .grid { grid-template-columns: 1fr; } main { padding-top: 34px; } h1 { font-size: 38px; } .metric { min-height: auto; } }
+      @media (max-width: 520px) { .topbar { align-items: flex-start; flex-direction: column; gap: 8px; padding: 14px 0; } h1 { font-size: 34px; } .links { display: grid; grid-template-columns: 1fr; gap: 8px; } .button { width: 100%; min-height: 42px; padding: 8px 12px; text-align: center; } }
     </style>
   </head>
   <body>
@@ -69,8 +76,9 @@
     </header>
 
     <main class="wrap">
+      <p class="eyebrow">Synthetic proof · browser, API, and device-action control</p>
       <h1>Browser action reliability proof.</h1>
-      <p class="lede">A dry-run proof for teams whose browser or API automations need to be observable before they touch a live account. One approved-source row set becomes an action ledger, blocked-action queue, selector/API failure taxonomy, alert rules, and a handoff runbook before any production browser action, API write, account operation, or form submission.</p>
+      <p class="lede">A first paid slice for teams automating browser, API, device, or operations-console work: redacted action requests become a dry-run ledger with visible approval, blocked, failure, and error states before any credential, kiosk, endpoint, customer account, API write, or external form submission is touched.</p>
 
       <div class="links">
         <a class="button" href="/demo/browser-action-ledger/dry-run-action-ledger.csv">Dry-Run Action Ledger CSV</a>
@@ -84,10 +92,17 @@
         <a class="button secondary" href="/demo/browser-action-ledger/process_browser_action_demo.py">Source Script</a>
       </div>
 
+      <div class="metrics" aria-label="Proof summary">
+        <div class="metric"><strong>11</strong><span>redacted or synthetic source actions</span></div>
+        <div class="metric"><strong>2</strong><span>dry-run action plans</span></div>
+        <div class="metric"><strong>5</strong><span>blocked scope rows</span></div>
+        <div class="metric"><strong>3</strong><span>failure or hard-error rows</span></div>
+      </div>
+
       <div class="grid">
         <div class="item">
           <h2>Approved Rows</h2>
-          <p>Only provided exports, allowed API rows, or redacted target-flow notes can become action plans.</p>
+          <p>Only provided exports, approved API rows, device-alert samples, or redacted target-flow notes can become action plans.</p>
         </div>
         <div class="item">
           <h2>Action Ledger</h2>
@@ -99,9 +114,11 @@
         </div>
         <div class="item">
           <h2>Scope Blocks</h2>
-          <p>Credentials, proxies, anti-bot work, live sources, duplicates, and submissions stop before action.</p>
+          <p>Credentials, proxies, anti-bot work, live sources, duplicates, device changes, and submissions stop before action.</p>
         </div>
       </div>
+
+      <div class="notice">Production boundary: no live browser action, API write, MDM change, kiosk action, account operation, external form submission, credential handling, customer data, anti-bot bypass, proxy work, security advice, legal advice, or production access.</div>
 
       <div class="table-wrap" aria-label="Browser action reliability proof table">
         <table>
