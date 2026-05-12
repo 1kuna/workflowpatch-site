@@ -1,6 +1,6 @@
 # Public Source Monitor Handoff
 
-This demo uses synthetic public-source events only. It does not use PHI, patient records, credentialing packets, payer records, secrets, or legal/regulatory judgment.
+This proof uses approved public, redacted, or synthetic public-source events only. It does not use PHI, patient records, credentialing packets, payer records, secrets, or legal/regulatory judgment.
 
 ## Run Summary
 

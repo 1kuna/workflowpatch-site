@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Generate the WorkflowPatch public-source monitor proof outputs.
 
-The demo is local and synthetic. It models a safe first proof for regulated or
-legal-adjacent operations: public-source monitoring with provenance, review
-queues, canaries, and explicit sensitive-data blocks.
+The proof uses approved public, redacted, or synthetic rows. It models a safe
+first slice for regulated or legal-adjacent operations: public-source monitoring
+with provenance, review queues, canaries, and explicit sensitive-data blocks.
 """
 
 from __future__ import annotations
@@ -153,7 +153,7 @@ def write_handoff(
     failing_canaries = sum(row["status"] == "fail" for row in canary_rows)
     body = f"""# Public Source Monitor Handoff
 
-This demo uses synthetic public-source events only. It does not use PHI, patient records, credentialing packets, payer records, secrets, or legal/regulatory judgment.
+This proof uses approved public, redacted, or synthetic public-source events only. It does not use PHI, patient records, credentialing packets, payer records, secrets, or legal/regulatory judgment.
 
 ## Run Summary
 

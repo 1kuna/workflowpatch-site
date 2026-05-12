@@ -1,6 +1,6 @@
 # Public Source Monitor Runbook
 
-This is a mock WorkflowPatch proof surface. It uses no client data, no credentials, no live source fetches, no PHI, no patient records, and no legal or regulatory judgment.
+This WorkflowPatch proof surface uses approved public, redacted, or synthetic source rows only. It uses no client data, no credentials, no live source fetches, no PHI, no patient records, and no legal or regulatory judgment.
 
 ## First Slice
 
