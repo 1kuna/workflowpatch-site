@@ -10,6 +10,20 @@ One self-hosted n8n incident family:
 2. Build a triage ledger that separates restart storms, database bloat, missing queue mode, unproven backups, and credential boundaries.
 3. Produce a migration-readiness gate list before any MySQL to Postgres cutover is discussed.
 
+## Safe Evidence Pack
+
+- Secrets-removed compose and env shape.
+- Crash-window logs and restart timestamps.
+- Execution table counts, retention settings, and slow-query clues.
+- Backup notes, restore proof, and main or queue mode state.
+
+## Returned Artifacts
+
+- Crash-signal triage ledger.
+- Migration-readiness checklist.
+- Backup and restore verification queue.
+- Blocked-action/error log for unsafe credential movement, unproven restore paths, and missing rollback approval.
+
 ## Guardrails
 
 - No production migration from a public thread.
