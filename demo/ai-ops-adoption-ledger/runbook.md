@@ -14,4 +14,4 @@ Deliver a written proof pack: source events, adoption policy, AI ops ledger, own
 
 ## Excluded Live Actions
 
-No live HubSpot, Salesforce, Zendesk, Intercom, Pylon, Segment, BigQuery, Snowflake, dbt, Retool, Notion, n8n, Zapier, Make, Gumloop, support-system, CRM, analytics, customer, renter, property-manager, billing, employee, or production writes. No credentials, no customer or renter data, no property-manager data, no financial records, no support tickets with personal data, no company-wide rollout, no employee training commitment, no legal/privacy/compliance advice, and no custom legal or HR commitment from the first proof.
+No live HubSpot, Salesforce, Zendesk, Intercom, Pylon, Segment, BigQuery, Snowflake, dbt, Retool, Notion, n8n, Zapier, Make, Gumloop, support-system, CRM, analytics, billing, employee, customer-data, or production writes. No credentials, no customer data, no financial records, no support tickets with personal data, no company-wide rollout, no employee training commitment, no legal/privacy/compliance advice, and no custom legal or HR commitment from the first proof.
