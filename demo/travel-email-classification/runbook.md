@@ -1,6 +1,6 @@
-# Travel Email Classification Demo Runbook
+# Travel Email Classification Proof Runbook
 
-This mock proof shows the first safe branch for a B2B travel agency email automation system.
+This redacted or synthetic proof shows the first safe branch for a B2B travel agency email automation system.
 
 ## Inputs
 
