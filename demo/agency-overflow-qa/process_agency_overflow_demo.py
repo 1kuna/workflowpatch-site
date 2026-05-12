@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch agency overflow QA demo outputs."""
+"""Generate the WorkflowPatch agency overflow QA proof outputs."""
 
 from __future__ import annotations
 
@@ -17,7 +17,7 @@ def read_csv(name: str) -> list[dict[str, str]]:
 
 def write_csv(name: str, fieldnames: list[str], rows: list[dict[str, str]]) -> None:
     with (ROOT / name).open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 

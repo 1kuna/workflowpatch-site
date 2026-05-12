@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch lead qualification review demo outputs."""
+"""Generate the WorkflowPatch lead qualification review proof outputs."""
 
 from __future__ import annotations
 

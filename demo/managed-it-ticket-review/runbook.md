@@ -4,8 +4,8 @@ Purpose: prove the first paid slice for a managed-IT support, onboarding, assess
 
 Inputs:
 
-- `ticket-events.csv`: mock sanitized ticket, monitoring, chat, onboarding, assessment, or service activity rows.
-- `client-map.csv`: mock client/account-manager lookup table.
+- `ticket-events.csv`: redacted or synthetic sanitized ticket, monitoring, chat, onboarding, assessment, or service activity rows.
+- `client-map.csv`: redacted or synthetic client/account-manager lookup table.
 - `review-policy.csv`: category-specific review and next-action rules.
 
 Outputs:

@@ -1,6 +1,6 @@
 # Lead Routing Review Proof Runbook
 
-This is a mock WorkflowPatch proof surface. It uses sample `.example` leads only.
+This proof surface uses redacted or synthetic `.example` leads only.
 
 ## Purpose
 

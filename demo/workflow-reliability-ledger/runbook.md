@@ -1,6 +1,6 @@
 # Workflow Reliability Ledger Runbook
 
-This demo shows the first proof shape for production-minded n8n or workflow-automation partners.
+This proof shows the first safe production-readiness shape for production-minded n8n or workflow-automation partners.
 
 ## Inputs
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the WorkflowPatch workflow reliability ledger demo outputs."""
+"""Generate the WorkflowPatch workflow reliability ledger proof outputs."""
 
 from __future__ import annotations
 
