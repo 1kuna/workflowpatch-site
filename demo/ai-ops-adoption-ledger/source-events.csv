@@ -6,6 +6,6 @@ evt-9004,support-export,Support,reply-draft-review,Zendesk,draft support replies
 evt-9005,finance-ops-note,Finance,billing-exception-handoff,Stripe,route billing exceptions to owner review,yes,yes,yes,yes,no
 evt-9006,revops-webhook,RevOps,crm-field-update,Salesforce,write enriched firmographic fields to CRM,yes,yes,no,no,yes
 evt-9007,product-usage-feed,Product,adoption-signal-routing,BigQuery,route low-adoption accounts to CS review,yes,yes,yes,no,no
-evt-9008,ops-slack-thread,Operations,tool-adoption-rollout,Notion,send company-wide AI workflow instructions,yes,no,no,no,yes
+evt-9008,internal-ops-brief,Internal Ops,agent-action-preview,Claude Code + MCP + Clay,run Claude Code and MCP action from Clay request without owner review,yes,no,no,no,yes
 evt-9009,snowflake-export,Analytics,metric-digest,dbt,produce weekly AI ops adoption scorecard,yes,yes,yes,no,no
 evt-9010,malformed-request,Unknown,missing-context,Retool,build automation from screenshot,missing,no,no,no,no

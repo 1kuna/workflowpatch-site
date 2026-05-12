@@ -6,6 +6,6 @@ AIOL-1004,evt-9004,Support,review,owner-review-queue,reply-draft request is appr
 AIOL-1005,evt-9005,Finance,blocked,blocked-action-queue,billing exception row contains sensitive data boundary risk,redact financial details and retry with synthetic event
 AIOL-1006,evt-9006,RevOps,blocked,blocked-action-queue,live Salesforce write requested without approval,convert to draft-only CRM preview and owner approval
 AIOL-1007,evt-9007,Product,accepted,owner-review-queue,adoption signal has owner metric approval and no live action,review product-to-CS routing criteria
-AIOL-1008,evt-9008,Operations,blocked,blocked-action-queue,company-wide instructions requested without success metric or approval,turn into internal rollout checklist first
+AIOL-1008,evt-9008,Internal Ops,blocked,blocked-action-queue,Claude Code and MCP action requested without owner policy or approval,convert to agent-action preview and owner review first
 AIOL-1009,evt-9009,Analytics,accepted,scorecard-preview,metric digest has owner metric approval and no live action,prepare weekly scorecard preview
 AIOL-1010,evt-9010,Unknown,error,error-log,source team is unknown and request is screenshot-only,request structured source row before scoping

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://www.workflowpatch.com/demo/ai-ops-adoption-ledger/">
     <title>WorkflowPatch AI Ops Adoption Ledger Proof</title>
-    <meta name="description" content="WorkflowPatch AI ops adoption ledger proof with synthetic cross-team requests routed to owner review, scorecard preview, blocked actions, and error logs before live system access.">
+    <meta name="description" content="WorkflowPatch AI ops adoption ledger proof with synthetic internal-ops, Claude Code, MCP, Clay, reporting, and cross-team requests routed to owner review, scorecard preview, blocked actions, and error logs before live system access.">
     <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
     <meta property="og:site_name" content="WorkflowPatch">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WorkflowPatch AI Ops Adoption Ledger Proof">
-    <meta property="og:description" content="A first paid slice for teams turning AI operations requests into reviewable ledgers, blocked-action queues, and adoption scorecard previews.">
+    <meta property="og:description" content="A first paid slice for teams turning AI, agent, reporting, and internal-ops requests into reviewable ledgers, blocked-action queues, and adoption scorecard previews.">
     <meta property="og:url" content="https://www.workflowpatch.com/demo/ai-ops-adoption-ledger/">
     <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
     <meta property="og:image:width" content="1200">
@@ -177,7 +177,7 @@
 
     <main class="wrap">
       <h1>AI ops adoption ledger proof.</h1>
-      <p class="lede">A first paid slice for teams turning AI operations requests across Sales, CS, Marketing, Support, RevOps, Product, Analytics, and Operations into one reviewable control layer. Redacted or synthetic requests become an AI ops ledger, owner-review queue, scorecard preview, blocked-action queue, and error log before any live CRM, support, data warehouse, workflow builder, customer-data, or production-system action.</p>
+      <p class="lede">A first paid slice for teams turning AI operations, internal reporting, agent-action, and tool-stack requests into one reviewable control layer. Redacted or synthetic requests become an AI ops ledger, owner-review queue, scorecard preview, blocked-action queue, and error log before any live CRM, Claude Code, MCP, Clay, Trigger.dev, Obsidian, support, data warehouse, workflow builder, customer-data, or production-system action.</p>
 
       <div class="links">
         <a class="button" href="/demo/ai-ops-adoption-ledger/ai-ops-ledger.csv">AI Ops Ledger CSV</a>
@@ -193,15 +193,15 @@
       <div class="grid">
         <div class="item">
           <h2>Input</h2>
-          <p>Ten synthetic cross-team AI operations requests spanning CRM, support, analytics, workflow tools, and adoption reporting. No credentials or production data.</p>
+          <p>Ten synthetic cross-team AI operations requests spanning CRM, support, analytics, Claude Code, MCP, Clay, Trigger.dev, Obsidian, workflow tools, and adoption reporting. No credentials or production data.</p>
         </div>
         <div class="item">
           <h2>Output</h2>
-          <p>Ledger rows, owner-review rows, scorecard preview, blocked-action rows, and a hard error so weak requests do not become invisible automation debt.</p>
+          <p>Ledger rows, owner-review rows, agent-action previews, scorecard preview, blocked-action rows, and a hard error so weak requests do not become invisible automation debt.</p>
         </div>
         <div class="item">
           <h2>Boundary</h2>
-          <p>No live HubSpot, Salesforce, Zendesk, Intercom, Pylon, Segment, BigQuery, Snowflake, dbt, Retool, n8n, Zapier, Make, or Gumloop actions.</p>
+          <p>No live HubSpot, Salesforce, Zendesk, Intercom, Pylon, Segment, BigQuery, Snowflake, dbt, Retool, Claude Code, MCP, Clay, Trigger.dev, Obsidian, n8n, Zapier, Make, or Gumloop actions.</p>
         </div>
       </div>
 
@@ -237,6 +237,13 @@
               <td class="warn">blocked</td>
               <td>Live Salesforce write requested without approval.</td>
               <td>Convert to draft-only CRM preview and owner approval.</td>
+            </tr>
+            <tr>
+              <td>AIOL-1008</td>
+              <td>Internal Ops</td>
+              <td class="warn">blocked</td>
+              <td>Claude Code and MCP action requested without owner policy or approval.</td>
+              <td>Convert to agent-action preview and owner review first.</td>
             </tr>
             <tr>
               <td>AIOL-1010</td>

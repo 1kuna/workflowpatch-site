@@ -2,7 +2,7 @@
 
 ## Source
 
-Use redacted or synthetic rows from cross-functional AI operations requests: Sales, Customer Success, Marketing, Support, Finance, RevOps, Product, Operations, Analytics, or similar teams. The useful first sample is 5-10 rows with source, team, requested action, system, owner, success metric, approval state, sensitive-data boundary, and whether a live action was requested.
+Use redacted or synthetic rows from cross-functional AI operations requests: Sales, Customer Success, Marketing, Support, Finance, RevOps, Product, Internal Ops, Analytics, or similar teams. The useful first sample is 5-10 rows with source, team, requested action, system, owner, success metric, approval state, sensitive-data boundary, and whether a live action was requested. For internal-ops stacks, include agent/tool-action requests from systems such as Claude Code, MCP servers, Clay, Trigger.dev, Obsidian, workflow builders, reporting tools, or CRM previews.
 
 ## Transformation
 
@@ -14,4 +14,4 @@ Deliver a written proof pack: source events, adoption policy, AI ops ledger, own
 
 ## Excluded Live Actions
 
-No live HubSpot, Salesforce, Zendesk, Intercom, Pylon, Segment, BigQuery, Snowflake, dbt, Retool, Notion, n8n, Zapier, Make, Gumloop, support-system, CRM, analytics, billing, employee, customer-data, or production writes. No credentials, no customer data, no financial records, no support tickets with personal data, no company-wide rollout, no employee training commitment, no legal/privacy/compliance advice, and no custom legal or HR commitment from the first proof.
+No live HubSpot, Salesforce, Zendesk, Intercom, Pylon, Segment, BigQuery, Snowflake, dbt, Retool, Notion, Claude Code, MCP, Clay, Trigger.dev, Obsidian, n8n, Zapier, Make, Gumloop, support-system, CRM, analytics, billing, employee, customer-data, or production writes. No credentials, no customer data, no financial records, no support tickets with personal data, no company-wide rollout, no employee training commitment, no legal/privacy/compliance advice, and no custom legal or HR commitment from the first proof.
