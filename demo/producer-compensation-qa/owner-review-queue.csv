@@ -1,0 +1,4 @@
+event_id,producer_id,policy_id,reason,owner,review_action
+pcq-1002,prod-203,pol-882,hierarchy changes require owner review before any downstream compensation logic changes,finance-owner-b,"Approve, narrow, or block before downstream compensation impact."
+pcq-1003,prod-104,pol-883,chargeback rows require finance owner review before statement or payout impact,finance-owner-a,"Approve, narrow, or block before downstream compensation impact."
+pcq-1007,prod-104,pol-887,duplicate_correlation_id,compensation-ops,Confirm replay intent before staging another compensation row.

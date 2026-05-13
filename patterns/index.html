@@ -833,6 +833,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Producer Compensation QA</h2>
+            <p>For insurance distribution teams whose producer, hierarchy, commission, chargeback, retry, and payout-state rows need a reviewable control layer before compensation impact.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted or synthetic producer map, compensation policy, and event export with producer, policy, hierarchy, correlation, and requested-action fields.</div>
+            <div class="step"><strong>Transform</strong>Check producer identity, hierarchy path, correlation id, event type, sensitive-data scope, and live payout boundaries.</div>
+            <div class="step"><strong>Destination</strong>Compensation QA ledger, owner-review queue, blocked-action queue, hard errors, source script, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Producer commission QA</li>
+                <li>Hierarchy or upline change review</li>
+                <li>Chargeback and retry controls</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live carrier or producer data first</li>
+                <li>No payout, payroll, tax, or accounting action</li>
+                <li>No regulated, legal, compliance, HR, or compensation advice</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Clean commission rows reach QA ledger</li>
+                <li>Hierarchy, chargeback, and duplicate rows route to owners</li>
+                <li>Payout and sensitive-data rows block before live action</li>
+              </ul>
+              <p><a href="/demo/producer-compensation-qa/">View producer compensation proof</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>HubSpot JSON Stabilization</h2>
             <p>For n8n workflows where landing-page webhooks, AI intent output, and HubSpot writes fail because payload shapes vary or nested arrays break downstream batching.</p>
           </div>
@@ -2326,6 +2365,7 @@
         <a class="button secondary" href="/demo/sales-ai-handoff/">View Sales AI Handoff Proof</a>
         <a class="button secondary" href="/demo/hubspot-ringcentral-qa/">View HubSpot RingCentral Proof</a>
         <a class="button secondary" href="/demo/insurance-ops-case-queue/">View Insurance Ops Proof</a>
+        <a class="button secondary" href="/demo/producer-compensation-qa/">View Producer Compensation Proof</a>
         <a class="button secondary" href="/demo/agency-overflow-qa/">View Agency Overflow Proof</a>
         <a class="button secondary" href="/demo/document-email-review/">View Document Email Demo</a>
         <a class="button secondary" href="/demo/finance-ops-handoff/">View Finance Ops Proof</a>

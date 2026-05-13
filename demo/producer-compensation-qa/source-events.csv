@@ -1,0 +1,9 @@
+event_id,producer_id,policy_id,event_type,amount,effective_date,expected_upline,correlation_id,requested_action,contains_sensitive_data
+pcq-1001,prod-104,pol-881,new_policy_commission,2180,2026-05-01,agency-21>broker-8,cor-501,stage_compensation_review,no
+pcq-1002,prod-203,pol-882,hierarchy_change,0,2026-05-03,agency-44>broker-12,cor-502,update_hierarchy_path,no
+pcq-1003,prod-104,pol-883,chargeback,640,2026-05-04,agency-21>broker-8,cor-503,stage_chargeback_review,no
+pcq-1004,prod-778,pol-884,new_policy_commission,4200,2026-05-04,agency-21>broker-8,cor-504,stage_compensation_review,no
+pcq-1005,prod-203,pol-885,retry_event,1800,2026-05-05,agency-44>broker-12,cor-505,stage_compensation_review,no
+pcq-1006,prod-104,pol-886,payout_release,3180,2026-05-05,agency-21>broker-8,cor-506,release_payout,no
+pcq-1007,prod-104,pol-887,new_policy_commission,1250,2026-05-05,agency-21>broker-8,cor-501,stage_compensation_review,no
+pcq-1008,prod-203,pol-888,new_policy_commission,1975,2026-05-06,agency-44>broker-12,cor-508,email_producer_statement,yes

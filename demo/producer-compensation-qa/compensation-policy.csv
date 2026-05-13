@@ -1,0 +1,6 @@
+event_type,destination_output,allowed_without_review,review_reason
+new_policy_commission,compensation_qa_ledger,yes,standard commission staging with approved hierarchy and unique event
+hierarchy_change,owner_review_queue,no,hierarchy changes require owner review before any downstream compensation logic changes
+chargeback,owner_review_queue,no,chargeback rows require finance owner review before statement or payout impact
+retry_event,compensation_qa_ledger,yes,retry rows can be staged only when hierarchy and correlation checks pass
+payout_release,blocked_action_queue,no,payout release is outside first-proof scope

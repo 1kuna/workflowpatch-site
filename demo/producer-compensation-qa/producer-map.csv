@@ -1,0 +1,4 @@
+producer_id,producer_name,approved_hierarchy_path,status,finance_owner
+prod-104,Apex Advisory Group,agency-21>broker-8,active,finance-owner-a
+prod-203,Northline Producer Desk,agency-44>broker-12,active,finance-owner-b
+prod-311,Rivergate Brokerage,agency-09>broker-3,paused,finance-owner-c

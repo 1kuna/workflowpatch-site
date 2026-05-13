@@ -1,0 +1,2 @@
+event_id,error_code,error_detail
+pcq-1004,unknown_producer,Source event references a producer that is not in the approved producer map.
