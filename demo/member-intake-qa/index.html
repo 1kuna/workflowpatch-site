@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://www.workflowpatch.com/demo/member-intake-qa/">
+    <title>WorkflowPatch Member Intake QA Proof</title>
+    <meta name="description" content="WorkflowPatch member intake QA proof with synthetic consultation, profile, matchmaker, referral, no-show, and date-feedback rows routed to ledgers, owner review, blocked actions, and hard errors before live member action.">
+    <link rel="icon" href="/assets/workflowpatch-mark.svg" type="image/svg+xml">
+    <meta property="og:site_name" content="WorkflowPatch">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WorkflowPatch Member Intake QA Proof">
+    <meta property="og:description" content="A synthetic proof for privacy-sensitive member onboarding and matchmaker handoffs: intake rows become QA ledgers, owner-review queues, blocked actions, and hard errors before any live member message or production write.">
+    <meta property="og:url" content="https://www.workflowpatch.com/demo/member-intake-qa/">
+    <meta property="og:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="WorkflowPatch async fixed-scope workflow automation">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.workflowpatch.com/assets/workflowpatch-social.png">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c2328;
+        --muted: #5f6b72;
+        --line: #d9e0e4;
+        --paper: #fbfcfb;
+        --panel: #ffffff;
+        --accent: #0f766e;
+        --accent-dark: #0b4d49;
+        --warning: #9a5b11;
+        --soft: #edf5f3;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      .wrap {
+        width: min(1080px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        background: rgba(251, 252, 251, 0.94);
+      }
+
+      .topbar {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: 800;
+      }
+
+      .brand img {
+        width: 32px;
+        height: 32px;
+      }
+
+      a {
+        color: var(--accent-dark);
+        font-weight: 700;
+      }
+
+      main {
+        padding: 48px 0;
+      }
+
+      .eyebrow {
+        color: var(--accent-dark);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0;
+        margin: 0 0 12px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-size: 50px;
+        line-height: 1.02;
+        margin: 0 0 18px;
+        letter-spacing: 0;
+        max-width: 840px;
+      }
+
+      .lede {
+        color: var(--muted);
+        font-size: 19px;
+        max-width: 900px;
+        margin: 0 0 28px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 34px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        padding: 0 14px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: transparent;
+        color: var(--accent-dark);
+      }
+
+      .metrics,
+      .workflow {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+        margin-bottom: 28px;
+      }
+
+      .metric,
+      .step {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 16px;
+      }
+
+      .metric {
+        min-height: 104px;
+      }
+
+      .metric strong {
+        display: block;
+        color: var(--accent-dark);
+        font-size: 31px;
+        line-height: 1;
+        margin-bottom: 10px;
+      }
+
+      .metric span,
+      .step p {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .step h2 {
+        font-size: 16px;
+        margin: 0 0 8px;
+      }
+
+      .step p {
+        margin: 0;
+      }
+
+      .notice {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff8ec;
+        color: #6b420d;
+        margin: 0 0 28px;
+        padding: 16px;
+        font-weight: 700;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        margin-top: 28px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 900px;
+        font-size: 14px;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: var(--soft);
+        color: var(--accent-dark);
+      }
+
+      tr:last-child td { border-bottom: 0; }
+
+      .status {
+        color: var(--accent-dark);
+        font-weight: 800;
+      }
+
+      .warn {
+        color: var(--warning);
+        font-weight: 800;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 26px 0 38px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 920px) {
+        .metrics,
+        .workflow {
+          grid-template-columns: 1fr;
+        }
+
+        main { padding-top: 34px; }
+        h1 { font-size: 36px; }
+        .metric { min-height: auto; }
+      }
+
+      @media (max-width: 520px) {
+        .topbar {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 8px;
+          padding: 14px 0;
+        }
+
+        h1 { font-size: 33px; }
+        .links {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 8px;
+        }
+
+        .button {
+          width: 100%;
+          min-height: 42px;
+          padding: 8px 12px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <a class="brand" href="/"><img src="/assets/workflowpatch-mark.svg" alt="">WorkflowPatch</a>
+        <a href="/start/">Start fit check</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <p class="eyebrow">Synthetic proof · member intake control</p>
+      <h1>Member intake QA proof.</h1>
+      <p class="lede">A first paid slice for service teams whose consultation, profile, matchmaker, referral, no-show, and feedback rows need a reviewable control layer. Synthetic member events become intake QA ledgers, owner-review queues, blocked actions, and hard errors before any live member data, customer message, CRM write, profile update, or date action is touched.</p>
+
+      <div class="links">
+        <a class="button" href="/demo/member-intake-qa/member-intake-qa-ledger.csv">QA Ledger CSV</a>
+        <a class="button secondary" href="/demo/member-intake-qa/owner-review-queue.csv">Owner Review CSV</a>
+        <a class="button secondary" href="/demo/member-intake-qa/blocked-action-queue.csv">Blocked Actions CSV</a>
+        <a class="button secondary" href="/demo/member-intake-qa/error-log.csv">Error Log CSV</a>
+        <a class="button secondary" href="/demo/member-intake-qa/member-events.csv">Member Events CSV</a>
+        <a class="button secondary" href="/demo/member-intake-qa/member-policy.csv">Policy CSV</a>
+        <a class="button secondary" href="/demo/member-intake-qa/runbook.md">Runbook</a>
+        <a class="button secondary" href="/demo/member-intake-qa/process_member_intake_demo.py">Source Script</a>
+      </div>
+
+      <div class="metrics" aria-label="Proof summary">
+        <div class="metric"><strong>8</strong><span>synthetic member-intake events</span></div>
+        <div class="metric"><strong>2</strong><span>QA ledger rows staged for owner review</span></div>
+        <div class="metric"><strong>2</strong><span>duplicate or reengagement review rows</span></div>
+        <div class="metric"><strong>3</strong><span>blocked live-channel or member-facing actions</span></div>
+      </div>
+
+      <div class="workflow">
+        <section class="step">
+          <h2>Input</h2>
+          <p>Synthetic consultation, profile update, matchmaker note, referral, no-show, and date-feedback rows plus a policy map.</p>
+        </section>
+        <section class="step">
+          <h2>Checks</h2>
+          <p>Duplicate keys, required fields, source boundary, sensitive details, consent state, and member-facing action scope are checked first.</p>
+        </section>
+        <section class="step">
+          <h2>Output</h2>
+          <p>Safe rows become an intake QA ledger; duplicates and reengagement rows go to owner review with evidence.</p>
+        </section>
+        <section class="step">
+          <h2>Blocks</h2>
+          <p>Live-channel sources, sensitive member details, SMS, member messages, date booking, CRM writes, and profile updates stop before action.</p>
+        </section>
+      </div>
+
+      <div class="notice">Production boundary: no live member, prospect, matchmaker, dating-profile, CRM, payment, call, SMS, WhatsApp, email, calendar, or production data. No matching advice, relationship advice, legal advice, privacy advice, HR advice, SMS send, member message, date scheduling, CRM write, profile update, or production action.</div>
+
+      <div class="table-wrap" aria-label="Member intake QA ledger">
+        <table>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Source Shape</th>
+              <th>Check</th>
+              <th>Decision</th>
+              <th>Boundary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>miq-1001</td>
+              <td>New consultation</td>
+              <td>Complete profile, approved source boundary, unique duplicate key</td>
+              <td class="status">QA ledger</td>
+              <td>Owner review before any CRM or member workflow impact.</td>
+            </tr>
+            <tr>
+              <td>miq-1003</td>
+              <td>Duplicate profile update</td>
+              <td>Duplicate key already seen</td>
+              <td class="warn">Owner review</td>
+              <td>Confirm replay intent before staging another profile row.</td>
+            </tr>
+            <tr>
+              <td>miq-1007</td>
+              <td>No-show follow-up</td>
+              <td>Reengagement policy requires owner approval</td>
+              <td class="warn">Owner review</td>
+              <td>No automated member follow-up.</td>
+            </tr>
+            <tr>
+              <td>miq-1004</td>
+              <td>Matchmaker note</td>
+              <td>Sensitive member detail present</td>
+              <td class="warn">Blocked action</td>
+              <td>Use synthetic or redacted detail only.</td>
+            </tr>
+            <tr>
+              <td>miq-1008</td>
+              <td>Date feedback</td>
+              <td>Member-facing message requested</td>
+              <td class="warn">Blocked action</td>
+              <td>No member message or date action.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">WorkflowPatch · alex@workflowpatch.com · 2995 East Point Street, East Point, GA 30094</div>
+    </footer>
+  </body>
+</html>

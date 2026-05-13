@@ -1183,6 +1183,45 @@
 
         <section class="pattern">
           <div class="pattern-head">
+            <h2>Member Intake QA</h2>
+            <p>For privacy-sensitive service teams where consultation, profile, matchmaker, referral, no-show, and feedback rows need owner review before member-facing action.</p>
+          </div>
+          <div class="flow">
+            <div class="step"><strong>Source</strong>One redacted or synthetic intake export with profile state, consent state, duplicate key, matchmaker owner, and requested action.</div>
+            <div class="step"><strong>Transform</strong>Check required fields, duplicate events, source boundary, sensitive details, consent state, and member-facing action scope.</div>
+            <div class="step"><strong>Destination</strong>Member intake QA ledger, owner-review queue, blocked-action queue, hard errors, source script, and runbook.</div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail">
+              <h3>Good Fit</h3>
+              <ul>
+                <li>Client onboarding QA</li>
+                <li>Profile update review</li>
+                <li>No-show and follow-up controls</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Guardrails</h3>
+              <ul>
+                <li>No live member data first</li>
+                <li>No SMS, email, or date action</li>
+                <li>No matching, relationship, privacy, legal, or HR advice</li>
+              </ul>
+            </div>
+            <div class="detail">
+              <h3>Acceptance Checks</h3>
+              <ul>
+                <li>Clean intake rows reach QA ledger</li>
+                <li>Duplicate and reengagement rows route to owners</li>
+                <li>Sensitive or member-facing actions block visibly</li>
+              </ul>
+              <p><a href="/demo/member-intake-qa/">View member intake proof</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pattern">
+          <div class="pattern-head">
             <h2>SMS Approval State Machine</h2>
             <p>For opted-in SMS workflows where generated copy needs state tracking, human review, and proof that no message sends before approval.</p>
           </div>
@@ -2405,6 +2444,7 @@
         <a class="button secondary" href="/demo/inventory-room-allocation/">View Inventory Demo</a>
         <a class="button secondary" href="/demo/sms-approval-state/">View SMS Approval Demo</a>
         <a class="button secondary" href="/demo/lead-review-ledger/">View Lead Ledger Demo</a>
+        <a class="button secondary" href="/demo/member-intake-qa/">View Member Intake Proof</a>
         <a class="button secondary" href="/demo/document-export-manifest/">View Document Export Demo</a>
         <a class="button secondary" href="/demo/contract-packet-state/">View Contract State Demo</a>
         <a class="button secondary" href="/start/">Ask If A Workflow Fits</a>

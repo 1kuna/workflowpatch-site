@@ -1,0 +1,4 @@
+event_id,member_ref,requested_action,reason,blocked_action
+miq-1004,mem-772,stage_matchmaker_review,sensitive_member_detail,"Remove private dating, health, legal, or identity details before proof work."
+miq-1006,mem-451,send_sms_followup,live_customer_channel_source,Use a synthetic or redacted source row before any proof run.
+miq-1008,mem-640,send_member_message,member_facing_action,Keep member messages and date actions out of the first proof.

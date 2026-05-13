@@ -1,0 +1,8 @@
+event_type,allowed_without_review,review_reason,destination_output
+new_consultation,yes,,member_intake_qa_ledger
+profile_update,yes,,member_intake_qa_ledger
+matchmaker_note,no,matchmaker notes require owner review before downstream member action,matchmaker_review_queue
+matchmaker_handoff,no,incomplete handoffs require owner review,matchmaker_review_queue
+scout_referral,no,scout referrals require source and consent review,matchmaker_review_queue
+no_show_followup,no,reengagement timing requires owner approval,member_review_queue
+date_feedback,no,date feedback requires owner review before any member message,member_review_queue

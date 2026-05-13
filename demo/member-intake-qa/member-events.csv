@@ -1,0 +1,9 @@
+event_id,member_ref,event_type,profile_state,requested_action,consent_state,source_boundary,matchmaker_owner,duplicate_key,contains_sensitive_detail,required_fields_complete
+miq-1001,mem-204,new_consultation,complete,stage_matchmaker_review,marketing_opt_in,synthetic_or_redacted,owner-north,dup-701,no,yes
+miq-1002,mem-338,profile_update,complete,stage_profile_review,member_opt_in,synthetic_or_redacted,owner-central,dup-702,no,yes
+miq-1003,mem-204,profile_update,complete,stage_profile_review,member_opt_in,synthetic_or_redacted,owner-north,dup-701,no,yes
+miq-1004,mem-772,matchmaker_note,complete,stage_matchmaker_review,member_opt_in,synthetic_or_redacted,owner-west,dup-704,yes,yes
+miq-1005,mem-910,matchmaker_handoff,incomplete,stage_matchmaker_review,member_opt_in,synthetic_or_redacted,owner-east,dup-705,no,no
+miq-1006,mem-451,scout_referral,complete,send_sms_followup,unknown,live_customer_channel,owner-central,dup-706,no,yes
+miq-1007,mem-519,no_show_followup,complete,stage_reengagement_review,member_opt_in,synthetic_or_redacted,owner-west,dup-707,no,yes
+miq-1008,mem-640,date_feedback,complete,send_member_message,member_opt_in,synthetic_or_redacted,owner-north,dup-708,no,yes

@@ -1,0 +1,2 @@
+event_id,error_code,error_detail
+miq-1005,missing_required_member_fields,Required profile or handoff fields are incomplete.
